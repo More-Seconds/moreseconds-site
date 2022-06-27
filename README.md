@@ -38,9 +38,29 @@ npm run build
 
 ---
 
+# Github Workflow
+
+## Starting a new feature
+
+Whenever you start on a new task or feature, create a new branch on github
+
+```
+git branch your-branch-name
+```
+
+Make all your commits and pushes in this branch
+
+## Merging your branch
+
+When your feature is complete and all your changes are pushed to your current branch go to the project github and click on branches next to the branch dropdown. from this page you can create a pull request and let someone know so they can review the changes and merge the branch with main
+
+---
+
 # Tech
 
 ## Tailwind
+
+[Docs](https://tailwindcss.com/docs/installation)
 
 ### Basics
 
@@ -83,7 +103,6 @@ To add a utility but only have it take effect at a certain breakpoint, all you n
 
 ### Customizing Tailwind
 
-[Docs](https://tailwindcss.com/docs/installation)
 You can create your own classes or overwrite defaults in the tailwind.config.js file
 
 ```
