@@ -121,6 +121,11 @@ module.exports = {
 }
 ```
 
+### Tailwind Intellisense
+
+This extension for Visual Studio Code will list out tailwind utility class options as you write them so you dont have to keep looking at the docs.
+To install open visual studio code and go to the extensions tab on the far left. Search tailwind and it should be the first thing that pops up. Hit install and you'll be good to go
+
 ## React Router
 
 ### Setup
