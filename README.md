@@ -38,6 +38,20 @@ npm run build
 
 ---
 
+# Github Workflow
+
+## Starting a new feature
+
+Whenever you start on a new task or feature, create a new branch on github
+
+```
+git branch your-branch-name
+```
+
+Make all your commits and pushes in this branch
+
+---
+
 # Tech
 
 ## Tailwind
