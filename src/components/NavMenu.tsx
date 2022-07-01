@@ -29,7 +29,7 @@ export function NavMenu({ mobile, open }: Props) {
       ref={containerRef}
       className={
         mobile
-          ? 'absolute left-0 right-0 top-32 translate-x-full overflow-hidden bg-surface'
+          ? 'absolute left-0 right-0 top-32 translate-x-full overflow-hidden bg-surface lg:hidden'
           : 'hidden  lg:mx-16 lg:block lg:max-w-2xl lg:justify-self-end'
       }
     >

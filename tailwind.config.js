@@ -8,7 +8,8 @@ module.exports = {
         surface: '#000000',
         accent: '#FF7E21',
         light: '#FCFCFD',
-        mid: '#B7B7B7'
+        mid: '#B7B7B7',
+        darkmid: '#E6E8EC'
       },
       fontFamily: {
         DM: 'DM Sans, system-ui, sans serif'
