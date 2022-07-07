@@ -1,14 +1,17 @@
 type Props = {
+  className?: string
   level: string
   children: string
-  dark: boolean
-  inlineWidth?: string
+  dark?: boolean
+  maxWidth?: string
 }
 
 export function Heading(props: Props) {
-  const headingStyle = `font-DM font-bold text-4xl z-10 ${
-    props.dark ? 'text-black' : 'text-light'
-  } ${props.inlineWidth ? 'max-w-' + props.inlineWidth : ''}`
+  const headingStyle = `font-DM font-bold z-10 ${
+    props.level == '1' ? 'text-6xl leading-tight' : 'text-4xl'
+  } ${props.dark ? 'text-black' : 'text-light'} ${
+    props.maxWidth ? 'max-w-' + props.maxWidth : ''
+  } ${props.className}`
   switch (props.level) {
     default:
       throw 'you must specify a heading level'
