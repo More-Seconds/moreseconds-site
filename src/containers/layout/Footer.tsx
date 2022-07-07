@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MSLogo, FbIcon, YtIcon, InstaIcon, TwitterIcon } from 'public'
+import { MSLogo, FbIcon, YtIcon, InstaIcon, TwitterIcon } from 'public/svgs'
 
 export function Footer() {
   return (
