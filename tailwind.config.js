@@ -2,6 +2,8 @@
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  mode: 'jit',
+  content: ['./src/**/*.tsx', './dist/index.html'],
   theme: {
     extend: {
       colors: {
@@ -17,7 +19,12 @@ module.exports = {
         Poppins: 'Poppins, system-ui, sans serif'
       },
       backgroundImage: {
-        floatingLabel: 'linear-gradient(to top, #E6E8EC 75.01%, #FCFCFD 25%);'
+        floatingLabel: 'linear-gradient(to top, #E6E8EC 75.01%, #FCFCFD 25%);',
+        homeHero: `url('/home_hero.png')`
+      },
+      minHeight: {
+        hero: '1400px',
+        heroTablet: '1096px'
       }
     }
   },

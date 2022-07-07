@@ -6,6 +6,7 @@ import { ReactComponent as InstaIcon } from './instagram.svg'
 import { ReactComponent as TwitterIcon } from './twitter.svg'
 import { ReactComponent as Planet } from './planet.svg'
 import { ReactComponent as FormCharacter } from './coffee_man.svg'
+import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 
 export {
   MSLogo,
@@ -15,5 +16,6 @@ export {
   InstaIcon,
   TwitterIcon,
   Planet,
-  FormCharacter
+  FormCharacter,
+  HomeHeroBG
 }
