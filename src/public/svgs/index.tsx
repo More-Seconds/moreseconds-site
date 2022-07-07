@@ -7,6 +7,9 @@ import { ReactComponent as TwitterIcon } from './twitter.svg'
 import { ReactComponent as Planet } from './planet.svg'
 import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
+import { ReactComponent as Hamburger } from './hamburger.svg'
+import { ReactComponent as Star } from './star.svg'
+import { ReactComponent as Ball } from './ball1.svg'
 
 export {
   MSLogo,
@@ -17,5 +20,8 @@ export {
   TwitterIcon,
   Planet,
   FormCharacter,
-  HomeHeroBG
+  HomeHeroBG,
+  Hamburger,
+  Star,
+  Ball
 }
