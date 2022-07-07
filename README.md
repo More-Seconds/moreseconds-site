@@ -193,8 +193,38 @@ root.render(
 
 # Components
 
+## Heading
+
+The heading component requires passing a heading level as a prop. By default the text is white but passing a dark prop will make it dark. The optional maxWidth prop allows you to specify one of the built in tailwind max width values or one you definied in the tailwind.config.js file.
+
+```
+<Heading level="1" dark maxWidth="sm">Title</Heading>
+```
+
 ## Layout
 
 The layout component is made up of the header, a slot for page content, and the footer. It will be on every page and act as a wrapper for the page content.
 
-Let's add to this as we start developing more components
+```
+<Layout>
+  {page content...}
+</Layout>
+```
+
+## NavMenu
+
+Conditionally renders either a standard navbar or a hamburger menu based on the presence of the "mobile" prop. If the component is in mobile mode the hamburger menu open state will be passed to the open prop as a boolean
+
+```
+<NavMenu />
+or
+<NavMenu mobile open={openState}/>
+```
+
+## Form
+
+Uses formik to handle form state and Yup to handle validation. The phone number field was accomplished with a react-text-mask masked input.
+
+```
+<FooterForm />
+```
