@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ReactComponent as MSLogo } from '../public/ms_logo.svg'
 import { ReactComponent as Hamburger } from '../public/hamburger.svg'
-import { NavMenu } from './NavMenu'
+import { NavMenu } from '../components/NavMenu'
 
 export function Header() {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false)

@@ -1,6 +1,6 @@
 import { FormCharacter, Planet } from 'public'
-import { FooterForm } from './Form'
-import { Heading } from './Heading'
+import { FooterForm } from '../components/Form'
+import { Heading } from '../components/Heading'
 
 export function FooterCTA() {
   const listStyle = 'list-disc ml-4 mt-6'

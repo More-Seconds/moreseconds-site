@@ -1,6 +1,6 @@
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { FooterForm } from './Form'
+import { FooterForm } from '../components/Form'
 import { FooterCTA } from './FooterCTA'
 
 type Props = {
