@@ -5,13 +5,13 @@ import { Heading } from '../components/Heading'
 export function FooterCTA() {
   const listStyle = 'list-disc ml-4 mt-6'
   return (
-    <section className="bg-light rounded-lg grid grid-rows-2 gap-10 place-items-center lg:place-items-stretch lg:justify-items-center lg:grid-cols-2 lg:grid-rows-1 lg:px-20 px-8 pt-20 lg:pt-40 pb-8 lg:pb-32 lg-mx-12">
-      <FormCharacter className="absolute lg:top-52 lg:right-0 lg:z-10 translate-y-3 scale-50 lg:scale-100 top-28 -right-20 md:translate-y-20 lg:translate-y-1" />
+    <section className="grid grid-rows-2 gap-10 px-8 pt-20 pb-8 rounded-lg bg-light place-items-center lg:place-items-stretch lg:justify-items-center lg:grid-cols-2 lg:grid-rows-1 lg:px-20 lg:pt-40 lg:pb-32 lg-mx-12">
+      <FormCharacter className="absolute scale-50 translate-y-3 lg:top-52 lg:right-0 lg:z-10 lg:scale-100 top-28 -right-20 md:translate-y-20 lg:translate-y-1" />
       <div className="flex flex-col max-w-lg">
         <Heading level="2" dark inlineWidth="md">
           More Seconds Delivers
         </Heading>
-        <ul className="font-Poppins max-w-md">
+        <ul className="max-w-md font-Poppins">
           <li className={listStyle}>
             Premium digital support so you can focus on driving sales for your
             clients
@@ -33,7 +33,7 @@ export function FooterCTA() {
             have to
           </li>
         </ul>
-        <Planet className="relative top-20 -left-8 hidden lg:block" />
+        <Planet className="relative hidden top-20 -left-8 lg:block" />
       </div>
       <FooterForm />
     </section>

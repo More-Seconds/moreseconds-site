@@ -94,7 +94,7 @@ export function FooterForm() {
       onSubmit={(values, actions) => console.log(values, actions)}
     >
       {(props) => (
-        <Form className="grid gap-2 w-full">
+        <Form className="grid w-full gap-2">
           <div className={containerStyles}>
             <Field
               id="firstName"
@@ -217,7 +217,7 @@ export function FooterForm() {
           </div>
           <button
             type="submit"
-            className="py-3 px-12 mt-2 bg-accent text-light font-DM font-bold w-fit rounded-3xl justify-self-center lg:justify-self-auto"
+            className="px-12 py-3 mt-2 font-bold bg-accent text-light font-DM w-fit rounded-3xl justify-self-center lg:justify-self-auto"
           >
             Let's Chat
           </button>

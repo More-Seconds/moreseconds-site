@@ -13,14 +13,14 @@ export function Header() {
   }
 
   return (
-    <header className="h-20 grid grid-cols-2 items-center">
+    <header className="grid items-center h-20 grid-cols-2">
       <Link to="/">
         <MSLogo className="mx-4 lg:mx-16" />
       </Link>
       <NavMenu />
       <Link
         to=""
-        className="block lg:hidden justify-self-end mr-4 lg:mr-16"
+        className="block mr-4 lg:hidden justify-self-end lg:mr-16"
         onClick={() => toggleHamburgerMenu()}
       >
         <Hamburger className="fill-accent" />

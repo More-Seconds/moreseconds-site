@@ -63,7 +63,7 @@ export function NavMenu({ mobile, open }: Props) {
         <li className="relative">
           <Link
             to=""
-            className="hover:text-accent flex flex-nowrap justify-center items-center gap-2"
+            className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
             onClick={() => toggleSubMenu()}
           >
             Services
@@ -78,16 +78,16 @@ export function NavMenu({ mobile, open }: Props) {
                 : 'absolute top-full -left-10 -right-10 flex flex-col items-center mt-2 bg-light rounded border-2'
             }
           >
-            <li className="w-full text-center p-2 hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
               <Link to="">Service 1</Link>
             </li>
-            <li className="w-full text-center p-2 hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
               <Link to="">Service 2</Link>
             </li>
-            <li className="w-full text-center p-2 hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
               <Link to="">Service 3</Link>
             </li>
-            <li className="w-full text-center p-2 hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
               <Link to="">Service 4</Link>
             </li>
           </ul>
