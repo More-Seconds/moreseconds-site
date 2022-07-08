@@ -1,7 +1,7 @@
 import { Ref, useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { Link, NavLink } from 'react-router-dom'
-import { ReactComponent as DownArrow } from '../public/arrow_down.svg'
+import { ArrowDown } from 'public/svgs'
 
 type Props = {
   mobile?: Boolean
@@ -67,7 +67,7 @@ export function NavMenu({ mobile, open }: Props) {
             onClick={() => toggleSubMenu()}
           >
             Services
-            <DownArrow className="inline scale-150" />
+            <ArrowDown className="inline scale-150" />
           </Link>
           <ul
             className={
