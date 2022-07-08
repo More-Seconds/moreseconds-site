@@ -1,7 +1,7 @@
 import { BodyText } from '../components/BodyText'
 import { Heading } from '../components/Heading'
 import { Signup } from '../components/Signup'
-import { Clients } from '../containers/shared/Clients'
+import { Clients } from '../components/Clients'
 import { SVGBackground } from '../containers/shared/SVGBackground'
 import { Layout } from '../containers/layout/Layout'
 import { HomeHeroBG } from '../public/svgs'
