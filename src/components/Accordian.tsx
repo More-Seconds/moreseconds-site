@@ -1,5 +1,4 @@
-import { Headset } from 'public/svgs'
-import { SVGProps, useState } from 'react'
+import { MouseEvent, SVGProps, useState } from 'react'
 import { BodyText } from './BodyText'
 
 type Props = {
@@ -10,7 +9,7 @@ type Props = {
 
 export function Accordian(props: Props) {
   const [open, setOpen] = useState(false)
-  function toggleOpen(e) {
+  function toggleOpen(e: MouseEvent<HTMLAnchorElement>) {
     e.preventDefault()
     setOpen(!open)
   }
