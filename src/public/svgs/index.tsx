@@ -16,6 +16,8 @@ import { ReactComponent as Fast } from './fast.svg'
 import { ReactComponent as Envelope } from './envelope.svg'
 import { ReactComponent as Favorite } from './favorite.svg'
 import { ReactComponent as Smile } from './smile.svg'
+import { ReactComponent as Smoke } from './smoke.svg'
+import { ReactComponent as Satellite } from './satellite.svg'
 
 export {
   MSLogo,
@@ -35,5 +37,7 @@ export {
   Fast,
   Envelope,
   Favorite,
-  Smile
+  Smile,
+  Smoke,
+  Satellite
 }

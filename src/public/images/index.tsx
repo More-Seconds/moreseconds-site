@@ -6,6 +6,12 @@ import BoudinLogo from './boudin.png'
 import HelpGoodLogo from './helpgood.png'
 import SFELogo from './SFE.png'
 import PCTLogo from './PCT.png'
+import HawkeMediaLogo from './hawke_media.png'
+import DyrdekLogo from './dyrdek.png'
+import Code from './code.png'
+import UX from './ux.png'
+import Updates from './updates.png'
+import Research from './research.png'
 
 export {
   AlgorithmLogo,
@@ -15,5 +21,11 @@ export {
   BoudinLogo,
   HelpGoodLogo,
   SFELogo,
-  PCTLogo
+  PCTLogo,
+  HawkeMediaLogo,
+  DyrdekLogo,
+  Code,
+  UX,
+  Updates,
+  Research
 }
