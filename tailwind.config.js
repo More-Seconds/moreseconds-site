@@ -6,6 +6,9 @@ module.exports = {
   content: ['./src/**/*.tsx', './dist/index.html'],
   theme: {
     extend: {
+      screens: {
+        '3xl': '2000px'
+      },
       colors: {
         surface: '#000000',
         accent: '#FF7E21',
@@ -22,7 +25,7 @@ module.exports = {
         floatingLabel: 'linear-gradient(to top, #E6E8EC 75.01%, #FCFCFD 25%);',
         homeHero: `url('/home_hero.png')`
       },
-      minHeight: {
+      height: {
         hero: '1400px',
         heroTablet: '1096px'
       }
