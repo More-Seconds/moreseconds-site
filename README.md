@@ -65,9 +65,9 @@ When your feature is complete and all your changes are pushed to your current br
 ### Basics
 
 ```
-<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
+<div class="flex items-center max-w-sm p-6 mx-auto space-x-4 bg-white shadow-lg rounded-xl">
   <div class="shrink-0">
-    <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+    <img class="w-12 h-12" src="/img/logo.svg" alt="ChitChat Logo">
   </div>
   <div>
     <div class="text-xl font-medium text-black">ChitChat</div>
@@ -195,20 +195,26 @@ root.render(
 
 ## Heading
 
-The heading component requires passing a heading level as a prop. By default the text is white but passing a dark prop will make it dark. The optional maxWidth prop allows you to specify one of the built in tailwind max width values or one you definied in the tailwind.config.js file.
+The heading component requires passing a heading level as a prop. By default the text is white but passing a dark prop will make it dark.
 
 ```
-<Heading level="1" dark maxWidth="sm">Title</Heading>
+<Heading level="1" dark className="{tailwind classes here if necessary}">Title</Heading>
 ```
 
-## Layout
+## Body Text
 
-The layout component is made up of the header, a slot for page content, and the footer. It will be on every page and act as a wrapper for the page content.
+The body text component holds the base styles for body text
 
 ```
-<Layout>
-  {page content...}
-</Layout>
+<BodyText className={tailwind classes here if necessary}>
+```
+
+## Button
+
+Base button styles with variant prop. supported variants are "primary" and "secondary"
+
+```
+<Button variant="primary">Click Me</Button>
 ```
 
 ## NavMenu
@@ -227,4 +233,44 @@ Uses formik to handle form state and Yup to handle validation. The phone number 
 
 ```
 <FooterForm />
+```
+
+## Signup
+
+Uses formik and yup. will be connected to hubspot
+
+```
+<Signup />
+```
+
+## Clients
+
+Shared section across multiple pages. Renders a headline and grid of client logos
+
+```
+<Clients />
+```
+
+# Containers
+
+## Layout
+
+The layout component is made up of the header, a slot for page content, and the footer. It will be on every page and act as a wrapper for the page content.
+
+```
+<Layout>
+  {page content...}
+</Layout>
+```
+
+## SVG Background
+
+Takes an svg and children and applies the svg as a background with text overlaid
+
+```
+import MyImage from 'assets/images'
+
+<SVGBackground background={MyImage}>
+{Content}
+</SVGBackground>
 ```
