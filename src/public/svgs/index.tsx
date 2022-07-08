@@ -10,6 +10,12 @@ import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 import { ReactComponent as Hamburger } from './hamburger.svg'
 import { ReactComponent as Star } from './star.svg'
 import { ReactComponent as Ball } from './ball1.svg'
+import { ReactComponent as TeamImage } from './team.svg'
+import { ReactComponent as Headset } from './headphones.svg'
+import { ReactComponent as Fast } from './fast.svg'
+import { ReactComponent as Envelope } from './envelope.svg'
+import { ReactComponent as Favorite } from './favorite.svg'
+import { ReactComponent as Smile } from './smile.svg'
 
 export {
   MSLogo,
@@ -23,5 +29,11 @@ export {
   HomeHeroBG,
   Hamburger,
   Star,
-  Ball
+  Ball,
+  TeamImage,
+  Headset,
+  Fast,
+  Envelope,
+  Favorite,
+  Smile
 }
