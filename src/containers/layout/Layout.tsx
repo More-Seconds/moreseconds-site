@@ -10,7 +10,7 @@ export function Layout(props: Props) {
   return (
     <>
       <Header />
-      {props.children}
+      <main>{props.children}</main>
       <FooterCTA />
       <Footer />
     </>
