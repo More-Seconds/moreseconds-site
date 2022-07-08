@@ -29,6 +29,9 @@ module.exports = {
       height: {
         hero: '1400px',
         heroTablet: '1096px'
+      },
+      gridTemplateColumns: {
+        services: '40fr 30fr 30fr'
       }
     }
   },
