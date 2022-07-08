@@ -1,11 +1,9 @@
 type Props = {
   children: string
-  maxWidth?: string
+  className?: string
 }
 
 export function BodyText(props: Props) {
-  const styles = `text-lg leading-7 text-light font-Poppins leading ${
-    props.maxWidth ? 'max-w-' + props.maxWidth : ''
-  }`
+  const styles = `2xl:text-2xl leading-7 text-light font-Poppins leading ${props.className}`
   return <p className={styles}>{props.children}</p>
 }

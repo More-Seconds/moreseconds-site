@@ -8,7 +8,9 @@ type Props = {
 
 export function Heading(props: Props) {
   const headingStyle = `font-DM font-bold z-10 ${
-    props.level == '1' ? 'text-6xl leading-tight' : 'text-4xl'
+    props.level == '1'
+      ? 'text-5xl md:text-4xl lg:text-6xl leading-tight 2xl:text-7xl'
+      : 'text-4xl'
   } ${props.dark ? 'text-black' : 'text-light'} ${
     props.maxWidth ? 'max-w-' + props.maxWidth : ''
   } ${props.className}`
