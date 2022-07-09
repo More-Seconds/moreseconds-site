@@ -1,6 +1,35 @@
 # More Seconds Site
-
-This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
+- [More Seconds Site](#more-seconds-site)
+  - [Getting Started](#getting-started)
+    - [Install](#install)
+    - [Build](#build)
+- [Github Workflow](#github-workflow)
+  - [Starting a new feature](#starting-a-new-feature)
+  - [Merging your branch](#merging-your-branch)
+- [App Structure](#app-structure)
+  - [Components directory](#components-directory)
+    - [Forms directory](#forms-directory)
+    - [Shared sections directory](#shared-sections-directory)
+    - [Typography directory](#typography-directory)
+    - [General Components](#general-components)
+  - [Containers directory](#containers-directory)
+    - [Layout directory](#layout-directory)
+    - [Shared directory](#shared-directory)
+  - [Pages directory](#pages-directory)
+  - [Public directory](#public-directory)
+    - [Images directory](#images-directory)
+    - [SVGs directory](#svgs-directory)
+  - [Styles directory](#styles-directory)
+    - [main.css](#maincss)
+- [Tech](#tech)
+  - [Tailwind](#tailwind)
+    - [Basics](#basics)
+    - [Responsiveness](#responsiveness)
+    - [Customizing Tailwind](#customizing-tailwind)
+    - [Tailwind Intellisense](#tailwind-intellisense)
+  - [React Router](#react-router)
+    - [Setup](#setup)
+  - [Adding routes](#adding-routes)
 
 ## Getting Started
 
@@ -55,6 +84,271 @@ Make all your commits and pushes in this branch
 When your feature is complete and all your changes are pushed to your current branch go to the project github and click on branches next to the branch dropdown. from this page you can create a pull request and let someone know so they can review the changes and merge the branch with main
 
 ---
+
+# App Structure
+
+Most of the code we will need to edit is in the "src" directory which is laid out as follows. This organization can change or adapt with the site but I found it to be pretty intuitive
+
+```
+|--- components
+     |--- forms
+     |--- shared sections
+     |--- typography
+     |--- (general)
+|--- containers
+     |--- layout
+     |--- shared
+|--- pages
+|--- public
+     |--- images
+     |--- svgs
+|--- styles
+```
+
+## Components directory
+
+Components can be considered as any reusable visual element on the site
+
+### Forms directory
+
+---
+
+These are the two forms on the site. They both use formik to handle form state and Yup to handle validation. The phone number field in the footer form was accomplished with a react-text-mask masked input. Both forms will be connected to hubspot
+
+**Contact Form**
+
+```
+<FooterForm />
+```
+
+**Signup**
+
+```
+<Signup />
+```
+
+### Shared sections directory
+
+---
+
+Shared sections are entire sections with hard coded copy and images that can be dropped into any page
+
+**Services**
+
+(add screenshot)
+Headings and grid layout are located in index.tsx.
+
+```
+<Sevices />
+```
+
+**Service**
+
+Individual service cards are located in Service.tsx. The Service component takes a title, image, and slug of the page to link to as props and displays the inner card layout
+
+```
+<Service
+  title="Web Development"
+  className="col-start-1 row-span-2 row-start-1"
+  image={Code}
+  slug={'/development'}
+/>
+
+```
+
+**Team**
+
+(add screenshot)
+Composes an SVG and copy in the SideBySide layout container.
+
+```
+<Team />
+```
+
+**Accordian**
+
+The accordian layout, state, and click events are handled in the Accordian.tsx file. it takes a title and an image to use as the bullet point
+
+```
+<Accordian title="Fast" image={sonic} />
+```
+
+**Clients**
+
+(add screenshot)
+Renders a headline and grid of client logos
+
+```
+<Clients />
+```
+
+**Partners**
+
+(add screenshot)
+
+```
+<Partners />
+```
+
+### Typography directory
+
+---
+
+**Heading**
+
+The heading component requires passing a heading level as a prop. By default the text is white but passing a dark prop will make it dark.
+
+```
+<Heading level="1" dark className="{tailwind classes here if necessary}">Title</Heading>
+```
+
+**Body Text**
+
+The body text component holds the base styles for body text
+
+```
+<BodyText className={tailwind classes here if necessary}>Some text</BodyText>
+```
+
+**Small Title**
+
+Small orange subtitle often paired with a heading
+
+```
+<SmallTitle>Title</SmallTitle>
+```
+
+### General Components
+
+---
+
+**Button**
+
+Base button styles with variant prop. supported variants are "primary" and "secondary"
+
+```
+<Button variant="primary">Click Me</Button>
+```
+
+**NavMenu**
+
+Conditionally renders either a standard navbar or a hamburger menu based on the presence of the "mobile" prop. If the component is in mobile mode the hamburger menu open state will be passed to the open prop as a boolean
+
+```
+<NavMenu />
+or
+<NavMenu mobile open={openState}/>
+```
+
+## Containers directory
+
+Containers are skeletons with set layout styles or sitewide layout related components
+
+### Layout directory
+
+---
+
+This contains the sitewide layout
+
+**Layout**
+
+The layout component is made up of the header, a slot for page content, and the footer. It will be on every page and act as a wrapper for the page content.
+
+```
+<Layout>
+  {page content...}
+</Layout>
+```
+
+**Footer**
+
+Site footer
+
+```
+<Footer />
+```
+
+**Footer CTA**
+
+Section right above the footer with contact form and cta
+
+```
+<FooterCTA />
+```
+
+**Header**
+
+Site header
+
+```
+<Header />
+```
+
+### Shared directory
+___
+
+Reused section layouts that will have differing content in accross contexts
+
+**Side By Side**
+
+Two column section layout with an image on one side. Takes an SVG as props as well as an optional "reverse" prop that will swap the columns
+
+```
+<SideBySide image={spaceship} reverse>
+{content}
+</SideBySide>
+```
+
+**SVG Background**
+
+Renders a full width svg background behind whatever you put inside it. takes a backround prop
+
+```
+<SVGBackground background={stars}>
+{content}
+</SVGBackground>
+```
+
+## Pages directory
+
+All full pages for the site. These are the components React Router will use to render each page
+
+## Public directory
+
+This holds all our assets. The vite bundler uses the folder name "public" to look for assets at build time.
+
+### Images directory
+
+---
+
+All of our images. To keep imports neat in the rest of the project, every time you add an image to the uploads folder, go to the index.tsx file in this folder and do the following.
+
+```
+import Image from './image.png'
+
+export { Image }
+```
+
+This way when importing multiple images from any other file will look like this
+
+```
+import { Image, Image1, Image2 } from '../public/images'
+```
+
+### SVGs directory
+
+We are using vite-plugin-svgr for SVG's. It allows you to easily import an svg as a react component. When you upload a new svg import and export it from the index.tsx file in the svgs directory. The syntax looks like this
+
+```
+import {ReactComponent as MySVG} from './thing.svg'
+export { MySVG }
+```
+
+## Styles directory
+
+### main.css
+Our base tailwind styles and google fonts are imported here. We can also add custom css here but tailwind should be capable of handling everything on the site.
+
 
 # Tech
 
@@ -190,87 +484,3 @@ root.render(
 ```
 
 ---
-
-# Components
-
-## Heading
-
-The heading component requires passing a heading level as a prop. By default the text is white but passing a dark prop will make it dark.
-
-```
-<Heading level="1" dark className="{tailwind classes here if necessary}">Title</Heading>
-```
-
-## Body Text
-
-The body text component holds the base styles for body text
-
-```
-<BodyText className={tailwind classes here if necessary}>
-```
-
-## Button
-
-Base button styles with variant prop. supported variants are "primary" and "secondary"
-
-```
-<Button variant="primary">Click Me</Button>
-```
-
-## NavMenu
-
-Conditionally renders either a standard navbar or a hamburger menu based on the presence of the "mobile" prop. If the component is in mobile mode the hamburger menu open state will be passed to the open prop as a boolean
-
-```
-<NavMenu />
-or
-<NavMenu mobile open={openState}/>
-```
-
-## Form
-
-Uses formik to handle form state and Yup to handle validation. The phone number field was accomplished with a react-text-mask masked input.
-
-```
-<FooterForm />
-```
-
-## Signup
-
-Uses formik and yup. will be connected to hubspot
-
-```
-<Signup />
-```
-
-## Clients
-
-Shared section across multiple pages. Renders a headline and grid of client logos
-
-```
-<Clients />
-```
-
-# Containers
-
-## Layout
-
-The layout component is made up of the header, a slot for page content, and the footer. It will be on every page and act as a wrapper for the page content.
-
-```
-<Layout>
-  {page content...}
-</Layout>
-```
-
-## SVG Background
-
-Takes an svg and children and applies the svg as a background with text overlaid
-
-```
-import MyImage from 'assets/images'
-
-<SVGBackground background={MyImage}>
-{Content}
-</SVGBackground>
-```
