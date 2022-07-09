@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BodyText } from './BodyText'
+import { BodyText } from '../../typography/BodyText'
 
 type Props = {
   title: string

@@ -11,7 +11,7 @@ import {
   FormikErrors
 } from 'formik'
 import * as Yup from 'yup'
-import { Button } from './Button'
+import { Button } from '../Button'
 
 interface FormField {
   email: string

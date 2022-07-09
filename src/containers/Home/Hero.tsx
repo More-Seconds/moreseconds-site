@@ -1,10 +1,11 @@
-import { BodyText } from 'components/BodyText'
-import { Heading } from 'components/Heading'
-import { Signup } from 'components/Signup'
-import { Clients } from 'components/Clients'
+import { BodyText } from 'components/typography/BodyText'
+import { Heading } from 'components/typography/Heading'
+import { Signup } from 'components/forms/Signup'
 import { SVGBackground } from 'containers/shared/SVGBackground'
 import { HomeHeroBG } from 'public/svgs'
 
+//todo: refactor to just a shared hero container that takes a layout prop
+// to switch between the two default hero layouts from the design
 export function Hero() {
   return (
     <SVGBackground background={HomeHeroBG}>

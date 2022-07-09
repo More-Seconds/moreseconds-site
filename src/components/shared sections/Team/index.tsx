@@ -8,8 +8,8 @@ import {
   TeamImage
 } from 'public/svgs'
 import { Accordian } from './Accordian'
-import { Heading } from './Heading'
-import { SmallTitle } from './SmallTitle'
+import { Heading } from '../../typography/Heading'
+import { SmallTitle } from '../../typography/SmallTitle'
 
 export function Team() {
   return (

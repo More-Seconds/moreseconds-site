@@ -1,8 +1,3 @@
-import { BodyText } from '../../components/BodyText'
-import { Heading } from '../../components/Heading'
-import { Signup } from '../../components/Signup'
-import { HomeHeroBG } from 'public/svgs'
-
 type Props = {
   children: JSX.Element | JSX.Element[]
   background: React.FunctionComponent<React.SVGProps<SVGSVGElement>>

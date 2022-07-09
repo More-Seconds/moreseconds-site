@@ -1,7 +1,7 @@
 import { Code, Research, Updates, UX } from 'public/images'
-import { Heading } from './Heading'
+import { Heading } from '../../typography/Heading'
 import { Service } from './Service'
-import { SmallTitle } from './SmallTitle'
+import { SmallTitle } from '../../typography/SmallTitle'
 
 export function Services() {
   return (

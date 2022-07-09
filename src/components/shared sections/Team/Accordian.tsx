@@ -1,5 +1,5 @@
 import { MouseEvent, SVGProps, useState } from 'react'
-import { BodyText } from './BodyText'
+import { BodyText } from '../../typography/BodyText'
 
 type Props = {
   title: string

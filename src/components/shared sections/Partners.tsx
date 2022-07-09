@@ -2,7 +2,7 @@ import { SideBySide } from 'containers/shared/SideBySide'
 import { SVGBackground } from 'containers/shared/SVGBackground'
 import { DyrdekLogo, HawkeMediaLogo } from 'public/images'
 import { Satellite, Smoke } from 'public/svgs'
-import { Heading } from './Heading'
+import { Heading } from '../typography/Heading'
 
 export function Partners() {
   return (
