@@ -13,7 +13,6 @@ import UX from './ux.png'
 import Updates from './updates.png'
 import Research from './research.png'
 import Jason from './jason.png'
-import Carousel
 
 export {
   AlgorithmLogo,
