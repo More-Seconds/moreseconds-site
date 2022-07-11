@@ -18,6 +18,7 @@ import { ReactComponent as Favorite } from './favorite.svg'
 import { ReactComponent as Smile } from './smile.svg'
 import { ReactComponent as Smoke } from './smoke.svg'
 import { ReactComponent as Satellite } from './satellite.svg'
+import { ReactComponent as CarouselArrow } from './arrow_right.svg'
 
 export {
   MSLogo,
@@ -39,5 +40,6 @@ export {
   Favorite,
   Smile,
   Smoke,
-  Satellite
+  Satellite,
+  CarouselArrow
 }

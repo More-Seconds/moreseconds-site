@@ -12,6 +12,8 @@ import Code from './code.png'
 import UX from './ux.png'
 import Updates from './updates.png'
 import Research from './research.png'
+import Jason from './jason.png'
+import Carousel
 
 export {
   AlgorithmLogo,
@@ -27,5 +29,6 @@ export {
   Code,
   UX,
   Updates,
-  Research
+  Research,
+  Jason
 }
