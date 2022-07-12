@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import 'tailwindcss/tailwind.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Homepage } from 'pages/Home'
+import { Homepage } from './pages/Home'
 import './styles/main.css'
-import { About } from 'pages/About'
+import { About } from './pages/About'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
