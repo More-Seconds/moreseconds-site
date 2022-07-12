@@ -24,6 +24,9 @@ import { ReactComponent as CarouselArrow } from './arrow_right.svg'
 import { ReactComponent as HollowStar } from './hollow_star.svg'
 import { ReactComponent as Cloud } from './cloud.svg'
 import { ReactComponent as CloudFull } from './cloud_full.svg'
+import { ReactComponent as CloudOpaque } from './cloud_opaque.svg'
+
+import { ReactComponent as AboutHero } from './about_hero.svg'
 
 export {
   MSLogo,
@@ -51,5 +54,7 @@ export {
   CarouselArrow,
   HollowStar,
   Cloud,
-  CloudFull
+  CloudFull,
+  AboutHero,
+  CloudOpaque
 }

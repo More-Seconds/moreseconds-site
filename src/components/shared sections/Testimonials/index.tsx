@@ -1,6 +1,6 @@
 import { Heading } from 'components/typography/Heading'
 import { Jason } from 'public/images'
-import { CarouselArrow, Star } from 'public/svgs'
+import { BallBlue, BallPurple, CarouselArrow, Star } from 'public/svgs'
 import { useState } from 'react'
 import { Dots } from './Dots'
 import { Testimonial } from './Testimonial'
@@ -22,7 +22,7 @@ export function Testimonials() {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-32 mx-4 sm:mx-16 lg:max-w-3xl lg:mx-auto">
+    <section className="relative flex flex-col py-32 mx-4 sm:mx-32 lg:mx-auto lg:max-w-4xl">
       <Heading level="2" className="mb-10 text-3xl text-center">
         Our Clients Stick With Us For A Reason
       </Heading>
@@ -114,17 +114,24 @@ export function Testimonials() {
           eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
           quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
         </Testimonial>
-        <CarouselArrow
-          className="absolute w-8 rotate-180 right-10 sm:-left-14 sm:top-1/2"
-          onClick={decrementActive}
-        />
-        <CarouselArrow
-          className="absolute right-0 w-8 sm:-right-14 sm:top-1/2"
-          onClick={incrementActive}
-        />
+        <div className="absolute flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-left-14 sm:top-1/2 hover:border-accent">
+          <CarouselArrow
+            className="rotate-180 fill-mid hover:fill-accent"
+            onClick={decrementActive}
+          />
+        </div>
+        <div className="absolute flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-right-14 sm:top-1/2 hover:border-accent">
+          <CarouselArrow
+            className="fill-mid hover:fill-accent"
+            onClick={incrementActive}
+          />
+        </div>
       </div>
       <Dots activeIndex={active} />
-      <Star className="absolute scale-75 -right-48 top-52" />
+      <Star className="absolute scale-75 -right-48 top-52 lg:hidden" />
+      <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 lg:-left-48" />
+      <BallPurple className="absolute hidden sm:block sm:top-40 sm:-right-24 lg:-right-48 sm:scale-75" />
+      <BallBlue className="absolute hidden sm:block sm:bottom-40 sm:-left-28 lg:-left-56" />
     </section>
   )
 }

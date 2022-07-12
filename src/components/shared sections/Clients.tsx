@@ -8,7 +8,7 @@ import {
   PopmenuLogo,
   SFELogo
 } from 'public/images'
-import { BallPurple, Star } from 'public/svgs'
+import { BallOrange, BallPurple, Star } from 'public/svgs'
 
 type Props = {
   className?: string
@@ -17,7 +17,9 @@ type Props = {
 export function Clients(props: Props) {
   return (
     <section
-      className={'flex flex-col items-center gap-8 pb-40 ' + props.className}
+      className={
+        'relative flex flex-col items-center gap-8 pb-40 ' + props.className
+      }
     >
       <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light">
         We’ve worked on hundreds of projects for agencies, startups, event
@@ -49,8 +51,8 @@ export function Clients(props: Props) {
           <img src={PCTLogo} alt="Plant Cell Technology" />
         </li>
       </ul>
-      <Star className="absolute bottom-0 hidden sm:block right-64" />
-      <BallPurple className="absolute hidden sm:block top-10 right-20" />
+      <BallPurple className="absolute hidden lg:block lg:top-0 lg:left-4" />
+      <BallOrange className="absolute hidden scale-50 lg:block lg:top-10 lg:right-20" />
     </section>
   )
 }

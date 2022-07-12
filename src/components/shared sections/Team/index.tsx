@@ -12,15 +12,19 @@ import { Accordian } from './Accordian'
 import { Heading } from '../../typography/Heading'
 import { SmallTitle } from '../../typography/SmallTitle'
 
-export function Team() {
+type Props = {
+  hideImageMobile?: boolean
+}
+
+export function Team(props: Props) {
   return (
     <section className="relative">
-      <SmallTitle className="mx-4 md:mx-16">Our values</SmallTitle>
-      <Heading level="2" className="max-w-lg mx-4 mb-10 md:mx-16">
+      <SmallTitle className="mx-4 md:mx-16 lg:ml-32">Our values</SmallTitle>
+      <Heading level="2" className="max-w-lg mx-4 mb-10 md:mx-16 lg:ml-32">
         A Reliable Web Development Team You Can Trust
       </Heading>
-      <SideBySide svg={TeamImage}>
-        <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins">
+      <SideBySide svg={TeamImage} hideImageMobile={props.hideImageMobile}>
+        <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins md:-ml-4 lg:ml-12">
           <Accordian title="Customer Service First" image={Headset}>
             We are here for you every step of the way. Your project is our top
             priority and no question or request is ever too much. Our goal is to
@@ -54,7 +58,7 @@ export function Team() {
           </Accordian>
         </ul>
       </SideBySide>
-      <HollowStar className="absolute top-0" />
+      <HollowStar className="absolute hidden top-40 sm:block" />
     </section>
   )
 }

@@ -4,6 +4,7 @@ import { DyrdekLogo, HawkeMediaLogo } from 'public/images'
 import {
   BallBlue,
   BallOrange,
+  BallPurple,
   Cloud,
   HollowStar,
   Planet,
@@ -16,7 +17,7 @@ import { Heading } from '../typography/Heading'
 export function Partners() {
   return (
     <section className="relative mb-20 sm:mb-48 sm:pt-20 lg:pt-40">
-      <div className="absolute z-10 w-screen pt-10 -top-72 sm:top-0">
+      <div className="absolute z-10 w-screen pt-10 sm:top-0">
         <Smoke className="h-auto w-[100vw]" />
       </div>
       <div className="flex flex-col mx-4 sm:flex-row sm:mr-16">
@@ -26,7 +27,7 @@ export function Partners() {
         <div className="z-20">
           <Heading
             level="2"
-            className="max-w-lg mt-20 mb-10 text-3xl text-center sm:mt-0 sm:text-left"
+            className="mt-20 mb-10 text-3xl text-center sm:max-w-2xl lg:max-w-lg sm:mt-0 sm:text-left"
           >
             We're Trusted Service Partners For The Most Influential Industry
             Leaders
@@ -49,12 +50,12 @@ export function Partners() {
           </ul>
         </div>
       </div>
-      <BallOrange className="absolute top-0 z-0 left-10" />
-      <HollowStar className="absolute z-0 top-24 left-1/2" />
-      <BallBlue className="absolute z-0 top-40 right-40" />
+      <BallOrange className="absolute top-0 z-0 sm:block -left-full sm:scale-50 lg:scale-100 sm:left-10" />
+      <HollowStar className="absolute z-0 -left-full sm:left-1/2 top-24" />
+      <BallBlue className="absolute z-0 top-24 right-20 sm:top-32 sm:right-20 lg:top-40 lg:right-40" />
       <Cloud className="absolute right-0 z-0 top-44" />
       <HollowStar className="absolute z-0 top-80 right-20" />
-      <Star className="absolute z-0 -bottom-20 right-1/3" />
+      <Star className="absolute z-0 scale-50 top-48 right-16 md:hidden lg:-bottom-20 lg:right-1/3" />
     </section>
   )
 }
