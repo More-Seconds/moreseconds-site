@@ -55,7 +55,7 @@ export function Partners() {
       <BallBlue className="absolute z-0 top-24 right-20 sm:top-32 sm:right-20 lg:top-40 lg:right-40" />
       <Cloud className="absolute right-0 z-0 top-44" />
       <HollowStar className="absolute z-0 top-80 right-20" />
-      <Star className="absolute z-0 scale-50 top-48 right-16 md:hidden lg:-bottom-20 lg:right-1/3" />
+      <Star className="absolute z-0 scale-50 top-48 right-16 md:hidden lg:block lg:-bottom-20 lg:right-1/3" />
     </section>
   )
 }
