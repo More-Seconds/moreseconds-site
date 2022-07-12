@@ -1,6 +1,6 @@
 import { Heading } from 'components/typography/Heading'
 import { Jason } from 'public/images'
-import { CarouselArrow } from 'public/svgs'
+import { CarouselArrow, Star } from 'public/svgs'
 import { useState } from 'react'
 import { Dots } from './Dots'
 import { Testimonial } from './Testimonial'
@@ -22,15 +22,11 @@ export function Testimonials() {
     setActive((active) => active - 1)
   }
   return (
-    <section className="flex flex-col items-center justify-center py-32">
-      <Heading level="2" className="mb-10 text-center">
+    <section className="relative flex flex-col py-32 mx-4 sm:mx-16 lg:max-w-3xl lg:mx-auto">
+      <Heading level="2" className="mb-10 text-3xl text-center">
         Our Clients Stick With Us For A Reason
       </Heading>
-      <div className="flex gap-24 mx-auto">
-        <CarouselArrow
-          className="self-center rotate-180"
-          onClick={decrementActive}
-        />
+      <div className="flex gap-4 mx-auto mb-5 sm:gap-24">
         <Testimonial
           image={Jason}
           company="World wide company"
@@ -118,9 +114,17 @@ export function Testimonials() {
           eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
           quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
         </Testimonial>
-        <CarouselArrow className="self-center" onClick={incrementActive} />
+        <CarouselArrow
+          className="absolute w-8 rotate-180 right-10 sm:-left-14 sm:top-1/2"
+          onClick={decrementActive}
+        />
+        <CarouselArrow
+          className="absolute right-0 w-8 sm:-right-14 sm:top-1/2"
+          onClick={incrementActive}
+        />
       </div>
       <Dots activeIndex={active} />
+      <Star className="absolute scale-75 -right-48 top-52" />
     </section>
   )
 }
