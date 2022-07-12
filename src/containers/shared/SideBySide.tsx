@@ -10,18 +10,26 @@ export function SideBySide(props: Props) {
     if (props.reverse) {
       return (
         <>
-          <div className="flex items-end">
-            {props.svg({ width: '100vw', height: '100%', className: 'h-auto' })}
+          <div className="flex w-full h-min sm:h-auto sm:items-end">
+            {props.svg({
+              width: '100%',
+              height: '100%',
+              className: 'h-auto w-[50vw]'
+            })}
           </div>
-          <div>{props.children}</div>
+          <div className="w-full mx-4 sm:mx-0">{props.children}</div>
         </>
       )
     } else {
       return (
         <>
-          <div>{props.children}</div>
-          <div className="flex items-end">
-            {props.svg({ width: '100vw', height: '100%', className: 'h-auto' })}
+          <div className="w-full mx-4 sm:mx-0">{props.children}</div>
+          <div className="flex w-full h-min sm:h-auto sm:items-end">
+            {props.svg({
+              width: '100%',
+              height: '100%',
+              className: 'h-auto w-[50vw]'
+            })}
           </div>
         </>
       )
@@ -31,8 +39,8 @@ export function SideBySide(props: Props) {
   return (
     <section
       className={
-        'grid grid-cols-1 grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 ' +
-        (props.reverse ? 'mr-16 ' : 'ml-16 ') +
+        'flex flex-col sm:flex-row  ' +
+        (props.reverse ? 'sm:mr-16 ' : 'sm:ml-16 ') +
         props.className
       }
     >
