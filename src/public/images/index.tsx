@@ -13,6 +13,7 @@ import UX from './ux.png'
 import Updates from './updates.png'
 import Research from './research.png'
 import Jason from './jason.png'
+import Brian from './brian.png'
 
 export {
   AlgorithmLogo,
@@ -29,5 +30,6 @@ export {
   UX,
   Updates,
   Research,
-  Jason
+  Jason,
+  Brian
 }

@@ -19,8 +19,8 @@ module.exports = {
         dark: '#4C4C4C'
       },
       fontFamily: {
-        DM: 'DM Sans, system-ui, sans serif',
-        Poppins: 'Poppins, system-ui, sans serif'
+        DM: ['DM Sans', 'system-ui', 'Sans-Serif'],
+        Poppins: ['Poppins', 'system-ui', 'sans serif']
       },
       backgroundImage: {
         floatingLabel: 'linear-gradient(to top, #E6E8EC 75.01%, #FCFCFD 25%);',

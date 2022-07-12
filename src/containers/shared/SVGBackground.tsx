@@ -6,7 +6,9 @@ type Props = {
 }
 
 export function SVGBackground(props: Props) {
-  const bgClass = `z-0 w-screen ${props.hideBgMobile ? 'hidden sm:block' : ''}`
+  const bgClass = `z-0 pt-10 w-screen ${
+    props.hideBgMobile ? 'hidden sm:block' : ''
+  }`
   return (
     <section
       className={'relative bg-cover flex flex-col w-screen ' + props.className}

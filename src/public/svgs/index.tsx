@@ -4,7 +4,7 @@ import { ReactComponent as FbIcon } from './fb.svg'
 import { ReactComponent as YtIcon } from './yt.svg'
 import { ReactComponent as InstaIcon } from './instagram.svg'
 import { ReactComponent as TwitterIcon } from './twitter.svg'
-import { ReactComponent as Planet } from './planet.svg'
+import { ReactComponent as Planet } from './Planet.svg'
 import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 import { ReactComponent as Hamburger } from './hamburger.svg'
@@ -24,6 +24,9 @@ import { ReactComponent as CarouselArrow } from './arrow_right.svg'
 import { ReactComponent as HollowStar } from './hollow_star.svg'
 import { ReactComponent as Cloud } from './cloud.svg'
 import { ReactComponent as CloudFull } from './cloud_full.svg'
+import { ReactComponent as CloudOpaque } from './cloud_opaque.svg'
+
+import { ReactComponent as AboutHero } from './about_hero.svg'
 
 export {
   MSLogo,
@@ -51,5 +54,7 @@ export {
   CarouselArrow,
   HollowStar,
   Cloud,
-  CloudFull
+  CloudFull,
+  AboutHero,
+  CloudOpaque
 }
