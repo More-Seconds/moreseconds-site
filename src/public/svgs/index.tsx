@@ -9,7 +9,9 @@ import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 import { ReactComponent as Hamburger } from './hamburger.svg'
 import { ReactComponent as Star } from './star.svg'
-import { ReactComponent as Ball } from './ball1.svg'
+import { ReactComponent as BallPurple } from './ball_purple.svg'
+import { ReactComponent as BallOrange } from './ball_orange.svg'
+import { ReactComponent as BallBlue } from './ball_blue.svg'
 import { ReactComponent as TeamImage } from './team.svg'
 import { ReactComponent as Headset } from './headphones.svg'
 import { ReactComponent as Fast } from './fast.svg'
@@ -19,6 +21,9 @@ import { ReactComponent as Smile } from './smile.svg'
 import { ReactComponent as Smoke } from './smoke.svg'
 import { ReactComponent as Satellite } from './satellite.svg'
 import { ReactComponent as CarouselArrow } from './arrow_right.svg'
+import { ReactComponent as HollowStar } from './hollow_star.svg'
+import { ReactComponent as Cloud } from './cloud.svg'
+import { ReactComponent as CloudFull } from './cloud_full.svg'
 
 export {
   MSLogo,
@@ -32,7 +37,9 @@ export {
   HomeHeroBG,
   Hamburger,
   Star,
-  Ball,
+  BallPurple,
+  BallOrange,
+  BallBlue,
   TeamImage,
   Headset,
   Fast,
@@ -41,5 +48,8 @@ export {
   Smile,
   Smoke,
   Satellite,
-  CarouselArrow
+  CarouselArrow,
+  HollowStar,
+  Cloud,
+  CloudFull
 }

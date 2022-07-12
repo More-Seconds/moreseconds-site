@@ -8,7 +8,7 @@ import {
   PopmenuLogo,
   SFELogo
 } from 'public/images'
-import { Ball, Star } from 'public/svgs'
+import { BallPurple, Star } from 'public/svgs'
 
 type Props = {
   className?: string
@@ -50,7 +50,7 @@ export function Clients(props: Props) {
         </li>
       </ul>
       <Star className="absolute bottom-0 hidden sm:block right-64" />
-      <Ball className="absolute hidden sm:block top-10 right-20" />
+      <BallPurple className="absolute hidden sm:block top-10 right-20" />
     </section>
   )
 }

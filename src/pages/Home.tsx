@@ -12,6 +12,7 @@ import { Jason } from 'public/images'
 import { CarouselArrow } from 'public/svgs'
 import { Testimonial } from 'components/shared sections/Testimonials/Testimonial'
 import { Testimonials } from 'components/shared sections/Testimonials'
+import { CenteredCTA } from 'components/shared sections/CenteredCta'
 
 export function Homepage() {
   return (
@@ -22,6 +23,7 @@ export function Homepage() {
       <SectionBlur />
       <Partners />
       <Services />
+      <CenteredCTA />
       <Testimonials />
     </Layout>
   )
