@@ -1,17 +1,16 @@
 import { Header } from './Header'
 import { Footer } from './Footer'
-import { FooterForm } from '../components/Form'
 import { FooterCTA } from './FooterCTA'
 
 type Props = {
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[]
 }
 
 export function Layout(props: Props) {
   return (
     <>
       <Header />
-      {props.children}
+      <main>{props.children}</main>
       <FooterCTA />
       <Footer />
     </>

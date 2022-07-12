@@ -12,7 +12,6 @@ import {
 } from 'formik'
 import * as Yup from 'yup'
 import InputMask from 'react-text-mask'
-import React from 'react'
 
 interface FormFields {
   firstName: string

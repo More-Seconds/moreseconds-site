@@ -1,7 +1,7 @@
 import { Ref, useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import { Link, NavLink } from 'react-router-dom'
-import { ReactComponent as DownArrow } from '../public/arrow_down.svg'
+import { ArrowDown } from 'public/svgs'
 
 type Props = {
   mobile?: Boolean
@@ -19,17 +19,22 @@ export function NavMenu({ mobile, open }: Props) {
 
   useEffect(() => {
     if (mobile && open) {
-      gsap.to(containerRef.current, { x: '0' })
+      gsap.to(containerRef.current, {
+        x: '0'
+      })
     } else if (mobile && !open) {
-      gsap.to(containerRef.current, { x: '100%' })
+      gsap.to(containerRef.current, {
+        x: '-100%'
+      })
     }
   }, [open])
   return (
+    // <div className="absolute z-30 bg-surface sm:static">
     <nav
       ref={containerRef}
       className={
         mobile
-          ? 'absolute left-0 right-0 top-32 translate-x-full overflow-hidden bg-surface lg:hidden'
+          ? 'absolute z-30 top-12 w-[100vw] bg-surface inset-0 h-screen -translate-x-full'
           : 'hidden  lg:mx-16 lg:block lg:max-w-2xl lg:justify-self-end'
       }
     >
@@ -67,7 +72,7 @@ export function NavMenu({ mobile, open }: Props) {
             onClick={() => toggleSubMenu()}
           >
             Services
-            <DownArrow className="inline scale-150" />
+            <ArrowDown className="inline scale-150" />
           </Link>
           <ul
             className={
@@ -134,5 +139,6 @@ export function NavMenu({ mobile, open }: Props) {
         </li>
       </ul>
     </nav>
+    // </div>
   )
 }

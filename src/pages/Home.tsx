@@ -1,21 +1,30 @@
-import { Layout } from 'containers/Layout'
+import { Clients } from '../components/shared sections/Clients'
+import { Layout } from '../containers/layout/Layout'
+import { Hero } from 'containers/Home/Hero'
+import { Team } from 'components/shared sections/Team'
+import { SectionBlur } from 'components/SectionBlur'
+import { Partners } from 'components/shared sections/Partners'
+import { Services } from 'components/shared sections/Services'
+import { Button } from 'components/Button'
+import { Heading } from 'components/typography/Heading'
+import { BodyText } from 'components/typography/BodyText'
+import { Jason } from 'public/images'
+import { CarouselArrow } from 'public/svgs'
+import { Testimonial } from 'components/shared sections/Testimonials/Testimonial'
+import { Testimonials } from 'components/shared sections/Testimonials'
+import { CenteredCTA } from 'components/shared sections/CenteredCta'
 
 export function Homepage() {
   return (
     <Layout>
-      <div className="">
-        <div className="py-16 px-4 mx-auto max-w-screen-xl sm:py-24 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-base font-semibold tracking-wide text-light uppercase">
-              Welcome to
-            </h2>
-            <p className="my-3 text-4xl font-bold text-light sm:text-5xl sm:tracking-tight lg:text-6xl">
-              More Seconds 😃
-            </p>
-            <p className="mt-5"></p>
-          </div>
-        </div>
-      </div>
+      <Hero />
+      <Clients className="relative z-10 sm:-top-16 lg:-top-32" />
+      <Team />
+      <SectionBlur />
+      <Partners />
+      <Services />
+      <CenteredCTA />
+      <Testimonials />
     </Layout>
   )
 }
