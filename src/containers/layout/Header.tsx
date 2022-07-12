@@ -12,7 +12,7 @@ export function Header() {
   }
 
   return (
-    <header className="grid items-center h-20 grid-cols-2">
+    <header className="relative z-30 grid items-center h-20 grid-cols-2">
       <Link to="/">
         <MSLogo className="mx-4 lg:mx-16" />
       </Link>
