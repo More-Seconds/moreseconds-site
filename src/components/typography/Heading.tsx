@@ -1,7 +1,7 @@
 type Props = {
   className?: string
   level: string
-  children: string
+  children: string | JSX.Element[]
   dark?: boolean
   maxWidth?: string
 }
@@ -11,7 +11,7 @@ export function Heading(props: Props) {
     props.level == '1'
       ? 'text-5xl md:text-4xl lg:text-6xl leading-tight 2xl:text-7xl'
       : props.level == '2'
-      ? 'text-2xl sm:text-4xl'
+      ? 'text-2xl '
       : ''
   } ${props.dark ? 'text-black' : 'text-light'} ${
     props.maxWidth ? 'max-w-' + props.maxWidth : ''
