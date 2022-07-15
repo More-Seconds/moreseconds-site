@@ -5,7 +5,11 @@ import { useState } from 'react'
 import { Dots } from './Dots'
 import { Testimonial } from './Testimonial'
 
-export function Testimonials() {
+type Props = {
+  title: string
+}
+
+export function Testimonials(props: Props) {
   const [active, setActive] = useState(0)
 
   function incrementActive() {
@@ -23,8 +27,11 @@ export function Testimonials() {
   }
   return (
     <section className="relative flex flex-col py-32 mx-4 sm:mx-32 lg:mx-auto lg:max-w-4xl">
-      <Heading level="2" className="mb-10 text-3xl text-center">
-        Our Clients Stick With Us For A Reason
+      <Heading
+        level="2"
+        className="mb-10 text-3xl text-center capitalize lg:text-4xl lg:max-w-2xl"
+      >
+        {props.title}
       </Heading>
       <div className="flex gap-4 mx-auto mb-5 sm:gap-24">
         <Testimonial
@@ -120,7 +127,7 @@ export function Testimonials() {
             onClick={decrementActive}
           />
         </div>
-        <div className="absolute flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-right-14 sm:top-1/2 hover:border-accent">
+        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border-2 rounded-full sm:-right-14 sm:top-1/2 hover:border-accent">
           <CarouselArrow
             className="fill-mid hover:fill-accent"
             onClick={incrementActive}

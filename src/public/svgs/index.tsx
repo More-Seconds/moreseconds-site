@@ -25,8 +25,18 @@ import { ReactComponent as HollowStar } from './hollow_star.svg'
 import { ReactComponent as Cloud } from './cloud.svg'
 import { ReactComponent as CloudFull } from './cloud_full.svg'
 import { ReactComponent as CloudOpaque } from './cloud_opaque.svg'
-
 import { ReactComponent as AboutHero } from './about_hero.svg'
+import { ReactComponent as CaseStudy1 } from './casestudy1.svg'
+import { ReactComponent as CaseStudy2 } from './casestudy2.svg'
+import { ReactComponent as CaseStudy3 } from './casestudy3.svg'
+import { ReactComponent as CaseStudy4 } from './casestudy4.svg'
+import { ReactComponent as CaseStudy5 } from './casestudy5.svg'
+import { ReactComponent as UFO } from './UFO.svg'
+import { ReactComponent as ManWithPhone } from './man_with_phone.svg'
+import { ReactComponent as Sputnik } from './sputnik.svg'
+import { ReactComponent as SmallSaturn } from './small_saturn.svg'
+import { ReactComponent as Rocket } from './Rocket.svg'
+import { ReactComponent as Highlight } from './highlight.svg'
 
 export {
   MSLogo,
@@ -56,5 +66,16 @@ export {
   Cloud,
   CloudFull,
   AboutHero,
-  CloudOpaque
+  CloudOpaque,
+  CaseStudy1,
+  CaseStudy2,
+  CaseStudy3,
+  CaseStudy4,
+  CaseStudy5,
+  UFO,
+  ManWithPhone,
+  Sputnik,
+  SmallSaturn,
+  Rocket,
+  Highlight
 }

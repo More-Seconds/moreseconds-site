@@ -15,7 +15,7 @@ import { Signup } from 'components/forms/Signup'
 
 export function Homepage() {
   return (
-    <Layout>
+    <Layout footerVariant="delivers">
       <Hero svg={HomeHeroBG}>
         <Heading level="1" className="max-w-lg lg:max-w-3xl 3xl:max-w-5xl">
           Take your projects from headache to handled and free up your valuable
@@ -25,7 +25,7 @@ export function Homepage() {
           We provide the service and speed of an in-house development team for
           the cost of a single developer.
         </BodyText>
-        <Signup />
+        <Signup variant="primary" />
       </Hero>
       <Clients className="relative z-10 sm:-top-16 lg:-top-32" />
       <Team />
@@ -33,7 +33,7 @@ export function Homepage() {
       <Partners />
       <Services />
       <CenteredCTA />
-      <Testimonials />
+      <Testimonials title="Our Clients Stick With Us For A Reason" />
     </Layout>
   )
 }
