@@ -11,7 +11,7 @@ export function HeroCentered(props: Props) {
   }`
   return (
     <section
-      className={'relative bg-cover flex flex-col w-screen ' + props.className}
+      className={'flex items-center justify-center px-10 mx-auto mt-32 3xl:px-1 sm:mt-56 relative bg-cover flex-col w-screen ' + props.className}
     >
       <div className="inset-0 z-10 sm:absolute">{props.children}</div>
       <div className={bgClass}>

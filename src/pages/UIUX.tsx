@@ -30,7 +30,7 @@ export function UIUX() {
   return (
     <Layout>
       <section className="flex flex-col items-center justify-center w-min">
-        <HeroCentered background = {Smoke} className="flex items-center justify-center px-10 mx-auto mt-32 3xl:px-1 sm:mt-56">
+        <HeroCentered background = {Smoke} className="">
           <SmallTitle className="mx-auto text-center">Our Services</SmallTitle>
           <Heading level="1" className="max-w-4xl mx-auto text-center">UX/UI Design</Heading>
           <BodyText className="mx-auto text-center sm: sm:max-w-4xl sm:px-10">Get a beautifully designed website that doesn’t break the bank. We provide pixel perfect design options to ensure each web project we deliver is an aesthetic masterpiece. Work with our design team to create a website that wows and start maximizing your conversion rate today.</BodyText>
