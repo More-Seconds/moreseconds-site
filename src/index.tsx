@@ -5,6 +5,7 @@ import { Homepage } from './pages/Home'
 import './styles/main.css'
 import { About } from './pages/About'
 import { CaseStudies } from 'pages/CaseStudies'
+import { CaseStudyAlgorithm } from 'pages/CaseAlgorithm'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
@@ -15,6 +16,7 @@ root.render(
       <Route path="/" element={<Homepage />}></Route>
       <Route path="/about" element={<About />}></Route>
       <Route path="/case-studies" element={<CaseStudies />}></Route>
+      <Route path="/algorithm-agency" element={<CaseStudyAlgorithm />}></Route>
     </Routes>
   </BrowserRouter>
 )
