@@ -4,6 +4,7 @@ import { FooterCTA } from './FooterCTA'
 
 type Props = {
   children: JSX.Element | JSX.Element[]
+  footerVariant: string
 }
 
 export function Layout(props: Props) {
@@ -11,7 +12,7 @@ export function Layout(props: Props) {
     <>
       <Header />
       <main>{props.children}</main>
-      <FooterCTA />
+      <FooterCTA variant={props.footerVariant} />
       <Footer />
     </>
   )
