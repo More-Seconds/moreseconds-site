@@ -3,7 +3,9 @@ import { Testimonials } from 'components/shared sections/Testimonials'
 import { Testimonial } from 'components/shared sections/Testimonials/Testimonial'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
+import { SmallTitle } from 'components/typography/SmallTitle'
 import { Layout } from 'containers/layout/Layout'
+import { HeroCentered } from 'containers/shared/HeroCentered'
 import {
   Request1,
   Request2,
@@ -18,6 +20,17 @@ import { Stats } from '../Stats'
 export function CaseStudyPCT() {
   return (
     <Layout footerVariant="delivers">
+      <HeroCentered>
+        <SmallTitle>Business</SmallTitle>
+        <Heading level="1">Plant Cell Technology</Heading>
+        <BodyText>
+          Based in Washington, DC, Plant Cell Technology develops, produces, and
+          markets innovative solutions for plant tissue culture operations
+          globally. PCT's flagship product, PPM, is essential to the success of
+          any and all plant tissue cultures and they have been supplying it
+          globally to growers, labs, and distributors for nearly three decades.
+        </BodyText>
+      </HeroCentered>
       <Request image={Request2} avatar={RequestAvatar2}>
         The Plant Cell Technology team approached us with several issues
         surrounding their e-commerce website and its marketing needs. They had a
