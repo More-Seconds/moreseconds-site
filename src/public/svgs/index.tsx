@@ -82,6 +82,6 @@ export {
   Rocket,
   Highlight,
   ManArtist,
-  StarOutline
+  StarOutline,
   AvatarHighlight
 }
