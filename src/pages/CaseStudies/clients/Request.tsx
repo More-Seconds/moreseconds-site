@@ -21,14 +21,14 @@ export function Request(props: Props) {
       <div className="relative w-full sm:w-[40%] px-4 mb-10">
         <img src={props.image} alt="request" className="rounded-lg" />
         <img
-          src={RequestAvatar1}
+          src={props.avatar}
           alt="avatar"
           className="absolute w-24 border-4 rounded-full -bottom-2 border-light left-2 sm:-left-8 sm:bottom-8 lg:scale-150 lg:bottom-24"
         />
         <AvatarHighlight className="absolute z-40 scale-50 -bottom-14 -left-4 sm:-left-14 sm:-bottom-6 lg:-left-20 lg:bottom-4" />
       </div>
       <Star className="absolute right-0 scale-50 bottom-40 sm:bottom-0 sm:left-32 lg:scale-75" />
-      <Star className="hiddem sm:block sm:absolute sm:left-24 sm:top-0 sm:scale-[25%] lg:scale-50" />
+      <Star className="hidden sm:block sm:absolute sm:left-24 sm:top-0 sm:scale-[25%] lg:scale-50" />
       <BallPurple className="hidden scale-[25%] sm:block sm:absolute sm:right-1/2 sm:top-0" />
     </section>
   )
