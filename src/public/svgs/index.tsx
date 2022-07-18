@@ -37,6 +37,8 @@ import { ReactComponent as Sputnik } from './Sputnik.svg'
 import { ReactComponent as SmallSaturn } from './small_saturn.svg'
 import { ReactComponent as Rocket } from './Rocket.svg'
 import { ReactComponent as Highlight } from './highlight.svg'
+import { ReactComponent as ManArtist } from './man_artist.svg'
+import { ReactComponent as StarOutline } from './star_outline.svg'
 
 export {
   MSLogo,
@@ -77,5 +79,7 @@ export {
   Sputnik,
   SmallSaturn,
   Rocket,
-  Highlight
+  Highlight,
+  ManArtist,
+  StarOutline
 }

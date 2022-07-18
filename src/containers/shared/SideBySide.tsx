@@ -4,6 +4,7 @@ type Props = {
   reverse?: boolean
   className?: string
   hideImageMobile?: boolean
+  svgStyles?: string
 }
 
 export function SideBySide(props: Props) {
@@ -39,7 +40,8 @@ export function SideBySide(props: Props) {
             {props.svg({
               width: '100%',
               height: '100%',
-              className: 'h-auto sm:w-[50vw]'
+              className: 'h-auto sm:w-[50vw] ' + (props.svgStyles ?? '')
+
             })}
           </div>
         </>
