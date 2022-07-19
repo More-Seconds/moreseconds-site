@@ -4,7 +4,7 @@ import { BodyText } from '../../typography/BodyText'
 type Props = {
   title: string
   children?: string
-  image: React.FunctionComponent<SVGProps<SVGSVGElement>>
+  image?: React.FunctionComponent<SVGProps<SVGSVGElement>>
 }
 
 export function Accordian(props: Props) {
@@ -22,12 +22,15 @@ export function Accordian(props: Props) {
         }
       >
         <>
-          {props.image({
-            width: '20px',
-            height: '20px',
-            className:
-              (open ? 'fill-accent stroke-accent' : 'fill-darkmid') + ' mt-1'
-          })}
+          {props.image
+            ? props.image({
+                width: '20px',
+                height: '20px',
+                className:
+                  (open ? 'fill-accent stroke-accent' : 'fill-darkmid') +
+                  ' mt-1'
+              })
+            : ''}
           <div>
             <BodyText
               className={(open ? 'text-dark' : '') + ' text-lg font-bold w-max'}

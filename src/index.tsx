@@ -26,9 +26,14 @@ root.render(
       <Route path="/about" element={<About />}></Route>
       <Route path="/uiux" element={<UIUX />}></Route>
       <Route path="/case-studies" element={<CaseStudies />}></Route>
-      <Route path="/web-development" element={<WebDevelopment/>}></Route>
-      <Route path="/research-and-analysis" element={<ResearchAndAnalysis/>}></Route>
-      <Route path="/website-updates" element={<WebsiteUpdates/>}></Route>
+      <Route path="/algorithm-agency" element={<CaseStudyAlgorithm />}></Route>
+      <Route path="/pct" element={<CaseStudyPCT />}></Route>
+      <Route path="/web-development" element={<WebDevelopment />}></Route>
+      <Route
+        path="/research-and-analysis"
+        element={<ResearchAndAnalysis />}
+      ></Route>
+      <Route path="/website-updates" element={<WebsiteUpdates />}></Route>
     </Routes>
   </BrowserRouter>
 )
