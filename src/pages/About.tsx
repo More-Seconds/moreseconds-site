@@ -7,7 +7,7 @@ import { Team } from 'components/shared sections/Team'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
-import { Hero } from 'containers/Home/Hero'
+import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
 import { Brian } from 'public/images'
 import {

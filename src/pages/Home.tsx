@@ -1,6 +1,6 @@
 import { Clients } from '../components/shared sections/Clients'
 import { Layout } from '../containers/layout/Layout'
-import { Hero } from 'containers/Home/Hero'
+import { Hero } from 'containers/shared/Hero'
 import { Team } from 'components/shared sections/Team'
 import { SectionBlur } from 'components/SectionBlur'
 import { Partners } from 'components/shared sections/Partners'
