@@ -14,6 +14,12 @@ import Updates from './updates.png'
 import Research from './research.png'
 import Jason from './jason.png'
 import Brian from './brian.png'
+import Request1 from './request_image1.png'
+import RequestAvatar1 from './request_avatar1.png'
+import Results1 from './results1.png'
+import Request2 from './request_image2.png'
+import RequestAvatar2 from './request_avatar2.png'
+import Results2 from './results2.png'
 
 export {
   AlgorithmLogo,
@@ -31,5 +37,11 @@ export {
   Updates,
   Research,
   Jason,
-  Brian
+  Brian,
+  Request1,
+  RequestAvatar1,
+  Request2,
+  RequestAvatar2,
+  Results1,
+  Results2
 }

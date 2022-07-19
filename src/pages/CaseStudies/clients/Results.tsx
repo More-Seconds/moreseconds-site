@@ -1,0 +1,34 @@
+import { BodyText } from 'components/typography/BodyText'
+import { Heading } from 'components/typography/Heading'
+import { BallOrange, Star } from 'public/svgs'
+
+type Props = {
+  children: Array<string>
+  image: string
+}
+
+export function Results(props: Props) {
+  return (
+    <section className="relative flex flex-col-reverse mb-20 sm:flex-row-reverse sm:justify-between sm:mx-16 lg:mx-32 lg:items-center">
+      <div className="w-full mx-4 sm:w-[50%] lg:w-[40%]">
+        <Heading level="2" className="mb-2 sm:text-4xl lg:mb-4">
+          Results
+        </Heading>
+        <div className="grid gap-4">
+          {props.children.map((result, index) => {
+            return (
+              <BodyText className="text-sm leading-6 lg:text-lg" key={index}>
+                {'● ' + result}
+              </BodyText>
+            )
+          })}
+        </div>
+      </div>
+      <div className="relative w-full sm:w-[40%] sm:h-full px-4 mb-10 sm:mb-0">
+        <img src={props.image} alt="request" className="h-full rounded-lg" />
+      </div>
+      <Star className="absolute -right-4 top-56 sm:top-[100%] sm:scale-50" />
+      <BallOrange className="hidden sm:block sm:absolute sm:left-0 sm:-bottom-16 sm:scale-50 lg:left-24 lg:-bottom-20" />
+    </section>
+  )
+}

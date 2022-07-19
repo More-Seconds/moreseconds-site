@@ -2,9 +2,17 @@ import { BallBlue, BallOrange, BallPurple, HollowStar, Star } from 'public/svgs'
 import { BodyText } from './typography/BodyText'
 import { Heading } from './typography/Heading'
 
-export function Dedicated() {
+type Props = {
+  className?: string
+}
+
+export function Dedicated(props: Props) {
   return (
-    <section className="relative mx-4 mb-20 text-center sm:pb-20">
+    <section
+      className={
+        'relative mx-4 mb-20 text-center sm:pb-20 ' + props.className ?? ''
+      }
+    >
       <Heading
         level="2"
         className="max-w-[15ch] sm:max-w-none mx-auto text-3xl mb-10"
