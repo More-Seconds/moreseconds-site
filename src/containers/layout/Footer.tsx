@@ -3,8 +3,8 @@ import { MSLogo, FbIcon, YtIcon, InstaIcon, TwitterIcon } from 'public/svgs'
 
 export function Footer() {
   return (
-    <footer className="max-w-4xl mx-auto">
-      <section className="flex flex-col items-center justify-between sm:flex-row">
+    <footer className="max-w-4xl mx-auto sm:mx-16 md:mx-auto md:max-w-6xl lg:mx-auto">
+      <section className="flex flex-col items-center justify-between sm:flex-row ">
         <MSLogo className="mt-10 sm:mt-0" />
         <ul className="flex flex-col gap-4 py-12 sm:flex-row font-DM text-light">
           <li>
@@ -34,7 +34,7 @@ export function Footer() {
           </li>
         </ul>
       </section>
-      <hr className="max-w-4xl mx-auto text-darkmid opacity-30" />
+      <hr className="max-w-4xl mx-auto text-darkmid opacity-30 md:max-w-6xl" />
       <section className="grid grid-flow-col py-12 mx-4 sm:grid-cols-3 sm:justify-items-center">
         <ul className="hidden gap-4 sm:flex font-DM justify-self-start text-light">
           <li>

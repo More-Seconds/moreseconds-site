@@ -1,3 +1,5 @@
+import { twMerge } from 'tailwind-merge'
+
 type Props = {
   className?: string
   level: string
@@ -7,15 +9,17 @@ type Props = {
 }
 
 export function Heading(props: Props) {
-  const headingStyle = `font-DM font-bold z-10 ${
-    props.level == '1'
-      ? 'text-5xl md:text-4xl lg:text-6xl leading-tight 2xl:text-7xl'
-      : props.level == '2'
-      ? 'text-2xl '
-      : ''
-  } ${props.dark ? 'text-black' : 'text-light'} ${
-    props.maxWidth ? 'max-w-' + props.maxWidth : ''
-  } ${props.className}`
+  function getConditionalStyles() {
+    const baseStyles = 'font-DM font-bold z-10'
+    const levelLayer =
+      props.level == '1'
+        ? 'text-5xl sm:text-4xl lg:text-6xl leading-tight 2xl:text-7xl'
+        : 'text-[30px] sm:text-2xl'
+    const themeLayer = props.dark ? 'text-black' : 'text-light'
+    const customLayer = props.className
+    return twMerge(baseStyles, levelLayer, themeLayer, customLayer)
+  }
+  const headingStyle = getConditionalStyles()
   switch (props.level) {
     default:
       throw 'you must specify a heading level'

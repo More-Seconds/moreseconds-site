@@ -20,6 +20,9 @@ import Results1 from './results1.png'
 import Request2 from './request_image2.png'
 import RequestAvatar2 from './request_avatar2.png'
 import Results2 from './results2.png'
+import PricingTable from './pricing_table.png'
+import PricingTableMobile from './pricing_table_mobile.png'
+import Testimonials1 from './testimonials1.png'
 
 export {
   AlgorithmLogo,
@@ -43,5 +46,8 @@ export {
   Request2,
   RequestAvatar2,
   Results1,
-  Results2
+  Results2,
+  PricingTable,
+  PricingTableMobile,
+  Testimonials1
 }

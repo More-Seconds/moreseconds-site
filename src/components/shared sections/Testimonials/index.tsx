@@ -26,10 +26,10 @@ export function Testimonials(props: Props) {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-32 mx-4 sm:mx-32 lg:mx-auto lg:max-w-4xl">
+    <section className="relative flex flex-col py-16 mx-4 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
       <Heading
         level="2"
-        className="mx-auto mb-10 text-3xl text-center capitalize lg:text-4xl lg:max-w-2xl"
+        className="mx-auto mb-10 text-[30px] sm:text-[35px] text-center capitalize lg:text-4xl lg:max-w-none"
       >
         {props.title}
       </Heading>

@@ -1,8 +1,11 @@
+import { twMerge } from 'tailwind-merge'
+
 type Props = {
   children: JSX.Element | JSX.Element[]
   background: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
   hideBgMobile?: boolean
   className?: string
+  svgStyles?: string
 }
 
 export function SVGBackground(props: Props) {
@@ -18,7 +21,7 @@ export function SVGBackground(props: Props) {
         {props.background({
           width: '100vw',
           height: '100%',
-          className: 'h-auto'
+          className: twMerge('h-auto', props.svgStyles ?? '')
         })}
       </div>
     </section>

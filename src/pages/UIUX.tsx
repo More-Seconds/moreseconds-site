@@ -8,7 +8,7 @@ import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Hero } from 'containers/Home/Hero'
+import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
 import { Brian } from 'public/images'
 import {
@@ -49,28 +49,29 @@ export function UIUX() {
           <Button href="" className="block max-w-xs mx-auto mt-6 text-center">
             Get More Seconds
           </Button>
-          <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-75 lg:right-32"/>
-          <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96"/>
-          <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16"/>
-          <Cloud className = "hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0"/>
-
+          <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-75 lg:right-32" />
+          <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96" />
+          <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16" />
+          <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
         </HeroCentered>
       </section>
 
-      <SideBySide svgStyles='scale-50 translate-x-[26%]'
+      <SideBySide
+        svgStyles="scale-50 translate-x-[26%]"
         svg={ManArtist}
-        className="flex items-center justify-center h-96 mb-52 pt-72">
+        className="flex items-center justify-center h-96 mb-52 pt-72"
+      >
         <Heading level="2" className="px-4 mt-40 mb-5">
           Need to level up your landing page?
         </Heading>
         <Signup variant="secondary" />
-        <Star className="absolute left-[70%] mt-14"/>
-        <BallPurple className="absolute mt-48 translate-x-40"/>
-        <BallPurple className="absolute left-[40%] -translate-y-[1200%] scale-50"/>
-        <BallPurple className="absolute left-[48%] -translate-y-[1100%] scale-50"/>
-        <BallBlue className="absolute left-[50%]"/>
-        <StarOutline className="absolute -translate-y-[1000%]"/>
-        <StarOutline className="absolute translate-y-20"/>
+        <Star className="absolute left-[70%] mt-14" />
+        <BallPurple className="absolute mt-48 translate-x-40" />
+        <BallPurple className="absolute left-[40%] -translate-y-[1200%] scale-50" />
+        <BallPurple className="absolute left-[48%] -translate-y-[1100%] scale-50" />
+        <BallBlue className="absolute left-[50%]" />
+        <StarOutline className="absolute -translate-y-[1000%]" />
+        <StarOutline className="absolute translate-y-20" />
       </SideBySide>
 
       <SideBySide
@@ -129,7 +130,6 @@ export function UIUX() {
       </section>
 
       <Testimonials title="Boost your conversion rate to increase sale" />
-      
     </Layout>
   )
 }
