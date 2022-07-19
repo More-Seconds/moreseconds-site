@@ -6,6 +6,7 @@ import './styles/main.css'
 import { About } from './pages/About'
 import { UIUX } from './pages/UIUX'
 import { CaseStudies } from 'pages/CaseStudies'
+import { WebDevelopment } from 'pages/WebDevelopment'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
@@ -17,6 +18,7 @@ root.render(
       <Route path="/about" element={<About />}></Route>
       <Route path="/uiux" element={<UIUX />}></Route>
       <Route path="/case-studies" element={<CaseStudies />}></Route>
+      <Route path="/web-development" element={<WebDevelopment/>}></Route>
     </Routes>
   </BrowserRouter>
 )

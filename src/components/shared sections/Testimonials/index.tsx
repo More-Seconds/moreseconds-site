@@ -29,7 +29,7 @@ export function Testimonials(props: Props) {
     <section className="relative flex flex-col py-32 mx-4 sm:mx-32 lg:mx-auto lg:max-w-4xl">
       <Heading
         level="2"
-        className="mb-10 text-3xl text-center capitalize lg:text-4xl lg:max-w-2xl"
+        className="mx-auto mb-10 text-3xl text-center capitalize lg:text-4xl lg:max-w-2xl"
       >
         {props.title}
       </Heading>
