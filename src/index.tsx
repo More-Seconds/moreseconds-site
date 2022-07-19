@@ -10,6 +10,8 @@ import { CaseStudyPCT } from 'pages/CaseStudies/clients/pct/CasePCT'
 import { UIUX } from './pages/UIUX'
 // import { CaseStudies } from 'pages/CaseStudies'
 import { WebDevelopment } from 'pages/WebDevelopment'
+import { ResearchAndAnalysis } from 'pages/ResearchAndAnalysis'
+import { WebsiteUpdates } from 'pages/WebsiteUpdates'
 
 const container = document.getElementById('root') as HTMLDivElement
 const root = createRoot(container)
@@ -22,6 +24,8 @@ root.render(
       <Route path="/uiux" element={<UIUX />}></Route>
       <Route path="/case-studies" element={<CaseStudies />}></Route>
       <Route path="/web-development" element={<WebDevelopment/>}></Route>
+      <Route path="/research-and-analysis" element={<ResearchAndAnalysis/>}></Route>
+      <Route path="/website-updates" element={<WebsiteUpdates/>}></Route>
     </Routes>
   </BrowserRouter>
 )
