@@ -13,7 +13,7 @@ export function Testimonial(props: Props) {
   return (
     <div
       className={
-        'flex flex-col sm:flex-row gap-16 sm:gap-4 lg:gap-32 ' +
+        'flex flex-col sm:flex-row sm:gap-4 lg:gap-32 ' +
         (props.hidden ? 'hidden' : '')
       }
     >

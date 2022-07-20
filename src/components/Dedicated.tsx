@@ -15,7 +15,7 @@ export function Dedicated(props: Props) {
     >
       <Heading
         level="2"
-        className="max-w-[15ch] sm:max-w-none mx-auto text-3xl mb-10"
+        className="max-w-[15ch] sm:max-w-none mx-auto text-3xl mb-10 sm:text-3xl"
       >
         Your Dedicated Digital Team
       </Heading>
