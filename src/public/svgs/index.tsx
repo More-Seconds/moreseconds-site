@@ -42,6 +42,8 @@ import { ReactComponent as StarOutline } from './star_outline.svg'
 import { ReactComponent as AvatarHighlight } from './avatar_highlight.svg'
 import { ReactComponent as PricingHero } from './pricinghero.svg'
 import { ReactComponent as PlayIcon } from './play_icon.svg'
+import { ReactComponent as WhoWeHelpHero } from './who_we_help_hero.svg'
+import { ReactComponent as MarketingAgencies } from './marketing_agencies.svg'
 
 export {
   MSLogo,
@@ -87,5 +89,7 @@ export {
   StarOutline,
   AvatarHighlight,
   PricingHero,
-  PlayIcon
+  PlayIcon,
+  WhoWeHelpHero,
+  MarketingAgencies
 }
