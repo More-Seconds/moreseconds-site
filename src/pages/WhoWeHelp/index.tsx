@@ -58,7 +58,7 @@ export function WhoWeHelp() {
       <section className="relative mx-4 sm:py-8">
         <Heading
           level="2"
-          className=" relative max-w-[15ch] mx-auto text-center capitalize mb-4 mt-8 sm:max-w-[27ch] sm:text-[40px] lg:text-[46px] lg:max-w-[30ch] lg:mb-6"
+          className=" relative max-w-[15ch] mx-auto text-center capitalize mb-4 mt-8 sm:max-w-[27ch] sm:text-[36px] lg:text-[46px] lg:max-w-[30ch] lg:mb-6"
         >
           <>
             We’re disrupting traditional dev shops, one happy client at a time
