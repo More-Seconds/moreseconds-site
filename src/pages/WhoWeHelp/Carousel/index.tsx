@@ -103,13 +103,13 @@ export function Carousel() {
           eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
           quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
         </Testimonial>
-        <div className="absolute top-[52.5%] flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-left-14 sm:top-1/2 hover:border-accent">
+        <div className="absolute top-[58.5%] flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-left-14 sm:top-1/2 hover:border-accent">
           <CarouselArrow
             className="rotate-180 fill-mid hover:fill-accent"
             onClick={decrementActive}
           />
         </div>
-        <div className="absolute right-0 top-[52.5%] flex items-center justify-center w-8 h-8 border-2 rounded-full sm:-right-14 sm:top-1/2 hover:border-accent">
+        <div className="absolute right-0 top-[58.5%] flex items-center justify-center w-8 h-8 border-2 rounded-full sm:-right-14 sm:top-1/2 hover:border-accent">
           <CarouselArrow
             className="fill-mid hover:fill-accent"
             onClick={incrementActive}
