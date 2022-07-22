@@ -1,4 +1,4 @@
-import { Dedicated } from 'components/Dedicated'
+import { Dedicated } from 'components/shared sections/Dedicated'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { Testimonial } from 'components/shared sections/Testimonials/Testimonial'
 import { BodyText } from 'components/typography/BodyText'
@@ -24,7 +24,7 @@ export function CaseStudyPCT() {
     <Layout footerVariant="delivers">
       <HeroCentered>
         <SmallTitle>Business</SmallTitle>
-        <Heading level="1" className="text-center">
+        <Heading level="1" className="text-center lg:text-[64px] mb-4">
           Plant Cell Technology
         </Heading>
         <BodyText className="max-w-3xl mx-4 text-center">

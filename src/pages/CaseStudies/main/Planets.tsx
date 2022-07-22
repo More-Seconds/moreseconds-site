@@ -19,20 +19,20 @@ export function Planets() {
     <section className="relative">
       <div className="relative w-32 h-32 mx-auto sm:w-48 sm:h-48 lg:h-64 lg:w-64">
         <CaseStudy1 className="w-full h-min" />
-        <BodyText className="absolute w-20 text-sm leading-4 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+        <BodyText className="absolute w-20 text-sm leading-4 sm:w-auto text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
           Marketing Agencies
         </BodyText>
       </div>
       <div className="flex justify-around gap-6 mb-8">
         <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:h-64 lg:w-64">
           <CaseStudy2 className="w-full h-min" />
-          <BodyText className="absolute w-20 text-sm leading-4 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <BodyText className="absolute w-20 text-sm leading-4 sm:w-auto text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             Startups
           </BodyText>
         </div>
         <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:h-64 lg:w-64">
           <CaseStudy3 className="w-full h-min" />
-          <BodyText className="absolute w-20 text-sm leading-4 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <BodyText className="absolute w-20 text-sm leading-4 sm:w-auto text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             Businesses
           </BodyText>
         </div>
@@ -40,13 +40,13 @@ export function Planets() {
       <div className="flex justify-evenly">
         <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:h-64 lg:w-64">
           <CaseStudy4 className="w-full h-min" />
-          <BodyText className="absolute w-20 text-sm leading-4 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <BodyText className="absolute w-20 text-sm leading-4 sm:w-auto text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             Event Producers
           </BodyText>
         </div>
         <div className="relative w-32 h-32 sm:w-48 sm:h-48 lg:h-64 lg:w-64">
           <CaseStudy5 className="w-full h-min" />
-          <BodyText className="absolute w-20 text-sm leading-4 text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <BodyText className="absolute w-20 text-sm leading-4 sm:w-auto text-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             Agencies with In-House Teams
           </BodyText>
         </div>

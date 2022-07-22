@@ -1,6 +1,6 @@
 import { Button } from 'components/Button'
 import { Card } from 'components/Card'
-import { Dedicated } from 'components/Dedicated'
+import { Dedicated } from 'components/shared sections/Dedicated'
 import { Signup } from 'components/forms/Signup'
 import { SectionBlur } from 'components/SectionBlur'
 import { Testimonials } from 'components/shared sections/Testimonials'

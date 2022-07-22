@@ -44,6 +44,7 @@ import { ReactComponent as PricingHero } from './pricinghero.svg'
 import { ReactComponent as PlayIcon } from './play_icon.svg'
 import { ReactComponent as WhoWeHelpHero } from './who_we_help_hero.svg'
 import { ReactComponent as MarketingAgencies } from './marketing_agencies.svg'
+import { ReactComponent as NoMaintenance } from './no_maintenance.svg'
 
 export {
   MSLogo,
@@ -91,5 +92,6 @@ export {
   PricingHero,
   PlayIcon,
   WhoWeHelpHero,
-  MarketingAgencies
+  MarketingAgencies,
+  NoMaintenance
 }

@@ -33,7 +33,7 @@ export function Testimonials(props: Props) {
       >
         {props.title}
       </Heading>
-      <div className="flex gap-4 mx-auto mb-5 sm:gap-24">
+      <div className="relative flex gap-4 mx-auto mb-5 sm:gap-24">
         <Testimonial
           image={Jason}
           company="World wide company"
@@ -121,15 +121,15 @@ export function Testimonials(props: Props) {
           eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
           quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
         </Testimonial>
-        <div className="absolute flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-left-14 sm:top-1/2 hover:border-accent">
+        <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12">
           <CarouselArrow
-            className="rotate-180 fill-mid hover:fill-accent"
+            className="rotate-180 fill-mid hover:fill-accent w-full h-full scale-125"
             onClick={decrementActive}
           />
         </div>
-        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border-2 rounded-full sm:-right-14 sm:top-1/2 hover:border-accent">
+        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12">
           <CarouselArrow
-            className="fill-mid hover:fill-accent"
+            className="fill-mid hover:fill-accent w-full h-full scale-125"
             onClick={incrementActive}
           />
         </div>

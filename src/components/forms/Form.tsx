@@ -216,7 +216,7 @@ export function FooterForm() {
           </div>
           <button
             type="submit"
-            className="px-12 py-3 mt-2 font-bold bg-accent text-light font-DM w-fit rounded-3xl justify-self-center lg:justify-self-auto"
+            className="px-12 py-3 mt-2 font-bold bg-accent text-light font-DM rounded-3xl justify-self-center lg:justify-self-auto w-full sm:w-max"
           >
             Let's Chat
           </button>

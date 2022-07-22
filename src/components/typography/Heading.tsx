@@ -13,7 +13,7 @@ export function Heading(props: Props) {
     const baseStyles = 'font-DM font-bold z-10'
     const levelLayer =
       props.level == '1'
-        ? 'text-5xl sm:text-4xl lg:text-6xl leading-tight 2xl:text-7xl'
+        ? 'text-5xl sm:text-4xl lg:text-6xl leading-tight'
         : 'text-[30px] sm:text-2xl'
     const themeLayer = props.dark ? 'text-black' : 'text-light'
     const customLayer = props.className

@@ -7,12 +7,14 @@ export function Hero() {
     <section className="relative py-10 sm:pt-32 sm:pb-0 lg:py-48">
       <Heading
         level="1"
-        className="text-[45px] mx-4 text-center break-words mb-5"
+        className="text-[45px] mx-auto text-center break-words mb-5 max-w-[13ch] sm:max-w-none"
       >
         <span className="text-[#3939FA] sm:text-5xl lg:text-6xl">#</span>
-        <span className="sm:text-5xl lg:text-6xl">MoreSecondsMadeThat</span>
+        <span className="break-words sm:text-5xl lg:text-6xl">
+          MoreSecondsMadeThat
+        </span>
       </Heading>
-      <BodyText className="w-[30ch] text-center mx-auto">
+      <BodyText className="w-[30ch] text-center mx-auto sm:w-auto">
         If you can dream it, More Seconds can make it.
       </BodyText>
       <BallOrange className="absolute top-4 scale-[25%] sm:right-0 sm:top-32 lg:top-72 lg:right-8" />
