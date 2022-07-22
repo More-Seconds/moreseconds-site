@@ -14,7 +14,7 @@ export function SideBySide(props: Props) {
         <>
           <div
             className={
-              'flex w-full h-min sm:h-auto sm:items-end ' +
+              'flex w-full h-min sm:h-auto sm:items-end lg:justify-evenly' +
               (props.hideImageMobile ? 'hidden sm:flex' : '')
             }
           >
