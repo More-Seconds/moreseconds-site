@@ -14,27 +14,25 @@ export function FAQ(props: Props) {
     <>
       <div
         className={
-          'p-4 sm:p-6 rounded-lg ' +
+          'p-4 sm:p-6 rounded-lg cursor-pointer ' +
           (isOpen == true ? 'bg-white' : 'bg-darkermid')
         }
+        onClick={() => setOpen(!isOpen)}
       >
-        <div
-          className="flex items-center justify-between"
-          onClick={() => setOpen(!isOpen)}
-        >
+        <div className="flex items-center justify-between gap-4">
           <Heading
             level="2"
             className={
               isOpen == true
-                ? 'text-black text-lg max-w-[25ch] sm:text-xl sm:max-w-xl'
-                : 'text-white text-sm max-w-[33ch] sm:text-lg sm:max-w-2xl lg:max-w-4xl'
+                ? 'text-black text-lg sm:text-xl'
+                : 'text-white text-sm sm:text-lg '
             }
           >
             {props.title}
           </Heading>
           <ArrowDown
             className={
-              'w-4 h-4 ' +
+              'w-4 h-4 shrink-0 ' +
               (isOpen == true ? 'fill-accent rotate-180' : 'fill-white')
             }
           />
