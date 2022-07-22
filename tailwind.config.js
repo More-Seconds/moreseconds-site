@@ -32,6 +32,9 @@ module.exports = {
       },
       gridTemplateColumns: {
         services: '40fr 30fr 30fr'
+      },
+      screens: {
+        lg: '1025px'
       }
     }
   },

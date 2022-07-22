@@ -9,7 +9,7 @@ type Props = {
 
 export function Results(props: Props) {
   return (
-    <section className="relative flex flex-col-reverse mb-20 sm:flex-row-reverse sm:justify-between sm:mx-16 lg:mx-32 lg:items-center">
+    <section className="relative flex flex-col-reverse mb-20 sm:flex-row-reverse sm:justify-between sm:mx-16 lg:mx-32 lg:items-center 2xl:max-w-[1600px] 2xl:mx-auto 2xl:px-32 2xl:pb-32">
       <div className="w-full mx-4 sm:w-[50%] lg:w-[40%]">
         <Heading level="2" className="mb-2 sm:text-4xl lg:mb-4">
           Results

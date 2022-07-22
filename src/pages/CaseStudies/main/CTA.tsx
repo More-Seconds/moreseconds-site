@@ -14,21 +14,21 @@ import {
 export function CTA() {
   return (
     <section className="relative">
-      <SideBySide svg={ManWithPhone}>
+      <SideBySide svg={ManWithPhone} className="sm:w-[95%]">
         <div className="grid gap-5 lg:ml-24 pt-14 sm:pt-32 lg:pt-64">
           <Heading
             level="2"
-            className="text-center capitalize sm:text-[24px] sm:text-left lg:text-4xl lg:max-w-lg"
+            className="text-center capitalize sm:min-w-[200px] sm:text-[32px] leading-9 sm:text-left lg:text-5xl lg:max-w-xl lg:mb-4 tracking-tighter"
           >
             How can we help your business succeed?
           </Heading>
-          <div className="lg:max-w-sm sm:absolute sm:top-52 lg:static">
-            <Signup className="sm:w-52" variant="secondary" />
+          <div className="lg:max-w-sm sm:absolute sm:top-56 lg:static">
+            <Signup className="sm:w-96" variant="secondary" />
           </div>
         </div>
       </SideBySide>
       <div className="h-72 sm:h-32">
-        <Sputnik className="relative scale-75 -left-14 sm:left-14 sm:-top-40 lg:scale-100 lg:left-52 lg:-top-64" />
+        <Sputnik className="relative scale-75 -left-14 sm:left-14 sm:-top-40 lg:scale-100 lg:left-52 lg:-top-[100%]" />
       </div>
       <BallPurple className="absolute scale-75 bottom-52 lg:left-16" />
       <BallPurple className="absolute hidden lg:block scale-[25%] top-32 left-96" />

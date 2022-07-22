@@ -40,9 +40,11 @@ export function Signup(props: Props) {
       validationSchema={validate}
       onSubmit={(values, actions) => console.log(values, actions)}
     >
-      <Form className="z-10 max-w-md lg:max-w-lg">
+      <Form className="z-10 max-w-md lg:max-w-none lg:w-[550px]">
         <fieldset
-          className={'flex pr-1 ' + getConditionalStyles(props.variant)}
+          className={
+            'relative flex pr-1 ' + getConditionalStyles(props.variant)
+          }
         >
           <Field
             type="email"
@@ -50,12 +52,14 @@ export function Signup(props: Props) {
             name="signUpEmail"
             placeholder="your email"
             className={
-              'bg-transparent text-light placeholder:text-mid placeholder:uppercase pl-6 py-3.5 w-full focus:rounded-l-full ' +
+              'bg-transparent text-light placeholder:text-mid placeholder:font-bold placeholder:uppercase pl-6 py-3.5 w-full focus:rounded-l-full ' +
               props.className
             }
           ></Field>
-          <div className="min-w-max py-3.5">
-            <Button href="#">Get More Seconds</Button>
+          <div className="min-w-max py-3.5 absolute right-0">
+            <Button href="#" className="font-bold">
+              Get More Seconds
+            </Button>
           </div>
         </fieldset>
         <ErrorMessage

@@ -1,5 +1,5 @@
 import { Button } from 'components/Button'
-import { Dedicated } from 'components/Dedicated'
+import { Dedicated } from 'components/shared sections/Dedicated'
 import { SectionBlur } from 'components/SectionBlur'
 import { Clients } from 'components/shared sections/Clients'
 import { Partners } from 'components/shared sections/Partners'

@@ -23,7 +23,7 @@ export function Testimonial(props: Props) {
           alt={props.name}
           className="w-20 sm:w-56 lg:w-60"
         />
-        <figcaption>
+        <figcaption className="grid gap-2">
           <h3 className="text-xs font-medium uppercase sm:text-lg font-Poppins">
             {props.company}
           </h3>
@@ -33,8 +33,8 @@ export function Testimonial(props: Props) {
           <h5>{props.title}</h5>
         </figcaption>
       </figure>
-      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-lg">
-        <BodyText className="text-sm italic sm:text-md lg:text-xl">
+      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-sm">
+        <BodyText className="text-sm italic sm:text-md lg:text-[22px] font-normal leading-6">
           {props.children}
         </BodyText>
       </div>

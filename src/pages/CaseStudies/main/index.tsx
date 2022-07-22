@@ -1,4 +1,4 @@
-import { Dedicated } from 'components/Dedicated'
+import { Dedicated } from 'components/shared sections/Dedicated'
 import { Signup } from 'components/forms/Signup'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
