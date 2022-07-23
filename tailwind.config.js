@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '2000px'
+        '3xl': '1750px'
       },
       colors: {
         surface: '#000000',
