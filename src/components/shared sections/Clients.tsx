@@ -18,14 +18,14 @@ export function Clients(props: Props) {
   return (
     <section
       className={
-        'relative flex flex-col items-center gap-8 pb-40 ' + props.className
+        'relative flex flex-col items-center gap-8 pb-10 ' + props.className
       }
     >
-      <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light">
+      <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light lg:text-[32px] lg:leading-[48px] lg:max-w-4xl">
         We’ve worked on hundreds of projects for agencies, startups, event
         producers, and businesses of all sizes.
       </p>
-      <ul className="grid grid-cols-4 grid-rows-2 mr-4 place-items-center">
+      <ul className="grid grid-cols-4 grid-rows-2 mr-4 place-items-center lg:gap-8">
         <li className="p-4 sm:p-0">
           <img src={AlgorithmLogo} alt="Algorithm Agency" />
         </li>

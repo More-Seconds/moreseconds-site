@@ -30,7 +30,9 @@ export function SideBySide(props: Props) {
     } else {
       return (
         <>
-          <div className="relative w-full px-4 sm:mx-0">{props.children}</div>
+          <div className="relative w-full px-4 sm:mx-0 flex flex-col">
+            {props.children}
+          </div>
           <div
             className={
               'flex w-full h-min sm:h-auto sm:items-end ' +

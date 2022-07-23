@@ -27,24 +27,24 @@ export function Partners() {
         <div className="z-20">
           <Heading
             level="2"
-            className="mt-20 mb-10 text-3xl text-center sm:max-w-2xl lg:max-w-lg sm:mt-0 sm:text-left"
+            className="mt-20 mb-10 text-3xl text-center sm:max-w-2xl lg:max-w-2xl sm:mt-0 sm:text-left lg:text-5xl"
           >
             We're Trusted Service Partners For The Most Influential Industry
             Leaders
           </Heading>
-          <ul className="grid h-48 max-w-lg grid-cols-2 grid-rows-1 gap-4">
-            <li className="flex items-center p-8 bg-darkermid rounded-xl">
+          <ul className="flex w-full h-48 max-w-xl gap-4">
+            <li className="flex items-center justify-center bg-darkermid rounded-xl w-full">
               <img
                 src={HawkeMediaLogo}
                 alt="Hawke Media Logo"
-                className="w-full"
+                className="w-[75%]"
               />
             </li>
-            <li className="flex items-center p-16 bg-darkermid rounded-xl">
+            <li className="flex items-center justify-center bg-darkermid rounded-xl w-full">
               <img
                 src={DyrdekLogo}
                 alt="Dyrdek Machine Logo"
-                className="w-full"
+                className="w-[50%]"
               />
             </li>
           </ul>
@@ -55,7 +55,7 @@ export function Partners() {
       <BallBlue className="absolute z-0 top-24 right-20 sm:top-32 sm:right-20 lg:top-40 lg:right-40" />
       <Cloud className="absolute right-0 z-0 top-44" />
       <HollowStar className="absolute z-0 top-80 right-20" />
-      <Star className="absolute z-0 scale-50 top-48 right-16 md:hidden lg:block lg:-bottom-20 lg:right-1/3" />
+      <Star className="absolute z-0 scale-50 top-48 right-16 md:hidden" />
     </section>
   )
 }

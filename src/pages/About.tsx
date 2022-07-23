@@ -15,6 +15,7 @@ import {
   BallBlue,
   BallOrange,
   BallPurple,
+  CircleHighlight,
   Cloud,
   CloudFull,
   CloudOpaque,
@@ -28,10 +29,18 @@ export function About() {
     <Layout footerVariant="connect">
       <Hero svg={AboutHero}>
         <Heading level="1" className="max-w-4xl">
-          We’re here to exponentially increase your most valuable, finite asset
-          – your time
+          <span className="relative">We’re </span>
+          <span className="relative z-10">
+            here
+            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 lg:scale-100 lg:-top-3 lg:-left-4 z-0" />
+          </span>
+          <span> </span>
+          <>
+            to exponentially increase your most valuable, finite asset – your
+            time
+          </>
         </Heading>
-        <BodyText className="max-w-lg sm:max-w-sm">
+        <BodyText className="max-w-lg sm:max-w-sm lg:max-w-md">
           More Seconds takes your web development projects from headache to
           handled so that you have time to focus on what you do best – driving
           traffic and sales for your business. If you want to stop scrolling

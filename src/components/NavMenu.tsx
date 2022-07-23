@@ -34,7 +34,7 @@ export function NavMenu({ mobile, open }: Props) {
       ref={containerRef}
       className={
         mobile
-          ? 'absolute z-30 top-12 w-[100vw] bg-surface inset-0 h-screen -translate-x-full'
+          ? 'absolute z-30 top-16 w-[100vw] bg-surface inset-0 h-screen -translate-x-full pt-10'
           : 'hidden  lg:mx-16 lg:block lg:max-w-2xl lg:justify-self-end'
       }
     >
@@ -55,16 +55,6 @@ export function NavMenu({ mobile, open }: Props) {
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/careers"
-            className={({ isActive }) =>
-              isActive ? 'text-accent' : 'hover:text-accent'
-            }
-          >
-            Careers
-          </NavLink>
-        </li>
         <li className="relative">
           <Link
             to=""
@@ -72,7 +62,7 @@ export function NavMenu({ mobile, open }: Props) {
             onClick={() => toggleSubMenu()}
           >
             Services
-            <ArrowDown className="inline scale-150" />
+            <ArrowDown className="inline scale-150 fill-light" />
           </Link>
           <ul
             className={
@@ -115,16 +105,6 @@ export function NavMenu({ mobile, open }: Props) {
             }
           >
             Pricing
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/team"
-            className={({ isActive }) =>
-              isActive ? 'text-accent' : 'hover:text-accent'
-            }
-          >
-            Team
           </NavLink>
         </li>
         <li>
