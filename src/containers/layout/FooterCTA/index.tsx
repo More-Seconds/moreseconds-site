@@ -29,7 +29,7 @@ export function FooterCTA(props: Props) {
           {getVariant(props.variant)}
           <Planet className="absolute hidden -bottom-4 -left-4 lg:block" />
         </div>
-        <FooterForm />
+        {props.variant == 'connect' ? <FooterForm levelUp /> : <FooterForm />}
       </section>
     </div>
   )

@@ -10,7 +10,7 @@ export function Dedicated(props: Props) {
   return (
     <section
       className={
-        'relative mx-4 mb-20 text-center sm:pb-20 ' + props.className ?? ''
+        'relative mx-4 sm:mb-20 text-center sm:pb-20 ' + props.className ?? ''
       }
     >
       <Heading
