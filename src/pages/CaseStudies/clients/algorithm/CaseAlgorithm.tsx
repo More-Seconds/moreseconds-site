@@ -123,7 +123,7 @@ export function CaseStudyAlgorithm() {
           <span className="text-accent">in partnership</span>
           <span> with algorithm agency</span>
         </Heading>
-        <BodyText className="mx-4 text-center text-sm sm:mx-16 mb-16 lg:max-w-[80ch] lg:mx-auto">
+        <BodyText className="mx-4 text-center text-sm sm:text-base sm:mx-16 mb-16 lg:max-w-[80ch] lg:mx-auto">
           State Fair Entertainment, producer of the Official Summer Fair of
           L.A., was created around the idea that a large-scale, high quality
           entertainment venue can promote positivity, be eco &#38; family
