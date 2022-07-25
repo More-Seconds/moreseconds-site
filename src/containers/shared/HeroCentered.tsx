@@ -8,13 +8,13 @@ type Props = {
 }
 
 export function HeroCentered(props: Props) {
-  const bgClass = `z-0 pt-10 w-screen absolute top-0 ${
+  const bgClass = `absolute z-50 pt-10 w-screen overflow-visible absolute top-0 ${
     props.hideBgMobile ? 'hidden sm:block' : ''
   }`
   return (
     <section
       className={
-        'flex items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative bg-cover flex-col w-screen ' +
+        'flex z-50 items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen ' +
         props.className
       }
     >
@@ -25,7 +25,7 @@ export function HeroCentered(props: Props) {
         <Smoke
           width="100vw"
           height="100%"
-          className="h-auto scale-x-125 rotate-180 -scale-y-125"
+          className="h-auto scale-x-125 rotate-180 -scale-y-125 z-100 relative top-12"
         />
       </div>
     </section>
