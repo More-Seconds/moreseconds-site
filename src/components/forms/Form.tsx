@@ -22,7 +22,11 @@ interface FormFields {
   phone: string
 }
 
-export function FooterForm() {
+type Props = {
+  levelUp?: boolean
+}
+
+export function FooterForm({ levelUp }: Partial<Props>) {
   const initialValues: FormFields = {
     firstName: '',
     lastName: '',
@@ -214,9 +218,16 @@ export function FooterForm() {
               component="div"
             />
           </div>
+          {levelUp == true ? (
+            <p className="text-accent font-medium font-Poppins">
+              Ready to level up?
+            </p>
+          ) : (
+            ''
+          )}
           <button
             type="submit"
-            className="px-12 py-3 mt-2 font-bold bg-accent text-light font-DM rounded-3xl justify-self-center lg:justify-self-auto w-full sm:w-max"
+            className="px-20 py-5 mt-2 font-bold bg-accent text-light font-DM rounded-[40px] justify-self-center lg:justify-self-auto w-full sm:w-max"
           >
             Let's Chat
           </button>

@@ -18,7 +18,7 @@ export function CTA() {
         <div className="grid gap-5 lg:ml-24 pt-14 sm:pt-32 lg:pt-64">
           <Heading
             level="2"
-            className="text-center capitalize sm:min-w-[200px] sm:text-[32px] leading-9 sm:text-left lg:text-5xl lg:max-w-xl lg:mb-4 tracking-tighter"
+            className="text-center capitalize sm:min-w-[200px] sm:text-[32px] leading-9 sm:text-left lg:text-5xl lg:leading-[56px] lg:max-w-xl lg:mb-4 tracking-tighter"
           >
             How can we help your business succeed?
           </Heading>
