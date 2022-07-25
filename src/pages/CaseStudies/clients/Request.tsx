@@ -23,7 +23,7 @@ export function Request(props: Props) {
         <img
           src={props.avatar}
           alt="avatar"
-          className="absolute w-24 border-4 rounded-full -bottom-2 border-light left-2 sm:-left-8 sm:bottom-8 lg:scale-150 lg:bottom-24 lg:-left-20 lg:w-40"
+          className="absolute w-24 border-4 rounded-full -bottom-2 border-light left-2 sm:-left-8 sm:bottom-8 lg:scale-150 lg:bottom-24 lg:-left-20 lg:w-32"
         />
         <AvatarHighlight className="absolute z-40 scale-50 -bottom-14 -left-4 sm:-left-14 sm:-bottom-6 lg:-left-32 lg:-bottom-0 lg:scale-100" />
       </div>

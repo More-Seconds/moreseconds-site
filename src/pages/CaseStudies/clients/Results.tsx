@@ -14,7 +14,7 @@ export function Results(props: Props) {
         <Heading level="2" className="mb-2 sm:text-4xl lg:mb-4">
           Results
         </Heading>
-        <div className="grid gap-4">
+        <div className="grid gap-4 sm:gap-2">
           {props.children.map((result, index) => {
             return (
               <BodyText className="text-sm leading-6 lg:text-lg" key={index}>
