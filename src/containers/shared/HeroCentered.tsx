@@ -8,13 +8,13 @@ type Props = {
 }
 
 export function HeroCentered(props: Props) {
-  const bgClass = `absolute z-50 pt-10 w-screen overflow-visible absolute top-0 ${
+  const bgClass = `absolute pt-10 w-screen overflow-visible absolute top-0 ${
     props.hideBgMobile ? 'hidden sm:block' : ''
   }`
   return (
     <section
       className={
-        'flex z-50 items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen ' +
+        'flex items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen ' +
         props.className
       }
     >
