@@ -45,6 +45,8 @@ import { ReactComponent as PlayIcon } from './play_icon.svg'
 import { ReactComponent as WhoWeHelpHero } from './who_we_help_hero.svg'
 import { ReactComponent as MarketingAgencies } from './marketing_agencies.svg'
 import { ReactComponent as NoMaintenance } from './no_maintenance.svg'
+import { ReactComponent as BigSaturn } from './Big_Saturn.svg'
+
 
 export {
   MSLogo,
@@ -93,5 +95,6 @@ export {
   PlayIcon,
   WhoWeHelpHero,
   MarketingAgencies,
-  NoMaintenance
+  NoMaintenance,
+  BigSaturn
 }
