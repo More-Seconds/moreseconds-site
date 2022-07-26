@@ -227,7 +227,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
           )}
           <button
             type="submit"
-            className="px-20 py-5 mt-2 font-bold bg-accent text-light font-DM rounded-[40px] justify-self-center lg:justify-self-auto w-full sm:w-max"
+            className="px-12 py-3 mt-2 font-bold bg-accent text-light font-DM rounded-[40px] justify-self-center lg:justify-self-auto w-full sm:w-max"
           >
             Let's Chat
           </button>
