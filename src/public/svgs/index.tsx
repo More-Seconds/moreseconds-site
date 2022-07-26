@@ -96,6 +96,6 @@ export {
   WhoWeHelpHero,
   MarketingAgencies,
   NoMaintenance,
-  BigSaturn
+  BigSaturn,
   CircleHighlight
 }
