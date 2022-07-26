@@ -1,8 +1,8 @@
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
+import { MarketingAgencies } from 'public/svgs'
 
 type Props = {
-  image: React.FunctionComponent<React.SVGProps<SVGSVGElement>>
   industry: string
   children: string
   hidden: boolean
@@ -12,14 +12,12 @@ export function Testimonial(props: Props) {
   return (
     <div
       className={
-        'w-full flex flex-col sm:flex-row sm:gap-4 lg:gap-32 ' +
+        'w-full flex flex-col sm:flex-row sm:gap-4 lg:gap-0 lg:justify-center ' +
         (props.hidden ? 'hidden' : '')
       }
     >
       <figure className="flex flex-col items-center justify-center gap-4 mb-6 sm:w-full text-light">
-        {props.image({
-          className: 'w-64 h-min'
-        })}
+        <MarketingAgencies className="w-64 h-min" />
         <figcaption>
           <Heading
             level="3"

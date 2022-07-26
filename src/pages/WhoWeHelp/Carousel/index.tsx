@@ -1,5 +1,3 @@
-import { Heading } from 'components/typography/Heading'
-import { Jason } from 'public/images'
 import {
   BallBlue,
   BallPurple,
@@ -15,7 +13,7 @@ export function Carousel() {
   const [active, setActive] = useState(0)
 
   function incrementActive() {
-    if (active == 6) {
+    if (active == 4) {
       setActive(-1)
     }
     setActive((active) => active + 1)
@@ -23,85 +21,49 @@ export function Carousel() {
 
   function decrementActive() {
     if (active == 0) {
-      setActive(7)
+      setActive(5)
     }
     setActive((active) => active - 1)
   }
   return (
     <section className="relative flex flex-col py-8 mx-4 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
       <div className="flex w-full gap-4 mx-auto mb-5 sm:gap-24 ">
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 0}
-        >
+        <Testimonial industry="Marketing Agencies" hidden={active != 0}>
           “We care about cultivating a long term relationship with our clients
           which is why they consistently turn to More Seconds whenever an issue
           or new assignment arises. Our commitment to excellence, honesty, and
           communication is reflected in our satisfied repeat clientele.”
         </Testimonial>
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 1}
-        >
-          2 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores m
+        <Testimonial industry="Startups" hidden={active != 1}>
+          "I need a fast, on budget, outsourced team to offload my web
+          development needs to. I’m interested in custom solutions unique to my
+          startup’s platform and innovative execution that will give my business
+          a leg up on competitors. I value creativity, new ideas, and speed.
+        </Testimonial>
+        <Testimonial industry="Businesses " hidden={active != 2}>
+          "I need to ensure the technical side of my business always runs
+          smoothly and I don’t have the bandwidth to manage additional projects
+          or staff. I want a web team that can hit the ground running and
+          deliver on their promises. My website needs to be safe, secure,
+          responsive and able to provide my customers with the solutions they
+          need.
+        </Testimonial>
+        <Testimonial industry="Event Producers" hidden={active != 3}>
+          "I need to hand over the website to a capable developer so I can focus
+          on the other aspects of my event. Completing projects on or before the
+          deadline is an absolute must to drive ticket sales. My event has
+          multiple stakeholders providing input so responsiveness and clear
+          communication is key."
         </Testimonial>
         <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 2}
-        >
-          3 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
-        </Testimonial>
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 3}
-        >
-          4 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure res modi et eligendi sequi! Aut
-        </Testimonial>
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
+          industry="Agencies with In-House Teams"
           hidden={active != 4}
         >
-          5 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas
-        </Testimonial>
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 5}
-        >
-          6 res modi et eligendi sequi! Aut dis dolor id voluptatem veniam a
-          tempora possimus 33 veniam sint. At velit voluptatem est omnis fugit
-          sed eligendi nihil et esse omnis et dolores modi e
-        </Testimonial>
-        <Testimonial
-          image={MarketingAgencies}
-          industry="Marketing Agencies"
-          hidden={active != 6}
-        >
-          7 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
+          "I need additional developers on-demand to handle overflow when we’re
+          up against a tight deadline on a big project and I can’t afford to
+          waste time hiring and managing freelancers. Team extension services
+          that can seamlessly integrate into my existing operation are essential
+          when our in-house team is overloaded."
         </Testimonial>
         <div className="absolute top-[58.5%] flex items-center justify-center w-8 h-8 border-2 rounded-full right-10 sm:-left-14 sm:top-1/2 hover:border-accent">
           <CarouselArrow
