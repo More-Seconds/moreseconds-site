@@ -19,16 +19,16 @@ export function Dedicated(props: Props) {
       >
         Your Dedicated Digital Team
       </Heading>
-      <BodyText className="text-xl sm:text-lg sm:mx-10 lg:mx-auto lg:max-w-[41rem]">
+      <BodyText className="text-xl sm:text-lg sm:mx-10 lg:mx-auto lg:max-w-3xl">
         More Seconds is a full-service digital agency that provides premium web
         support for agencies, startups, businesses, and more. If you can dream
         it, More Seconds can make it. We are passionate problem solvers who
         seamlessly deliver the service and speed of an in-house development team
         for a fraction of the cost.
       </BodyText>
-      <BallOrange className="absolute hidden sm:block sm:top-1/2 sm:-left-4 sm:scale-50" />
+      <BallOrange className="absolute hidden sm:block sm:top-1/2 sm:-left-4 sm:scale-50 lg:left-40" />
       <Star className="absolute hidden sm:block sm:bottom-0 sm:left-10" />
-      <BallOrange className="absolute hidden sm:block sm:-top-10 sm:right-0" />
+      <BallOrange className="absolute hidden sm:block sm:-top-10 sm:right-0 lg:right-24" />
       <HollowStar className="relative scale-50 left-72 sm:hidden" />
       <BallPurple className="relative scale-50 top-8 sm:hidden" />
     </section>
