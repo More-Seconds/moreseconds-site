@@ -8,7 +8,10 @@ export function Services() {
   return (
     <section className="relative">
       <SmallTitle className="mb-2 text-center">Our Services</SmallTitle>
-      <Heading level="2" className="max-w-xl mx-auto mb-20 text-center">
+      <Heading
+        level="2"
+        className="max-w-xl mx-auto mb-20 text-center lg:text-[56px] lg:leading-[56px] lg:max-w-4xl"
+      >
         Access a broad slate of services and innovative solutions
       </Heading>
       <ul className="grid max-w-6xl grid-cols-1 grid-rows-5 gap-4 mx-4 sm:mx-auto sm:grid-rows-2 sm:grid-cols-services md:mx-16 lg:mx-auto">

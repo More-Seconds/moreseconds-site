@@ -10,11 +10,22 @@ type Props = {
 }
 
 export function NavMenu({ mobile, open }: Props) {
-  const [subMenu, setSubMenu] = useState(false)
+  const [services, setServices] = useState(false)
+  const [cases, setCases] = useState(false)
   const containerRef = useRef(null)
 
-  function toggleSubMenu() {
-    setSubMenu(!subMenu)
+  function toggleServices() {
+    setServices(!services)
+    if (cases == true && services == false) {
+      setCases(false)
+    }
+  }
+
+  function toggleCases() {
+    setCases(!cases)
+    if (cases == false && services == true) {
+      setServices(false)
+    }
   }
 
   useEffect(() => {
@@ -35,7 +46,7 @@ export function NavMenu({ mobile, open }: Props) {
       className={
         mobile
           ? 'absolute z-30 top-16 w-[100vw] bg-surface inset-0 h-screen -translate-x-full pt-10'
-          : 'hidden  lg:mx-16 lg:block lg:max-w-2xl lg:justify-self-end'
+          : 'hidden  lg:mx-16 lg:block lg:max-w-3xl lg:justify-self-end'
       }
     >
       <ul
@@ -59,31 +70,60 @@ export function NavMenu({ mobile, open }: Props) {
           <Link
             to="#"
             className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
-            onClick={() => toggleSubMenu()}
+            onClick={() => toggleServices()}
           >
             Services
             <ArrowDown className="inline scale-150 fill-light" />
           </Link>
           <ul
             className={
-              !subMenu
+              !services
                 ? 'hidden'
                 : mobile
                 ? 'flex flex-col gap-8 mt-8'
-                : 'absolute top-full -left-10 -right-10 flex flex-col items-center mt-2 bg-light rounded border-2'
+                : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-darkmid border border-mid'
             }
           >
-            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
               <Link to="/uiux">UI/UX Design</Link>
             </li>
-            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
               <Link to="/web-development">Web Development</Link>
             </li>
-            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
               <Link to="/research-and-analysis">Research &#38; Analysis</Link>
             </li>
-            <li className="w-full p-2 text-center hover:bg-mid hover:text-light">
+            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid  hover:text-light">
               <Link to="/website-updates">Website Updates</Link>
+            </li>
+          </ul>
+        </li>
+        <li className="relative">
+          <Link
+            to="#"
+            className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
+            onClick={() => toggleCases()}
+          >
+            Cases
+            <ArrowDown className="inline scale-150 fill-light" />
+          </Link>
+          <ul
+            className={
+              !cases
+                ? 'hidden'
+                : mobile
+                ? 'flex flex-col gap-8 mt-8'
+                : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-light border border-darkmid'
+            }
+          >
+            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+              <Link to="/case-studies">Case Studies</Link>
+            </li>
+            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+              <Link to="/algorithm-agency">Algorithm Agency</Link>
+            </li>
+            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+              <Link to="/pct">Plant Cell Technology</Link>
             </li>
           </ul>
         </li>
@@ -105,6 +145,16 @@ export function NavMenu({ mobile, open }: Props) {
             }
           >
             Pricing
+          </NavLink>
+        </li>
+        <li className="min-w-max">
+          <NavLink
+            to="/who-we-help"
+            className={({ isActive }) =>
+              isActive ? 'text-accent' : 'hover:text-accent'
+            }
+          >
+            Why Us
           </NavLink>
         </li>
         <li>

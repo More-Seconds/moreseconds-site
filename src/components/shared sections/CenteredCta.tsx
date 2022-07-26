@@ -6,13 +6,19 @@ import { Heading } from '../typography/Heading'
 export function CenteredCTA() {
   return (
     <section className="relative flex flex-col items-center justify-center gap-5 pt-20 mx-4 sm:py-60">
-      <Heading level="2" className="max-w-md text-3xl text-center">
+      <Heading
+        level="2"
+        className="max-w-md text-3xl text-center lg:text-[46px] lg:max-w-xl lg:leading-[56px]"
+      >
         Service and speed delivered seamlessly
       </Heading>
       <BodyText className="text-center">
         Expertly execute your vision without time-consuming oversight.
       </BodyText>
-      <Button href="" className="w-full px-12 mx-auto text-center sm:w-auto">
+      <Button
+        href=""
+        className="w-full px-12 py-3 mx-auto text-center sm:w-auto"
+      >
         Let's Chat
       </Button>
       <Cloud className="absolute -right-10 top-20" />
