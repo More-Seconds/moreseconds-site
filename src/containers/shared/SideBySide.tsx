@@ -21,7 +21,7 @@ export function SideBySide(props: Props) {
             {props.svg({
               width: '100%',
               height: '100%',
-              className: 'h-auto sm:w-[50vw]'
+              className: 'h-auto sm:w-[50vw] ' + (props.svgStyles ?? '')
             })}
           </div>
           <div className="relative w-full mx-4 sm:mx-0">{props.children}</div>

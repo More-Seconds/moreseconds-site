@@ -23,7 +23,8 @@ import {
   ManArtist,
   BallBlue,
   BallPurple,
-  StarOutline
+  StarOutline,
+  BigSaturn
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
@@ -61,7 +62,7 @@ export function UIUX() {
         svg={ManArtist}
         className="flex items-center justify-center h-96 mb-52 pt-72"
       >
-        <Heading level="2" className="px-4 mt-40 mb-5">
+        <Heading level="1" className="max-w-lg px-4 mt-40 mb-5 lg:max-w-3xl 3xl:max-w-5xl">
           Need to level up your landing page?
         </Heading>
         <Signup variant="secondary" />
@@ -75,12 +76,14 @@ export function UIUX() {
       </SideBySide>
 
       <SideBySide
-        svg={Planet}
+        svgStyles="scale-50"
+        svg={BigSaturn}
         reverse
         className="flex items-center justify-center pb-20 pl-6"
       >
+        <div className="pr-16">
         <SmallTitle>Design that drives conversion</SmallTitle>
-        <Heading level="2">
+        <Heading level="1" className="mt-2 max-w-1xl mb-7">
           More Seconds Delivers Fresh, Modern Design daily
         </Heading>
         <BodyText className="max-w-xs sm:max-w-none">
@@ -92,9 +95,10 @@ export function UIUX() {
           illustrations to content architecture and interactive elements, we’ll
           bring your brand’s best vision to life.
         </BodyText>
+        </div>
       </SideBySide>
 
-      <section className="flex flex-wrap items-center justify-center mt-20 mb-60">
+      <section className="flex flex-wrap items-center justify-center mt-20 mb-4">
         <Card>
           <Heading level="2">Full Website & Web App Design</Heading>
           <BodyText className="pt-5">
@@ -129,7 +133,7 @@ export function UIUX() {
         </Card>
       </section>
 
-      <Testimonials title="Boost your conversion rate to increase sale" />
+      <Testimonials title="Good design converts" />
     </Layout>
   )
 }
