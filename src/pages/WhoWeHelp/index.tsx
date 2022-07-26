@@ -71,29 +71,29 @@ export function WhoWeHelp() {
           more efficiently than our competitors.
         </BodyText>
         <ul className="grid gap-4 sm:grid-cols-3 sm:mx-16 lg:mx-auto max-w-5xl justify-center">
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-8">
-            <BodyText className="text-lg text-center">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+            <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE CLIENT SATISFACTION RATING
             </BodyText>
-            <BodyText className="text-center">
+            <BodyText className="text-center lg:text-lg">
               we retain a 93% per-project satisfaction rate, as stated by our
               clients*
             </BodyText>
           </li>
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-8">
-            <BodyText className="text-lg text-center">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+            <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE CLIENT SATISFACTION RATING
             </BodyText>
-            <BodyText className="text-center">
+            <BodyText className="text-center lg:text-lg">
               we retain a 93% per-project satisfaction rate, as stated by our
               clients*
             </BodyText>
           </li>
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-8">
-            <BodyText className="text-lg text-center">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+            <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE PROJECT COMPLETION ACCURACY
             </BodyText>
-            <BodyText className="text-center">
+            <BodyText className="text-center lg:text-lg">
               we complete projects within a 92% accuracy rating, as stated by
               our clients*
             </BodyText>
@@ -106,7 +106,7 @@ export function WhoWeHelp() {
       <section className="relative flex flex-col py-8 mx-4">
         <Heading
           level="2"
-          className="px-2 mb-4 tracking-tighter text-center sm:text-3xl sm:max-w-[20ch] sm:mx-auto sm:mb-8"
+          className="px-2 mb-4 tracking-tighter text-center sm:text-3xl sm:max-w-[20ch] sm:mx-auto sm:mb-8 lg:text-5xl"
         >
           Unparalleled quality at an unbeatable value
         </Heading>
