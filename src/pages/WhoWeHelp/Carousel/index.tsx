@@ -1,7 +1,9 @@
 import {
   BallBlue,
+  BallOrange,
   BallPurple,
   CarouselArrow,
+  HollowStar,
   MarketingAgencies,
   Star
 } from 'public/svgs'
@@ -79,10 +81,9 @@ export function Carousel() {
         </div>
       </div>
       <Dots activeIndex={active} />
-      <Star className="absolute scale-75 -right-48 top-52 lg:hidden" />
-      <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 lg:-left-48" />
-      <BallPurple className="absolute hidden sm:block sm:top-40 sm:-right-24 lg:-right-48 sm:scale-75" />
-      <BallBlue className="absolute hidden sm:block sm:bottom-40 sm:-left-28 lg:-left-56" />
+      <Star className="absolute sm:top-8 sm:-right-24" />
+      <HollowStar className="hidden sm:scale-75 sm:block sm:absolute sm:-left-24 sm:top-0" />
+      <BallOrange className="hidden lg:block lg:absolute lg:bottom-72 lg:-left-72" />
     </section>
   )
 }

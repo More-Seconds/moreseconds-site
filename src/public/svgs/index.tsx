@@ -47,6 +47,7 @@ import { ReactComponent as MarketingAgencies } from './marketing_agencies.svg'
 import { ReactComponent as NoMaintenance } from './no_maintenance.svg'
 import { ReactComponent as BigSaturn } from './Big_Saturn.svg'
 import { ReactComponent as CircleHighlight } from './circle_highlight.svg'
+import { ReactComponent as Pillow } from './pillow.svg'
 
 export {
   MSLogo,
@@ -97,5 +98,6 @@ export {
   MarketingAgencies,
   NoMaintenance,
   BigSaturn,
-  CircleHighlight
+  CircleHighlight,
+  Pillow
 }
