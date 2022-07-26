@@ -1,4 +1,5 @@
 import { Smoke } from 'public/svgs'
+import { twMerge } from 'tailwind-merge'
 
 type Props = {
   children: JSX.Element | JSX.Element[]
@@ -13,10 +14,10 @@ export function HeroCentered(props: Props) {
   }`
   return (
     <section
-      className={
-        'flex items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen ' +
+      className={twMerge(
+        'flex items-center justify-center px-15 py-15 lg:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen',
         props.className
-      }
+      )}
     >
       <div className="inset-0 z-10 flex flex-col items-center justify-center gap-2 py-20 lg:gap-4">
         {props.children}
