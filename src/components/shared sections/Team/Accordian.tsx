@@ -33,13 +33,16 @@ export function Accordian(props: Props) {
             : ''}
           <div>
             <BodyText
-              className={(open ? 'text-dark' : '') + ' text-lg font-bold w-max'}
+              className={
+                (open ? 'text-dark' : '') + ' text-lg font-bold w-max mb-2'
+              }
             >
               {props.title}
             </BodyText>
             <p
               className={
-                (open ? 'block' : 'hidden') + ' max-w-xs text-sm text-dark'
+                (open ? 'block' : 'hidden') +
+                ' max-w-xs text-sm text-dark leading-6'
               }
             >
               {props.children}

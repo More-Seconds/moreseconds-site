@@ -4,7 +4,12 @@ export function Connect() {
   const listStyle = 'list-disc ml-4 mt-6'
   return (
     <>
-      <Heading level="2" dark maxWidth="md" className="text-3xl lg:text-5xl">
+      <Heading
+        level="2"
+        dark
+        maxWidth="md"
+        className="text-3xl lg:text-5xl capitalize"
+      >
         Connect with us to learn how we differ:
       </Heading>
       <ul className="max-w-md font-Poppins pl-2">
