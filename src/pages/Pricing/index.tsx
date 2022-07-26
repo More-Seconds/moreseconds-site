@@ -31,9 +31,10 @@ export function Pricing() {
       >
         <Heading
           level="1"
-          className="sm:max-w-[18ch] text-[2.5em] mr-4 sm:text-[40px] leading-[3rem]"
+          className="sm:max-w-[18ch] tracking-tighter text-[45px] mr-4 sm:text-[40px] leading-[3rem]"
         >
           <>Only pay for the work you actually need. No monthly retainers. </>
+          <br className="sm:hidden" />
           <span className="relative">
             No minimums.
             <NoMaintenance className="absolute left-0 bottom-0 w-full" />
