@@ -59,7 +59,7 @@ export function Signup(props: Props) {
           <div className="min-w-max lg:py-6 py-4 absolute lg:right-3 right-1.5">
             <Button
               href="#"
-              className="font-bold lg:py-4 py-3 sm:rounded-[60px]"
+              className="font-bold text-sm sm:text-base px-4 lg:py-4 py-3 sm:rounded-[60px]"
             >
               Get More Seconds
             </Button>

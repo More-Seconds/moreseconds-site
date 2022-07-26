@@ -23,7 +23,9 @@ import {
   ManArtist,
   BallBlue,
   BallPurple,
-  StarOutline
+  StarOutline,
+  BigSaturn,
+  HollowStar
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
@@ -32,14 +34,14 @@ import { Signup } from 'components/forms/Signup'
 
 export function WebDevelopment() {
   return (
-    <Layout footerVariant="simplified">
+    <Layout footerVariant="connect">
       <section className="flex flex-col items-center justify-center w-min">
-        <HeroCentered className="">
+        <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">Our Services</SmallTitle>
           <Heading level="1" className="max-w-4xl mx-auto text-center">
             Web Development
           </Heading>
-          <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10">
+          <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
             From startups to established corporations, we utilize the latest
             technologies and platforms to deliver captivating user experiences
             and web interfaces. Our team of top U.S.-based developers write high
@@ -47,90 +49,134 @@ export function WebDevelopment() {
             functionality. Experience the benefits of having your own in-house
             digital team without actually hiring one full-time.
           </BodyText>
-          <Button href="" className="block max-w-xs mx-auto mt-6 text-center">
+          <Button
+            href=""
+            className="block max-w-xs mx-auto mt-6 text-center py-3 px-8"
+          >
             Get More Seconds
           </Button>
           <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-75 lg:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96" />
           <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16" />
-          <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
+          <Cloud className="hidden rotate-180 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
         </HeroCentered>
       </section>
 
-      <SideBySide
-        svgStyles="scale-50 translate-x-[26%]"
-        svg={ManArtist}
-        className="flex items-center justify-center h-96 mb-52 pt-72"
-      >
-        <Heading level="2" className="px-4 mt-40 mb-5">
-          Need to level up your landing page?
-        </Heading>
-        <Signup variant="secondary" />
-        <Star className="absolute left-[70%] mt-14" />
-        <BallPurple className="absolute mt-48 translate-x-40" />
-        <BallPurple className="absolute left-[40%] -translate-y-[1200%] scale-50" />
-        <BallPurple className="absolute left-[48%] -translate-y-[1100%] scale-50" />
-        <BallBlue className="absolute left-[50%]" />
-        <StarOutline className="absolute -translate-y-[1000%]" />
-        <StarOutline className="absolute translate-y-20" />
-      </SideBySide>
+      <section className="relative block items-center sm:py-72">
+        <div className="flex items-center -translate-y-16 w-screen h-96 relative -right-20 justify-self-start sm:absolute sm:top-28 sm:-right-2 sm:w-[378px] lg:translate-y-64 lg:right-40">
+          <ManArtist className="h-full sm:scale-150 lg:scale-[300%]" />
+          <Star className="absolute -left-12 top-8 scale-50 sm:-left-[40vw] sm:-top-12 sm:-scale-x-75 sm:scale-y-75 lg:-top-72 lg:-left-[50vw] lg:-scale-x-100 lg:scale-y-100" />
+          <Star className="hidden sm:block sm:absolute sm:-top-40 sm:right-32 sm:scale-50" />
+          <CloudFull className="absolute -left-52 scale-75 top-10 sm:-scale-x-150 sm:scale-y-150 sm:-left-[65vw] sm:top-0 lg:-top-56 lg:-scale-x-[200%] lg:scale-y-[200%]" />
+          <HollowStar className="absolute top-32 scale-75 sm:-top-8 sm:right-80 lg:-top-72 lg:-left-56 lg:scale-100" />
+          <HollowStar className="hidden lg:block lg:absolute lg:-left-[65vw] lg:-bottom-20" />
+          <HollowStar className="hidden lg:block lg:absolute lg:-top-20 lg:-left-[65vw]" />
+          <BallPurple className="absolute -left-20 bottom-16 scale-[25%] sm:bottom-52 sm:-left-32 lg:-top-20 lg:-left-80" />
+          <BallPurple className="hidden lg:block lg:absolute lg:-top-24 lg:-left-[550px] scale-[25%]" />
+        </div>
+        <div className="mx-4 sm:ml-16 lg:ml-32 -translate-y-20 sm:translate-y-0 lg:pb-64 lg:pt-32">
+          <Heading
+            level="1"
+            className="text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md lg:max-w-xl lg:text-[46px] lg:leading-[56px] tracking-tighter "
+          >
+            Need to level up your landing page?
+          </Heading>
+          <Signup variant="secondary" className="sm:min-w-[500px] " />
+        </div>
+        <BallPurple className="hidden sm:block sm:absolute sm:left-4 sm:bottom-32 lg:bottom-72 lg:left-32" />
+        <BallOrange className="hidden sm:block sm:absolute sm:left-64 sm:bottom-36 sm:scale-50 lg:left-96" />
+        <BallBlue className="hidden sm:block sm:absolute sm:right-52 lg:left-1/2 sm:bottom-96" />
+        <Star className="hidden sm:block sm:absolute sm:bottom-16 sm:right-12 lg:right-[600px] lg:bottom-64" />
+      </section>
 
-      <SideBySide
-        svg={Planet}
-        reverse
-        className="flex items-center justify-center pb-20 pl-6"
-      >
-        <SmallTitle>Development that delights</SmallTitle>
-        <Heading level="2">
-          Have an exciting vision for your website? More Seconds has the tech
-          talent to bring it to life.
-        </Heading>
-        <BodyText className="max-w-xs sm:max-w-none">
-          Your website is essential to the success of your business. We
-          understand the importance of every element – design, development,
-          speed, security, performance, functionality, hosting, and maintenance.
-          Modernizing your web presence boosts sales, supports marketing
-          campaigns, increases customer acquisition, and more. We provide
-          innovative, custom web development solutions so your website stays
-          ahead of the competition
-        </BodyText>
-      </SideBySide>
+      <section className="flex flex-col sm:flex-row mx-4 sm:mr-12 lg:mr-32 sm:ml-4 lg:ml-16 sm:gap-8">
+        <div className="relative w-full h-min -mt-28 sm:mt-0 lg:w-[150%]">
+          <BigSaturn className="w-[70%] mx-auto sm:w-full lg:w-full lg:scale-110" />
+          <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
+          <BallBlue className="absolute scale-50 top-16 right-20 lg:hidden" />
+          <Star className="absolute -right-4 top-1/2 scale-50 sm:hidden" />
+        </div>
+        <div className="w-[120%] relative -mt-16 sm:mt-0 lg:w-full">
+          <SmallTitle>DEVELOPMENT THAT DELIGHTS</SmallTitle>
+          <Heading
+            level="1"
+            className="mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md lg:text-[46px] lg:leading-[56px] lg:max-w-[17ch] tracking-tighter"
+          >
+            Have an exciting vision for your website? More Seconds has the tech
+            talent to bring it to life.
+          </Heading>
+          <BodyText className="max-w-[35ch] sm:max-w-none lg:text-lg lg:max-w-[53ch]">
+            Your website is essential to the success of your business. We
+            understand the importance of every element – design, development,
+            speed, security, performance, functionality, hosting, and
+            maintenance. Modernizing your web presence boosts sales, supports
+            marketing campaigns, increases customer acquisition, and more. We
+            provide innovative, custom web development solutions so your website
+            stays ahead of the competition.
+          </BodyText>
+          <HollowStar className="absolute right-16 top-12 scale-75 sm:top-[10%] sm:-right-16 sm:scale-50" />
+        </div>
+      </section>
 
-      <section className="flex flex-wrap items-center justify-center mx-auto mt-20 mb-60">
-        <Card>
-          <Heading level="2">Full-cycle Website Design & Development</Heading>
-          <BodyText className="pt-5">
+      <section className="relative grid grid-flow-row w-full sm:grid-cols-4 items-center justify-center mt-4 sm:mt-32 mb-4 sm:mb-48 gap-3 px-4 sm:px-8 lg:px-32">
+        <Card className="w-full sm:py-8 py-10 h-full gap-2 lg:gap-8">
+          <Heading
+            level="2"
+            className="max-w-[16ch] mx-auto text-lg sm:text-base lg:text-2xl"
+          >
+            Full-cycle Website Design & Development
+          </Heading>
+          <BodyText className="text-xs lg:text-lg">
             We provide full-cycle development services from market research and
             business analysis to design, development, and launch.
           </BodyText>
         </Card>
 
-        <Card>
-          <Heading level="2">Targeted Landing Page Development</Heading>
-          <BodyText className="pt-5">
+        <Card className="w-full sm:py-8 py-10 h-full gap-2 lg:gap-8">
+          <Heading
+            level="2"
+            className="max-w-[16ch] mx-auto text-lg sm:text-base lg:text-2xl"
+          >
+            Targeted Landing Page Development
+          </Heading>
+          <BodyText className="text-xs lg:text-lg">
             A pixel-perfect landing page built in record time. Select the
             platform, add any specifications, and we’ll handle the rest. It’s
             that easy!
           </BodyText>
         </Card>
 
-        <Card>
-          <Heading level="2">Theme Customization & Development</Heading>
-          <BodyText className="pt-5">
+        <Card className="w-full sm:py-8 py-10 h-full gap-2 sm:gap-4 lg:gap-8">
+          <Heading
+            level="2"
+            className="max-w-[16ch] mx-auto text-lg sm:text-sm lg:text-2xl"
+          >
+            Theme Customization & Development
+          </Heading>
+          <BodyText className="text-xs lg:text-lg">
             We can help build anew or customize the current functionality of
             your websites CMS theme and backend architecture structure.
           </BodyText>
         </Card>
 
-        <Card>
-          <Heading level="2">Custom Plugin & Feature Development</Heading>
-          <BodyText className="pt-5">
+        <Card className="w-full sm:py-8 py-10 h-full gap-2 sm:gap-4 lg:gap-9">
+          <Heading
+            level="2"
+            className="max-w-[16ch] mx-auto text-lg sm:text-sm lg:text-2xl"
+          >
+            Custom Plugin & Feature Development
+          </Heading>
+          <BodyText className="text-xs lg:text-lg">
             We use first-rate technologies to develop and implement new features
             and plugins that drive user satisfaction and successful conversions.
           </BodyText>
         </Card>
+        <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
+        <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
       </section>
-
+      <div className="hidden max-h-[0px] sm:flex items-center justify-end">
+        <CloudFull className="translate-x-20 -translate-y-10 -scale-x-110 scale-y-110" />
+      </div>
       <Testimonials title="Websites that wow." />
     </Layout>
   )
