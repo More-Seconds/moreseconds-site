@@ -27,7 +27,7 @@ export function FooterCTA(props: Props) {
         <FormCharacter className="absolute hidden scale-50 translate-y-4 sm:block lg:-top-48 lg:right-0 lg:z-10 lg:scale-100 -top-48 -right-20 md:translate-y-3 lg:translate-y-4" />
         <div className="relative flex flex-col items-start w-full max-w-lg gap-4">
           {getVariant(props.variant)}
-          <Planet className="absolute hidden -bottom-4 -left-4 lg:block" />
+          <Planet className="absolute hidden -bottom-4 lg:-bottom-20 -left-4 lg:block" />
         </div>
         {props.variant == 'connect' ? <FooterForm levelUp /> : <FooterForm />}
       </section>

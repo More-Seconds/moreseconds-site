@@ -28,7 +28,7 @@ export function Homepage() {
           </span>
           <> and free up your valuable time</>
         </Heading>
-        <BodyText className="max-w-[30ch] sm:max-w-md lg:max-w-lg">
+        <BodyText className="max-w-[30ch] sm:max-w-md lg:max-w-lg lg:text-lg">
           We provide the service and speed of an in-house development team for
           the cost of a single developer.
         </BodyText>

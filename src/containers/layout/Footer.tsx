@@ -13,8 +13,13 @@ export function Footer() {
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/who-we-help" className="hover:text-accent">
-              Who We Help
+            <Link to="/uiux" className="hover:text-accent">
+              Services
+            </Link>
+          </li>
+          <li className="text-center">
+            <Link to="/case-studies" className="hover:text-accent">
+              Cases
             </Link>
           </li>
           <li className="text-center">
@@ -28,7 +33,12 @@ export function Footer() {
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/contact" className="hover:text-accent">
+            <Link to="/who-we-help" className="hover:text-accent">
+              Why Us
+            </Link>
+          </li>
+          <li className="text-center">
+            <Link to="#contact" className="hover:text-accent">
               Contact
             </Link>
           </li>
@@ -51,7 +61,7 @@ export function Footer() {
         <span className="font-medium font-DM text-light justify-self-start sm:justify-self-center">
           ©2022 Moreseconds
         </span>
-        <ul className="flex items-center gap-4 justify-self-end">
+        <ul className="flex items-center gap-6 justify-self-end">
           <li>
             <FbIcon />
           </li>
