@@ -3,8 +3,8 @@ import { MSLogo, FbIcon, YtIcon, InstaIcon, TwitterIcon } from 'public/svgs'
 
 export function Footer() {
   return (
-    <footer className="max-w-4xl mx-auto sm:mx-16 md:mx-16 md:max-w-6xl lg:mx-auto">
-      <section className="flex flex-col items-center justify-between sm:flex-row ">
+    <footer className="max-w-4xl mx-auto sm:mx-16 sm:mt-10 lg:mt-0 md:mx-16 md:max-w-6xl lg:mx-auto">
+      <section className="flex flex-col items-center justify-between lg:flex-row ">
         <MSLogo className="mt-10 sm:mt-0" />
         <ul className="flex flex-col gap-4 py-12 sm:flex-row font-DM text-light">
           <li className="text-center">
@@ -63,16 +63,24 @@ export function Footer() {
         </span>
         <ul className="flex items-center gap-6 justify-self-end">
           <li>
-            <FbIcon />
+            <a href="https://www.facebook.com/More-Seconds-104270218954241">
+              <FbIcon />
+            </a>
           </li>
           <li>
-            <YtIcon />
+            <a href="">
+              <YtIcon />
+            </a>
           </li>
           <li>
-            <InstaIcon />
+            <a href="https://instagram.com/getmoreseconds">
+              <InstaIcon />
+            </a>
           </li>
           <li>
-            <TwitterIcon />
+            <a href="https://twitter.com/getmoreseconds">
+              <TwitterIcon />
+            </a>
           </li>
         </ul>
       </section>

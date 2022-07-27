@@ -35,6 +35,7 @@ root.render(
       ></Route>
       <Route path="/website-updates" element={<WebsiteUpdates />}></Route>
       <Route path="/who-we-help" element={<WhoWeHelp />}></Route>
+      <Route path="*" element={<Homepage />}></Route>
     </Routes>
   </BrowserRouter>
 )
