@@ -17,7 +17,7 @@ export function Stats() {
           </div>
           <BodyText className="text-xl">Lorem Ipsum</BodyText>
         </li>
-        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-accent">
+        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-gradient-to-b from-accent">
           <div className="flex items-center h-full">
             <BodyText className="text-4xl font-bold sm:font-normal sm:text-5xl lg:text-7xl">
               43%
@@ -25,7 +25,7 @@ export function Stats() {
           </div>
           <BodyText className="text-xl">Lorem Ipsum</BodyText>
         </li>
-        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-accent">
+        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-gradient-to-b from-accent">
           <div className="flex items-center h-full">
             <BodyText className="text-4xl font-bold sm:font-normal sm:text-5xl lg:text-7xl">
               20+
@@ -33,7 +33,7 @@ export function Stats() {
           </div>
           <BodyText className="text-xl">Lorem Ipsum</BodyText>
         </li>
-        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-accent">
+        <li className="flex flex-col items-center h-32 p-4 rounded-2xl bg-darkermid lg:h-56 lg:p-10 hover:bg-gradient-to-b from-accent">
           <div className="flex items-center h-full">
             <BodyText className="text-4xl font-bold sm:font-normal sm:text-5xl lg:text-7xl">
               1230

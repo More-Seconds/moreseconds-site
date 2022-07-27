@@ -33,7 +33,7 @@ export function Testimonial(props: Props) {
           <h5>{props.title}</h5>
         </figcaption>
       </figure>
-      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-md">
+      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-lg">
         <BodyText className="text-sm italic sm:text-md lg:text-[20px] font-normal leading-6">
           {props.children}
         </BodyText>

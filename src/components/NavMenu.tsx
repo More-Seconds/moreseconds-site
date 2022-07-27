@@ -13,6 +13,9 @@ export function NavMenu({ mobile, open }: Props) {
   const [services, setServices] = useState(false)
   const [cases, setCases] = useState(false)
   const containerRef = useRef(null)
+  const submenuStyles = mobile
+    ? 'w-full p-2 text-center text-base'
+    : 'w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light'
 
   function toggleServices() {
     setServices(!services)
@@ -72,7 +75,7 @@ export function NavMenu({ mobile, open }: Props) {
             className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
             onClick={() => toggleServices()}
           >
-            Services
+            Capabilities
             <ArrowDown className="inline scale-150 fill-light" />
           </Link>
           <ul
@@ -84,16 +87,16 @@ export function NavMenu({ mobile, open }: Props) {
                 : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-darkmid border border-mid'
             }
           >
-            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/uiux">UI/UX Design</Link>
             </li>
-            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/web-development">Web Development</Link>
             </li>
-            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid border-b border-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/research-and-analysis">Research &#38; Analysis</Link>
             </li>
-            <li className="w-full p-2 text-center text-sm text-darkermid hover:bg-mid  hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/website-updates">Website Updates</Link>
             </li>
           </ul>
@@ -116,13 +119,13 @@ export function NavMenu({ mobile, open }: Props) {
                 : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-light border border-darkmid'
             }
           >
-            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/case-studies">Case Studies</Link>
             </li>
-            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/algorithm-agency">Algorithm Agency</Link>
             </li>
-            <li className="w-full p-2 text-center text-darkermid text-sm border-b border-darkmid hover:bg-mid hover:text-light">
+            <li className={submenuStyles}>
               <Link to="/pct">Plant Cell Technology</Link>
             </li>
           </ul>
