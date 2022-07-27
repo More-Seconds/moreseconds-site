@@ -51,6 +51,7 @@ export function Clients(props: Props) {
         <li className="p-4 sm:p-0">
           <img
             src={SFELogo}
+            width="100"
             alt="State Fair Entertainment"
             className="saturate-0"
           />

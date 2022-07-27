@@ -49,7 +49,7 @@ export function CaseStudyAlgorithm() {
             className="w-full h-full saturate-0 lg:w-28 lg:h-28"
           />
         </div>
-        <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-75 lg:right-32" />
+        <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-100 lg:right-64 lg:top-24" />
         <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96" />
         <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16" />
         <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
@@ -62,13 +62,16 @@ export function CaseStudyAlgorithm() {
       <Results image={Results1}>
         {[
           'Extended in-house development and technical operations knowledge base',
-          'Provided a suite of on-demand web services including research &#38; analysis, live web troubleshooting, web development expertise, project management, and much more',
+          'Provided a suite of on-demand web services including research & analysis, live web troubleshooting, web development expertise, project management, and much more',
           'Increased month-to-month ROI by expanding their premium client web service offerings',
           'Enabled marketing team to focus on their core competencies without worrying about the technical details'
         ]}
       </Results>
-      <section className="mb-32 2xl:mx-auto 2xl:max-w-[1600px]">
-        <Heading level="2" className="mb-5 text-4xl text-center lg:text-[46px]">
+      <section className="mb-16 sm:mb-32 2xl:mx-auto 2xl:max-w-[1600px]">
+        <Heading
+          level="2"
+          className="mb-5 text-[30px] leading-[56px] tracking-tighter text-center lg:text-[46px]"
+        >
           Bistro Boudin
         </Heading>
         <Heading level="3" className="mb-5 text-lg text-center uppercase">
@@ -76,12 +79,12 @@ export function CaseStudyAlgorithm() {
           <span className="text-[#3939FA] text-lg">in partnership</span>
           <span className="text-lg"> with algorithm agency</span>
         </Heading>
-        <BodyText className="mx-4 mb-16 text-sm text-center sm:mx-16 lg:max-w-[80ch] lg:mx-auto sm:text-base">
+        <BodyText className="mx-4 mb-16 text-sm text-center sm:mx-16 lg:max-w-[80ch] lg:mx-auto sm:text-base lg:text-lg">
           Bistro Boudin is a nationally recognized San Francisco Bakery,
           Restaurant, and Catering Company. More Seconds was contracted by
           Algorithm Agency to redesign the Bistro Boudin Flagship website,
           develop a customized dedicated web server, and handle the ongoing
-          maintenance &#38; upgrade needs the client presented. This site uses
+          maintenance & upgrade needs the client presented. This site uses
           Bridge + Elementor to provide a clean and easy way to create and
           update its frontend. It also includes customized PHP page templates,
           custom javascript for animating and rendering, as well as a host of
@@ -112,18 +115,21 @@ export function CaseStudyAlgorithm() {
         </div>
       </section>
       <section className="relative z-10 mb-20 lg:mb-48 2xl:mx-auto 2xl:max-w-[1600px]">
-        <Heading level="2" className="mb-5 text-4xl text-center lg:text-[46px]">
+        <Heading
+          level="2"
+          className="mb-5 text-[30px] leading-[56px] text-center lg:text-[46px] tracking-tighter"
+        >
           State Fair Entertainment
         </Heading>
         <Heading
           level="3"
           className="mx-2 mb-5 text-lg font-normal text-center uppercase"
         >
-          <span>State Fair Entertainment </span>
-          <span className="text-accent">in partnership</span>
-          <span> with algorithm agency</span>
+          <span className="text-lg">State Fair Entertainment </span>
+          <span className="text-accent text-lg">in partnership</span>
+          <span className="text-lg"> with algorithm agency</span>
         </Heading>
-        <BodyText className="mx-4 text-center text-sm sm:text-base sm:mx-16 mb-16 lg:max-w-[80ch] lg:mx-auto">
+        <BodyText className="mx-4 text-center text-sm sm:text-base sm:mx-16 mb-16 lg:max-w-[80ch] lg:mx-auto lg:text-lg">
           State Fair Entertainment, producer of the Official Summer Fair of
           L.A., was created around the idea that a large-scale, high quality
           entertainment venue can promote positivity, be eco &#38; family
