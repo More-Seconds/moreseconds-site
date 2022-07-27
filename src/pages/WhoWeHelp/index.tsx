@@ -17,6 +17,7 @@ import {
   Highlight,
   HollowStar,
   NoMaintenance,
+  Pillow,
   Planet,
   Star,
   WhoWeHelpHero
@@ -48,6 +49,7 @@ export function WhoWeHelp() {
           </div>
           <div className="w-full sm:w-fit sm:absolute sm:-top-52 sm:-right-[170px] lg:-top-32 lg:right-0 -z-10">
             <WhoWeHelpHero className="w-full scale-75 h-min translate-x-14 sm:scale-50 lg:scale-100 lg:translate-x-0" />
+            <Pillow className="hidden lg:block lg:absolute lg:translate-x-14 lg:top-80 lg:right-48 -z-20" />
           </div>
         </section>
         <Cloud className="absolute scale-75 bottom-6 sm:right-0 sm:translate-x-[25%] sm:-bottom-28 lg:scale-100 lg:translate-x-0" />
