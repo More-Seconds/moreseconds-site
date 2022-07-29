@@ -1,7 +1,7 @@
 import { twMerge } from 'tailwind-merge'
 
 type Props = {
-  children: string
+  children: string | JSX.Element | JSX.Element[]
   className?: string
 }
 
