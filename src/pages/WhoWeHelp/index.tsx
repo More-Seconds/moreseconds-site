@@ -54,7 +54,7 @@ export function WhoWeHelp() {
         </section>
         <Cloud className="absolute scale-75 bottom-6 sm:right-0 sm:translate-x-[25%] sm:-bottom-28 lg:scale-100 lg:translate-x-0" />
         <Cloud className="z-0 hidden sm:block sm:absolute sm:-scale-x-50 sm:scale-y-50 sm:-top-24 sm:-left-8 sm:-translate-x-[20%]" />
-        <CloudFull className="absolute bottom-56 -left-32 scale-75 sm:scale-100 sm:-left-12 sm:-bottom-32 lg:left-24 lg:-bottom-52 lg:scale-150" />
+        <CloudFull className="absolute scale-75 bottom-56 -left-32 sm:scale-100 sm:-left-12 sm:-bottom-32 lg:left-24 lg:-bottom-52 lg:scale-150" />
         <BallOrange className="hidden sm:block sm:absolute sm:-top-8 sm:left-0 sm:scale-[25%] lg:-top-24 lg:left-64 lg:scale-50" />
         <BallOrange className="hidden sm:block sm:absolute sm:-bottom-4 sm:right-6 sm:scale-[30%] lg:hidden" />
         <BallBlue className="hidden sm:block sm:absolute sm:bottom-2 sm:left-6 sm:scale-50 lg:-top-40 lg:left-[95%] lg:scale-75" />
@@ -68,15 +68,15 @@ export function WhoWeHelp() {
           <>
             We’re disrupting traditional dev shops, one happy client at a time
           </>
-          <Highlight className="absolute scale-y-75 rotate-180 -scale-x-75 -top-8 left-0 sm:-left-12" />
+          <Highlight className="absolute left-0 scale-y-75 rotate-180 -scale-x-75 -top-8 sm:-left-12" />
         </Heading>
         <BodyText className="text-center font-Poppins max-w-[26ch] mx-auto mb-8 sm:max-w-[55ch] lg:mb-16 lg:text-[18px]">
           Our team of top-tier developers combined with our proprietary project
           management platform enables clients to achieve exceptional results far
           more efficiently than our competitors.
         </BodyText>
-        <ul className="grid gap-4 sm:grid-cols-3 sm:mx-16 lg:mx-auto max-w-5xl justify-center">
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+        <ul className="grid justify-center max-w-5xl gap-4 sm:grid-cols-3 sm:mx-16 lg:mx-auto">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10 hover:bg-gradient-to-b from-accent">
             <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE CLIENT SATISFACTION RATING
             </BodyText>
@@ -85,7 +85,7 @@ export function WhoWeHelp() {
               clients*
             </BodyText>
           </li>
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10 hover:bg-gradient-to-b from-accent">
             <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE CLIENT SATISFACTION RATING
             </BodyText>
@@ -94,7 +94,7 @@ export function WhoWeHelp() {
               clients*
             </BodyText>
           </li>
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 lg:p-10 hover:bg-gradient-to-b from-accent">
             <BodyText className="text-lg text-center lg:text-2xl">
               AVERAGE PROJECT COMPLETION ACCURACY
             </BodyText>

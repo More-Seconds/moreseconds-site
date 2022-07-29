@@ -32,7 +32,7 @@ export function About() {
           <span className="relative">We’re </span>
           <span className="relative z-10">
             here
-            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 lg:scale-100 lg:-top-3 lg:-left-4 z-0" />
+            <CircleHighlight className="absolute -z-20 hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 lg:scale-[92%] lg:-top-3 lg:-left-2" />
           </span>
           <span> </span>
           <>
@@ -40,7 +40,7 @@ export function About() {
             time
           </>
         </Heading>
-        <BodyText className="max-w-lg sm:max-w-sm lg:max-w-md">
+        <BodyText className="max-w-lg sm:max-w-sm lg:max-w-lg lg:text-lg">
           More Seconds takes your web development projects from headache to
           handled so that you have time to focus on what you do best – driving
           traffic and sales for your business. If you want to stop scrolling
@@ -60,7 +60,7 @@ export function About() {
           <Heading level="2" dark className="text-center lg:mb-10 lg:text-5xl">
             Our Founder
           </Heading>
-          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between sm:flex-row lg:justify-start lg:gap-16">
+          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between sm:flex-row lg:justify-start lg:gap-16 lg:mb-8">
             <img
               src={Brian}
               alt="Brian Hurst"
@@ -74,7 +74,7 @@ export function About() {
               >
                 Brian Hurst
               </Heading>
-              <BodyText className="italic text-center sm:text-left sm:text-xl sm:max-w-[40ch] text-accent ">
+              <BodyText className="italic text-center sm:text-left sm:text-[22px] sm:leading-[28px] sm:max-w-[40ch] text-accent ">
                 “I’d like to create a space where clients can truly focus on
                 their ideas and creativity without the restrictions of not
                 understanding how to code or how the web works behind the

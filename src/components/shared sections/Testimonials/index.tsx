@@ -26,7 +26,7 @@ export function Testimonials(props: Props) {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-16 mx-4 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
+    <section className="relative flex flex-col py-16 mx-8 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
       <Heading
         level="2"
         className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center capitalize lg:text-[46px] lg:leading-[56px] lg:max-w-none"
@@ -123,13 +123,13 @@ export function Testimonials(props: Props) {
         </Testimonial>
         <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12 lg:-translate-y-24 lg:-left-40">
           <CarouselArrow
-            className="rotate-180 fill-mid hover:fill-accent w-full h-full scale-125"
+            className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent"
             onClick={decrementActive}
           />
         </div>
         <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12 lg:-translate-y-24 lg:-right-40">
           <CarouselArrow
-            className="fill-mid hover:fill-accent w-full h-full scale-125"
+            className="w-full h-full scale-125 fill-mid hover:fill-accent"
             onClick={incrementActive}
           />
         </div>
