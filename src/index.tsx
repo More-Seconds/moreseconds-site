@@ -15,10 +15,11 @@ import { WhoWeHelp } from 'pages/WhoWeHelp'
 import './styles/main.css'
 import './styles/modal-video.scss'
 
-const container = document.getElementById('root') as HTMLDivElement
-const root = createRoot(container)
+// Before
+import { render } from 'react-dom'
+const container = document.getElementById('root')
 
-root.render(
+render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
@@ -37,5 +38,6 @@ root.render(
       <Route path="/who-we-help" element={<WhoWeHelp />}></Route>
       <Route path="*" element={<Homepage />}></Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
+  container
 )
