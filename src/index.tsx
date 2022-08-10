@@ -17,10 +17,11 @@ import './styles/modal-video.scss'
 import { PrivacyPolicy } from 'pages/PrivacyPolicy'
 import { Terms } from 'pages/Terms'
 
-const container = document.getElementById('root') as HTMLDivElement
-const root = createRoot(container)
+// Before
+import { render } from 'react-dom'
+const container = document.getElementById('root')
 
-root.render(
+render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Homepage />}></Route>
@@ -43,5 +44,6 @@ root.render(
 
       <Route path="*" element={<Homepage />}></Route>
     </Routes>
-  </BrowserRouter>
+  </BrowserRouter>,
+  container
 )
