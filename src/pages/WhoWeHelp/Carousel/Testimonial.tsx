@@ -12,7 +12,7 @@ export function Testimonial(props: Props) {
   return (
     <div
       className={
-        'w-full flex flex-col sm:flex-row sm:gap-4 lg:gap-0 lg:justify-center ' +
+        'w-full flex flex-col sm:flex-row sm:gap-4 xl:gap-0 xl:justify-center ' +
         (props.hidden ? 'hidden' : '')
       }
     >
@@ -27,9 +27,9 @@ export function Testimonial(props: Props) {
           </Heading>
         </figcaption>
       </figure>
-      <div className="flex flex-col w-full sm:max-w-xs sm:mt-4 lg:max-w-lg sm:justify-center">
+      <div className="flex flex-col w-full sm:max-w-xs sm:mt-4 xl:max-w-lg sm:justify-center">
         <Heading level="3">Who We Help</Heading>
-        <BodyText className="text-sm italic sm:text-md lg:text-xl max-w-[25ch] sm:max-w-none">
+        <BodyText className="text-sm italic sm:text-md xl:text-xl max-w-[25ch] sm:max-w-none">
           {props.children}
         </BodyText>
       </div>

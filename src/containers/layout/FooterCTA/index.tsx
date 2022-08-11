@@ -23,11 +23,11 @@ function getVariant(variant: string) {
 export function FooterCTA(props: Props) {
   return (
     <div className="w-screen xl:px-16" id="contact">
-      <section className="relative shrink-0 grid grid-flow-row gap-10 px-4 pt-4 pb-8 mx-4 rounded-lg sm:pt-20 sm:px-8 bg-light lg:place-items-stretch lg:justify-items-center sm:grid-cols-2 sm:grid-rows-1 sm:mx-8 lg:px-20 lg:pt-40 lg:pb-32 lg:mx-16 2xl:mx-auto 2xl:max-w-[1600px]">
-        <FormCharacter className="absolute hidden scale-50 translate-y-4 sm:block lg:-top-48 lg:right-0 lg:z-10 lg:scale-100 -top-48 -right-20 md:translate-y-3 lg:translate-y-4" />
+      <section className="relative shrink-0 grid grid-flow-row gap-10 px-4 pt-4 pb-8 mx-4 rounded-lg sm:pt-20 sm:px-8 bg-light xl:place-items-stretch xl:justify-items-center sm:grid-cols-2 sm:grid-rows-1 sm:mx-8 xl:px-20 xl:pt-40 xl:pb-32 xl:mx-16 2xl:mx-auto 2xl:max-w-[1600px]">
+        <FormCharacter className="absolute hidden scale-50 translate-y-4 sm:block xl:-top-48 xl:right-0 xl:z-10 xl:scale-100 -top-48 -right-20 md:translate-y-3 xl:translate-y-4" />
         <div className="relative flex flex-col items-start w-full max-w-lg gap-4">
           {getVariant(props.variant)}
-          <Planet className="absolute hidden -bottom-4 lg:-bottom-20 -left-4 lg:block" />
+          <Planet className="absolute hidden -bottom-4 xl:-bottom-20 -left-4 xl:block" />
         </div>
         {props.variant == 'connect' ? <FooterForm levelUp /> : <FooterForm />}
       </section>

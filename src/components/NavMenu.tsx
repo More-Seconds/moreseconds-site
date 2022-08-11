@@ -49,7 +49,7 @@ export function NavMenu({ mobile, open }: Props) {
       className={
         mobile
           ? 'absolute z-30 top-16 w-[100vw] bg-surface inset-0 h-screen -translate-x-full pt-10'
-          : 'hidden  lg:mx-16 lg:block lg:max-w-3xl lg:justify-self-end'
+          : 'hidden  xl:mx-16 xl:block xl:max-w-3xl xl:justify-self-end'
       }
     >
       <ul

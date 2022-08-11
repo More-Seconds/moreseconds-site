@@ -34,10 +34,10 @@ export function Testimonials(props: Props) {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-16 mx-8 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
+    <section className="relative flex flex-col py-16 mx-4 xl:py-32 sm:mx-32 xl:mx-auto xl:max-w-4xl">
       <Heading
         level="2"
-        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center capitalize lg:text-[46px] lg:leading-[56px] lg:max-w-none"
+        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center capitalize xl:text-[46px] xl:leading-[56px] xl:max-w-none"
       >
         {props.title}
       </Heading>
@@ -118,13 +118,13 @@ export function Testimonials(props: Props) {
         >
           “Prompt response, quick resolution.”
         </Testimonial>
-        <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12 lg:-translate-y-24 lg:-left-40">
+        <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-40">
           <CarouselArrow
             className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent"
             onClick={decrementActive}
           />
         </div>
-        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12 lg:-translate-y-24 lg:-right-40">
+        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-right-40">
           <CarouselArrow
             className="w-full h-full scale-125 fill-mid hover:fill-accent"
             onClick={incrementActive}
@@ -132,10 +132,10 @@ export function Testimonials(props: Props) {
         </div>
       </div>
       <Dots activeIndex={active} />
-      <Star className="absolute scale-75 -right-48 top-52 lg:hidden" />
-      <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 lg:-left-48" />
-      <BallPurple className="absolute hidden sm:block sm:top-40 sm:-right-24 lg:-right-48 sm:scale-75" />
-      <BallBlue className="absolute hidden sm:block sm:bottom-40 sm:-left-28 lg:-left-56" />
+      <Star className="absolute scale-75 -right-48 top-52 xl:hidden" />
+      <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 xl:-left-48" />
+      <BallPurple className="absolute hidden sm:block sm:top-40 sm:-right-24 xl:-right-48 sm:scale-75" />
+      <BallBlue className="absolute hidden sm:block sm:bottom-40 sm:-left-28 xl:-left-56" />
     </section>
   )
 }

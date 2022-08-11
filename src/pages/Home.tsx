@@ -19,22 +19,22 @@ export function Homepage() {
       <Hero svg={HomeHeroBG}>
         <Heading
           level="1"
-          className="max-w-lg lg:max-w-4xl 3xl:max-w-5xl lg:text-[64px] lg:leading-[72.96px]"
+          className="max-w-lg xl:max-w-4xl 3xl:max-w-5xl xl:text-[64px] xl:leading-[72.96px]"
         >
           <>Take your projects from </>
           <span className="relative">
             headache to handled
-            <NoMaintenance className="absolute left-0 bottom-0 w-[5ch] sm:w-[70%] lg:w-auto lg:scale-x-125 lg:translate-x-12" />
+            <NoMaintenance className="absolute left-0 bottom-0 w-[5ch] sm:w-[70%] xl:w-auto xl:scale-x-125 xl:translate-x-12" />
           </span>
           <> and free up your valuable time</>
         </Heading>
-        <BodyText className="max-w-[30ch] sm:max-w-md lg:max-w-lg lg:text-lg">
+        <BodyText className="max-w-[30ch] sm:max-w-md xl:max-w-lg xl:text-lg">
           We provide the service and speed of an in-house development team for
           the cost of a single developer.
         </BodyText>
         <Signup variant="primary" />
       </Hero>
-      <Clients className="relative z-10 sm:-top-16 lg:-top-32" />
+      <Clients className="relative z-10 sm:-top-16 xl:-top-32" />
       <Team />
       <SectionBlur />
       <Partners />

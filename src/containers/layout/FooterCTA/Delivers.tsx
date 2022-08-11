@@ -4,7 +4,7 @@ export function Delivers() {
   const listStyle = 'list-disc ml-4 mt-6'
   return (
     <>
-      <Heading level="2" dark className="lg:text-[46px] lg:min-w-max">
+      <Heading level="2" dark className="xl:text-[46px] xl:min-w-max">
         More Seconds Delivers
       </Heading>
       <ul className="max-w-md font-Poppins">

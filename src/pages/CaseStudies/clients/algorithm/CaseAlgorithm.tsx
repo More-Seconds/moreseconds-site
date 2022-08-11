@@ -23,36 +23,36 @@ export function CaseStudyAlgorithm() {
     <Layout footerVariant="delivers">
       <HeroCentered>
         <SmallTitle className="uppercase">Marketing Agencies</SmallTitle>
-        <Heading level="1" className="text-center lg:text-[64px] mb-4">
+        <Heading level="1" className="text-center xl:text-[64px] mb-4">
           Algorithm Agency
         </Heading>
-        <BodyText className="max-w-3xl text-lg mx-4 text-center lg:max-w-4xl lg:mb-10">
+        <BodyText className="max-w-3xl text-lg mx-4 text-center xl:max-w-4xl xl:mb-10">
           Based in Newport Beach, Algorithm Agency develops and implements
           results-driven campaigns powered by storytelling. This cutting-edge
           marketing agency builds highly technical digital campaigns to drive
           real, trackable outcomes resulting in over $52 million in sales.
         </BodyText>
-        <div className="flex gap-8 lg:gap-20">
+        <div className="flex gap-8 xl:gap-20">
           <img
             src={SFELogo}
             alt=""
-            className="w-full h-full saturate-0 lg:w-28 lg:h-28"
+            className="w-full h-full saturate-0 xl:w-28 xl:h-28"
           />
           <img
             src={AlgorithmLogo}
             alt=""
-            className="w-full h-full saturate-0 lg:w-28 lg:h-28"
+            className="w-full h-full saturate-0 xl:w-28 xl:h-28"
           />
           <img
             src={BoudinLogo}
             alt=""
-            className="w-full h-full saturate-0 lg:w-28 lg:h-28"
+            className="w-full h-full saturate-0 xl:w-28 xl:h-28"
           />
         </div>
-        <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-100 lg:right-64 lg:top-24" />
-        <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96" />
-        <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16" />
-        <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
+        <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-100 xl:right-64 xl:top-24" />
+        <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
+        <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
+        <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
       </HeroCentered>
       <Request image={Request1} avatar={RequestAvatar1}>
         Algorithm Agency came to More Seconds because they needed a dedicated
@@ -70,7 +70,7 @@ export function CaseStudyAlgorithm() {
       <section className="mb-16 sm:mb-32 2xl:mx-auto 2xl:max-w-[1600px]">
         <Heading
           level="2"
-          className="mb-5 text-[30px] leading-[56px] tracking-tighter text-center lg:text-[46px]"
+          className="mb-5 text-[30px] leading-[56px] tracking-tighter text-center xl:text-[46px]"
         >
           Bistro Boudin
         </Heading>
@@ -79,7 +79,7 @@ export function CaseStudyAlgorithm() {
           <span className="text-[#3939FA] text-lg">in partnership</span>
           <span className="text-lg"> with algorithm agency</span>
         </Heading>
-        <BodyText className="mx-4 mb-16 text-sm text-center sm:mx-16 lg:max-w-[80ch] lg:mx-auto sm:text-base lg:text-lg">
+        <BodyText className="mx-4 mb-16 text-sm text-center sm:mx-16 xl:max-w-[80ch] xl:mx-auto sm:text-base xl:text-lg">
           Bistro Boudin is a nationally recognized San Francisco Bakery,
           Restaurant, and Catering Company. More Seconds was contracted by
           Algorithm Agency to redesign the Bistro Boudin Flagship website,
@@ -94,30 +94,30 @@ export function CaseStudyAlgorithm() {
         <SmallTitle className="text-[#3939FA] text-center mb-16">
           KEY OUTCOMES
         </SmallTitle>
-        <div className="grid grid-cols-1 grid-rows-3 gap-4 mx-4 my-8 lg:mx-32 sm:grid-cols-3 sm:grid-rows-1">
-          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid lg:py-16 lg:px-8 hover:bg-gradient-to-b from-[#3939FA]">
-            <BodyText className="font-semibold text-center lg:text-2xl">
+        <div className="grid grid-cols-1 grid-rows-3 gap-4 mx-4 my-8 xl:mx-32 sm:grid-cols-3 sm:grid-rows-1">
+          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid xl:py-16 xl:px-8 hover:bg-gradient-to-b from-[#3939FA]">
+            <BodyText className="font-semibold text-center xl:text-2xl">
               Re-branded and re-designed company flagship website
             </BodyText>
           </div>
-          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid lg:py-16 lg:px-8 hover:bg-gradient-to-b from-[#3939FA]">
-            <BodyText className="font-semibold text-center lg:text-2xl">
+          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid xl:py-16 xl:px-8 hover:bg-gradient-to-b from-[#3939FA]">
+            <BodyText className="font-semibold text-center xl:text-2xl">
               Long-term partnership for on-demand development, design, and
               consultancy services
             </BodyText>
           </div>
-          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid lg:py-16 lg:px-8 hover:bg-gradient-to-b from-[#3939FA]">
-            <BodyText className="font-semibold text-center lg:text-2xl">
+          <div className="flex items-center justify-center px-8 py-16 sm:px-2 sm:py-8 rounded-xl bg-darkermid xl:py-16 xl:px-8 hover:bg-gradient-to-b from-[#3939FA]">
+            <BodyText className="font-semibold text-center xl:text-2xl">
               Ability to make rapid changes & updates to their website frontend
               or backend in order to optimize sales traffic & conversion ratio
             </BodyText>
           </div>
         </div>
       </section>
-      <section className="relative z-10 mb-20 lg:mb-48 2xl:mx-auto 2xl:max-w-[1600px]">
+      <section className="relative z-10 mb-20 xl:mb-48 2xl:mx-auto 2xl:max-w-[1600px]">
         <Heading
           level="2"
-          className="mb-5 text-[30px] leading-[56px] text-center lg:text-[46px] tracking-tighter"
+          className="mb-5 text-[30px] leading-[56px] text-center xl:text-[46px] tracking-tighter"
         >
           State Fair Entertainment
         </Heading>
@@ -129,7 +129,7 @@ export function CaseStudyAlgorithm() {
           <span className="text-accent text-lg">in partnership</span>
           <span className="text-lg"> with algorithm agency</span>
         </Heading>
-        <BodyText className="mx-4 text-center text-sm sm:text-base sm:mx-16 mb-16 lg:max-w-[80ch] lg:mx-auto lg:text-lg">
+        <BodyText className="mx-4 text-center text-sm sm:text-base sm:mx-16 mb-16 xl:max-w-[80ch] xl:mx-auto xl:text-lg">
           State Fair Entertainment, producer of the Official Summer Fair of
           L.A., was created around the idea that a large-scale, high quality
           entertainment venue can promote positivity, be eco &#38; family
@@ -144,38 +144,38 @@ export function CaseStudyAlgorithm() {
         <SmallTitle className="text-accent text-center mb-16">
           KEY OUTCOMES
         </SmallTitle>
-        <div className="grid grid-cols-1 grid-rows-4 gap-3 mx-4 my-8 sm:mx-16 lg:mx-32 sm:grid-cols-4 sm:grid-rows-1">
-          <div className="flex items-center justify-center px-8 py-16 sm:px-1 sm:py-8 rounded-xl bg-darkermid lg:py-16 lg:px-4 hover:bg-gradient-to-b from-accent">
-            <BodyText className="font-semibold text-center sm:leading-5 lg:text-2xl">
+        <div className="grid grid-cols-1 grid-rows-4 gap-3 mx-4 my-8 sm:mx-16 xl:mx-32 sm:grid-cols-4 sm:grid-rows-1">
+          <div className="flex items-center justify-center px-8 py-16 sm:px-1 sm:py-8 rounded-xl bg-darkermid xl:py-16 xl:px-4 hover:bg-gradient-to-b from-accent">
+            <BodyText className="font-semibold text-center sm:leading-5 xl:text-2xl">
               New functional website developed to handle large scale e-commerce
               ticket and accessory sales
             </BodyText>
           </div>
           <div className="flex items-center justify-center px-8 py-16 sm:px-1 sm:py-8 rounded-xl bg-darkermid hover:bg-gradient-to-b from-accent">
-            <BodyText className="font-semibold text-center sm:leading-5 lg:text-2xl">
+            <BodyText className="font-semibold text-center sm:leading-5 xl:text-2xl">
               Ability to schedule and shift their website content in real-time
               to keep their site content fresh and engaging
             </BodyText>
           </div>
           <div className="flex items-center justify-center px-8 py-16 sm:p-4 rounded-xl bg-darkermid hover:bg-gradient-to-b from-accent">
-            <BodyText className="font-semibold text-center sm:leading-5 lg:text-2xl">
+            <BodyText className="font-semibold text-center sm:leading-5 xl:text-2xl">
               Customized and launched dedicated hosting server
             </BodyText>
           </div>
           <div className="flex items-center justify-center px-8 py-16 sm:p-4 rounded-xl bg-darkermid hover:bg-gradient-to-b from-accent">
-            <BodyText className="font-semibold text-center sm:leading-5 lg:text-2xl">
+            <BodyText className="font-semibold text-center sm:leading-5 xl:text-2xl">
               1000% marketing ad spend ROI achieved
             </BodyText>
           </div>
         </div>
-        <Star className="hidden sm:block sm:absolute sm:left-0 sm:top-0 lg:left-8 sm:scale-50" />
-        <Star className="hidden sm:block sm:absolute sm:right-0 sm:-top-8 lg:right-8 sm:scale-50" />
+        <Star className="hidden sm:block sm:absolute sm:left-0 sm:top-0 xl:left-8 sm:scale-50" />
+        <Star className="hidden sm:block sm:absolute sm:right-0 sm:-top-8 xl:right-8 sm:scale-50" />
         <BallBlue className="hidden sm:block sm:absolute sm:right-4 sm:bottom-1/2" />
         <BallOrange className="hidden sm:block sm:absolute sm:bottom-16 sm:scale-50" />
       </section>
       <Stats />
       <Testimonials title="Generate millions in revenue with  the right website" />
-      <Dedicated className="lg:hidden" />
+      <Dedicated className="xl:hidden" />
     </Layout>
   )
 }
