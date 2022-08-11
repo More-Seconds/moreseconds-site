@@ -7,7 +7,7 @@ export function Simplified() {
       <Heading
         level="2"
         dark
-        className="tracking-tighter sm:max-w-md lg:text-[46px] lg:leading[56px] lg:max-w-lg"
+        className="tracking-tighter sm:max-w-md xl:text-[46px] lg:leading-[56px] xl:max-w-lg"
       >
         Web support simplified
       </Heading>

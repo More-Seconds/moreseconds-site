@@ -8,7 +8,7 @@ export function Connect() {
         level="2"
         dark
         maxWidth="md"
-        className="text-3xl lg:text-5xl capitalize"
+        className="text-3xl xl:text-5xl capitalize"
       >
         Connect with us to learn how we differ:
       </Heading>

@@ -28,7 +28,7 @@ export function Carousel() {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-8 mx-4 lg:py-32 sm:mx-32 lg:mx-auto lg:max-w-4xl">
+    <section className="relative flex flex-col py-8 mx-4 xl:py-32 sm:mx-32 xl:mx-auto xl:max-w-4xl">
       <div className="flex w-full gap-4 mx-auto mb-5 sm:gap-24 ">
         <Testimonial industry="Marketing Agencies" hidden={active != 0}>
           “We care about cultivating a long term relationship with our clients
@@ -83,7 +83,7 @@ export function Carousel() {
       <Dots activeIndex={active} />
       <Star className="absolute sm:top-8 sm:-right-24" />
       <HollowStar className="hidden sm:scale-75 sm:block sm:absolute sm:-left-24 sm:top-0" />
-      <BallOrange className="hidden lg:block lg:absolute lg:bottom-72 lg:-left-72" />
+      <BallOrange className="hidden xl:block xl:absolute xl:bottom-72 xl:-left-72" />
     </section>
   )
 }

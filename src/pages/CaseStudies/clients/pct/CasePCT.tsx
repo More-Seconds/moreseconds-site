@@ -24,7 +24,7 @@ export function CaseStudyPCT() {
     <Layout footerVariant="delivers">
       <HeroCentered>
         <SmallTitle>Business</SmallTitle>
-        <Heading level="1" className="text-center lg:text-[64px] mb-4">
+        <Heading level="1" className="text-center xl:text-[64px] mb-4">
           Plant Cell Technology
         </Heading>
         <BodyText className="max-w-3xl mx-4 text-center">
@@ -36,10 +36,10 @@ export function CaseStudyPCT() {
         </BodyText>
 
         <img src={PCTLogo} alt="" className="mx-auto saturate-0" />
-        <Planet className="absolute scale-50 -top-4 -right-8 lg:scale-75 lg:right-32" />
-        <BallOrange className="absolute right-0 scale-[25%] top-56 lg:scale-75 lg:right-16 lg:top-96" />
-        <BallBlue className="absolute top-0 scale-50 left-4 lg:scale-75 lg:left-32 lg:top-16" />
-        <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 lg:-scale-y-100 lg:scale-x-100 lg:left-0" />
+        <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
+        <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
+        <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
+        <Cloud className="hidden rotate-180 sm:block sm:absolute sm:-left-32 sm:bottom-0 sm:-scale-y-50 sm:scale-50 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
       </HeroCentered>
       <Request image={Request2} avatar={RequestAvatar2}>
         The Plant Cell Technology team approached us with several issues
@@ -58,7 +58,7 @@ export function CaseStudyPCT() {
       </Results>
       <Stats />
       <Testimonials title="Generate millions in revenue with  the right website" />
-      <Dedicated className="lg:hidden" />
+      <Dedicated className="xl:hidden" />
     </Layout>
   )
 }

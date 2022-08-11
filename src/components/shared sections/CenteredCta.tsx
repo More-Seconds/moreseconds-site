@@ -8,7 +8,7 @@ export function CenteredCTA() {
     <section className="relative flex flex-col items-center justify-center gap-5 pt-20 mx-4 sm:py-60">
       <Heading
         level="2"
-        className="max-w-md text-3xl text-center lg:text-[46px] lg:max-w-xl lg:leading-[56px]"
+        className="max-w-md text-3xl text-center xl:text-[46px] xl:max-w-xl xl:leading-[56px]"
       >
         Service and speed delivered seamlessly
       </Heading>

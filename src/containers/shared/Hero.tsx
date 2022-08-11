@@ -13,7 +13,7 @@ type Props = {
 export function Hero(props: Props) {
   return (
     <SVGBackground background={props.svg} svgStyles={props.svgStyles}>
-      <div className="grid gap-6 pt-4 mx-4 overflow-hidden lg:gap-10 max-w-7xl md:mx-16 lg:mx-32 lg:pt-32 xl:mx-auto xl:pl-32 lg:max-w-[1600px] 3xl:pt-60">
+      <div className="grid gap-6 pt-4 mx-4 overflow-hidden xl:gap-10 max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
         {props.children}
       </div>
     </SVGBackground>

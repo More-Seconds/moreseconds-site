@@ -32,7 +32,7 @@ export function About() {
           <span className="relative">We’re </span>
           <span className="relative z-10">
             here
-            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 lg:scale-100 lg:-top-3 lg:-left-4 z-0" />
+            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 xl:scale-100 xl:-top-3 xl:-left-4 z-0" />
           </span>
           <span> </span>
           <>
@@ -40,7 +40,7 @@ export function About() {
             time
           </>
         </Heading>
-        <BodyText className="max-w-lg sm:max-w-sm lg:max-w-md">
+        <BodyText className="max-w-lg sm:max-w-sm xl:max-w-md">
           More Seconds takes your web development projects from headache to
           handled so that you have time to focus on what you do best – driving
           traffic and sales for your business. If you want to stop scrolling
@@ -55,12 +55,12 @@ export function About() {
         </div>
         <CloudFull className="absolute scale-50 -left-20 bottom-32 sm:bottom-24 sm:-left-20" />
       </Hero>
-      <section className="relative mx-4 mt-10 mb-20 sm:mx-8 lg:mx-16">
-        <div className="grid gap-8 px-4 py-8 bg-light rounded-3xl sm:px-16 lg:px-64 lg:gap-10 lg:py-24">
-          <Heading level="2" dark className="text-center lg:mb-10 lg:text-5xl">
+      <section className="relative mx-4 mt-10 mb-20 sm:mx-8 xl:mx-16">
+        <div className="grid gap-8 px-4 py-8 bg-light rounded-3xl sm:px-16 xl:px-64 xl:gap-10 xl:py-24">
+          <Heading level="2" dark className="text-center xl:mb-10 xl:text-5xl">
             Our Founder
           </Heading>
-          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between sm:flex-row lg:justify-start lg:gap-16">
+          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between sm:flex-row xl:justify-start xl:gap-16">
             <img
               src={Brian}
               alt="Brian Hurst"
@@ -69,7 +69,7 @@ export function About() {
             <figcaption className="relative">
               <Heading
                 level="3"
-                className="mb-4 text-lg text-center sm:text-2xl sm:text-left lg:text-2xl font-Poppins"
+                className="mb-4 text-lg text-center sm:text-2xl sm:text-left xl:text-2xl font-Poppins"
                 dark
               >
                 Brian Hurst
@@ -80,8 +80,8 @@ export function About() {
                 understanding how to code or how the web works behind the
                 scenes.”
               </BodyText>
-              <Highlight className="absolute hidden sm:block -bottom-10 -left-10 sm:scale-75 lg:scale-100" />
-              <Highlight className="absolute hidden sm:block sm:rotate-180 -right-6 top-2 sm:scale-75 lg:scale-100" />
+              <Highlight className="absolute hidden sm:block -bottom-10 -left-10 sm:scale-75 xl:scale-100" />
+              <Highlight className="absolute hidden sm:block sm:rotate-180 -right-6 top-2 sm:scale-75 xl:scale-100" />
             </figcaption>
           </figure>
           <BodyText className="text-sm text-center sm:text-lg text-dark">
@@ -95,8 +95,8 @@ export function About() {
             Computer Science from the University at Albany, SUNY.
           </BodyText>
         </div>
-        <Rocket className="hidden sm:block sm:absolute sm:scale-75 sm:right-0 sm:-top-24 lg:right-24 lg:-top-16" />
-        <BallBlue className="absolute hidden sm:block right-10 top-[45%] lg:scale-150" />
+        <Rocket className="hidden sm:block sm:absolute sm:scale-75 sm:right-0 sm:-top-24 xl:right-24 xl:-top-16" />
+        <BallBlue className="absolute hidden sm:block right-10 top-[45%] xl:scale-150" />
         <BallOrange className="absolute hidden scale-50 sm:block bottom-10 left-4" />
         <BallPurple className="absolute hidden scale-75 sm:block top-16 left-4" />
       </section>

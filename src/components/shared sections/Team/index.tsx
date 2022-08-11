@@ -22,19 +22,19 @@ export function Team(props: Props) {
       <SideBySide
         svg={TeamImage}
         hideImageMobile={props.hideImageMobile}
-        svgStyles="self-start justify-self-start lg:-translate-x-10"
+        svgStyles="self-start justify-self-start xl:-translate-x-10"
       >
         <div className="2xl:w-fit 2xl:self-end">
-          <SmallTitle className="mx-2 md:mx-8 lg:ml-16 mb-2">
+          <SmallTitle className="mx-2 md:mx-8 xl:ml-16 mb-2">
             Our values
           </SmallTitle>
           <Heading
             level="2"
-            className="max-w-lg mx-4 mb-10 md:mx-16 lg:ml-16 lg:text-5xl lg:mr-0 lg:min-w-[20ch]"
+            className="max-w-lg mx-4 mb-10 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
             A Reliable Web Development Team You Can Trust
           </Heading>
-          <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins md:-ml-4 lg:ml-12">
+          <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins md:-ml-4 xl:ml-12">
             <Accordian title="Customer Service First" image={Headset}>
               We are here for you every step of the way. Your project is our top
               priority and no question or request is ever too much. Our goal is

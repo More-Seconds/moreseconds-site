@@ -21,11 +21,11 @@ export function Clients(props: Props) {
         'relative flex flex-col items-center gap-8 pb-10 ' + props.className
       }
     >
-      <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light lg:text-[32px] lg:leading-[48px] lg:max-w-5xl">
+      <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light xl:text-[32px] xl:leading-[48px] xl:max-w-5xl">
         We’ve worked on hundreds of projects for agencies, startups, event
         producers, and businesses of all sizes.
       </p>
-      <ul className="grid grid-cols-4 grid-rows-2 mr-4 place-items-center lg:gap-16">
+      <ul className="grid grid-cols-4 grid-rows-2 mr-4 place-items-center xl:gap-16">
         <li className="p-4 sm:p-0">
           <img
             src={AlgorithmLogo}
@@ -64,8 +64,8 @@ export function Clients(props: Props) {
           />
         </li>
       </ul>
-      <BallPurple className="absolute hidden lg:block lg:top-0 lg:left-4" />
-      <BallOrange className="absolute hidden scale-50 lg:block lg:top-10 lg:right-20" />
+      <BallPurple className="absolute hidden xl:block xl:top-0 xl:left-4" />
+      <BallOrange className="absolute hidden scale-50 xl:block xl:top-10 xl:right-20" />
     </section>
   )
 }
