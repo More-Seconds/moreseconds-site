@@ -5,7 +5,14 @@ import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
-import { PricingTable, PricingTableMobile, Testimonials1 } from 'public/images'
+import {
+  CodyThumbnail,
+  DanThumbnail,
+  PricingTable,
+  PricingTableMobile,
+  StephThumbnail,
+  Testimonials1
+} from 'public/images'
 import {
   ArrowDown,
   BallOrange,
@@ -60,19 +67,19 @@ export function Pricing() {
       <Testimonials title="No commitment. No hidden fees. Just great service" />
       <section className="relative grid grid-cols-1 grid-rows-3 gap-8 py-24 mx-4 sm:grid-cols-3 sm:grid-rows-1 sm:mx-16 sm:gap-4 lg:mx-32">
         <VideoModal
-          thumbnail={Testimonials1}
-          videoId="dQw4w9WgXcQ"
-          name="John Doe"
+          thumbnail={DanThumbnail}
+          videoId="cltmKuk7ezU"
+          name="Daniel Mickelson - Algorithm Agency"
         />
         <VideoModal
-          thumbnail={Testimonials1}
-          videoId="dQw4w9WgXcQ"
-          name="John Doe"
+          thumbnail={CodyThumbnail}
+          videoId="Mzqp3MuI3vE"
+          name="Cody Johnson - Dualstrike"
         />
         <VideoModal
-          thumbnail={Testimonials1}
-          videoId="dQw4w9WgXcQ"
-          name="John Doe"
+          thumbnail={StephThumbnail}
+          videoId="Wu9SJumUemc"
+          name="Stephanie Wilson - Plant Cell Technology"
         />
         <CloudFull className="hidden sm:block sm:absolute sm:top-0 sm:left-0 sm:-translate-x-[50%]" />
         <Cloud className="hidden sm:block sm:absolute sm:right-0 sm:bottom-0 sm:translate-x-[25%] lg:translate-x-32" />

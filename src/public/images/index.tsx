@@ -23,6 +23,15 @@ import Results2 from './results2.png'
 import PricingTable from './pricing_table.png'
 import PricingTableMobile from './pricing_table_mobile.png'
 import Testimonials1 from './testimonials1.png'
+import JaredLindo from './jared_lindo.jpeg'
+import KellyT from './kelly_T.jpeg'
+import MikeD from './Mike Damanskis.jpg'
+import CodyJ from './codyjohnson.png'
+import DanielM from './danielm.png'
+import Helen from './Helen-BW.jpeg'
+import DanThumbnail from './danielthumbnail.jpg'
+import CodyThumbnail from './codythumbnail.jpg'
+import StephThumbnail from './stephaniethumbnail.jpg'
 
 export {
   AlgorithmLogo,
@@ -49,5 +58,14 @@ export {
   Results2,
   PricingTable,
   PricingTableMobile,
-  Testimonials1
+  Testimonials1,
+  JaredLindo,
+  KellyT,
+  MikeD,
+  CodyJ,
+  DanielM,
+  Helen,
+  DanThumbnail,
+  CodyThumbnail,
+  StephThumbnail
 }

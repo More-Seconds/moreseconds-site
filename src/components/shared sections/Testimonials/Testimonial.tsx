@@ -13,15 +13,16 @@ export function Testimonial(props: Props) {
   return (
     <div
       className={
-        'flex flex-col sm:flex-row sm:gap-4 lg:gap-32 ' +
-        (props.hidden ? 'hidden' : '')
+        'flex flex-col sm:flex-row sm:gap-4 ' + (props.hidden ? 'hidden' : '')
       }
     >
       <figure className="grid gap-4 mb-10 sm:w-full text-light">
         <img
           src={props.image}
           alt={props.name}
-          className="w-20 sm:w-56 lg:w-60"
+          width="80"
+          height="80"
+          className="w-20 sm:w-56 lg:w-60 aspect-square object-cover rounded-full border-4 border-#666"
         />
         <figcaption className="grid gap-2">
           <h3 className="text-xs font-medium uppercase sm:text-lg font-Poppins">
@@ -33,7 +34,7 @@ export function Testimonial(props: Props) {
           <h5>{props.title}</h5>
         </figcaption>
       </figure>
-      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-lg">
+      <div className=" sm:max-w-xs sm:mt-4 lg:max-w-none w-[150%]">
         <BodyText className="text-sm italic sm:text-md lg:text-[20px] font-normal leading-6">
           {props.children}
         </BodyText>
