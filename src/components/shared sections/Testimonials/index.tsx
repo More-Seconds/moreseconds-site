@@ -1,5 +1,13 @@
 import { Heading } from 'components/typography/Heading'
-import { Jason } from 'public/images'
+import {
+  CodyJ,
+  DanielM,
+  Helen,
+  JaredLindo,
+  Jason,
+  KellyT,
+  MikeD
+} from 'public/images'
 import { BallBlue, BallPurple, CarouselArrow, Star } from 'public/svgs'
 import { useState } from 'react'
 import { Dots } from './Dots'
@@ -13,7 +21,7 @@ export function Testimonials(props: Props) {
   const [active, setActive] = useState(0)
 
   function incrementActive() {
-    if (active == 6) {
+    if (active == 5) {
       setActive(-1)
     }
     setActive((active) => active + 1)
@@ -21,7 +29,7 @@ export function Testimonials(props: Props) {
 
   function decrementActive() {
     if (active == 0) {
-      setActive(7)
+      setActive(6)
     }
     setActive((active) => active - 1)
   }
@@ -35,91 +43,80 @@ export function Testimonials(props: Props) {
       </Heading>
       <div className="relative flex gap-4 mx-auto mb-5 sm:gap-24">
         <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Jason Mandela"
-          title="Head of Design"
+          image={JaredLindo}
+          company="Siro Solutions"
+          name="Jared Lindo"
+          title="CEO / Owner"
           hidden={active != 0}
         >
-          “We care about cultivating a long term relationship with our clients
-          which is why they consistently turn to More Seconds whenever an issue
-          or new assignment arises. Our commitment to excellence, honesty, and
-          communication is reflected in our satisfied repeat clientele.”
+          “Brian and his team have been amazing to work with. They do
+          exceptional work, communicate frequently, and have a serious depth of
+          knowledge.”
         </Testimonial>
         <Testimonial
-          image={Jason}
-          company="company"
-          name="Someone else"
-          title="title"
+          image={KellyT}
+          company="Listing Language"
+          name="Kelley Tanzola"
+          title="Founder"
           hidden={active != 1}
         >
-          2 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores m
+          “More Seconds is part of my Team. I have worked with More Seconds for
+          over 3 years now. My goals and vision were embraced from the very
+          beginning. As my vision grew More Seconds has been by my side, making
+          sure I understand each step, each new development along the way. Their
+          response time and patience have been fantastic as I have reached out
+          at all times of the day/night with self inflicted emergencies. They
+          quickly got me back on track. I consider them a part of my Team.”
         </Testimonial>
         <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Someone else"
-          title="title"
+          image={MikeD}
+          company="HelpGood"
+          name="Mike Damanskis"
+          title="Senior Content Producer"
           hidden={active != 2}
         >
-          3 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
+          “More Seconds helped deliver us a beautiful, functional, and effective
+          site for our client on an accelerated timeline. We're overjoyed that
+          our animal shelter client has a new gorgeous site that can more
+          effectively showcase these pets—and find more homes for these
+          abandoned pups!”
         </Testimonial>
         <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Jason Mandela"
-          title="Head of Design"
+          image={CodyJ}
+          company="DualStrike LLC"
+          name="Cody Johnson"
+          title="Co-Founder"
           hidden={active != 3}
         >
-          4 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure res modi et eligendi sequi! Aut
+          “Working with Brian and his team at More Seconds has been a blessing
+          for our company. Not only did they provide innovative ways for us to
+          design and develop our website, but implemented them in such a way
+          where it was easy to manage following deployment. When we experienced
+          problems in our production environment, More Seconds were quick to get
+          a hold of and they worked overnight to resolve all issues. I can truly
+          say if it wasn't for the amazing staff of More Seconds, our business
+          wouldn't be experiencing the growth and profitability that we are
+          seeing today.”
         </Testimonial>
         <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Jason Mandela"
-          title="Head of Design"
+          image={DanielM}
+          company="Algorithm Agency"
+          name="Daniel Mickelson"
+          title="CEO & Founder"
           hidden={active != 4}
         >
-          5 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas
+          "I couldn't be happier with the design, development, and technical
+          support that we receive from Brian and the More Seconds team. Last
+          week, we hit our highest engagement score on record."
         </Testimonial>
         <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Jason Mandela"
-          title="Head of Design"
+          image={Helen}
+          company="Age Perfectly"
+          name="Helen Jackman"
+          title="CEO / Owner"
           hidden={active != 5}
         >
-          6 res modi et eligendi sequi! Aut dis dolor id voluptatem veniam a
-          tempora possimus 33 veniam sint. At velit voluptatem est omnis fugit
-          sed eligendi nihil et esse omnis et dolores modi e
-        </Testimonial>
-        <Testimonial
-          image={Jason}
-          company="World wide company"
-          name="Jason Mandela"
-          title="Head of Design"
-          hidden={active != 6}
-        >
-          7 Lorem ipsum dolor sit amet. Et quam consectetur sed exercitationem
-          quis vel quos quis sit reiciendis dolor id voluptatem veniam a tempora
-          possimus 33 veniam sint. At velit voluptatem est omnis fugit sed
-          eligendi nihil et esse omnis et dolores modi et eligendi sequi! Aut
-          quam quod sit aperiam illum sed iure voluptas ut nulla labore a sint
+          “Prompt response, quick resolution.”
         </Testimonial>
         <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent lg:w-12 lg:h-12 lg:-translate-y-24 lg:-left-40">
           <CarouselArrow
