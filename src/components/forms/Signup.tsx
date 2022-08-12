@@ -83,7 +83,7 @@ export function Signup(props: Props) {
             ></Field>
             <div className="min-w-max xl:py-6 py-4 absolute xl:right-3 right-1.5">
               <button
-                className="bg-gradient-to-b from-accent to-[#FFAD72] text-light text-center font-DM min-w-max max-h-fit rounded-3xl justify-self-center xl:justify-self-auto font-bold text-sm sm:text-base px-4 xl:py-4 py-3 sm:rounded-[60px]"
+               className="'px-12 bg-gradient-to-b from-accent to-[#FFAD72] text-light text-center font-DM min-w-max max-h-fit rounded-3xl justify-self-center xl:justify-self-auto font-bold text-sm sm:text-base px-4 xl:py-5 py-3 sm:rounded-[60px] hover:from-[#FFAD72] hover:to-accent"
                 onClick={() => {
                   handleSubmit()
                   handleReset()

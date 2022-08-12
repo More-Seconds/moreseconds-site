@@ -11,7 +11,7 @@ type Props = {
 export function Service(props: Props) {
   return (
     <li className={'relative ' + props.className}>
-      <Link to={props.slug}>
+      <Link to={props.slug} reloadDocument>
         <div className="h-full overflow-hidden rounded-xl">
           <img
             src={props.image}

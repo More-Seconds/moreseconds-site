@@ -12,7 +12,7 @@ type Props = {
 export function VideoModal(props: Props) {
   const [isOpen, setOpen] = useState(false)
   return (
-    <div className="">
+    <div className="cursor-pointer">
       <div className="relative mb-4" onClick={() => setOpen(true)}>
         <img src={props.thumbnail} alt="" className="w-full rounded-xl" />
         <PlayIcon className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />

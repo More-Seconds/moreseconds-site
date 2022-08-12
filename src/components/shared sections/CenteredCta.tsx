@@ -16,13 +16,13 @@ export function CenteredCTA() {
         Expertly execute your vision without time-consuming oversight.
       </BodyText>
       <Button
-        href=""
+        href="#contact"
         className="w-full px-12 py-3 mx-auto text-center sm:w-auto"
       >
         Let's Chat
       </Button>
       <Cloud className="absolute -right-10 top-20" />
-      <CloudFull className="absolute bottom-48 left-24" />
+      <CloudFull className="absolute bottom-48 left-24 -z-10" />
       <Star className="absolute top-0 left-0 scale-50 -rotate-45" />
       <BallPurple className="absolute left-0 scale-75 top-1/2" />
       <BallPurple className="absolute scale-50 bottom-32 right-32" />
