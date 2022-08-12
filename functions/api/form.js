@@ -19,7 +19,11 @@ export async function onRequestPost(request) {
       content: [
         {
           type: 'text/plain',
-          value: 'And no email service accounts and all for free too!'
+          value: `${
+            requestData.singupEmail
+              ? `New Signup Email: ${requestData.singupEmail}`
+              : ''
+          }`
         }
       ]
     })
