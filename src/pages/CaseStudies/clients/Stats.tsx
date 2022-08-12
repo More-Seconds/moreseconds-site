@@ -3,7 +3,7 @@ import { BallOrange, Cloud } from 'public/svgs'
 
 export function Stats() {
   return (
-    <section className="relative mx-4 sm:mx-16 xl:mx-32 2xl:mx-auto 2xl:max-w-[1600px] 2xl:px-32">
+    <section className="hidden relative mx-4 sm:mx-16 xl:mx-32 2xl:mx-auto 2xl:max-w-[1600px] 2xl:px-32">
       <div className="relative z-0 flex items-end justify-end h-0 -right-4 sm:-right-16 xl:-right-32">
         <Cloud />
         <BallOrange className="absolute scale-50 -top-16" />
