@@ -28,7 +28,7 @@ export async function onRequestPost(request) {
   console.log(response)
   const result = await response.json()
   const body = JSON.stringify({
-    request: requestData,
+    request: JSON.stringify(requestData),
     response: response.status == 202 ? 'success' : 'fail'
   })
   return new Response(body, {
