@@ -28,7 +28,7 @@ export async function onRequestPost(request) {
   const result = await response.json()
   const body = JSON.stringify({
     request: request,
-    response: result
+    response: response
   })
   return new Response(body, {
     headers: {
