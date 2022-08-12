@@ -1,5 +1,5 @@
 export async function onRequestPost(request) {
-  const requestData = await request.body.json()
+  const requestData = await request.json()
   const send_request = new Request('https://api.mailchannels.net/tx/v1/send', {
     method: 'POST',
     headers: {
