@@ -50,7 +50,7 @@ export function Signup(props: Props) {
         body: JSON.stringify(values)
       })
       const result = await response.json()
-      setSubmitStatus(result)
+      setSubmitStatus(result.response)
     } catch {
       setSubmitStatus('fail')
     }
