@@ -8,7 +8,8 @@ import {
   FieldAttributes,
   ErrorMessage,
   FormikTouched,
-  FormikErrors
+  FormikErrors,
+  FormikValues
 } from 'formik'
 import * as Yup from 'yup'
 import { Button } from '../Button'
@@ -33,12 +34,20 @@ function getConditionalStyles(variant: string) {
   }
 }
 
+async function submitForm(values: FormikValues) {
+  const response = await fetch('/form', {
+    method: 'POST',
+    body: JSON.stringify(values)
+  })
+  console.log(await response.json())
+}
+
 export function Signup(props: Props) {
   return (
     <Formik
       initialValues={initialValue}
       validationSchema={validate}
-      onSubmit={(values, actions) => console.log(values, actions)}
+      onSubmit={(values, actions) => submitForm(values)}
     >
       <Form
         data-static-form-name="signup"
