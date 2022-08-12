@@ -97,7 +97,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       onSubmit={(values, actions) => console.log(values, actions)}
     >
       {(props) => (
-        <Form className="grid w-full gap-2">
+        <Form data-static-form-name="contact" className="grid w-full gap-2">
           <div className={containerStyles}>
             <Field
               id="firstName"

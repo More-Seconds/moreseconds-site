@@ -40,7 +40,10 @@ export function Signup(props: Props) {
       validationSchema={validate}
       onSubmit={(values, actions) => console.log(values, actions)}
     >
-      <Form className="z-10 max-w-md xl:max-w-none xl:w-[550px]">
+      <Form
+        data-static-form-name="signup"
+        className="z-10 max-w-md xl:max-w-none xl:w-[550px]"
+      >
         <fieldset
           className={
             'relative flex pr-1 ' + getConditionalStyles(props.variant)
