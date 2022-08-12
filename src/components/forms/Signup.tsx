@@ -11,6 +11,7 @@ import {
   FormikErrors,
   FormikValues
 } from 'formik'
+import { request } from 'https'
 import * as Yup from 'yup'
 import { Button } from '../Button'
 
@@ -35,7 +36,6 @@ function getConditionalStyles(variant: string) {
 }
 
 async function submitForm(values: FormikValues) {
-  console.log(values)
   const response = await fetch('/api/form', {
     method: 'POST',
     headers: {
