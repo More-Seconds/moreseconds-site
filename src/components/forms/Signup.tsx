@@ -39,7 +39,7 @@ async function submitForm(values: FormikValues) {
   const response = await fetch('/api/form', {
     method: 'POST',
     headers: {
-      accepts: 'application/json'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify(values)
   })
