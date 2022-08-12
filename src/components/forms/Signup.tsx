@@ -43,7 +43,7 @@ async function submitForm(values: FormikValues) {
     },
     body: JSON.stringify(values)
   })
-  console.log(await response.json())
+  console.log(response)
 }
 
 export function Signup(props: Props) {
