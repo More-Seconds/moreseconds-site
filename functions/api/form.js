@@ -1,4 +1,5 @@
 export async function onRequestPost(request) {
+  const requestData = await request.body.json()
   const send_request = new Request('https://api.mailchannels.net/tx/v1/send', {
     method: 'POST',
     headers: {
@@ -27,7 +28,7 @@ export async function onRequestPost(request) {
   console.log(response)
   const result = await response.json()
   const body = JSON.stringify({
-    request: request,
+    request: requestData,
     response: response.status == 202 ? 'success' : 'fail'
   })
   return new Response(body, {
