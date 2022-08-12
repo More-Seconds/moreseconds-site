@@ -26,10 +26,10 @@ export async function onRequestPost(request) {
   const response = await fetch(send_request)
   console.log(response)
   const result = await response.json()
-  const body = {
+  const body = JSON.stringify({
     request: request,
     response: result
-  }
+  })
   return new Response(body, {
     headers: {
       'content-type': 'application/json;charset=UTF-8'
