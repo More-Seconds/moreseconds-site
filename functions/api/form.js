@@ -27,9 +27,12 @@ export async function onRequestPost(request) {
   console.log(response)
   const result = await response.json()
   return new Response({
-    body: {
+   {
       request: request,
       response: result
+    },
+    headers: {
+      'content-type': 'application/json;charset=UTF-8'
     }
   })
 }
