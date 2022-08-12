@@ -23,5 +23,10 @@ export async function onRequestPost(request) {
       ]
     })
   })
-  return new Response(request)
+  const response = await fetch(send_request)
+  const result = await response.json()
+  return new Response({
+    request: JSON.stringify(request),
+    response: JSON.stringify(result)
+  })
 }
