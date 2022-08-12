@@ -19,16 +19,24 @@ export function Services() {
           title="Web Development"
           className="col-start-1 row-span-2 row-start-1"
           image={Code}
-          slug={''}
+          slug={'/web-development'}
         />
         <Service
           title="UX/UI Design"
           className="col-start-1 row-span-1 row-start-3 sm:col-span-2 sm:row-start-1"
           image={UX}
-          slug={''}
+          slug={'/uiux'}
         />
-        <Service title="Website Updates" image={Updates} slug={''} />
-        <Service title="Research &#38; Analysis" image={Research} slug={''} />
+        <Service
+          title="Website Updates"
+          image={Updates}
+          slug={'/website-updates'}
+        />
+        <Service
+          title="Research &#38; Analysis"
+          image={Research}
+          slug={'/research-analysis'}
+        />
       </ul>
       <BallPurple className="absolute top-0 scale-50 right-20" />
     </section>

@@ -14,6 +14,7 @@ export function HeroCentered(props: Props) {
   }`
   return (
     <section
+      id="hero"
       className={twMerge(
         'flex items-center justify-center px-15 py-15 xl:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen',
         props.className

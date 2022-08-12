@@ -88,15 +88,13 @@ export function Testimonials(props: Props) {
           title="Co-Founder"
           hidden={active != 3}
         >
-          “Working with Brian and his team at More Seconds has been a blessing
-          for our company. Not only did they provide innovative ways for us to
-          design and develop our website, but implemented them in such a way
-          where it was easy to manage following deployment. When we experienced
-          problems in our production environment, More Seconds were quick to get
-          a hold of and they worked overnight to resolve all issues. I can truly
-          say if it wasn't for the amazing staff of More Seconds, our business
-          wouldn't be experiencing the growth and profitability that we are
-          seeing today.”
+          “Not only did More Seconds provide innovative ways for us to design
+          and develop our website, but implemented them in such a way where it
+          was easy to manage following deployment. When we experienced problems
+          in our production environment, More Seconds worked overnight to
+          resolve all issues. I can truly say if it wasn't for the amazing staff
+          of More Seconds, our business wouldn't be experiencing the growth and
+          profitability that we are seeing today.”
         </Testimonial>
         <Testimonial
           image={DanielM}
@@ -120,13 +118,13 @@ export function Testimonials(props: Props) {
         </Testimonial>
         <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-40">
           <CarouselArrow
-            className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent"
+            className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent cursor-pointer"
             onClick={decrementActive}
           />
         </div>
         <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-right-40">
           <CarouselArrow
-            className="w-full h-full scale-125 fill-mid hover:fill-accent"
+            className="w-full h-full scale-125 fill-mid hover:fill-accent cursor-pointer"
             onClick={incrementActive}
           />
         </div>
