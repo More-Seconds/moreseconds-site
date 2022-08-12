@@ -11,8 +11,8 @@ export async function onRequestPost(request) {
         }
       ],
       from: {
-        email: 'sender@example.com',
-        name: 'Workers - MailChannels integration'
+        email: 'no-reply@moreseconds.com',
+        name: 'More Seconds'
       },
       subject: 'Look! No servers',
       content: [
