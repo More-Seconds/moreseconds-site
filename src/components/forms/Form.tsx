@@ -8,10 +8,13 @@ import {
   FieldAttributes,
   ErrorMessage,
   FormikTouched,
-  FormikErrors
+  FormikErrors,
+  FormikValues
 } from 'formik'
 import * as Yup from 'yup'
 import InputMask from 'react-text-mask'
+import { useState } from 'react'
+import { BodyText } from 'components/typography/BodyText'
 
 interface FormFields {
   firstName: string
@@ -27,6 +30,7 @@ type Props = {
 }
 
 export function FooterForm({ levelUp }: Partial<Props>) {
+  const [submitStatus, setSubmitStatus] = useState('')
   const initialValues: FormFields = {
     firstName: '',
     lastName: '',
@@ -90,11 +94,32 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       return baseStyles + focusStyles + labelStylesIdle
     }
   }
+
+  async function submitForm(
+    values: FormikValues,
+    actions: FormikHelpers<FormFields>
+  ) {
+    try {
+      const response = await fetch('/api/form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(values)
+      })
+      const result = await response.json()
+      console.log(result)
+      setSubmitStatus(result.response)
+      actions.resetForm()
+    } catch {
+      setSubmitStatus('fail')
+    }
+  }
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validate}
-      onSubmit={(values, actions) => console.log(values, actions)}
+      onSubmit={(values, actions) => submitForm(values, actions)}
     >
       {(props) => (
         <Form data-static-form-name="contact" className="grid w-full gap-2">
@@ -225,9 +250,21 @@ export function FooterForm({ levelUp }: Partial<Props>) {
           ) : (
             ''
           )}
+          {submitStatus == 'success' ? (
+            <BodyText className="text-dark">
+              We Recieved your Submission!
+            </BodyText>
+          ) : submitStatus == 'fail' ? (
+            <BodyText className="text-red-600">Submission Failed</BodyText>
+          ) : (
+            <></>
+          )}
           <button
-            type="submit"
             className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded-[40px] xl:justify-self-auto w-full sm:w-max hover:from-[#FFAD72] hover:to-accent"
+            onClick={() => {
+              props.handleSubmit()
+              //props.resetForm()
+            }}
           >
             Let's Chat
           </button>
