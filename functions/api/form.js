@@ -21,8 +21,8 @@ export async function onRequestPost(request) {
           type: 'text/plain',
           value: `${
             requestData.singupEmail
-              ? `New Signup Email: ${requestData.singupEmail}`
-              : ''
+              ? `New Signup Email: ${requestData.signupEmail}`
+              : 'Default'
           }`
         }
       ]
