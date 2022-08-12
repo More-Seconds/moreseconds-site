@@ -24,5 +24,6 @@ export default {
         ]
       })
     })
+    return new Response('email sent')
   }
 }

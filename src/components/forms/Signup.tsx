@@ -35,8 +35,12 @@ function getConditionalStyles(variant: string) {
 }
 
 async function submitForm(values: FormikValues) {
+  console.log(values)
   const response = await fetch('/form', {
     method: 'POST',
+    headers: {
+      accepts: 'application/json'
+    },
     body: JSON.stringify(values)
   })
   console.log(await response.json())
