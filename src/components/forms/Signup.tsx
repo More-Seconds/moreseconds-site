@@ -40,8 +40,8 @@ async function submitForm(values: FormikValues) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
-    }
-    //body: values
+    },
+    body: JSON.stringify(values)
   })
   console.log(await response.json())
 }
@@ -75,7 +75,7 @@ export function Signup(props: Props) {
           <div className="min-w-max xl:py-6 py-4 absolute xl:right-3 right-1.5">
             <button
               type="submit"
-              className="'px-12 bg-gradient-to-b from-accent to-[#FFAD72] text-light text-center font-DM min-w-max max-h-fit rounded-3xl justify-self-center xl:justify-self-auto font-bold text-sm sm:text-base px-4 xl:py-4 py-3 sm:rounded-[60px]"
+              className="'bg-gradient-to-b from-accent to-[#FFAD72] text-light text-center font-DM min-w-max max-h-fit rounded-3xl justify-self-center xl:justify-self-auto font-bold text-sm sm:text-base px-4 xl:py-4 py-3 sm:rounded-[60px]"
             >
               Get More Seconds
             </button>
