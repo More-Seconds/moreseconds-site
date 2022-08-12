@@ -127,52 +127,44 @@ export function Pricing() {
           </ul>
         </FAQ>
         <FAQ title="Do you only work with WordPress? I need a solution for my low code/no code website">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          We are WordPress experts and find that as businesses scale they often
+          outgrow the capabilities of low code/no code website builds. However,
+          we are more than happy to create solutions that work with your
+          existing web platform.
         </FAQ>
         <FAQ title="How does More Seconds seamlessly integrate into my agency’s workflow for client projects?">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          We provide each of our clients with a dedicated Technical Project
+          Manager. This PM will join you on Slack, as well as your favorite
+          project management or project ticket platform: Rebooth, Jira,
+          Teamwork, etc. From there you’ll be able to send over project
+          requests, questions, dad jokes, whatever you’d like.
         </FAQ>
         <FAQ title="Can MoreSeconds handle the Project Management end?">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          <span>
+            Each project request, ticket, or task, is stored and mirrored within
+            our project management system. We have an open client portal that
+            you and your team can join <a href="#">here</a> to interact with our
+            team and your projects in real-time.
+          </span>
         </FAQ>
         <FAQ title="Has More Seconds worked on [type of project] for [type of company]?">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          Most likely, yes! In the rare case that we haven’t, we’ll be upfront
+          with you about our experience and propose an innovative solution
+          you’ll love.
         </FAQ>
         <FAQ title="I’ve had bad experiences with freelancers and agencies in the past. What makes More Seconds different?">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          We completely understand how stressful it can be to deal with flakey,
+          unqualified, and unresponsive freelance developers and agencies. At
+          More Seconds, service is our top priority. We are interested in
+          cultivating long-term relationships, not pursuing immediate financial
+          gain. Our 90% client retention rate demonstrates this commitment to
+          excellence.
         </FAQ>
         <FAQ title="Will you be there for me when I have an urgent client web issue in the middle of the night">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ipsa
-          earum, blanditiis quis sed fugit harum explicabo deserunt id quidem
-          asperiores provident repellendus nesciunt eos odit laboriosam libero
-          doloribus quaerat error autem officia? Doloribus maiores voluptate
-          quam minus soluta temporibus deleniti quos dignissimos exercitationem
-          minima, eligendi magni iste laboriosam assumenda!
+          <span>
+            Of course! We’re happy to help with those dreaded late night, urgent
+            calls. Create a ticket for an urgent link <a href="#">here</a>
+          </span>
         </FAQ>
       </section>
     </Layout>
