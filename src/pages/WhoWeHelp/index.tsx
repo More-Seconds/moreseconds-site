@@ -68,7 +68,7 @@ export function WhoWeHelp() {
           <>
             We’re disrupting traditional dev shops, one happy client at a time
           </>
-          <Highlight className="absolute scale-y-75 rotate-180 -scale-x-75 -top-8 left-0 sm:-left-12" />
+          <Highlight className="absolute left-0 scale-y-75 rotate-180 -scale-x-75 -top-8 sm:-left-12" />
         </Heading>
         <BodyText className="text-center font-Poppins max-w-[26ch] mx-auto mb-8 sm:max-w-[55ch] xl:mb-16 xl:text-[18px]">
           Our team of top-tier developers combined with our proprietary project
@@ -94,7 +94,7 @@ export function WhoWeHelp() {
               clients*
             </BodyText>
           </li>
-          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 xl:p-10">
+          <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 xl:p-10 hover:bg-gradient-to-b from-accent">
             <BodyText className="text-lg text-center xl:text-2xl">
               AVERAGE PROJECT COMPLETION ACCURACY
             </BodyText>

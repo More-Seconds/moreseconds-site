@@ -14,6 +14,8 @@ import { WebsiteUpdates } from 'pages/WebsiteUpdates'
 import { WhoWeHelp } from 'pages/WhoWeHelp'
 import './styles/main.css'
 import './styles/modal-video.scss'
+import { PrivacyPolicy } from 'pages/PrivacyPolicy'
+import { Terms } from 'pages/Terms'
 
 // Before
 import { render } from 'react-dom'
@@ -36,6 +38,10 @@ render(
       ></Route>
       <Route path="/website-updates" element={<WebsiteUpdates />}></Route>
       <Route path="/who-we-help" element={<WhoWeHelp />}></Route>
+      <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+      <Route path="/terms-of-service" element={<Terms />}></Route>
+      {/* <Route path="/privacy-policy" element={PrivacyPolicy}></Route> */}
+
       <Route path="*" element={<Homepage />}></Route>
     </Routes>
   </BrowserRouter>,

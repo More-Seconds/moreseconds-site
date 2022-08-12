@@ -74,7 +74,7 @@ export function About() {
               >
                 Brian Hurst
               </Heading>
-              <BodyText className="italic text-center sm:text-left sm:text-xl sm:max-w-[40ch] text-accent ">
+              <BodyText className="italic text-center sm:text-left sm:text-[22px] sm:leading-[28px] sm:max-w-[40ch] text-accent ">
                 “I’d like to create a space where clients can truly focus on
                 their ideas and creativity without the restrictions of not
                 understanding how to code or how the web works behind the
