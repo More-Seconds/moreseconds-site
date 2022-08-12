@@ -109,7 +109,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       })
       const result = await response.json()
       console.log(result)
-      setSubmitStatus(result)
+      setSubmitStatus(result.result)
       actions.resetForm()
     } catch {
       setSubmitStatus('fail')
