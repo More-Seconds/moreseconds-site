@@ -26,7 +26,6 @@ export async function onRequestPost(request) {
   })
   const response = await fetch(send_request)
   console.log(response)
-  const result = await response.json()
   const body = JSON.stringify({
     request: JSON.stringify(requestData),
     response: response.status == 202 ? 'success' : 'fail'
