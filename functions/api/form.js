@@ -1,5 +1,5 @@
 export async function onRequestPost(request) {
-  send_request = new Request('https://api.mailchannels.net/tx/v1/send', {
+  const send_request = new Request('https://api.mailchannels.net/tx/v1/send', {
     method: 'POST',
     headers: {
       'content-type': 'application/json'
@@ -24,6 +24,7 @@ export async function onRequestPost(request) {
     })
   })
   const response = await fetch(send_request)
+  console.log(response)
   const result = await response.json()
   return new Response({
     request: JSON.stringify(request),
