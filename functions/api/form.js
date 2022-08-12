@@ -28,8 +28,8 @@ export async function onRequestPost(request) {
   const result = await response.json()
   return new Response({
     body: {
-      request: JSON.stringify(request),
-      response: JSON.stringify(result)
+      request: request,
+      response: result
     }
   })
 }
