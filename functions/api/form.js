@@ -16,7 +16,7 @@ export async function onRequestPost(request) {
     body: JSON.stringify({
       personalizations: [
         {
-          to: [{ email: 'ejensen@moreseconds.com', name: 'Test Recipient' }]
+          to: [{ email: 'hello@moreseconds.com', name: 'Test Recipient' }]
         }
       ],
       from: {
