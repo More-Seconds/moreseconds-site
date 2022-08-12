@@ -99,9 +99,7 @@ export function Signup(props: Props) {
             component="span"
           />
           {submitStatus == 'success' ? (
-            <BodyText className="text-dark">
-              We Recieved your Submission!
-            </BodyText>
+            <BodyText>We Recieved your Submission!</BodyText>
           ) : submitStatus == 'fail' ? (
             <BodyText className="text-red-600">Submission Failed</BodyText>
           ) : (
