@@ -8,7 +8,8 @@ import {
   FieldAttributes,
   ErrorMessage,
   FormikTouched,
-  FormikErrors
+  FormikErrors,
+  FormikValues
 } from 'formik'
 import * as Yup from 'yup'
 import InputMask from 'react-text-mask'
@@ -90,11 +91,22 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       return baseStyles + focusStyles + labelStylesIdle
     }
   }
+
+  async function submitForm(values: FormikValues) {
+    const response = await fetch('/api/form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    })
+    console.log(await response.json())
+  }
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validate}
-      onSubmit={(values, actions) => console.log(values, actions)}
+      onSubmit={(values, actions) => submitForm(values)}
     >
       {(props) => (
         <Form data-static-form-name="contact" className="grid w-full gap-2">
