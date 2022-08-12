@@ -32,7 +32,7 @@ export async function onRequestPost(request) {
   })
   return new Response(body, {
     headers: {
-      'content-type': 'application/json;charset=UTF-8'
+      'content-type': 'application/json'
     }
   })
 }
