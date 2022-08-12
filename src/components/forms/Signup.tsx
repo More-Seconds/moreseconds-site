@@ -40,8 +40,8 @@ async function submitForm(values: FormikValues) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(values)
+    }
+    //body: values
   })
   console.log(await response.json())
 }
