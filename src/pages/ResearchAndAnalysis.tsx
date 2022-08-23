@@ -49,7 +49,7 @@ export function ResearchAndAnalysis() {
             Swiss-Army knife of web development, design, and optimization tools.
           </BodyText>
           <Button
-            href=""
+            href="#contact"
             className="block max-w-xs mx-auto mt-6 text-center py-3 px-8"
           >
             Get More Seconds

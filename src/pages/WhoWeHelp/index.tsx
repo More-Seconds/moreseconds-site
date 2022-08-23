@@ -81,17 +81,17 @@ export function WhoWeHelp() {
               AVERAGE CLIENT SATISFACTION RATING
             </BodyText>
             <BodyText className="text-center xl:text-lg">
-              we retain a 93% per-project satisfaction rate, as stated by our
+              We retain a 93% per-project satisfaction rate, as stated by our
               clients*
             </BodyText>
           </li>
           <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 xl:p-10">
             <BodyText className="text-lg text-center xl:text-2xl">
-              AVERAGE CLIENT SATISFACTION RATING
+              AVERAGE PROJECT COMPLETION TIME
             </BodyText>
             <BodyText className="text-center xl:text-lg">
-              we retain a 93% per-project satisfaction rate, as stated by our
-              clients*
+              We finish projects within 90% of our estimated project completion
+              time
             </BodyText>
           </li>
           <li className="flex flex-col items-center justify-center gap-4 px-10 py-8 rounded-lg bg-darkermid sm:p-4 xl:p-10 hover:bg-gradient-to-b from-accent">
@@ -99,7 +99,7 @@ export function WhoWeHelp() {
               AVERAGE PROJECT COMPLETION ACCURACY
             </BodyText>
             <BodyText className="text-center xl:text-lg">
-              we complete projects within a 92% accuracy rating, as stated by
+              We complete projects within a 92% accuracy rating, as stated by
               our clients*
             </BodyText>
           </li>
@@ -116,7 +116,7 @@ export function WhoWeHelp() {
         >
           Unparalleled quality at an unbeatable value
         </Heading>
-        <Button className="sm:w-min sm:mx-auto" href="">
+        <Button className="sm:w-min sm:mx-auto" href="#contact">
           Get More Seconds
         </Button>
         <Cloud className="bottom-0 right-0 hidden sm:block sm:absolute sm:scale-75 sm:-right-32" />
