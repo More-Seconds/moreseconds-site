@@ -49,22 +49,22 @@ export function Team(props: Props) {
             </Accordian>
             <Accordian title="Responsive" image={Envelope}>
               We’ll never leave you hanging. We know how frustrating a lack of
-              communication can be so rest assured, you will never have to
+              communication can be, so rest assured, you will never have to
               follow up with our team. All questions, concerns, and updates are
               addressed on-demand.
             </Accordian>
             <Accordian title="All Inclusive" image={Favorite}>
-              The power of a team with a single point of contact. You’ll benefit
-              from a range of services without the hassle of managing multiple
-              people and taking a piecemeal approach with your project. We do
-              all the work.
+              We provide the power of a team with a single point of contact.
+              You’ll benefit from a range of services without the hassle of
+              managing multiple people and taking a piecemeal approach with your
+              project. We do all the work.
             </Accordian>
             <Accordian title="Trusted Partners" image={Smile}>
               We care about cultivating a long term relationship with our
-              clients which is why they consistently turn to More Seconds
+              clients, which is why they consistently turn to More Seconds
               whenever an issue or new assignment arises. Our commitment to
               excellence, honesty, and communication is reflected in our
-              satisfied repeat clientele
+              satisfied repeat clientele.
             </Accordian>
           </ul>
         </div>

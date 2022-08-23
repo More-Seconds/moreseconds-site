@@ -76,7 +76,7 @@ export function UIUX() {
         <div className="mx-4 sm:ml-16 xl:ml-32 -translate-y-20 sm:translate-y-0 xl:pb-64 xl:pt-32">
           <Heading
             level="1"
-            className="text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
+            className="capitalize text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
           >
             Need to level up your landing page?
           </Heading>
@@ -101,7 +101,7 @@ export function UIUX() {
             level="1"
             className="mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
           >
-            More Seconds Delivers Fresh, Modern Design daily
+            More Seconds Delivers Fresh, Modern Design Daily
           </Heading>
           <BodyText className="max-w-[34ch] sm:max-w- xl:text-lg xl:max-w-[53ch]">
             When a potential customer visits your website for the first time,
@@ -153,7 +153,7 @@ export function UIUX() {
           </Heading>
           <BodyText className="text-xs xl:text-lg">
             You’ll see exactly how your custom designs are progressing each step
-            of the way with mockups in Figma and your input is always welcome.
+            of the way with mockups in Figma, and your input is always welcome.
           </BodyText>
         </Card>
 

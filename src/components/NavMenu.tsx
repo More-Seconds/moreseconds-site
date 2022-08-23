@@ -88,16 +88,16 @@ export function NavMenu({ mobile, open }: Props) {
             }
           >
             <li className={submenuStyles}>
-              <Link to="/uiux">UI/UX Design</Link>
-            </li>
-            <li className={submenuStyles}>
               <Link to="/web-development">Web Development</Link>
             </li>
             <li className={submenuStyles}>
-              <Link to="/research-and-analysis">Research &#38; Analysis</Link>
+              <Link to="/uiux">UI/UX Design</Link>
             </li>
             <li className={submenuStyles}>
               <Link to="/website-updates">Website Updates</Link>
+            </li>
+            <li className={submenuStyles}>
+              <Link to="/research-and-analysis">Research &#38; Analysis</Link>
             </li>
           </ul>
         </li>

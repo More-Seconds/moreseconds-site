@@ -31,10 +31,10 @@ export function Carousel() {
     <section className="relative flex flex-col py-8 mx-4 xl:py-32 sm:mx-32 xl:mx-auto xl:max-w-4xl">
       <div className="flex w-full gap-4 mx-auto mb-5 sm:gap-24 ">
         <Testimonial industry="Marketing Agencies" hidden={active != 0}>
-          “We care about cultivating a long term relationship with our clients
-          which is why they consistently turn to More Seconds whenever an issue
-          or new assignment arises. Our commitment to excellence, honesty, and
-          communication is reflected in our satisfied repeat clientele.”
+          "We care about cultivating a long term relationship with our clients.
+          That’s why they consistently turn to More Seconds whenever an issue or
+          new assignment arises. Our commitment to excellence, honesty, and
+          communication is reflected in our satisfied repeat clientele."
         </Testimonial>
         <Testimonial industry="Startups" hidden={active != 1}>
           "I need a fast, on budget, outsourced team to offload my web
@@ -44,7 +44,7 @@ export function Carousel() {
         </Testimonial>
         <Testimonial industry="Businesses " hidden={active != 2}>
           "I need to ensure the technical side of my business always runs
-          smoothly and I don’t have the bandwidth to manage additional projects
+          smoothly, and I don’t have the bandwidth to manage additional projects
           or staff. I want a web team that can hit the ground running and
           deliver on their promises. My website needs to be safe, secure,
           responsive and able to provide my customers with the solutions they
@@ -54,7 +54,7 @@ export function Carousel() {
           "I need to hand over the website to a capable developer so I can focus
           on the other aspects of my event. Completing projects on or before the
           deadline is an absolute must to drive ticket sales. My event has
-          multiple stakeholders providing input so responsiveness and clear
+          multiple stakeholders providing input, so responsiveness and clear
           communication is key."
         </Testimonial>
         <Testimonial
@@ -62,7 +62,7 @@ export function Carousel() {
           hidden={active != 4}
         >
           "I need additional developers on-demand to handle overflow when we’re
-          up against a tight deadline on a big project and I can’t afford to
+          up against a tight deadline on a big project, and I can’t afford to
           waste time hiring and managing freelancers. Team extension services
           that can seamlessly integrate into my existing operation are essential
           when our in-house team is overloaded."
