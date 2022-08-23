@@ -49,7 +49,7 @@ export function About() {
           taken care of – we’re here to help.
         </BodyText>
         <div className="flex justify-center sm:justify-start">
-          <Button href="" className="w-full sm:px-16 sm:w-min">
+          <Button href="#contact" className="w-full sm:px-16 sm:w-min">
             Let's Chat
           </Button>
         </div>

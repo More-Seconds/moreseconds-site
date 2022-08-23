@@ -35,7 +35,7 @@ export function Testimonial(props: Props) {
         </figcaption>
       </figure>
       <div className=" sm:max-w-xs sm:mt-4 xl:max-w-none w-[150%]">
-        <BodyText className="text-sm italic sm:text-base sm:max-w-xl xl:text-[20px] xl:max-w-xl font-normal leading-6">
+        <BodyText className="text-sm italic max-w-xs sm:text-base sm:max-w-xl xl:text-[20px] xl:w-[36rem] font-normal leading-6">
           {props.children}
         </BodyText>
       </div>

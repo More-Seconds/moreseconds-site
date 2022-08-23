@@ -65,8 +65,7 @@ export function Testimonials(props: Props) {
           beginning. As my vision grew More Seconds has been by my side, making
           sure I understand each step, each new development along the way. Their
           response time and patience have been fantastic as I have reached out
-          at all times of the day/night with self inflicted emergencies. They
-          quickly got me back on track. I consider them a part of my Team.”
+          at all times of the day/night with self inflicted emergencies.”
         </Testimonial>
         <Testimonial
           image={MikeD}
@@ -90,11 +89,11 @@ export function Testimonials(props: Props) {
         >
           “Not only did More Seconds provide innovative ways for us to design
           and develop our website, but implemented them in such a way where it
-          was easy to manage following deployment. When we experienced problems
-          in our production environment, More Seconds worked overnight to
-          resolve all issues. I can truly say if it wasn't for the amazing staff
-          of More Seconds, our business wouldn't be experiencing the growth and
-          profitability that we are seeing today.”
+          was easy to manage. When we experienced problems in our production
+          environment, More Seconds worked overnight to resolve all issues. If
+          it wasn't for the amazing staff of More Seconds, our business wouldn't
+          be experiencing the growth and profitability that we are seeing
+          today.”
         </Testimonial>
         <Testimonial
           image={DanielM}
