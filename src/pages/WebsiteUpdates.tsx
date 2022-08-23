@@ -42,7 +42,7 @@ export function WebsiteUpdates() {
             Website Updates
           </Heading>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
-            From on-demand updates to urgent after-hours fixes, More Seconds
+            From on-demand updates to urgent after-hours fixes, More Seconds'
             premium web support offers the easiest way to make rapid changes to
             your website. We provide a completely hands-off website maintenance
             and updates service with a dedicated Project Manager to address all
@@ -76,7 +76,7 @@ export function WebsiteUpdates() {
         <div className="mx-4 sm:ml-16 xl:ml-32 -translate-y-20 sm:translate-y-0 xl:pb-64 xl:pt-32">
           <Heading
             level="1"
-            className="text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
+            className="capitalize text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
           >
             Need to level up your landing page?
           </Heading>
@@ -99,7 +99,7 @@ export function WebsiteUpdates() {
           <SmallTitle>UPGRADE YOUR UPDATES</SmallTitle>
           <Heading
             level="1"
-            className="mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
+            className="capitalize mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
           >
             Do you need on-demand website updates? Get More Seconds’ lightning
             fast support.
@@ -107,7 +107,7 @@ export function WebsiteUpdates() {
           <BodyText className="max-w-[35ch] sm:max-w-none xl:text-lg xl:max-w-[53ch]">
             We offer on-call and on-demand web support that seamlessly
             integrates into your project management workflow. Our expert
-            #dev-ops team is always available to handle any issue that arises.
+            #dev-ops team is always available to handle any issues that arise.
           </BodyText>
           <HollowStar className="absolute right-16 top-12 scale-75 sm:top-[10%] sm:-right-16 sm:scale-50" />
         </div>
@@ -161,9 +161,8 @@ export function WebsiteUpdates() {
             Third Party Platform Integrations
           </Heading>
           <BodyText className="text-xs xl:text-lg">
-            We’re able to sync your website to third party apps like Mailchimp
-            as well as common platforms that may require some connection to your
-            site.
+            We're able to sync your website to third party apps like Mailchimp
+            and other common platforms that may require connection to your site.
           </BodyText>
         </Card>
         <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />

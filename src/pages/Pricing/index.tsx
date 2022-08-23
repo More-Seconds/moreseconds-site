@@ -126,8 +126,8 @@ export function Pricing() {
             <li>● Heroku</li>
           </ul>
         </FAQ>
-        <FAQ title="Do you only work with WordPress? I need a solution for my low code/no code website">
-          We are WordPress experts and find that as businesses scale they often
+        <FAQ title="Do you only work with WordPress? I need a solution for my low code/no code website.">
+          We are WordPress experts and find that as businesses scale, they often
           outgrow the capabilities of low code/no code website builds. However,
           we are more than happy to create solutions that work with your
           existing web platform.
@@ -139,12 +139,12 @@ export function Pricing() {
           Teamwork, etc. From there you’ll be able to send over project
           requests, questions, dad jokes, whatever you’d like.
         </FAQ>
-        <FAQ title="Can MoreSeconds handle the Project Management end?">
+        <FAQ title="Can More Seconds handle the Project Management end?">
           <span>
-            Each project request, ticket, or task, is stored and mirrored within
+            Each project request, ticket, or task is stored and mirrored within
             our project management system. We have an open client portal that
-            you and your team can join <a href="#">here</a> to interact with our
-            team and your projects in real-time.
+            you and your team can join to interact with our team and your
+            projects in real-time.
           </span>
         </FAQ>
         <FAQ title="Has More Seconds worked on [type of project] for [type of company]?">
@@ -160,7 +160,7 @@ export function Pricing() {
           gain. Our 90% client retention rate demonstrates this commitment to
           excellence.
         </FAQ>
-        <FAQ title="Will you be there for me when I have an urgent client web issue in the middle of the night">
+        <FAQ title="Will you be there for me when I have an urgent client web issue in the middle of the night?">
           <span>
             Of course! We’re happy to help with those dreaded late night, urgent
             calls. Create a ticket for an urgent link <a href="#">here</a>

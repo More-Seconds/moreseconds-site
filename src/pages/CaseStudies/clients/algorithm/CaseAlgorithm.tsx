@@ -133,7 +133,7 @@ export function CaseStudyAlgorithm() {
           State Fair Entertainment, producer of the Official Summer Fair of
           L.A., was created around the idea that a large-scale, high quality
           entertainment venue can promote positivity, be eco &#38; family
-          friendly and be an asset to the community in which it is held. More
+          friendly, and be an asset to the community in which it is held. More
           Seconds received an urgent request from Algorithm Agency to build a
           custom website for their new client State Fair Entertainment. By
           working with More Seconds for all of their development and web

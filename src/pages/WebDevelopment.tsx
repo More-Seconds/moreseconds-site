@@ -42,10 +42,11 @@ export function WebDevelopment() {
             Web Development
           </Heading>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
-            From startups to established corporations, we utilize the latest
-            technologies and platforms to deliver captivating user experiences
-            and web interfaces. Our team of top U.S.-based developers write high
-            level, production ready code designed to optimize your website’s
+            We build pixel-perfect landing pages in record time. From startups
+            to established corporations, we utilize the latest technologies and
+            platforms to deliver captivating user experiences and web
+            interfaces. Our team of top U.S.-based developers write high level,
+            production ready code designed to optimize your website’s
             functionality. Experience the benefits of having your own in-house
             digital team without actually hiring one full-time.
           </BodyText>
@@ -77,7 +78,7 @@ export function WebDevelopment() {
         <div className="mx-4 sm:ml-16 xl:ml-32 -translate-y-20 sm:translate-y-0 xl:pb-64 xl:pt-32">
           <Heading
             level="1"
-            className="text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
+            className="capitalize text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
           >
             Need to level up your landing page?
           </Heading>
@@ -100,7 +101,7 @@ export function WebDevelopment() {
           <SmallTitle>DEVELOPMENT THAT DELIGHTS</SmallTitle>
           <Heading
             level="1"
-            className="mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
+            className="capitalize mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
           >
             Have an exciting vision for your website? More Seconds has the tech
             talent to bring it to life.

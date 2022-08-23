@@ -49,7 +49,7 @@ export function CaseStudyPCT() {
       </Request>
       <Results image={Results2}>
         {[
-          'Identified a host of issues plaguing the website – poor performance and load times due to improper backend configuration low quality server configuration, broken links on critical pages, and a lack of consumer offerings displayed',
+          'Identified a host of issues plaguing the website – poor performance and load times due to improper backend configuration, low quality server configuration, broken links on critical pages, and a lack of consumer offerings displayed',
           'Re-branded and re-designed e-commerce website',
           'Consistently increasing ROI and weekly sales numbers',
           'Long-term partnership for on-demand development, design, and consultancy services',
