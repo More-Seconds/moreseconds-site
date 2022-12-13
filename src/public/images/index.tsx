@@ -32,6 +32,8 @@ import Helen from './Helen-BW.jpeg'
 import DanThumbnail from './danielthumbnail.jpg'
 import CodyThumbnail from './codythumbnail.jpg'
 import StephThumbnail from './stephaniethumbnail.jpg'
+import ClanFinderLogo from './clanfinder_logo.png'
+import BlackAmbitionLogo from './black_ambition_logo.png'
 
 export {
   AlgorithmLogo,
@@ -67,5 +69,7 @@ export {
   Helen,
   DanThumbnail,
   CodyThumbnail,
-  StephThumbnail
+  StephThumbnail,
+  ClanFinderLogo,
+  BlackAmbitionLogo
 }
