@@ -32,23 +32,60 @@ export function Team(props: Props) {
             level="2"
             className="max-w-lg mx-4 mb-10 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
-            Get the <span className="text-accent">speed & service</span> of an in-house development team for the cost of a single developer.
+            {[
+              <>
+                Get the <span className="text-accent">speed & service</span> of
+                an in-house development team for the cost of a single developer.
+              </>
+            ]}
           </Heading>
           <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins md:-ml-4 xl:ml-12">
-            <Accordian  title="Your Dedicated #Dev-Ops Team" image={Headset} open>
-            Get access to a dedicated team of digital professionals that you can count on. Each More Seconds dev team includes a technical project manager, project coordinator, lead Engineer, and two skilled design engineers.
+            <Accordian
+              title="Your Dedicated #Dev-Ops Team"
+              image={Headset}
+              open
+            >
+              Get access to a dedicated team of digital professionals that you
+              can count on. Each More Seconds dev team includes a technical
+              project manager, project coordinator, lead Engineer, and two
+              skilled design engineers.
             </Accordian>
-            <Accordian title="Exceptional Development - Consistent Results" image={Fast}>
-            Our developers are high-performance, solution generating, best-in-class specialists. Whether it involves spinning up a conversion optimized landing page, integrating the latest API into a website, or solving a complex problem, we’ve always got you covered.
+            <Accordian
+              title="Exceptional Development - Consistent Results"
+              image={Fast}
+            >
+              Our developers are high-performance, solution generating,
+              best-in-class specialists. Whether it involves spinning up a
+              conversion optimized landing page, integrating the latest API into
+              a website, or solving a complex problem, we’ve always got you
+              covered.
             </Accordian>
-            <Accordian title="High-Quality - Delivery On Demand" image={Envelope}>
-            Our development processes are fine-tuned for maximum efficiency and high quality product delivery. We know that urgent means urgent, and that brand reputation is everything. We’ll be ready to tackle your next project at a moment's notice, just send the request.
+            <Accordian
+              title="High-Quality - Delivery On Demand"
+              image={Envelope}
+            >
+              Our development processes are fine-tuned for maximum efficiency
+              and high quality product delivery. We know that urgent means
+              urgent, and that brand reputation is everything. We’ll be ready to
+              tackle your next project at a moment's notice, just send the
+              request.
             </Accordian>
             <Accordian title="Full Service - All Inclusive" image={Favorite}>
-            Unlock the power of an experienced team through a single point of contact. You’ll benefit from a wide range of services without the hassle of managing multiple people and taking a piecemeal approach with your project. We do all the work, you can sit back and enjoy the results.
+              Unlock the power of an experienced team through a single point of
+              contact. You’ll benefit from a wide range of services without the
+              hassle of managing multiple people and taking a piecemeal approach
+              with your project. We do all the work, you can sit back and enjoy
+              the results.
             </Accordian>
-            <Accordian title="Trusted Partners - White Label Service" image={Smile}>
-            We care about cultivating a long term relationship with our clients, which is why they consistently turn to More Seconds whenever an issue or new assignment arises. Our commitment to excellence, honesty, and communication is reflected in our satisfied repeat clientele.
+            <Accordian
+              title="Trusted Partners - White Label Service"
+              image={Smile}
+            >
+              We care about cultivating a long term relationship with our
+              clients, which is why they consistently turn to More Seconds
+              whenever an issue or new assignment arises. Our commitment to
+              excellence, honesty, and communication is reflected in our
+              satisfied repeat clientele.
             </Accordian>
           </ul>
         </div>

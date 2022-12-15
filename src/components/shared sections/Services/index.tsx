@@ -9,14 +9,18 @@ export function Services() {
   return (
     <section className="relative max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
       <SmallTitle className="mb-2 text-left">Our Services</SmallTitle>
-      
-      <div class="flex">
-  
+
+      <div className="flex">
         <Heading
           level="2"
           className="max-w-xl mb-10 text-left xl:text-[56px] xl:leading-[56px] xl:max-w-2xl"
         >
-          Access a broad slate of services and <span class="text-accent">innovative solutions.</span>
+          {[
+            <>
+              Access a broad slate of services and{' '}
+              <span className="text-accent">innovative solutions.</span>
+            </>
+          ]}
         </Heading>
         <Button
           href="#contact"
@@ -25,7 +29,12 @@ export function Services() {
           View our Work
         </Button>
       </div>
-      <p class="text-light mb-8 xl:max-w-2xl">Transform your marketing, creative, and management teams into digital superheroes—literally. Whether it’s an eye-catching site redesign, a couple of landing page builds, an api integration, or a unique problem, you can rest easy knowing that we’re on top of everything and then some.</p>
+      <p className="text-light mb-8 xl:max-w-2xl">
+        Transform your marketing, creative, and management teams into digital
+        superheroes—literally. Whether it’s an eye-catching site redesign, a
+        couple of landing page builds, an api integration, or a unique problem,
+        you can rest easy knowing that we’re on top of everything and then some.
+      </p>
       <ul className="grid max-w-9xl grid-cols-1 grid-rows-5 gap-4 mx-4 sm:mx-auto sm:grid-rows-2 sm:grid-cols-services md:mx-16 xl:mx-auto">
         <Service
           title="Web Development"

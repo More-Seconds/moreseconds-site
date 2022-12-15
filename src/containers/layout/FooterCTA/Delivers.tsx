@@ -4,12 +4,13 @@ export function Delivers() {
   const listStyle = 'list-disc ml-4 mt-6'
   return (
     <>
-      <Heading
-        level="2"
-        dark
-        className="xl:text-[36px] xl:min-w-auto"
-      >
-        Imagine what your team could do with <span style={{ color: '#3939FA'}}>More Seconds.</span>
+      <Heading level="2" dark className="xl:text-[36px] xl:min-w-auto">
+        {[
+          <>
+            Imagine what your team could do with{' '}
+            <span style={{ color: '#3939FA' }}>More Seconds.</span>
+          </>
+        ]}
       </Heading>
       <ul className="max-w-md font-Poppins">
         <li className={listStyle}>
