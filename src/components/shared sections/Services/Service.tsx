@@ -19,7 +19,7 @@ export function Service(props: Props) {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="absolute inset-0 flex flex-col justify-between w-full h-full p-8">
+        <div className="absolute inset-0 flex flex-col justify-end w-full h-full p-8">
           <BodyText className="text-2xl font-DM">{props.title}</BodyText>
           <p className="text-lg uppercase text-light">Learn More</p>
         </div>
