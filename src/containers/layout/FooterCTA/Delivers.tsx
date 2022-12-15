@@ -7,9 +7,9 @@ export function Delivers() {
       <Heading
         level="2"
         dark
-        className="capitalize xl:text-[46px] xl:min-w-max"
+        className="xl:text-[36px] xl:min-w-auto"
       >
-        More Seconds Delivers
+        Imagine what your team could do with <span style={{ color: '#3939FA'}}>More Seconds.</span>
       </Heading>
       <ul className="max-w-md font-Poppins">
         <li className={listStyle}>

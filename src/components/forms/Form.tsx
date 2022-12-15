@@ -24,6 +24,13 @@ interface FormFields {
   businessSize: string
   phone: string
 }
+// My modification
+// interface FormFields {
+//   fullName: string
+//   email: string
+//   companyName: string
+//   companySize: string
+// }
 
 type Props = {
   levelUp?: boolean
@@ -40,6 +47,14 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     phone: ''
   }
 
+  // my modification
+  // const initialValues: FormFields = {
+  //   fullName: '',
+  //   email: '',
+  //   companyName: '',
+  //   companySize: ''
+  // }
+
   const validate = Yup.object({
     firstName: Yup.string().required('This field is required'),
     lastName: Yup.string().required('This field is required'),
@@ -48,6 +63,14 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     businessSize: Yup.string(),
     phone: Yup.string()
   })
+
+  // My modification
+  // const validate = Yup.object({
+  //   fullName: Yup.string().required('This field is required'),
+  //   email: Yup.string().email().required('This field is required'),
+  //   companyName: Yup.string(),
+  //   companySize: Yup.string()
+  // })
 
   const phoneNumberMask = [
     '(',
@@ -259,6 +282,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
           ) : (
             <></>
           )}
+    
+    
           <button
             className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded-[40px] xl:justify-self-auto w-full sm:w-max hover:from-[#FFAD72] hover:to-accent"
             onClick={() => {

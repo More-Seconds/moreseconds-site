@@ -68,7 +68,7 @@ export function Footer() {
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.youtube.com/channel/UCooFeC30xA943Uear0-3yKA/videos">
               <YtIcon />
             </a>
           </li>

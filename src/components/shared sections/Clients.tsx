@@ -22,8 +22,7 @@ export function Clients(props: Props) {
       }
     >
       <p className="max-w-2xl mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light xl:text-[32px] xl:leading-[48px] xl:max-w-5xl">
-        We’ve worked on hundreds of projects for agencies, startups, event
-        producers, and businesses of all sizes.
+      We have completed 2,235 projects for agencies, startups, event producers, and businesses of all sizes.
       </p>
       <ul className="grid grid-cols-4 grid-rows-2 mr-4 place-items-center xl:gap-16">
         <li className="p-4 sm:p-0">

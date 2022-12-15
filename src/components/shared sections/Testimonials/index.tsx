@@ -14,7 +14,7 @@ import { Dots } from './Dots'
 import { Testimonial } from './Testimonial'
 
 type Props = {
-  title: string
+  title: string | JSX.Element[]
 }
 
 export function Testimonials(props: Props) {
