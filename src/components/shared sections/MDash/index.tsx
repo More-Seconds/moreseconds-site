@@ -48,7 +48,7 @@ export function MDash(props: Props) {
         </div>
 
         <div className="content-end 2xl:w-fit 2xl:self-start justify-self-center xl:justify-self-end xl:pr-24">
-          <Button>Start a Project </Button>
+          <Button href="http://dash.moreseconds.com/">Start a Project </Button>
         </div>
       </div>
 
