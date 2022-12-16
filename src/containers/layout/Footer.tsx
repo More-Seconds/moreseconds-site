@@ -59,7 +59,7 @@ export function Footer() {
           </li>
         </ul>
         <span className="font-medium font-DM text-light justify-self-start sm:justify-self-center">
-          ©2022 Moreseconds
+          ©2023 Moreseconds. All rights reserved
         </span>
         <ul className="flex items-center gap-6 justify-self-end">
           <li>
