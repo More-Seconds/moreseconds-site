@@ -2,6 +2,7 @@ import { Clients } from '../components/shared sections/Clients'
 import { Layout } from '../containers/layout/Layout'
 import { Hero } from 'containers/shared/Hero'
 import { Team } from 'components/shared sections/Team'
+import { MDash } from 'components/shared sections/MDash'
 import { SectionBlur } from 'components/SectionBlur'
 import { Partners } from 'components/shared sections/Partners'
 import { Services } from 'components/shared sections/Services'
@@ -38,6 +39,7 @@ export function Homepage() {
       </Hero>
       <Clients className="relative z-10 sm:-top-16 xl:-top-32" />
       <Team />
+      <MDash />
       <SectionBlur />
       <Partners />
       <div className="mb-20 flex justify-center m-auto text-light flex-row sm:flex-row max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
