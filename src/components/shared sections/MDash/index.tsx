@@ -13,7 +13,7 @@ import { Heading } from '../../typography/Heading'
 import { SmallTitle } from '../../typography/SmallTitle'
 import { BodyText } from 'components/typography/BodyText'
 import { Button } from 'components/Button'
-import DashboardGIF from 'public/images/mdashboard.gif'
+import DashboardGIF from 'public/images/msdashboard.gif'
 
 type Props = {
   hideImageMobile?: boolean
