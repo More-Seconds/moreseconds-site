@@ -5,10 +5,11 @@ type Props = {
   title: string
   children?: string
   image?: React.FunctionComponent<SVGProps<SVGSVGElement>>
+  open?: boolean
 }
 
 export function Accordian(props: Props) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(props.open)
   function toggleOpen(e: MouseEvent<HTMLAnchorElement>) {
     e.preventDefault()
     setOpen(!open)
@@ -17,8 +18,8 @@ export function Accordian(props: Props) {
     <a href="" onClick={toggleOpen}>
       <li
         className={
-          (open ? 'bg-light' : 'bg-darkermid') +
-          ' flex items-start gap-8 px-8 py-6 rounded-3xl'
+          (open ? 'bg-darkermid' : 'bg-darker') +
+          ' border-b border-dark flex items-start gap-8 px-8 py-6 rounded-3xl'
         }
       >
         <>
@@ -34,7 +35,7 @@ export function Accordian(props: Props) {
           <div>
             <BodyText
               className={
-                (open ? 'text-dark' : '') + ' text-lg font-bold w-max mb-2'
+                (open ? 'text-light' : '') + ' text-lg font-bold w-max mb-2'
               }
             >
               {props.title}
@@ -42,7 +43,7 @@ export function Accordian(props: Props) {
             <p
               className={
                 (open ? 'block' : 'hidden') +
-                ' max-w-xs text-sm text-dark leading-6'
+                ' max-w-xs text-sm text-light leading-6'
               }
             >
               {props.children}

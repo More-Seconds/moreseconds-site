@@ -75,7 +75,7 @@ export function Signup(props: Props) {
               type="email"
               id="sign-up-email"
               name="signUpEmail"
-              placeholder="your email"
+              placeholder="Enter your email"
               className={
                 'bg-transparent text-light placeholder:text-mid placeholder:font-bold placeholder:uppercase pl-6 xl:py-6 py-4 w-full focus:rounded-l-full ' +
                 props.className
@@ -89,7 +89,7 @@ export function Signup(props: Props) {
                   handleReset()
                 }}
               >
-                Get More Seconds
+                Get Started
               </button>
             </div>
           </fieldset>
