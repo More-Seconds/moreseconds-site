@@ -17,7 +17,7 @@ import { useState } from 'react'
 import { BodyText } from 'components/typography/BodyText'
 
 interface FormFields {
-  firstName: string
+  fullName: string
   lastName: string
   email: string
   business: string
@@ -32,7 +32,7 @@ type Props = {
 export function FooterForm({ levelUp }: Partial<Props>) {
   const [submitStatus, setSubmitStatus] = useState('')
   const initialValues: FormFields = {
-    firstName: '',
+    fullName: '',
     lastName: '',
     email: '',
     business: '',
@@ -41,7 +41,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
   }
 
   const validate = Yup.object({
-    firstName: Yup.string().required('This field is required'),
+    fullName: Yup.string().required('This field is required'),
     lastName: Yup.string().required('This field is required'),
     email: Yup.string().email().required('This field is required'),
     business: Yup.string(),
@@ -122,29 +122,29 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       onSubmit={(values, actions) => submitForm(values, actions)}
     >
       {(props) => (
-        <Form data-static-form-name="contact" className="grid w-full gap-2">
+        <Form data-static-form-name="contact" className="grid w-full gap-2 ">
           <div className={containerStyles}>
             <Field
-              id="firstName"
-              name="firstName"
+              id="fullName"
+              name="fullName"
               className={inputStyles(
-                props.touched.firstName,
-                props.errors.firstName
+                props.touched.fullName,
+                props.errors.fullName
               )}
             />
             <label
-              htmlFor="firstName"
-              className={labelStyles(props.values.firstName)}
+              htmlFor="fullName"
+              className={labelStyles(props.values.fullName)}
             >
-              FIRST NAME
+              FULL NAME
             </label>
             <ErrorMessage
-              name="firstName"
+              name="fullName"
               className="text-red-600"
               component="div"
             />
           </div>
-          <div className={containerStyles}>
+          {/* <div className={containerStyles}>
             <Field
               id="lastName"
               name="lastName"
@@ -164,7 +164,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
               className="text-red-600"
               component="div"
             />
-          </div>
+          </div> */}
           <div className={containerStyles}>
             <Field
               id="email"
@@ -223,7 +223,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
               component="div"
             />
           </div>
-          <div className={containerStyles}>
+          {/* <div className={containerStyles}>
             <MaskedField
               mask={phoneNumberMask}
               id="phone"
@@ -242,7 +242,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
               className="text-red-600"
               component="div"
             />
-          </div>
+          </div> */}
           {levelUp == true ? (
             <p className="font-medium text-accent font-Poppins">
               Ready to level up?
@@ -260,7 +260,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
             <></>
           )}
           <button
-            className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded-[40px] xl:justify-self-auto w-full sm:w-max hover:from-[#FFAD72] hover:to-accent"
+            className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded xl:justify-self-auto w-full sm:w-max hover:from-[#FFAD72] hover:to-accent"
             onClick={() => {
               props.handleSubmit()
               //props.resetForm()
