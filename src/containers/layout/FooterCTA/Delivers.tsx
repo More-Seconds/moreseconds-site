@@ -1,15 +1,15 @@
 import { Heading } from 'components/typography/Heading'
 
 export function Delivers() {
-  const listStyle = 'list-disc ml-4 mt-2'
+  const listStyle = 'list-disc ml-4 mt-6'
   return (
     <>
       <Heading
         level="2"
         dark
-        className="capitalize xl:text-[30px] xl:min-w-md sm:leading-none"
+        className="capitalize xl:text-[30px] xl:min-w-md sm:leading-normal"
       >
-        Imagine what your team could do with More Seconds.
+        {[<>Imagine what your team could do with <span className="text-indigo-800">More Seconds.</span></>]}
       </Heading>
       <ul className="max-w-md font-Poppins">
         <li className={listStyle}>
