@@ -7,9 +7,9 @@ export function Delivers() {
       <Heading
         level="2"
         dark
-        className="capitalize xl:text-[46px] xl:min-w-max"
+        className="capitalize xl:text-[30px] xl:min-w-md sm:leading-normal"
       >
-        More Seconds Delivers
+        {[<>Imagine what your team could do with <span className="text-indigo-800">More Seconds.</span></>]}
       </Heading>
       <ul className="max-w-md font-Poppins">
         <li className={listStyle}>

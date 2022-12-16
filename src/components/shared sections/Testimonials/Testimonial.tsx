@@ -22,7 +22,7 @@ export function Testimonial(props: Props) {
           alt={props.name}
           width="80"
           height="80"
-          className="w-20 sm:w-56 xl:w-72 aspect-square object-cover rounded-full border-4 border-#666"
+          className="w-20 sm:w-56 xl:w-72 aspect-square object-cover rounded-lg border-4 border-dark"
         />
         <figcaption className="grid gap-2 xl:ml-[5%]">
           <h3 className="text-xs font-medium uppercase sm:text-lg font-Poppins">
@@ -34,8 +34,8 @@ export function Testimonial(props: Props) {
           <h5>{props.title}</h5>
         </figcaption>
       </figure>
-      <div className=" sm:max-w-xs sm:mt-4 xl:max-w-none w-[150%]">
-        <BodyText className="text-sm italic max-w-xs sm:text-base sm:max-w-xl xl:text-[20px] xl:w-[36rem] font-normal leading-6">
+      <div className=" sm:max-w-xs sm:mt0 xl:max-w-none w-[150%]">
+        <BodyText className="text-sm max-w-xs sm:max-w-xl  xl:text-[20px] xl:w-[36rem] font-normal leading-10">
           {props.children}
         </BodyText>
       </div>

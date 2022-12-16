@@ -50,7 +50,7 @@ export function UIUX() {
           </BodyText>
           <Button
             href="#contact"
-            className="block max-w-xs mx-auto mt-6 text-center py-3 px-8"
+            className="block max-w-xs px-8 py-3 mx-auto mt-6 text-center"
           >
             Get More Seconds
           </Button>
@@ -61,19 +61,19 @@ export function UIUX() {
         </HeroCentered>
       </section>
 
-      <section className="relative block items-center sm:py-72">
+      <section className="relative items-center block sm:py-72">
         <div className="flex items-center -translate-y-16 w-screen h-96 relative -right-20 justify-self-start sm:absolute sm:top-28 sm:-right-2 sm:w-[378px] xl:translate-y-64 xl:right-40">
           <ManArtist className="h-full sm:scale-150 xl:scale-[300%]" />
           <Star className="absolute -left-12 top-8 scale-50 sm:-left-[40vw] sm:-top-12 sm:-scale-x-75 sm:scale-y-75 xl:-top-72 xl:-left-[50vw] xl:-scale-x-100 xl:scale-y-100" />
           <Star className="hidden sm:block sm:absolute sm:-top-40 sm:right-32 sm:scale-50" />
           <CloudFull className="absolute -left-52 scale-75 top-10 sm:-scale-x-150 sm:scale-y-150 sm:-left-[65vw] sm:top-0 xl:-top-56 xl:-scale-x-[200%] xl:scale-y-[200%]" />
-          <HollowStar className="absolute top-32 scale-75 sm:-top-8 sm:right-80 xl:-top-72 xl:-left-56 xl:scale-100" />
+          <HollowStar className="absolute scale-75 top-32 sm:-top-8 sm:right-80 xl:-top-72 xl:-left-56 xl:scale-100" />
           <HollowStar className="hidden xl:block xl:absolute xl:-left-[65vw] xl:-bottom-20" />
           <HollowStar className="hidden xl:block xl:absolute xl:-top-20 xl:-left-[65vw]" />
           <BallPurple className="absolute -left-20 bottom-16 scale-[25%] sm:bottom-52 sm:-left-32 xl:-top-20 xl:-left-80" />
           <BallPurple className="hidden xl:block xl:absolute xl:-top-24 xl:-left-[550px] scale-[25%]" />
         </div>
-        <div className="mx-4 sm:ml-16 xl:ml-32 -translate-y-20 sm:translate-y-0 xl:pb-64 xl:pt-32">
+        <div className="mx-4 -translate-y-20 sm:ml-16 xl:ml-32 sm:translate-y-0 xl:pb-64 xl:pt-32">
           <Heading
             level="1"
             className="capitalize text-2xl max-w-[15ch] px-4 mb-8 sm:max-w-md xl:max-w-xl xl:text-[46px] xl:leading-[56px] tracking-tighter "
@@ -88,12 +88,12 @@ export function UIUX() {
         <Star className="hidden sm:block sm:absolute sm:bottom-16 sm:right-12 xl:right-[600px] xl:bottom-64" />
       </section>
 
-      <section className="flex flex-col sm:flex-row mx-4 sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
+      <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
         <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
           <BigSaturn className="w-[70%] mx-auto sm:w-full xl:w-full xl:scale-110" />
           <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
           <BallBlue className="absolute scale-50 top-16 right-20 xl:hidden" />
-          <Star className="absolute -right-4 top-1/2 scale-50 sm:hidden" />
+          <Star className="absolute scale-50 -right-4 top-1/2 sm:hidden" />
         </div>
         <div className="w-[120%] relative -mt-16 sm:mt-0 xl:w-full">
           <SmallTitle>Design that drives conversion</SmallTitle>
@@ -116,8 +116,8 @@ export function UIUX() {
         </div>
       </section>
 
-      <section className="relative grid grid-flow-row w-full sm:grid-cols-4 items-center justify-center mt-4 sm:mt-32 mb-4 sm:mb-48 gap-3 px-4 sm:px-8 xl:px-32">
-        <Card className="w-full sm:py-8 py-10 h-full gap-2 xl:gap-8">
+      <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
@@ -130,7 +130,7 @@ export function UIUX() {
           </BodyText>
         </Card>
 
-        <Card className="w-full sm:py-8 py-10 h-full gap-2 xl:gap-8">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
@@ -144,7 +144,7 @@ export function UIUX() {
           </BodyText>
         </Card>
 
-        <Card className="w-full sm:py-8 py-10 h-full gap-4 xl:gap-8">
+        <Card className="w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"
@@ -157,7 +157,7 @@ export function UIUX() {
           </BodyText>
         </Card>
 
-        <Card className="w-full sm:py-8 py-10 h-full gap-1 xl:gap-9">
+        <Card className="w-full h-full gap-1 py-10 sm:py-8 xl:gap-9">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
@@ -173,7 +173,7 @@ export function UIUX() {
         <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
       </section>
       <div className="hidden max-h-[0px] sm:flex items-center justify-end">
-        <CloudFull className="translate-x-20 -translate-y-10 -scale-x-110 scale-y-110" />
+        <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
       </div>
       <Testimonials title="Good design converts" />
     </Layout>
