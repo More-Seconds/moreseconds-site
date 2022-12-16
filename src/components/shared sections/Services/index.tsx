@@ -26,7 +26,8 @@ export function Services() {
             level="2"
             className="max-w-lg mx-4 mb-10 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
-            Access a broad slate of services and innovative solutions.
+            {[<>Access a broad slate of services and <span className="text-accent">innovative solutions.</span></>]}
+            
           </Heading>
           <BodyText className="max-w-lsg mx-4 mb-2 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch] xl:text-lg">
           Transform your marketing, creative, and management teams into digital superheroes—literally. Whether it’s an eye-catching site redesign, a couple of landing page builds, an api integration, or a unique problem, you can rest easy knowing that we’re on top of everything and then some.

@@ -31,7 +31,8 @@ export function MDash(props: Props) {
             level="2"
             className="max-w-lg mx-4 mb-10 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
-            Take your projects from headache to handled in seconds.
+
+            {[<>Take your projects from <span className="text-accent">headache to handled</span> in seconds.</>]}
           </Heading>
           <BodyText className="max-w-lsg mx-4 mb-2 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch] xl:text-lg">
             We build pixel-perfect landing pages in record time. From startups
@@ -45,7 +46,7 @@ export function MDash(props: Props) {
         </div>
 
         <div className="content-end 2xl:w-fit 2xl:self-start justify-self-center xl:justify-self-end xl:pr-24">
-          <Button href="http://dash.moreseconds.com/">Start a Project </Button>
+          <Button href="https://moreseconds.com/algorithm-agency">View our Work </Button>
         </div>
       </div>
 
@@ -58,11 +59,18 @@ export function MDash(props: Props) {
 
       <div>
         <BodyText className="px-5 pb-20 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
-          Supercharge your team with the ultimate development tool. Request,
+          {/* <span>Supercharge</span> your team with the ultimate development tool. Request,
           track, interact, and build all in real-time and all from one place. We
           “baked in” our proprietary #dev-ops processes into a purpose-built
           platform designed specifically to make managing your project landscape
-          a breeze.
+          a breeze. */}
+
+          {[<><span className="text-accent">Supercharge </span>
+          your team with the ultimate development tool. Request,
+          track, interact, and build all in real-time and all from one place. We
+          “baked in” our proprietary #dev-ops processes into a purpose-built
+          platform designed specifically to make managing your project landscape
+          a breeze. </>]}
         </BodyText>
       </div>
 

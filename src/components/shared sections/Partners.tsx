@@ -32,14 +32,14 @@ export function Partners() {
             We're trusted service partners for the most influential industry leaders.
           </Heading>
           <ul className="flex w-full h-48 gap-4">
-            <li className="flex items-center justify-center bg-darker border-b border-dark rounded-xl w-full xl:w-80 xl:h-64 xl:p-8">
+            <li className="flex items-center justify-center w-full border-b-2 bg-darker border-indigo-400/20 rounded-xl xl:w-80 xl:h-64 xl:p-8">
               <img
                 src={HawkeMediaLogo}
                 alt="Hawke Media Logo"
                 className="w-[75%]"
               />
             </li>
-            <li className="flex items-center justify-center bg-darker border-b border-dark rounded-xl w-full xl:w-80 xl:h-64 xl:p-6">
+            <li className="flex items-center justify-center w-full border-b-2 bg-darker border-indigo-400/20 rounded-xl xl:w-80 xl:h-64 xl:p-6">
               <img
                 src={DyrdekLogo}
                 alt="Dyrdek Machine Logo"

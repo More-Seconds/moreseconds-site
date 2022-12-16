@@ -18,8 +18,8 @@ export function Accordian(props: Props) {
     <a href="" onClick={toggleOpen}>
       <li
         className={
-          (open ? 'bg-darkermid' : 'bg-darker') +
-          ' border-b border-dark flex items-start gap-8 px-8 py-6 rounded-3xl'
+          (open ? 'bg-indigo-400/20' : 'bg-darker') +
+          ' border-b-2 border-indigo-400/20 flex items-start gap-8 px-8 py-6 rounded-3xl'
         }
       >
         <>
