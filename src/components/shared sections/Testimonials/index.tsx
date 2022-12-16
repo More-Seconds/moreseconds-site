@@ -21,7 +21,7 @@ export function Testimonials(props: Props) {
   const [active, setActive] = useState(0)
 
   function incrementActive() {
-    if (active == 5) {
+    if (active == 4) {
       setActive(-1)
     }
     setActive((active) => active + 1)
@@ -106,15 +106,7 @@ export function Testimonials(props: Props) {
           support that we receive from Brian and the More Seconds team. Last
           week, we hit our highest engagement score on record."
         </Testimonial>
-        <Testimonial
-          image={Helen}
-          company="Age Perfectly"
-          name="Helen Jackman"
-          title="CEO / Owner"
-          hidden={active != 5}
-        >
-          “Prompt response, quick resolution.”
-        </Testimonial>
+        
         <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-40">
           <CarouselArrow
             className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent cursor-pointer"

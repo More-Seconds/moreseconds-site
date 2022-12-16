@@ -12,7 +12,6 @@ export function Dots(props: Props) {
       <li className={props.activeIndex == 2 ? activeClass : idleClass}></li>
       <li className={props.activeIndex == 3 ? activeClass : idleClass}></li>
       <li className={props.activeIndex == 4 ? activeClass : idleClass}></li>
-      <li className={props.activeIndex == 5 ? activeClass : idleClass}></li>
     </ul>
   )
 }
