@@ -39,26 +39,26 @@ export function Homepage() {
       </Hero>
       <Clients className="relative z-10 sm:-top-16 xl:-top-32" />
       <Team />
-      <MDash />
+      
       <SectionBlur />
       <Partners />
       <div className="mb-20 flex justify-center m-auto text-light flex-row sm:flex-row max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
+        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
           <p className="font-bold uppercase font-Poppins text-accent">
             More Speed
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
             3 months
           </h2>
           <p>
             We reduce the average new website build time from 90 days to 30.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
+        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
           <p className="font-bold uppercase font-Poppins text-accent">
             More Reliability
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
             7 Days
           </h2>
           <p>
@@ -66,11 +66,11 @@ export function Homepage() {
             week.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
+        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
           <p className="font-bold uppercase font-Poppins text-accent">
             More Sync
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
             5 Minutes
           </h2>
           <p>
@@ -78,11 +78,11 @@ export function Homepage() {
             Slack.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
+        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
           <p className="font-bold uppercase font-Poppins text-accent">
             More Projects
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
             60 Seconds
           </h2>
           <p>
@@ -91,6 +91,7 @@ export function Homepage() {
           </p>
         </div>
       </div>
+      <MDash />
 
       <Services />
       {/* <CenteredCTA /> */}
