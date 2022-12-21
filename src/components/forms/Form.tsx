@@ -20,8 +20,8 @@ interface FormFields {
   fullName: string
   lastName: string
   email: string
-  business: string
-  businessSize: string
+  companyName: string
+  companySize: string
   phone: string
 }
 // My modification
@@ -42,8 +42,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     fullName: '',
     lastName: '',
     email: '',
-    business: '',
-    businessSize: '',
+    companyName: '',
+    companySize: '',
     phone: ''
   }
 
@@ -59,8 +59,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     fullName: Yup.string().required('This field is required'),
     lastName: Yup.string().required('This field is required'),
     email: Yup.string().email().required('This field is required'),
-    business: Yup.string(),
-    businessSize: Yup.string(),
+    companyName: Yup.string(),
+    companySize: Yup.string(),
     phone: Yup.string()
   })
 
@@ -145,7 +145,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       onSubmit={(values, actions) => submitForm(values, actions)}
     >
       {(props) => (
-        <Form data-static-form-name="contact" className="grid w-full gap-2 ">
+        <Form data-static-form-name="contact" className="grid w-full gap-2 z-[9] relative">
           <div className={containerStyles}>
             <Field
               id="fullName"
@@ -206,42 +206,42 @@ export function FooterForm({ levelUp }: Partial<Props>) {
           </div>
           <div className={containerStyles}>
             <Field
-              id="business"
-              name="business"
+              id="companyName"
+              name="companyName"
               className={inputStyles(
-                props.touched.business,
-                props.errors.business
+                props.touched.companyName,
+                props.errors.companyName
               )}
             />
             <label
-              htmlFor="business"
-              className={labelStyles(props.values.business)}
+              htmlFor="companyName"
+              className={labelStyles(props.values.companyName)}
             >
-              BUSINESS
+              COMPANY NAME
             </label>
             <ErrorMessage
-              name="business"
+              name="CompanyName"
               className="text-red-600"
               component="div"
             />
           </div>
           <div className={containerStyles}>
             <Field
-              id="businessSize"
-              name="businessSize"
+              id="companySize"
+              name="companySize"
               className={inputStyles(
-                props.touched.businessSize,
-                props.errors.businessSize
+                props.touched.companySize,
+                props.errors.companySize
               )}
             />
             <label
-              htmlFor="businessSize"
-              className={labelStyles(props.values.businessSize)}
+              htmlFor="companySize"
+              className={labelStyles(props.values.companySize)}
             >
-              BUSINESS SIZE
+              COMPANY SIZE
             </label>
             <ErrorMessage
-              name="businessSize"
+              name="companySize"
               className="text-red-600"
               component="div"
             />

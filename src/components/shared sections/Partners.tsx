@@ -16,11 +16,11 @@ import { Heading } from '../typography/Heading'
 
 export function Partners() {
   return (
-    <section className="relative mb-20 sm:mb-48 sm:pt-20 xl:pt-40">
+    <section className="relative mb-0 sm:mb-0 sm:pt-20 xl:pt-40">
       <div className="absolute z-10 w-screen pt-10 sm:top-0">
         <Smoke className="h-auto w-[100vw]" />
       </div>
-      <div className="flex flex-col mx-4 sm:flex-row sm:mr-16">
+      <div className="flex flex-col mx-4 sm:flex-row sm:mr-8 mr-8">
         <div className="z-20 md:w-1/2">
           <Satellite className="z-20 w-2/3 h-auto md:w-full xl:w-2/3 sm:-translate-x-14 xl:translate-x-14" />
         </div>
@@ -31,7 +31,7 @@ export function Partners() {
           >
             We're trusted service partners for the most influential industry leaders.
           </Heading>
-          <ul className="flex w-full h-48 gap-4">
+          <ul className="flex w-full h-48 gap-4 justify-between">
             <li className="flex items-center justify-center w-full border-b-2 bg-darker border-indigo-400/20 rounded-xl xl:w-80 xl:h-64 xl:p-8">
               <img
                 src={HawkeMediaLogo}

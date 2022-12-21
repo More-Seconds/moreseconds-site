@@ -35,8 +35,15 @@ module.exports = {
       },
       screens: {
         lg: '1025px'
+      },
+
+      backgroundImage: {
+        'm-dash': "url('/public/images/m-dash-big.png')",
       }
+
+
     }
   },
+
   plugins: []
 }

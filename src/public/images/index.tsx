@@ -8,10 +8,11 @@ import SFELogo from './SFE.png'
 import PCTLogo from './PCT.png'
 import HawkeMediaLogo from './hawke_media.png'
 import DyrdekLogo from './dyrdek.png'
-import Code from './code.png'
-import UX from './ux.png'
-import Updates from './updates.png'
-import Research from './research.png'
+import PageBuilding from './pagebuilding.png'
+import PageDesign from './pagedesign.png'
+import WebCare from './webcare.png'
+import FeatureFunction from './featurefunction.png'
+import AuditReport from './auditreport.png'
 import Jason from './jason.png'
 import Brian from './brian.png'
 import Request1 from './request_image1.png'
@@ -46,10 +47,11 @@ export {
   PCTLogo,
   HawkeMediaLogo,
   DyrdekLogo,
-  Code,
-  UX,
-  Updates,
-  Research,
+  PageBuilding,
+  PageDesign,
+  WebCare,
+  FeatureFunction,
+  AuditReport,
   Jason,
   Brian,
   Request1,

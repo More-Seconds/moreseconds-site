@@ -18,19 +18,19 @@ type Props = {
 
 export function Team(props: Props) {
   return (
-    <section className="relative">
+    <section className="relative xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
       <SideBySide
         svg={TeamImage}
         hideImageMobile={props.hideImageMobile}
-        svgStyles="self-start justify-self-start xl:-translate-x-10"
+        svgStyles="self-start justify-self-start xl:-translate-x-10 relative -right-[5%]"
       >
         <div className="2xl:w-fit 2xl:self-end">
-          <SmallTitle className="mx-2 md:mx-8 xl:ml-16 mb-2">
+          <SmallTitle className="mb-4">
             Our promise
           </SmallTitle>
           <Heading
             level="2"
-            className="max-w-lg mx-4 mb-10 md:mx-16 xl:ml-16 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
+            className="max-w-lg mb-6 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
             {[
               <>
@@ -39,9 +39,9 @@ export function Team(props: Props) {
               </>
             ]}
           </Heading>
-          <ul className="relative z-20 grid gap-3 sm:max-w-md text-light font-Poppins md:-ml-4 xl:ml-12">
+          <ul className="relative z-20 grid gap-3 sm:max-w-xl text-light font-Poppins">
             <Accordian
-              title="Your Dedicated #Dev-Ops Team"
+              title="Your Go To #dev-ops team"
               image={Headset}
               open
             >

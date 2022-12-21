@@ -25,7 +25,7 @@ export function Homepage() {
         >
           <>The last development </>
           <span className="relative">
-            team you'll ever need.
+            team you’ll ever need.
             <NoMaintenance className="absolute right-20 bottom-0 w-[5ch] sm:w-[70%] xl:w-auto xl:scale-x-125 xl:translate-x-12" />
           </span>
           <></>
@@ -38,54 +38,55 @@ export function Homepage() {
         <Signup variant="primary" />
       </Hero>
       <Clients className="relative z-10 sm:-top-16 xl:-top-32" />
-      <Team />
       
+      <Team />
       <SectionBlur />
       <Partners />
-      <div className="mb-20 flex justify-center m-auto text-light flex-row sm:flex-row max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
-        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent">
+
+      <div className="mb-20 grid grid-cols-4 gap-12 justify-center m-auto text-light flex-row sm:flex-row xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Speed
           </p>
-          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-[2.5rem] xl:mt-5">
             3 months
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We reduce the average new website build time from 90 days to 30.
           </p>
         </div>
-        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Reliability
           </p>
-          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            7 Days
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-[2.5rem] xl:mt-5">
+            7 days
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We are active and available for urgent project requests 7 days a
             week.
           </p>
         </div>
-        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent">
-            More Sync
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+            More Synced
           </p>
-          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            5 Minutes
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-[2.5rem] xl:mt-5">
+            5 minutes
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We boast an average of 5 minutes or less for response times on
             Slack.
           </p>
         </div>
-        <div className="pb-8 pr-3 mr-8 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Projects
           </p>
-          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            60 Seconds
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-[2.5rem] xl:mt-5">
+            60 seconds
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We can go from detailed brief to project kickoff in under 60
             seconds.
           </p>

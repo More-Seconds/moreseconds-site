@@ -37,7 +37,7 @@ export function Testimonials(props: Props) {
     <section className="relative flex flex-col py-16 mx-4 xl:py-32 sm:mx-32 xl:mx-auto xl:max-w-4xl">
       <Heading
         level="2"
-        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center xl:text-[46px] xl:leading-[56px] xl:max-w-none"
+        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center xl:text-[46px] xl:leading-[56px] xl:max-w-[45rem]"
       >
         {props.title}
       </Heading>
@@ -48,6 +48,7 @@ export function Testimonials(props: Props) {
           name="Jared Lindo"
           title="CEO / Owner"
           hidden={active != 0}
+          video={false}
         >
           “Brian and his team have been amazing to work with. They do
           exceptional work, communicate frequently, and have a serious depth of
@@ -59,6 +60,7 @@ export function Testimonials(props: Props) {
           name="Kelley Tanzola"
           title="Founder"
           hidden={active != 1}
+          video={false}
         >
           “More Seconds is part of my Team. I have worked with More Seconds for
           over 3 years now. My goals and vision were embraced from the very
@@ -73,6 +75,7 @@ export function Testimonials(props: Props) {
           name="Mike Damanskis"
           title="Senior Content Producer"
           hidden={active != 2}
+          video={false}
         >
           “More Seconds helped deliver us a beautiful, functional, and effective
           site for our client on an accelerated timeline. We're overjoyed that
@@ -86,6 +89,7 @@ export function Testimonials(props: Props) {
           name="Cody Johnson"
           title="Co-Founder"
           hidden={active != 3}
+          video={false}
         >
           “Not only did More Seconds provide innovative ways for us to design
           and develop our website, but implemented them in such a way where it
@@ -101,6 +105,7 @@ export function Testimonials(props: Props) {
           name="Daniel Mickelson"
           title="CEO & Founder"
           hidden={active != 4}
+          video={true}
         >
           "I couldn't be happier with the design, development, and technical
           support that we receive from Brian and the More Seconds team. Last

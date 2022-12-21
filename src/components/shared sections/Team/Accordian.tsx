@@ -18,8 +18,8 @@ export function Accordian(props: Props) {
     <a href="" onClick={toggleOpen}>
       <li
         className={
-          (open ? 'bg-indigo-400/20' : 'bg-darker') +
-          ' border-b-2 border-indigo-400/20 flex items-start gap-8 px-8 py-6 rounded-3xl'
+          (open ? 'relative bg-[#1e1e30] border-0 shadow-[5px_5px_0px_#ff7e22] rounded-3xl' : 'bg-darker border-indigo-400/20 border-b-2 rounded-0') +
+          ' border-indigo-400/20 flex items-start gap-8 px-8 py-6 rounded-0'
         }
       >
         <>
@@ -28,14 +28,14 @@ export function Accordian(props: Props) {
                 width: '20px',
                 height: '20px',
                 className:
-                  (open ? 'fill-accent stroke-accent' : 'fill-darkmid') +
+                  (open ? 'fill-accent stroke-accent w-auto]' : 'fill-darkmid') +
                   ' mt-1'
               })
             : ''}
           <div>
             <BodyText
               className={
-                (open ? 'text-light' : '') + ' text-lg font-bold w-max mb-2'
+                (open ? 'text-light font-medium' : ' font-bold') + ' text-lg w-max mb-2 capitalize'
               }
             >
               {props.title}
@@ -43,7 +43,7 @@ export function Accordian(props: Props) {
             <p
               className={
                 (open ? 'block' : 'hidden') +
-                ' max-w-xs text-sm text-light leading-6'
+                ' max-w-[30rem] text-normal text-light leading-7'
               }
             >
               {props.children}

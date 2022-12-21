@@ -1,4 +1,5 @@
 import { BodyText } from 'components/typography/BodyText'
+import { PlayIcon } from 'public/svgs'
 
 type Props = {
   image: string
@@ -16,7 +17,7 @@ export function Testimonial(props: Props) {
         'flex flex-col sm:flex-row sm:gap-8 ' + (props.hidden ? 'hidden' : '')
       }
     >
-      <figure className="grid gap-4 mb-10 shrink-0 text-light">
+      <figure className="grid gap-4 mb-10 shrink-0 text-light relative cursor-pointer">
         <img
           src={props.image}
           alt={props.name}
@@ -24,6 +25,12 @@ export function Testimonial(props: Props) {
           height="80"
           className="w-20 sm:w-56 xl:w-72 aspect-square object-cover rounded-lg border-4 border-dark"
         />
+
+        <PlayIcon className={
+          'absolute -translate-x-1/2 -translate-y-[-275%] left-1/2 top-0'
+        }
+        />
+
         <figcaption className="grid gap-2 xl:ml-[5%]">
           <h3 className="text-xs font-medium uppercase sm:text-lg font-Poppins">
             {props.company}
@@ -35,7 +42,7 @@ export function Testimonial(props: Props) {
         </figcaption>
       </figure>
       <div className=" sm:max-w-xs sm:mt0 xl:max-w-none w-[150%]">
-        <BodyText className="text-sm max-w-xs sm:max-w-xl  xl:text-[20px] xl:w-[36rem] font-normal leading-10">
+        <BodyText className="max-w-xs sm:max-w-xl  xl:text-[1.5rem] xl:w-[36rem] font-normal leading-[1.75]">
           {props.children}
         </BodyText>
       </div>

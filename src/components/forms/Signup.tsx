@@ -89,7 +89,7 @@ export function Signup(props: Props) {
                   handleReset()
                 }}
               >
-                Get Started
+                Get More Seconds
               </button>
             </div>
           </fieldset>
