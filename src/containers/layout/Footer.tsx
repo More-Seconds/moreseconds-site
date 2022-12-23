@@ -45,7 +45,7 @@ export function Footer() {
         </ul>
       </section>
       <hr className="max-w-4xl mx-auto text-darkmid opacity-30 md:max-w-6xl" />
-      <section className="grid grid-flow-col py-12 sm:justify-items-center sm:grid-rows-3 sm:gap-0 sm:pt-4 sm:grid-cols-1 sm:items-center sm:text-center md:grid-cols-3 md:pt-0 md:mx-4 md:grid-rows-1">
+      <section className="grid grid-flow-col py-12 sm:justify-items-center sm:grid-rows-3 sm:gap-0 sm:pt-4 sm:grid-cols-1 sm:items-center sm:text-center md:grid-cols-3 md:pt-4 md:mx-4 md:grid-rows-1 lg:pt-8">
         <ul className="hidden gap-4 sm:flex sm:w-full sm:justify-center font-DM justify-self-start text-light">
           <li>
             <Link to="" className="hover:text-accent">
