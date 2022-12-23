@@ -1,4 +1,4 @@
-import AlgorithmLogo from './algorithm2.svg'
+import AlgorithmLogo from './Algorithm2.svg'
 import PopmenuLogo from './popmenu_white.svg'
 import MMLogo from './M3_2.svg'
 import MontyLogo from './Monty-Summit-logo.webp'
