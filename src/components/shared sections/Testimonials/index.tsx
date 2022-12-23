@@ -29,19 +29,19 @@ export function Testimonials(props: Props) {
 
   function decrementActive() {
     if (active == 0) {
-      setActive(6)
+      setActive(5)
     }
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-16 mx-4 xl:py-32 sm:mx-32 xl:mx-auto xl:max-w-4xl">
+    <section className="relative flex flex-col py-16 sm:px-[25px] md:mx-4 md:mx-32 lg:pt-20 xl:mx-auto xl:max-w-4xl xl:py-32">
       <Heading
         level="2"
-        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-[35px] text-center capitalize xl:text-[46px] xl:leading-[56px] xl:max-w-none"
+        className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-2xl sm:text-center md:text-center md:text-[35px] text-center md:max-w-[45rem] md:text-[2.5rem] md:leading-[1.35] xl:text-[46px] xl:leading-[56px] xl:max-w-[45rem]"
       >
         {props.title}
       </Heading>
-      <div className="relative flex gap-4 mx-auto mb-5 sm:gap-24">
+      <div className="relative flex gap-4 mx-auto mb-5 sm:gap-24 md:w-[90%] md:justify-center">
         <Testimonial
           image={JaredLindo}
           company="Siro Solutions"
@@ -107,15 +107,15 @@ export function Testimonials(props: Props) {
           week, we hit our highest engagement score on record."
         </Testimonial>
         
-        <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-40">
+        <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-[3rem] sm:top-1/2 sm:-translate-y-1/2 sm:-left-20 lg:top-[35%] xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-[10rem] hover:border-accent">
           <CarouselArrow
-            className="w-full h-full scale-125 rotate-180 fill-mid hover:fill-accent cursor-pointer"
+            className="w-full h-full scale-125 rotate-180 cursor-pointer fill-mid hover:fill-accent"
             onClick={decrementActive}
           />
         </div>
-        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-20 sm:top-1/2 sm:-translate-y-1/2 hover:border-accent xl:w-12 xl:h-12 xl:-translate-y-24 xl:-right-40">
+        <div className="absolute right-0 flex items-center justify-center w-8 h-8 border rounded-full sm:-right-[3rem] sm:top-1/2 sm:-translate-y-1/2 md:-right-20 lg:top-[35%] xl:w-12 xl:h-12 xl:-translate-y-24 xl:-right-[15rem] hover:border-accent">
           <CarouselArrow
-            className="w-full h-full scale-125 fill-mid hover:fill-accent cursor-pointer"
+            className="w-full h-full scale-125 cursor-pointer fill-mid hover:fill-accent"
             onClick={incrementActive}
           />
         </div>

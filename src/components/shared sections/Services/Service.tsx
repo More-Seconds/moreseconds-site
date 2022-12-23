@@ -12,7 +12,7 @@ export function Service(props: Props) {
   return (
     <li className={'relative ' + props.className} >
       <Link to={props.slug} reloadDocument>
-        <div className="h-full overflow-hidden rounded-xl">
+        <div className="h-full overflow-hidden rounded-xl ">
             <img
               src={props.image}
               alt={props.title}
@@ -21,9 +21,9 @@ export function Service(props: Props) {
 
           </div>
 
-        <div className="absolute inset-0 flex flex-col justify-end w-full h-full p-8">
-          <BodyText className="text-2xl font-DM">{props.title}</BodyText>
-          <p className="text-lg uppercase text-light">Learn More</p>
+        <div className="absolute inset-0 flex flex-col justify-end w-full h-full sm:gap-[.55rem] sm:p-4 md:p-8 md:gap-0">
+          <BodyText className="font-DM sm:text-4 sm:leading-[1.35] md:text-2xl">{props.title}</BodyText>
+          <p className="text-light font-light sm:text-[.8rem] md:leading-normal md:text-md">See more</p>
         </div>
       </Link>
     </li>

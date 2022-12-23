@@ -21,76 +21,78 @@ export function Homepage() {
       <Hero svg={HomeHeroBG}>
         <Heading
           level="1"
-          className="max-w-lg xl:max-w-3xl 3xl:max-w-5xl xl:text-[64px] xl:leading-[72.96px]"
+          className=" xs:text-4xl sm:mx-auto sm:text-[2rem] sm:leading-[1.05] sm:max-w-[18ch] md:gap-4 md:text-[2.75rem] md:leading-[1] md:text-[calc(3.05rem_-_0.7vw)] lg:mt-[2rem] lg:max-w-[45rem] lg:text-[3.5rem] lg:leading-[1] xl:max-w-3xl xl:text-[64px] xl:leading-[72.96px] 3xl:max-w-5xl"
         >
           <>The last development </>
           <span className="relative">
-            team you'll ever need.
-            <NoMaintenance className="absolute right-20 bottom-0 w-[5ch] sm:w-[70%] xl:w-auto xl:scale-x-125 xl:translate-x-12" />
+            team you’ll ever need.
+            <NoMaintenance className="absolute bottom-0 w-[5ch] sm:right-0 sm:w-[12ch] md:right-0 md:bottom-[-10px] md:w-[12ch] lg:bottom-0 xl:right-20 xl:w-auto xl:scale-x-125 xl:translate-x-12" />
           </span>
           <></>
         </Heading>
-        <BodyText className="max-w-[30ch] sm:max-w-md xl:max-w-2xl xl:text-lg">
+        <BodyText className="max-w-[30ch] sm:max-w-[45ch] md:max-w-full md:text-[1rem] md:leading-[1.75] md:my-4 lg:max-w-xl xl:max-w-2xl xl:text-lg">
           We set the standard for high quality development teams and built a
           frictionless #dev-ops platform, designed to take your web projects
           from “headache to handled” in seconds.
         </BodyText>
         <Signup variant="primary" />
       </Hero>
-      <Clients className="relative z-10 sm:-top-16 xl:-top-32" />
+      <Clients className="relative z-10 sm:-top-10 md:-top-16 xl:-top-32" />
+      
       <Team />
-      <MDash />
       <SectionBlur />
       <Partners />
-      <div className="mb-20 flex justify-center m-auto text-light flex-row sm:flex-row max-w-7xl md:mx-16 lg:mx-16 xl:pt-32 xl:mx-auto xl:pl-32 xl:max-w-[1600px] 3xl:pt-60">
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
-          <p className="font-bold uppercase font-Poppins text-accent">
+
+      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[25px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:gap-12 md:gap-[1rem] md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Speed
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
             3 months
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We reduce the average new website build time from 90 days to 30.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
-          <p className="font-bold uppercase font-Poppins text-accent">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Reliability
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            7 Days
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
+            7 days
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We are active and available for urgent project requests 7 days a
             week.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
-          <p className="font-bold uppercase font-Poppins text-accent">
-            More Sync
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+            More Synced
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            5 Minutes
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
+            5 minutes
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We boast an average of 5 minutes or less for response times on
             Slack.
           </p>
         </div>
-        <div className="border-b border-dark mr-8 pr-3 pb-8">
-          <p className="font-bold uppercase font-Poppins text-accent">
+        <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
+          <p className="font-bold uppercase font-Poppins text-accent mb-4">
             More Projects
           </p>
-          <h2 className="font-DM font-bold z-10 sm:text-2xl text-light mb-3 mt-5 text-3xl text-center sm:max-w-2xl xl:max-w-2xl sm:mt-0 sm:text-left xl:text-4xl xl:mt-5">
-            60 Seconds
+          <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
+            60 seconds
           </h2>
-          <p>
+          <p className="mt-[0.8rem] leading-7">
             We can go from detailed brief to project kickoff in under 60
             seconds.
           </p>
         </div>
       </div>
+      <MDash />
 
       <Services />
       {/* <CenteredCTA /> */}

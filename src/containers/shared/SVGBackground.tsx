@@ -9,14 +9,14 @@ type Props = {
 }
 
 export function SVGBackground(props: Props) {
-  const bgClass = `z-0 pt-10 w-screen ${
+  const bgClass = `z-0 w-screen md:mt-[3rem] lg:mt-0 xl:pt-10 ${
     props.hideBgMobile ? 'hidden sm:block' : ''
   }`
   return (
     <section
       className={'relative bg-cover flex flex-col w-screen ' + props.className}
     >
-      <div className="inset-0 z-10 sm:absolute">{props.children}</div>
+      <div className="inset-0 z-10 sm:relative md:absolute">{props.children}</div>
       <div className={bgClass}>
         {props.background({
           width: '100vw',
