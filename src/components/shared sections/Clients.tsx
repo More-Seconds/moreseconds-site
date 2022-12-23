@@ -47,7 +47,7 @@ export function Clients(props: Props) {
 
 
         <li className="p-4 sm:p-0">
-          <img src={PopmenuLogo} alt="Popmenu" className="saturate-0 sm:max-w-[7rem] sm:min-w-[10rem]  md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[9rem] xl:min-w-[13rem]" />
+          <img src={PopmenuLogo} alt="Popmenu" className="saturate-0 sm:max-w-[7rem] sm:min-w-[7rem]  md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[9rem] xl:min-w-[13rem]" />
         </li>
         
 
@@ -90,7 +90,7 @@ export function Clients(props: Props) {
 
 
         <li className="p-4 sm:p-0">
-          <img src={ClanFinderLogo} alt="Popmenu" className="saturate-0 sm:max-w-[7rem] sm:min-w-[10rem] md:max-w-[9rem] md:min-w-[9rem] lg:max-w-[8rem] xl:min-w-[15rem]" />
+          <img src={ClanFinderLogo} alt="Popmenu" className="saturate-0 sm:max-w-[7rem] sm:min-w-[7rem] md:max-w-[9rem] md:min-w-[9rem] lg:max-w-[8rem] xl:min-w-[15rem]" />
         </li>
 
 
