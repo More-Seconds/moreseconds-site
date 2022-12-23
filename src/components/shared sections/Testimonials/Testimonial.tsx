@@ -27,7 +27,7 @@ export function Testimonial(props: Props) {
         />
 
         <PlayIcon className={
-          'absolute -translate-x-1/2 -translate-y-[-275%] left-1/2 top-0 lg:top-[-10%]'
+          'hidden absolute -translate-x-1/2 -translate-y-[-275%] left-1/2 top-0 lg:top-[-10%]'
         }
         />
 
