@@ -100,7 +100,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
   ) => {
     const validate = touched && errors ? 'border-2 border-red-600' : 'border-0'
     return (
-      `peer font-Poppins text-dark text-lg bg-darkmid rounded-2xl p-5 w-full border ` +
+      `peer font-Poppins text-dark text-lg sm:bg-[#dfe1e5] md:bg-darkmid rounded-2xl p-5 w-full border ` +
       validate
     )
   }
@@ -285,7 +285,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     
     
           <button
-            className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded xl:justify-self-auto w-full sm:w-max hover:from-[#FFAD72] hover:to-accent"
+            className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded sm:w-full-auto w-full md:w-max xl:justify-self hover:from-[#FFAD72] hover:to-accent"
             onClick={() => {
               props.handleSubmit()
               //props.resetForm()

@@ -18,11 +18,11 @@ type Props = {
 
 export function Team(props: Props) {
   return (
-    <section className="relative xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+    <section className="relative sm:px-[25px] md:pl-[45px] md:pr-0 lg:pl-[64px] xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
       <SideBySide
         svg={TeamImage}
         hideImageMobile={props.hideImageMobile}
-        svgStyles="self-start justify-self-start xl:-translate-x-10 relative -right-[5%]"
+        svgStyles="relative self-start justify-self-start lg:-right-[10%] xl:-translate-x-10 xl:-right-[5%]"
       >
         <div className="2xl:w-fit 2xl:self-end">
           <SmallTitle className="mb-4">
@@ -30,7 +30,7 @@ export function Team(props: Props) {
           </SmallTitle>
           <Heading
             level="2"
-            className="max-w-lg mb-6 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
+            className=" mb-6 md:mb-10 md:text-[2.5rem] md:leading-[1] xl:max-w-lg xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
             {[
               <>
@@ -90,7 +90,7 @@ export function Team(props: Props) {
           </ul>
         </div>
       </SideBySide>
-      <HollowStar className="absolute hidden top-40 sm:block" />
+      <HollowStar className="absolute hidden sm:block lg:top-50 xl:top-40" />
     </section>
   )
 }

@@ -23,14 +23,14 @@ type Props = {
 export function MDash(props: Props) {
   return (
     <section className="relative">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-3 pt-4 pb-8 overflow-hidden xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className=" pt-4 pb-8 overflow-hidden sm:px-[25px] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="2xl:w-fit 2xl:self-start">
           <SmallTitle className="mb-4">
             The M-Dash
           </SmallTitle>
           <Heading
             level="2"
-            className="max-w-lg mb-6 xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
+            className="max-w-lg mb-6 md:text-[2.5rem] md:leading-[1] xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
 
             {[<>Take your projects from <span className="text-accent">headache to handled</span> in seconds.</>]}
@@ -41,21 +41,21 @@ export function MDash(props: Props) {
           </BodyText>
         </div>
 
-        <div className="content-end 2xl:w-fit 2xl:self-start justify-self-center xl:justify-self-end">
+        <div className="content-end justify-self-center md:justify-self-end xl:justify-self-end 2xl:w-fit 2xl:self-start">
           <Button href="https://dash.moreseconds.com/login">Start a Project</Button>
         </div>
       </div>
 
-      <div className="relative grid grid-cols-1 gap-3 overflow-hidden xl:gap-10 xl:py-[7rem] xl:mx-auto xl:max-w-[1315px] xl:px-[45px] xl:py-14 xl:mb-8 bg-backgroundImage bg-[url('/src/public/images/ms-dashb-big.png')] bg-cover border-0 border-solid rounded-[15px]">
+      <div className="relative grid grid-cols-1 gap-3 overflow-hidden md:py-[5rem] md:mx-auto md:max-w-[calc(100%_-_10%)] md:px-[45px]  xl:gap-10 xl:py-[7rem] xl:mx-auto xl:max-w-[1315px] xl:px-[45px] xl:py-14 xl:mb-8 md:bg-backgroundImage bg-[url('/src/public/images/ms-dashb-big.png')] bg-cover border-0 border-solid md:rounded-[15px]">
 
-        <div className="inner--gif xl:mx-auto xl:max-w-[1100px] xl:px-[45px] before:content-[''] before:absolute before:left-0 before:top-0 before:bg-[#00000094] before:w-full before:h-full before:z-10">
-          <img className="w-full z-20 relative border-0 border-solid rounded-[15px]" src={DashboardGIF} alt="" />
+        <div className="inner--gif mx-auto md:max-w-[750px] lg:px-[45px] xl:max-w-[1100px] xl:px-[45px] before:content-[''] before:absolute before:left-0 before:top-0 before:bg-[#00000094] before:w-full before:h-full before:z-10">
+          <img className="w-full z-20 relative border-0 border-solid sm:min-h-[23rem] sm:object-cover sm:object-left md:min-h-0 md:rounded-[15px]" src={DashboardGIF} alt="" />
         </div>
 
       </div>
 
       <div>
-        <BodyText className="mt-16 pb-20 mx-auto text-center sm:max-w-4xl xl:text-[1.75rem] leading-[1.35]">
+        <BodyText className="pb-20 sm:px-[25px] sm:leading-6 sm:mt-10 md:mt-14 mx-auto text-center sm:max-w-4xl md:px-[45wpx] md:leading-[1.35] md:text-[1.35rem] lg:px-[64px] xl:text-[1.75rem] leading-[1.35]">
           {/* <span>Supercharge</span> your team with the ultimate development tool. Request,
           track, interact, and build all in real-time and all from one place. We
           “baked in” our proprietary #dev-ops processes into a purpose-built

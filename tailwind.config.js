@@ -5,10 +5,26 @@ module.exports = {
   mode: 'jit',
   content: ['./src/**/*.tsx', './dist/index.html'],
   theme: {
-    extend: {
-      screens: {
-        '3xl': '1750px'
+
+     screens: {
+      'sm': '275px',
+        // => @media (min-width: 640px) { ... }
+
+      'md': '755px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1025px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1280px) { ... }
       },
+
+    extend: {
+     
       colors: {
         surface: '#000000',
         accent: '#FF7E21',

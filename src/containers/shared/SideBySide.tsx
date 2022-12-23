@@ -14,7 +14,7 @@ export function SideBySide(props: Props) {
         <>
           <div
             className={
-              'flex w-full h-min sm:h-auto sm:items-end xl:justify-evenly' +
+              'flex w-full h-min sm:h-auto sm:items-end  xl:justify-evenly' +
               (props.hideImageMobile ? 'hidden sm:flex' : '')
             }
           >
@@ -30,12 +30,12 @@ export function SideBySide(props: Props) {
     } else {
       return (
         <>
-          <div className="relative w-full sm:mx-0 flex flex-col">
+          <div className="relative sm:mx-0 flex flex-col w-full md:w-[66%] lg:w-full">
             {props.children}
           </div>
           <div
             className={
-              'flex w-full h-min sm:h-auto sm:items-end ' +
+              'flex w-full h-min sm:h-auto sm:items-end sm:hidden md:flex md:justify-end ' +
               (props.hideImageMobile ? 'hidden sm:flex' : '')
             }
           >
@@ -53,7 +53,7 @@ export function SideBySide(props: Props) {
   return (
     <section
       className={
-        'flex flex-col sm:flex-row  ' +
+        'flex flex-col md:flex-col-reverse  lg:flex-row  ' +
         (props.reverse ? 'sm:mr-16 ' : '') +
         props.className
       }

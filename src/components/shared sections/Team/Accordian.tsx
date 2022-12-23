@@ -28,14 +28,14 @@ export function Accordian(props: Props) {
                 width: '20px',
                 height: '20px',
                 className:
-                  (open ? 'fill-accent stroke-accent w-auto]' : 'fill-darkmid') +
+                  (open ? 'fill-accent stroke-accent w-[6rem] sm:hidden md:flex' : 'fill-darkmid') +
                   ' mt-1'
               })
             : ''}
           <div>
             <BodyText
               className={
-                (open ? 'text-light font-medium' : ' font-bold') + ' text-lg w-max mb-2 capitalize'
+                (open ? 'text-light font-medium' : ' font-bold') + ' text-lg mb-2 capitalize lg:w-max'
               }
             >
               {props.title}
@@ -43,7 +43,7 @@ export function Accordian(props: Props) {
             <p
               className={
                 (open ? 'block' : 'hidden') +
-                ' max-w-[30rem] text-normal text-light leading-7'
+                ' lg:max-w-[30rem] text-normal text-light leading-7'
               }
             >
               {props.children}
