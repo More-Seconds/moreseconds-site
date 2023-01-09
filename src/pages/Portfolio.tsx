@@ -41,7 +41,7 @@ export function Portfolio() {
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading level="1" className="max-w-4xl mx-auto text-center">
-          See Why You Should Use Superside
+          See Why You Should Use More Seconds
           </Heading>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
           Our astronomical design teams have helped some of the world’s top brands leverage a full range of conceptual and production expertise to execute sensational campaigns and scale at the speed of light.
@@ -153,9 +153,9 @@ export function Portfolio() {
         <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
         <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
       </section> */}
-      <div className="hidden max-h-[0px] sm:flex items-center justify-end">
+      {/* <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
-      </div>
+      </div> */}
       {/* <Testimonials title="Websites that wow." /> */}
     </Layout>
   )

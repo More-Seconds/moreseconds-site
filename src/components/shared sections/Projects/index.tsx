@@ -9,7 +9,7 @@ import { Button } from 'components/Button'
 
 export function Projects() {
   return (
-    <section className="relative flex flex-col content-center self-center justify-center my-32 mb-20 flex-nowrap justify-items-center justify-self-center">
+    <section className="relative flex flex-col content-center self-center justify-center md:my-32 mb-20 flex-nowrap justify-items-center justify-self-center md:px-16 px-8">
       {/* <SmallTitle className="mb-2 text-center">Our Services</SmallTitle>
       <Heading
         level="2"
@@ -42,59 +42,59 @@ export function Projects() {
 
       {/* grid-template-rows: repeat(2,minmax(0,0.5fr)) */}
       {/* xl:max-w-[1600px] */}
-      <Heading level="1" className="self-center w-full mb-10 max-w-7xl">
+      <Heading level="1" className="self-center w-full mb-10 max-w-7xl ">
         I want to see All capabilities
       </Heading>
-      <ul className="grid self-center grid-cols-3 gap-4 auto-rows-fr max-w-7xl ">
+      <ul className="grid self-center sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-fr max-w-7xl mb-20">
         <Project
           title="Page Building"
-          className="lg:col-start-1 lg:col-end-3"
+          className="md:col-start-1 md:col-end-3 col-start-1 col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
         <Project
           title="Features & Functionality"
-          className="lg:col-start-3 lg:col-end-4"
+          className="md:col-start-3 md:col-end-4"
           image={FeatureFunction}
           slug={'/web-development'}
         />
         <Project
           title="Features & Functionality"
-          className="lg:col-start-1 lg:col-end-2"
+          className="md:col-start-1 md:col-end-2"
           image={FeatureFunction}
           slug={'/web-development'}
         />
         <Project
           title="Features & Functionality"
-          className="lg:col-start-2 lg:col-end-3"
-          image={FeatureFunction}
-          slug={'/web-development'}
-        />
-
-        <Project
-          title="Features & Functionality"
-          className="lg:col-start-3 lg:col-end-4"
+          className="md:col-start-2 md:col-end-3 col-start-1 col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
 
         <Project
           title="Features & Functionality"
-          className="lg:col-start-1 lg:col-end-2"
+          className="md:col-start-3 md:col-end-4"
+          image={FeatureFunction}
+          slug={'/web-development'}
+        />
+
+        <Project
+          title="Features & Functionality"
+          className="md:col-start-1 md:col-end-2"
           image={FeatureFunction}
           slug={'/web-development'}
         />
         
         <Project
           title="Features & Functionality"
-          className="lg:col-start-1 lg:col-end-2"
+          className="md:col-start-1 md:col-end-2 col-start-1 col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
 
         <Project
           title="Features & Functionality"
-          className="lg:col-start-2 lg:col-end-4 lg:row-start-3 lg:row-end-5"
+          className="md:col-start-2 md:col-end-4 md:row-start-3 md:row-end-5 col-start-1 col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
