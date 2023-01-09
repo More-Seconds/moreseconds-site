@@ -45,7 +45,7 @@ export function Homepage() {
 
       <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[25px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:gap-12 md:gap-[1rem] md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+          <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Speed
           </p>
           <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
@@ -56,7 +56,7 @@ export function Homepage() {
           </p>
         </div>
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+          <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Reliability
           </p>
           <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
@@ -68,7 +68,7 @@ export function Homepage() {
           </p>
         </div>
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+          <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Synced
           </p>
           <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">
@@ -80,7 +80,7 @@ export function Homepage() {
           </p>
         </div>
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
-          <p className="font-bold uppercase font-Poppins text-accent mb-4">
+          <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Projects
           </p>
           <h2 className="z-10 mt-5 mb-3 text-3xl font-bold text-center font-DM sm:text-2xl text-light sm:max-w-2xl sm:mt-0 sm:text-left lg:text-[2rem] xl:max-w-2xl  xl:text-[2.5rem] xl:mt-5">

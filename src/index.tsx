@@ -9,6 +9,7 @@ import { CaseStudyPCT } from 'pages/CaseStudies/clients/pct/CasePCT'
 import { UIUX } from './pages/UIUX'
 import { Pricing } from './pages/Pricing'
 import { WebDevelopment } from 'pages/WebDevelopment'
+import { Portfolio } from 'pages/Portfolio'
 import { ResearchAndAnalysis } from 'pages/ResearchAndAnalysis'
 import { WebsiteUpdates } from 'pages/WebsiteUpdates'
 import { WhoWeHelp } from 'pages/WhoWeHelp'
@@ -32,6 +33,7 @@ render(
       <Route path="/algorithm-agency" element={<CaseStudyAlgorithm />}></Route>
       <Route path="/pct" element={<CaseStudyPCT />}></Route>
       <Route path="/web-development" element={<WebDevelopment />}></Route>
+      <Route path="/portfolio" element={<Portfolio />}></Route>
       <Route
         path="/research-and-analysis"
         element={<ResearchAndAnalysis />}
