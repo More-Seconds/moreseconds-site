@@ -5,11 +5,45 @@ import { SmallTitle } from '../../typography/SmallTitle'
 import { BallPurple } from 'public/svgs'
 import { BodyText } from 'components/typography/BodyText'
 import { Button } from 'components/Button'
+// import { createClient } from 'contentful'
+
+// const client = createClient({
+//   space: 'bca1sb6nivz6',
+//   accessToken: 'q2TJeu5SPVSrviAaRjnU_6Nm9wuHqG2ERVR1YGPc8v0'
+// })
+
+
+// client.getEntries({
+//   content_type: 'blogPost'
+// }).then(response => {
+//   const posts = response.items
+//   posts.forEach(post => {
+//     console.log(post.fields.title)
+//   })
+// })
+
+import sanityClient from '@sanity/client'
+
+
+const client = sanityClient({
+  projectId: '1l0nc7l2',
+  dataset: 'production',
+  useCdn: true // this enables CDN-based querying for faster results
+})
+
+client.fetch(`
+*[_type == 'post'] {
+  title
+}`)
+  .then(results => {
+    console.log(results)
+  })
+
 
 
 export function Projects() {
   return (
-    <section className="relative flex flex-col content-center self-center justify-center md:my-32 mb-20 flex-nowrap justify-items-center justify-self-center md:px-16 px-8">
+    <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
       {/* <SmallTitle className="mb-2 text-center">Our Services</SmallTitle>
       <Heading
         level="2"
@@ -45,10 +79,10 @@ export function Projects() {
       <Heading level="1" className="self-center w-full mb-10 max-w-7xl ">
         I want to see All capabilities
       </Heading>
-      <ul className="grid self-center sm:grid-cols-2 md:grid-cols-3 gap-4 auto-rows-fr max-w-7xl mb-20">
+      <ul className="grid self-center gap-4 mb-20 sm:grid-cols-2 md:grid-cols-3 auto-rows-fr max-w-7xl">
         <Project
           title="Page Building"
-          className="md:col-start-1 md:col-end-3 col-start-1 col-end-3"
+          className="col-start-1 col-end-3 md:col-start-1 md:col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
@@ -66,7 +100,7 @@ export function Projects() {
         />
         <Project
           title="Features & Functionality"
-          className="md:col-start-2 md:col-end-3 col-start-1 col-end-3"
+          className="col-start-1 col-end-3 md:col-start-2 md:col-end-3"
           image={FeatureFunction}
           slug={'/web-development'}
         />
@@ -87,17 +121,21 @@ export function Projects() {
         
         <Project
           title="Features & Functionality"
-          className="md:col-start-1 md:col-end-2 col-start-1 col-end-3"
+          className="col-start-1 col-end-3 md:col-start-1 md:col-end-2"
           image={FeatureFunction}
           slug={'/web-development'}
         />
 
         <Project
           title="Features & Functionality"
-          className="md:col-start-2 md:col-end-4 md:row-start-3 md:row-end-5 col-start-1 col-end-3"
+          className="col-start-1 col-end-3 md:col-start-2 md:col-end-4 md:row-start-3 md:row-end-5"
           image={FeatureFunction}
           slug={'/web-development'}
         />
+
+        <div>
+
+        </div>
 
         
 
