@@ -133,10 +133,6 @@ export function Projects() {
           slug={'/web-development'}
         />
 
-        <div>
-
-        </div>
-
         
 
       </ul>
