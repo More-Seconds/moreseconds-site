@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@cloudflare/pages-plugin-mailchannels": "^0.1.1",
+    "@portabletext/react": "^2.0.0",
     "@sanity/client": "^4.0.1",
     "contentful": "^9.2.15",
     "gsap": "^3.10.4",
