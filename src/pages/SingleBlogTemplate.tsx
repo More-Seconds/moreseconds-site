@@ -35,7 +35,7 @@ const client = sanityClient({
 })
 
 
-export function SingleBlogTemplate({id}) {
+export function SingleBlogTemplate({id} : any) {
 
   
   
@@ -74,7 +74,7 @@ const components = {
   block: {
     // Ex. 1: customizing common block types
     // h1: ({children}:any) => console.log("asdasd"),
-    h1: ({children}:any) => <h1 level="1" className="text-2xl text-white">{children}</h1>,
+    h1: ({children}:any) => <Heading level="1" className="text-2xl text-white">{children}</Heading>,
     h2: ({children}:any) => <Heading level="2" className="text-2xl text-white">{children}</Heading>,
     h3: ({children}:any) => <Heading level="3" className="text-2xl text-white">{children}</Heading>,
     h4: ({children}:any) => <Heading level="4" className="text-2xl text-white">{children}</Heading>,
@@ -103,11 +103,11 @@ const components = {
             return <>
 
               <div className="flex flex-row content-center justify-center">
-                <div className="max-w-7xl">
+                <div className="w-full max-w-7xl">
 
                   {/* POST TITLE AND IMAGE */}
                   <Heading level="1" className="mb-10">{ele.title}</Heading>
-                  <img src={ele.mainImage.asset.url} className="w-full mb-10 rounded-lg "></img>
+                  <img src={(ele.mainImage == null) ? 'https://via.placeholder.com/150' : ele.mainImage.asset.url} className="object-cover	w-full max-h-[400px] h-max mb-10 rounded-lg "></img>
 
                   {/* POST META DATA */}
                   <div className="flex flex-row content-center justify-start mb-10">
@@ -153,7 +153,7 @@ const components = {
                     </div>
                     
                     {/* POST BODY TEXT */}
-                    <div className="grid max-w-5xl grid-cols-1 auto-rows-min gap-y-5">
+                    <div className="grid w-full max-w-5xl grid-cols-1 auto-rows-min gap-y-5">
                       <PortableText
                         value={ele.body}
                         components = {components}
