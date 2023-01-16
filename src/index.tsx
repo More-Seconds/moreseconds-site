@@ -17,11 +17,14 @@ import './styles/main.css'
 import './styles/modal-video.scss'
 import { PrivacyPolicy } from 'pages/PrivacyPolicy'
 import { Terms } from 'pages/Terms'
+import { SingleBlogTemplate } from 'pages/SingleBlogTemplate'
+import { Blogs } from 'pages/Blogs'
+
 
 // Before
 import { render } from 'react-dom'
 const container = document.getElementById('root')
-
+// asdasd
 render(
   <BrowserRouter>
     <Routes>
@@ -34,14 +37,13 @@ render(
       <Route path="/pct" element={<CaseStudyPCT />}></Route>
       <Route path="/web-development" element={<WebDevelopment />}></Route>
       <Route path="/portfolio" element={<Portfolio />}></Route>
-      <Route
-        path="/research-and-analysis"
-        element={<ResearchAndAnalysis />}
-      ></Route>
+      <Route path="/research-and-analysis" element={<ResearchAndAnalysis />}></Route>
       <Route path="/website-updates" element={<WebsiteUpdates />}></Route>
       <Route path="/who-we-help" element={<WhoWeHelp />}></Route>
       <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       <Route path="/terms-of-service" element={<Terms />}></Route>
+      <Route path="/blog/:id" element={<SingleBlogTemplate id={location.href.slice(location.href.indexOf('/blog/')+'/blog/'.length)}/>}></Route>
+      <Route path="/blogs" element={<Blogs/>}></Route>
       {/* <Route path="/privacy-policy" element={PrivacyPolicy}></Route> */}
 
       <Route path="*" element={<Homepage />}></Route>
