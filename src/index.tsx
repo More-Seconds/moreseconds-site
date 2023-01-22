@@ -18,6 +18,7 @@ import './styles/modal-video.scss'
 import { PrivacyPolicy } from 'pages/PrivacyPolicy'
 import { Terms } from 'pages/Terms'
 import { SingleBlogTemplate } from 'pages/SingleBlogTemplate'
+import { SinglePortfolioTemplate } from 'pages/SinglePortfolioTemplate'
 import { Blogs } from 'pages/Blogs'
 
 
@@ -43,6 +44,7 @@ render(
       <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       <Route path="/terms-of-service" element={<Terms />}></Route>
       <Route path="/blog/:id" element={<SingleBlogTemplate id={location.href.slice(location.href.indexOf('/blog/')+'/blog/'.length)}/>}></Route>
+      <Route path="/portfolio/:id" element={<SinglePortfolioTemplate id="f0287d43-f5b3-446f-a2bf-ba82279eaf01"/>}></Route>
       <Route path="/blogs" element={<Blogs/>}></Route>
       {/* <Route path="/privacy-policy" element={PrivacyPolicy}></Route> */}
 

@@ -38,22 +38,10 @@ const client = sanityClient({
 export function SingleBlogTemplate({id} : any) {
 
   
-  
   const [posts, setPosts] = useState<any>([]);
-//
+
   useEffect(() => {
-    // client.fetch(`
-    // *[_type == 'post'] [2...3]{
-    //   title,
-    //   body,
-    //   mainImage {
-    //     asset->{url}
-    //   }
-    // }`)
-    // .then(results => {
-    //   setPosts(results);
-    //   console.log(results)
-    // })
+
 
     client.fetch(`
     *[_id == '${id}'] {
@@ -81,7 +69,7 @@ const components = {
     blockquote: ({children}:any) => <blockquote className="pl-4 text-white border-l-2 border-l-purple-500">{children}</blockquote>,
     normal: ({children}:any) => <BodyText className="leading-normal text-white ">{children}</BodyText>,
     
-//
+
     // Ex. 2: rendering custom styles
     // customHeading: ({children}) => (
     //   <h2 className="text-lg text-purple-700 text-primary">{children}</h2>
@@ -100,6 +88,7 @@ const components = {
     <Layout footerVariant="delivers">
       <div className="px-20 my-20">
           {posts.map((ele:any) => {
+            console.log(ele)
             return <>
 
               <div className="flex flex-row content-center justify-center">
