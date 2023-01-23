@@ -52,7 +52,7 @@ export function SinglePortfolioTemplate({id} : any) {
   //   }`);
   // }
 
-  const [posts, setPosts] = useState<any>({});
+  const [posts, setPosts] = useState<any>([]);
 
   useEffect(() => {
 
@@ -74,9 +74,23 @@ export function SinglePortfolioTemplate({id} : any) {
               text
           },
           image{
-              ...
+              asset->{url}
+          },
+          imageSection[]{
+            asset-> {url}
+          },
+          fullWidthImage {
+            asset-> {url}
           }
+          
+
+        },
+
+        heroImage {
+          asset-> {url}
         }
+
+        
       
 
     }`)
@@ -111,11 +125,76 @@ const components = {
     
     <Layout footerVariant="delivers">
       <div className="px-20 my-20">
-          {posts.body.map((ele:any) => {
-            console.log(ele.body);
-            return <PortableText value={ele.body}
-            components = {components}/>
-          })}
+          <div className="flex flex-col items-center content-center justify-center">
+
+          {
+              posts[0] && <img src={posts[0].heroImage.asset.url} className="rounded-lg" alt="" /> 
+          }
+            <div className="w-full max-w-7xl">
+              
+              {
+                // console.log(posts)
+                posts[0]?.body && posts[0].body.map((ele:any) => {
+                    // switch(ele.sectionType) {
+                    //     case 'project-summary':
+                    //       return <div className="grid items-center content-center grid-cols-2 py-4 justify-items-center project-summary"> <div><BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText><Heading level="1" className="text-2xl text-white">{ele.projectSummaryHeading}</Heading><BodyText className="py-8 text-2xl leading-normal text-white">{ele.projectSummaryDescription}</BodyText></div> <img src={ele.image.asset.url}/></div>
+                    //       break;
+
+                    //     default:
+                    //       return <div className="py-4 default"> <PortableText value={ele.body} components = {components}/> </div>
+                    //   }
+                    
+                    if (ele.sectionType == 'project-summary') {
+                      return <>
+                        <div className="grid items-center content-center grid-cols-2 my-20 justify-items-center project-summary"> 
+                          <div>
+                            <div className="mb-20 project-info">
+                              <BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText>
+                              <Heading level="1" className="text-2xl text-white">{ele.projectSummaryHeading}</Heading>
+                              <BodyText className="py-8 text-2xl leading-normal text-white">{ele.projectSummaryDescription}</BodyText>
+                            </div>
+                            <div className="flex year-industry gap-7">
+                              <div className="project-year">
+                                <BodyText className="py-4 text-lg leading-normal text-white">Year</BodyText>
+                                <Heading level="2" className="text-2xl text-white">{ele.projectYear}</Heading>
+                              </div>
+                              <div className="project-industry">
+                                <BodyText className="py-4 text-lg leading-normal text-white">Industry</BodyText>
+                                <Heading level="2" className="text-2xl text-white">{ele.projectIndustry}</Heading>
+                              </div>
+                            </div>
+                          </div>
+                            <img className="object-cover w-[500px] h-[500px] rounded-lg justify-self-end	" src={ele.image.asset.url}/>
+
+                        </div>
+                      </>
+                    } else if (ele.sectionType == 'centered-text') {
+                      return <>
+                        <div className="flex content-center justify-center my-8 flex-column">
+                          <BodyText className="max-w-5xl py-8 text-3xl leading-normal text-center text-white">{ele.centeredText}</BodyText>
+                        </div>
+                      
+                      </>
+                    } else if (ele.sectionType == 'image-section') {
+                      console.log(ele.imageSection)
+                      return <div className="grid grid-cols-3 py-8 gap-x-8 auto-rows-[minmax(400px,400px)]">
+                        {ele.imageSection.map((e) => {
+                          return <div className=""><img src={e.asset.url} className="object-cover max-w-[400px] w-full max-h-[400px] h-[400px] rounded-lg" alt="" /></div>
+
+                        })}
+                      </div>
+                    } else if(ele.sectionType == 'full-width-image') {
+                      return <img className="w-full" src={ele.fullWidthImage.asset.url} alt="" />
+
+                    } else {
+                      return <div className="py-4 default"> <PortableText value={ele.body} components = {components}/> </div>
+                    }
+                })
+
+                
+              }
+            </div>
+          </div>
 
 
 
@@ -126,7 +205,7 @@ const components = {
 
       </div>
 
-      <BlogPreviews/>
+      {/* <BlogPreviews/> */}
 
     </Layout>
   )

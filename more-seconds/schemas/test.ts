@@ -20,6 +20,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'heroImage',
+      type: 'image',
+      // hidden: ({ parent }) => parent?.sectionType !== "hero-image"
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'array',
@@ -39,29 +44,70 @@ export default {
               type: 'string',
               options: {
                 list: [
-                  {title: "Side By Side Section", value: "side-by-side"},
-                  {title: "Rich Text", value: "rich-text"},
+                  {title: "Project Summary Section", value: "project-summary"},
+                  {title: "Centered Text", value: "centered-text"},
+                  {title: "Image Section", value: "image-section"},
+                  {title: "Full-Width Image", value: "full-width-image"},
                 ],
               }
             },
 
+           
+
             {
-              name: 'body',
-              type: 'blockContent',
-              hidden: ({ parent }) => parent?.sectionType !== "rich-text"
+              name: 'fullWidthImage',
+              type: 'image',
+              hidden: ({ parent }) => parent?.sectionType !== "full-width-image"
             },
 
             {
-              name: 'text',
-              type: 'string',
-              hidden: ({ parent }) => parent?.sectionType !== "side-by-side"
+              name: 'imageSection',
+              type: 'array',
+              of: [
+                {
+                  type: 'image',
+                }
+              ],
+
+              hidden: ({ parent }) => parent?.sectionType !== "image-section"
             },
+
+            {
+              name: 'centeredText',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "centered-text"
+            },
+
+            {
+              name: 'projectSummaryHeading',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+            {
+              name: 'projectSummaryDescription',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
+            {
+              name: 'projectYear',
+              type: 'number',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
+            {
+              name: 'projectIndustry',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
 
             {
               name: 'image',
               type: 'image',
-              hidden: ({ parent }) => parent?.sectionType !== "side-by-side"
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
             },
+            
 
             
           ]
