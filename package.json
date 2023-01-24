@@ -26,7 +26,8 @@
     "react-dom": "^16.0.0",
     "react-modal-video": "^1.2.10",
     "react-router-dom": "^6.3.0",
-    "react-text-mask": "^5.4.3"
+    "react-text-mask": "^5.4.3",
+    "wrangler": "^2.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.18.5",
