@@ -6,7 +6,7 @@ export async function onRequestPost(request) {
     if (requestData.signUpEmail) {
       message = `New Signup Email: ${requestData.signUpEmail}`
     } else if (requestData.fullName) {
-      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.company} \n Business Size: ${requestData.companySize}`
+      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.companyName} \n Business Size: ${requestData.companySize}`
     } else {
       message = 'error'
     }
