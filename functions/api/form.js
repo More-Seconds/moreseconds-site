@@ -3,8 +3,8 @@ export async function onRequestPost(request) {
     const requestData = await request.request.json()
     console.log(requestData)
     let message
-    if (requestData.email) {
-      message = `New Signup Email: ${requestData.email}`
+    if (requestData.signUpEmail) {
+      message = `New Signup Email: ${requestData.signUpEmail}`
     } else if (requestData.fullName) {
       message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.business} \n Business Size: ${requestData.businessSize}`
     } else {
