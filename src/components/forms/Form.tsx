@@ -18,11 +18,9 @@ import { BodyText } from 'components/typography/BodyText'
 
 interface FormFields {
   fullName: string
-  lastName: string
   email: string
   companyName: string
   companySize: string
-  phone: string
 }
 // My modification
 // interface FormFields {
@@ -40,11 +38,9 @@ export function FooterForm({ levelUp }: Partial<Props>) {
   const [submitStatus, setSubmitStatus] = useState('')
   const initialValues: FormFields = {
     fullName: '',
-    lastName: '',
     email: '',
     companyName: '',
-    companySize: '',
-    phone: ''
+    companySize: ''
   }
 
   // my modification
@@ -57,11 +53,9 @@ export function FooterForm({ levelUp }: Partial<Props>) {
 
   const validate = Yup.object({
     fullName: Yup.string().required('This field is required'),
-    lastName: Yup.string().required('This field is required'),
     email: Yup.string().email().required('This field is required'),
     companyName: Yup.string(),
-    companySize: Yup.string(),
-    phone: Yup.string()
+    companySize: Yup.string()
   })
 
   // My modification
@@ -122,6 +116,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     values: FormikValues,
     actions: FormikHelpers<FormFields>
   ) {
+    console.log('submitted')
     try {
       const response = await fetch('/api/form', {
         method: 'POST',
@@ -135,6 +130,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       setSubmitStatus(result.response)
       actions.resetForm()
     } catch {
+      console.log('failed')
       setSubmitStatus('fail')
     }
   }
@@ -145,7 +141,10 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       onSubmit={(values, actions) => submitForm(values, actions)}
     >
       {(props) => (
-        <Form data-static-form-name="contact" className="grid w-full gap-2 z-[9] relative">
+        <Form
+          data-static-form-name="contact"
+          className="grid w-full gap-2 z-[9] relative"
+        >
           <div className={containerStyles}>
             <Field
               id="fullName"
@@ -282,14 +281,11 @@ export function FooterForm({ levelUp }: Partial<Props>) {
           ) : (
             <></>
           )}
-    
-    
+
           <button
             className="px-12 py-3 mt-2 font-bold bg-gradient-to-b from-accent to-[#FFAD72] text-light font-DM rounded sm:w-full-auto w-full md:w-max xl:justify-self hover:from-[#FFAD72] hover:to-accent"
-            onClick={() => {
-              props.handleSubmit()
-              //props.resetForm()
-            }}
+            type="button"
+            onClick={() => props.handleSubmit()}
           >
             Let's Chat
           </button>
