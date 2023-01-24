@@ -6,7 +6,7 @@ export async function onRequestPost(request) {
     if (requestData.signUpEmail) {
       message = `New Signup Email: ${requestData.signUpEmail}`
     } else if (requestData.fullName) {
-      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.business} \n Business Size: ${requestData.businessSize}`
+      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.company} \n Business Size: ${requestData.companySize}`
     } else {
       message = 'error'
     }
@@ -18,14 +18,14 @@ export async function onRequestPost(request) {
       body: JSON.stringify({
         personalizations: [
           {
-            to: [{ email: 'ejensen@moreseconds.com', name: 'Test Recipient' }]
+            to: [{ email: 'hello@moreseconds.com', name: 'Test Recipient' }]
           }
         ],
         from: {
           email: 'no-reply@moreseconds.com',
           name: 'More Seconds'
         },
-        subject: 'Look! No servers',
+        subject: 'New Form Submission',
         content: [
           {
             type: 'text/plain',
