@@ -3,10 +3,10 @@ export async function onRequestPost(request) {
     const requestData = await request.request.json()
     console.log(requestData)
     let message
-    if (requestData.email) {
-      message = `New Signup Email: ${requestData.email}`
+    if (requestData.signUpEmail) {
+      message = `New Signup Email: ${requestData.signUpEmail}`
     } else if (requestData.fullName) {
-      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.business} \n Business Size: ${requestData.businessSize}`
+      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.companyName} \n Business Size: ${requestData.companySize}`
     } else {
       message = 'error'
     }
@@ -18,14 +18,14 @@ export async function onRequestPost(request) {
       body: JSON.stringify({
         personalizations: [
           {
-            to: [{ email: 'ejensen@moreseconds.com', name: 'Test Recipient' }]
+            to: [{ email: 'hello@moreseconds.com', name: 'Test Recipient' }]
           }
         ],
         from: {
           email: 'no-reply@moreseconds.com',
           name: 'More Seconds'
         },
-        subject: 'Look! No servers',
+        subject: 'New Form Submission',
         content: [
           {
             type: 'text/plain',
