@@ -10,31 +10,109 @@
 
 // schemas/pet.js
 export default {
-  name: 'Portfolio',
+  name: 'portfolio',
   title: 'Portfolio',
   type: 'document',
+
   fields: [
     {
       name: 'title',
-      type: 'string'
+      type: 'string',
+    },
+    {
+      name: 'heroImage',
+      type: 'image',
+      // hidden: ({ parent }) => parent?.sectionType !== "hero-image"
     },
     {
       name: 'body',
+      title: 'Body',
       type: 'array',
       of: [
         {
           type: 'object',
           fields: [
             {
-              name: 'type',
+              name: 'nameOfSection',
+              title: 'Name of section',
               type: 'string'
             },
+
             {
-              name: 'text',
-              type: 'blockContent'
-            }
+              name: 'sectionType',
+              title: 'Section Type',
+              type: 'string',
+              options: {
+                list: [
+                  {title: "Project Summary Section", value: "project-summary"},
+                  {title: "Centered Text", value: "centered-text"},
+                  {title: "Image Section", value: "image-section"},
+                  {title: "Full-Width Image", value: "full-width-image"},
+                ],
+              }
+            },
+
+           
+
+            {
+              name: 'fullWidthImage',
+              type: 'image',
+              hidden: ({ parent }) => parent?.sectionType !== "full-width-image"
+            },
+
+            {
+              name: 'imageSection',
+              type: 'array',
+              of: [
+                {
+                  type: 'image',
+                }
+              ],
+
+              hidden: ({ parent }) => parent?.sectionType !== "image-section"
+            },
+
+            {
+              name: 'centeredText',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "centered-text"
+            },
+
+            {
+              name: 'projectSummaryHeading',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+            {
+              name: 'projectSummaryDescription',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
+            {
+              name: 'projectYear',
+              type: 'number',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
+            {
+              name: 'projectIndustry',
+              type: 'string',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+
+
+            {
+              name: 'image',
+              type: 'image',
+              hidden: ({ parent }) => parent?.sectionType !== "project-summary"
+            },
+            
+
+            
           ]
-        }
+        },
+
       ]
     },
 

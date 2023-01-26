@@ -57,11 +57,6 @@ export function SinglePortfolioTemplate({id} : any) {
   useEffect(() => {
 
 
-
-
-
-
-
     client.fetch(`
     *[_id == '${id}'] {
         title,
@@ -98,6 +93,7 @@ export function SinglePortfolioTemplate({id} : any) {
       setPosts(results);
       console.log(results)
     })
+    
   }, [])
 
   // `components` object you'll pass to PortableText
@@ -164,7 +160,8 @@ const components = {
                               </div>
                             </div>
                           </div>
-                            <img className="object-cover w-[500px] h-[500px] rounded-lg justify-self-end	" src={ele.image.asset.url}/>
+                            <img className="object-cover w-[500px] h-[500px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
+
 
                         </div>
                       </>
