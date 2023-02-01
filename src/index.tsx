@@ -44,7 +44,7 @@ render(
       <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       <Route path="/terms-of-service" element={<Terms />}></Route>
       <Route path="/blog/:id" element={<SingleBlogTemplate id={location.href.slice(location.href.indexOf('/blog/')+'/blog/'.length)}/>}></Route>
-      <Route path="/portfolio/:id" element={<SinglePortfolioTemplate id="d8b7e35b-7c0c-4b31-96fa-8bb1c71420b6"/>}></Route>
+      <Route path="/portfolio/:id" element={<SinglePortfolioTemplate id={location.href.slice(location.href.indexOf('/portfolio/')+'/portfolio/'.length)}/>}></Route>
       <Route path="/blogs" element={<Blogs/>}></Route>
       {/* <Route path="/privacy-policy" element={PrivacyPolicy}></Route> */}
 

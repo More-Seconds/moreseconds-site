@@ -142,8 +142,8 @@ const components = {
                     
                     if (ele.sectionType == 'project-summary') {
                       return <>
-                        <div className="grid items-center content-center grid-cols-2 my-20 justify-items-center project-summary"> 
-                          <div>
+                        <div className="flex items-center content-center justify-between grid-cols-1 my-20 flex-column lg:flex-row lg:grid-cols-2 justify-items-center project-summary"> 
+                          <div className="pr-8">
                             <div className="mb-20 project-info">
                               <BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText>
                               <Heading level="1" className="text-2xl text-white">{ele.projectSummaryHeading}</Heading>
@@ -160,7 +160,7 @@ const components = {
                               </div>
                             </div>
                           </div>
-                            <img className="object-cover w-[500px] h-[500px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
+                          <img className="object-cover w-[450px] h-[450px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
 
 
                         </div>
@@ -173,15 +173,33 @@ const components = {
                       
                       </>
                     } else if (ele.sectionType == 'image-section') {
-                      console.log(ele.imageSection)
-                      return <div className="grid grid-cols-3 py-8 gap-x-8 auto-rows-[minmax(400px,400px)]">
+
+                      let classesOfParent = "grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
+                      let classesOfImg = "object-cover w-full max-h-[400px] h-[400px] rounded-lg";
+
+                      console.log(ele.imageSection.length % 3)
+
+                      if(ele.imageSection.length ==1){
+                        classesOfParent = "grid grid-cols-1 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
+                        classesOfImg = "object-cover w-full max-h-[400px] h-[400px] rounded-lg";
+
+                      } else if(ele.imageSection.length == 2) {
+                        classesOfParent = "grid grid-cols-2 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
+                        classesOfImg = "object-cover w-full max-h-[400px] h-[400px] rounded-lg";
+                      }
+                      
+
+
+
+                      console.log(ele.imageSection.length)
+                      return <div className={classesOfParent}>
                         {ele.imageSection.map((e) => {
-                          return <div className=""><img src={e.asset.url} className="object-cover max-w-[400px] w-full max-h-[400px] h-[400px] rounded-lg" alt="" /></div>
+                          return <div className=""><img src={e.asset.url} className={classesOfImg} alt="" /></div>
 
                         })}
                       </div>
                     } else if(ele.sectionType == 'full-width-image') {
-                      return <img className="w-full" src={ele.fullWidthImage.asset.url} alt="" />
+                      return <img className="w-full rounded-xl " src={ele.fullWidthImage.asset.url} alt="" />
 
                     } else {
                       return <div className="py-4 default"> <PortableText value={ele.body} components = {components}/> </div>

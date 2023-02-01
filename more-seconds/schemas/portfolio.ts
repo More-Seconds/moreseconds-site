@@ -25,6 +25,12 @@ export default {
       // hidden: ({ parent }) => parent?.sectionType !== "hero-image"
     },
     {
+      name: 'category',
+      title: 'Category',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'category'}}],
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'array',
@@ -37,6 +43,7 @@ export default {
               title: 'Name of section',
               type: 'string'
             },
+            
 
             {
               name: 'sectionType',
