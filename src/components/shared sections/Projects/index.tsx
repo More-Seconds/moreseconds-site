@@ -87,14 +87,14 @@ export function Projects() {
     setLoading(false)
   }
 
-  function filter(e) {
+  function filter(e:any) {
     // e.preventDefault();
     console.log(postsArchive);
     console.log(e.target.id);
     if(e.target.id == 'default-filter') {
       setPosts(postsArchive);
     } else {
-      setPosts(postsArchive.filter(post => post.category.some(c => c._ref === e.target.id)))
+      setPosts(postsArchive.filter((post:any) => post.category.some((c:any) => c._ref === e.target.id)))
     }
     
 
@@ -117,22 +117,25 @@ export function Projects() {
   return (
     <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
       <Heading level="1" className="self-center w-full mb-10 max-w-7xl ">
-        I want to see 
 
-        <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-4 hover:cursor-pointer">
-           All Capabilities
-          <div id="spacer " className="h-8"></div>
-          <div className={'px-8 py-4 rounded-xl grid grid-cols-3 gap-8 hover:cursor-default bg-white ' + visibility}>
-            {/* {console.log(posts)} */}
-            <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
-            {listOfFilters &&
+      <span>I want to see</span>
 
-              listOfFilters.map((ele:any) => {
-                return <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
-              })
-            }
-          </div>
-        </span>
+        
+          <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-4 hover:cursor-pointer">
+            All Capabilities
+            <div id="spacer " className="h-8"></div>
+            <div className={'px-8 py-4 rounded-xl grid grid-cols-3 gap-8 hover:cursor-default bg-white ' + visibility}>
+              {/* {console.log(posts)} */}
+              <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
+              {listOfFilters &&
+
+                listOfFilters.map((ele:any) => {
+                  return <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
+                })
+              }
+            </div>
+          </span>
+
       </Heading>
       
 

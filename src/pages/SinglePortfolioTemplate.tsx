@@ -193,7 +193,7 @@ const components = {
 
                       console.log(ele.imageSection.length)
                       return <div className={classesOfParent}>
-                        {ele.imageSection.map((e) => {
+                        {ele.imageSection.map((e:any) => {
                           return <div className=""><img src={e.asset.url} className={classesOfImg} alt="" /></div>
 
                         })}
