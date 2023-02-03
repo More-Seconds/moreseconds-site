@@ -94,10 +94,14 @@ export function Projects() {
     if(e.target.id == 'default-filter') {
       setPosts(postsArchive);
     } else {
-      setPosts(postsArchive.filter((post:any) => post.category.some((c:any) => c._ref === e.target.id)))
+      console.log(postsArchive)
+      setPosts(postsArchive.filter((post:any) => {
+        if(post.hasOwnProperty('category')) {
+          return post.category.some((c:any) => c._ref === e.target.id)
+        }
+        return false;
+      }))
     }
-    
-
   }
 
   useEffect(() => {
