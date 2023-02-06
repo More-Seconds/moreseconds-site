@@ -86,7 +86,7 @@ const components = {
   return (
     
     <Layout footerVariant="delivers">
-      <div className="px-20 my-20">
+      <div className="px-8 my-4 lg:px-20 lg:my-20">
           {posts.map((ele:any) => {
             console.log(ele)
             return <>

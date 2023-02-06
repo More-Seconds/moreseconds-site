@@ -37,7 +37,7 @@ export function Projects() {
 
   async function fetchCategory() {
     const results = await client.fetch(
-      `*[_type == 'category'] {
+      `*[_type == 'portfolioCategories'] {
         _id,
         title
       }`
@@ -73,7 +73,7 @@ export function Projects() {
         category
         
       } `)
-
+      
     // sort the data
     const sortedPosts = postResults.sort((a: any, b: any) => {
       return arrayOfIDs.indexOf(a._id) - arrayOfIDs.indexOf(b._id)

@@ -28,7 +28,7 @@ export default {
       name: 'category',
       title: 'Category',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
+      of: [{type: 'reference', to: {type: 'portfolioCategories'}}],
     },
     {
       name: 'body',

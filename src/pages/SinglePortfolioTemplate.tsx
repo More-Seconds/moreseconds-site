@@ -120,7 +120,7 @@ const components = {
   return (
     
     <Layout footerVariant="delivers">
-      <div className="px-20 my-20">
+      <div className="px-8 my-4 lg:px-20 lg:my-20">
           <div className="flex flex-col items-center content-center justify-center">
 
           {
@@ -142,7 +142,7 @@ const components = {
                     
                     if (ele.sectionType == 'project-summary') {
                       return <>
-                        <div className="flex items-center content-center justify-between grid-cols-1 my-20 flex-column lg:flex-row lg:grid-cols-2 justify-items-center project-summary"> 
+                        <div className="flex flex-col-reverse items-center content-center justify-between my-20 lg:flex-row justify-items-center project-summary"> 
                           <div className="pr-8">
                             <div className="mb-20 project-info">
                               <BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText>
@@ -160,7 +160,7 @@ const components = {
                               </div>
                             </div>
                           </div>
-                          <img className="object-cover w-[450px] h-[450px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
+                          <img className="object-cover w-[450px] lg:h-[450px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
 
 
                         </div>
@@ -179,12 +179,12 @@ const components = {
 
                       console.log(ele.imageSection.length % 3)
 
-                      if(ele.imageSection.length ==1){
+                      if(ele.imageSection.length == 1 ){
                         classesOfParent = "grid grid-cols-1 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
                         classesOfImg = "object-cover w-full max-h-[400px] h-[400px] rounded-lg";
 
                       } else if(ele.imageSection.length == 2) {
-                        classesOfParent = "grid grid-cols-2 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
+                        classesOfParent = "grid grid-cols-1 lg:grid-cols-2 py-8 gap-8 auto-rows-[minmax(400px,400px)]"
                         classesOfImg = "object-cover w-full max-h-[400px] h-[400px] rounded-lg";
                       }
                       
