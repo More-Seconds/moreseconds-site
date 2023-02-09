@@ -12,11 +12,11 @@ export function Project(props: Props) {
   return (
     <li className={'relative ' + props.className} >
       <Link to={props.slug} reloadDocument>
-        <div className="h-full overflow-hidden rounded-xl ">
+        <div className="w-full h-full overflow-hidden rounded-xl ">
             <img
               src={props.image}
               alt={props.title}
-              className="object-cover w-full h-full "
+              className="object-cover w-[400px] h-[400px]"
             />
 
           </div>

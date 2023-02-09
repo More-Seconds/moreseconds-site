@@ -9,6 +9,7 @@ import { Heading } from '../../typography/Heading'
 import { Project } from './Project'
 import { SmallTitle } from '../../typography/SmallTitle'
 import { BallPurple } from 'public/svgs'
+import { DropDown } from 'public/svgs'
 import { BodyText } from 'components/typography/BodyText'
 import { Button } from 'components/Button'
 
@@ -32,6 +33,7 @@ export function Projects() {
   const [loading, setLoading] = useState(true)
   // const [activeFilter, setActiveFilter] = useState('63101181-a594-46fb-839b-f03171dc65f0')
   const [listOfFilters, setListOfFilters] = useState<any>([]);
+  const [activeFilter, setActiveFilter] = useState('All Capabilities');
   const [visibility, setVisibility] = useState('hidden');
 
 
@@ -91,6 +93,8 @@ export function Projects() {
     // e.preventDefault();
     console.log(postsArchive);
     console.log(e.target.id);
+    setActiveFilter(e.target.textContent)
+    // console.log(e.target.textContent);
     if(e.target.id == 'default-filter') {
       setPosts(postsArchive);
     } else {
@@ -120,25 +124,27 @@ export function Projects() {
 
   return (
     <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
-      <Heading level="1" className="self-center w-full mb-10 max-w-7xl ">
+      <Heading level="2" className="self-center w-full mb-10 text-xl max-w-7xl">
 
       <span>I want to see</span>
 
         
-          <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-4 hover:cursor-pointer">
-            All Capabilities
+          <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-2 hover:cursor-pointer">
+            {activeFilter} 
+            <span><DropDown className="relative inline w-4 h-4 ml-4 text-lg fill-white "/></span>
             <div id="spacer " className="h-8"></div>
-            <div className={'px-8 py-4 rounded-xl grid grid-cols-3 gap-8 hover:cursor-default bg-white ' + visibility}>
+            <div className={'shadow-2xl	 absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' + visibility}>
               {/* {console.log(posts)} */}
-              <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
+              <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
               {listOfFilters &&
 
                 listOfFilters.map((ele:any) => {
-                  return <button className="py-2 text-3xl text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
+                  return <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
                 })
               }
             </div>
           </span>
+          
 
       </Heading>
       
