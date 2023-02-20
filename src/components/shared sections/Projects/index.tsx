@@ -71,6 +71,9 @@ export function Projects() {
         heroImage {
           asset -> {url}
         },
+        thumbnailImage {
+          asset -> {url}
+        },
         title,
         category
         
@@ -162,7 +165,7 @@ export function Projects() {
                 <Project
                   title={ele.title}
                   className=""
-                  image={ele.heroImage.asset.url}
+                  image={ele.thumbnailImage.asset.url}
                   slug={`/portfolio/${ele._id}`}
                 />
               </React.Fragment>

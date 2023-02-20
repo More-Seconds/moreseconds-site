@@ -20,6 +20,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'thumbnailImage',
+      type: 'image',
+      // hidden: ({ parent }) => parent?.sectionType !== "hero-image"
+    },
+    {
       name: 'heroImage',
       type: 'image',
       // hidden: ({ parent }) => parent?.sectionType !== "hero-image"
