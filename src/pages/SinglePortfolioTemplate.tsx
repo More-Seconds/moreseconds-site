@@ -8,6 +8,7 @@ import { Partners } from 'components/shared sections/Partners'
 import { Services } from 'components/shared sections/Services'
 import { BlogPreviews } from 'components/shared sections/BlogPreviews'
 
+import { Link } from 'react-router-dom'
 import { Heading } from 'components/typography/Heading'
 import { BodyText } from 'components/typography/BodyText'
 import { SmallTitle } from '../components/typography/SmallTitle'
@@ -56,9 +57,11 @@ export function SinglePortfolioTemplate({id} : any) {
 
   useEffect(() => {
 
+    console.log(id);
+
 
     client.fetch(`
-    *[_id == '${id}'] {
+    *[_type == 'portfolio' && slug.current == '${id}'] {
         title,
         body[]{
           ...,
@@ -101,10 +104,10 @@ const components = {
   block: {
     // Ex. 1: customizing common block types
     // h1: ({children}:any) => console.log("asdasd"),
-    h1: ({children}:any) => <Heading level="1" className="text-2xl text-white">{children}</Heading>,
-    h2: ({children}:any) => <Heading level="2" className="text-2xl text-white">{children}</Heading>,
-    h3: ({children}:any) => <Heading level="3" className="text-2xl text-white">{children}</Heading>,
-    h4: ({children}:any) => <Heading level="4" className="text-2xl text-white">{children}</Heading>,
+    h1: ({children}:any) => <Heading level="1" className="text-xl text-white">{children}</Heading>,
+    h2: ({children}:any) => <Heading level="2" className="text-xl text-white">{children}</Heading>,
+    h3: ({children}:any) => <Heading level="3" className="text-xl text-white">{children}</Heading>,
+    h4: ({children}:any) => <Heading level="4" className="text-xl text-white">{children}</Heading>,
     blockquote: ({children}:any) => <blockquote className="pl-4 text-white border-l-2 border-l-purple-500">{children}</blockquote>,
     normal: ({children}:any) => <BodyText className="leading-normal text-white ">{children}</BodyText>,
     
@@ -122,7 +125,11 @@ const components = {
     <Layout footerVariant="delivers">
       <div className="px-8 my-4 lg:px-20 lg:my-20">
           <div className="flex flex-col items-center content-center justify-center">
+          
 
+            <BodyText className="w-full py-8 text-left max-w-[100rem]" >
+              <Link to="/portfolio" className="w-full py-8 text-left text-white">← Back</Link>
+            </BodyText>
           {
               posts[0] && <img src={posts[0].heroImage.asset.url} className="max-w-[100rem] w-full object-cover rounded-lg" alt="" /> 
           }
@@ -142,21 +149,21 @@ const components = {
                     
                     if (ele.sectionType == 'project-summary') {
                       return <>
-                        <div className="flex flex-col-reverse items-center content-center justify-between my-20 lg:flex-row justify-items-center project-summary"> 
-                          <div className="pr-48">
-                            <div className="mb-20 project-info">
+                        <div className="flex flex-col-reverse items-center content-center justify-between my-20 xl:flex-row justify-items-center project-summary"> 
+                          <div className="xl:pr-24 2xl:pr-48">
+                            <div className="lg:mb-20 project-info">
                               <BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText>
-                              <Heading level="1" className="text-2xl text-white">{ele.projectSummaryHeading}</Heading>
-                              <BodyText className="py-8 text-2xl leading-normal text-white">{ele.projectSummaryDescription}</BodyText>
+                              <Heading level="1" className="text-xl text-white">{ele.projectSummaryHeading}</Heading>
+                              <BodyText className="py-8 text-xl leading-normal text-white">{ele.projectSummaryDescription}</BodyText>
                             </div>
                             <div className="flex year-industry gap-7">
                               <div className="project-year">
-                                <BodyText className="py-4 text-lg leading-normal text-white">Year</BodyText>
-                                <Heading level="2" className="text-2xl text-white">{ele.projectYear}</Heading>
+                                <BodyText className="py-4 text-xl leading-normal text-white">Year</BodyText>
+                                <Heading level="2" className="text-xl text-white">{ele.projectYear}</Heading>
                               </div>
                               <div className="project-industry">
                                 <BodyText className="py-4 text-lg leading-normal text-white">Industry</BodyText>
-                                <Heading level="2" className="text-2xl text-white">{ele.projectIndustry}</Heading>
+                                <Heading level="2" className="text-xl text-white">{ele.projectIndustry}</Heading>
                               </div>
                             </div>
                           </div>
@@ -168,7 +175,7 @@ const components = {
                     } else if (ele.sectionType == 'centered-text') {
                       return <>
                         <div className="flex content-center justify-center my-8 flex-column">
-                          <BodyText className="max-w-5xl py-8 text-3xl leading-normal text-center text-white">{ele.centeredText}</BodyText>
+                          <BodyText className="max-w-5xl py-8 text-xl leading-7 text-center text-white">{ele.centeredText}</BodyText>
                         </div>
                       
                       </>

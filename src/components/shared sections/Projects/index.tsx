@@ -75,7 +75,10 @@ export function Projects() {
           asset -> {url}
         },
         title,
-        category
+        category,
+        slug {
+          current
+        }
         
       } `)
       
@@ -160,13 +163,15 @@ export function Projects() {
           posts.length > 0 &&
           posts.map((ele: any) => {
             // console.log(ele.heroImage.asset.url)
+            // console.log(ele.slug.current)
             return (
+              
               <React.Fragment key={ele.title}>
                 <Project
                   title={ele.title}
                   className=""
                   image={ele.thumbnailImage.asset.url}
-                  slug={`/portfolio/${ele._id}`}
+                  slug={`/portfolio/${ele.slug.current}`}
                 />
               </React.Fragment>
             )

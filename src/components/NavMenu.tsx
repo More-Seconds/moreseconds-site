@@ -101,7 +101,8 @@ export function NavMenu({ mobile, open }: Props) {
             </li>
           </ul>
         </li>
-        <li className="relative">
+
+        {/* <li className="relative">
           <Link
             to="#"
             className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
@@ -129,7 +130,19 @@ export function NavMenu({ mobile, open }: Props) {
               <Link to="/pct">Plant Cell Technology</Link>
             </li>
           </ul>
+        </li> */}
+        <li>
+          <NavLink
+            to="/portfolio"
+            className={({ isActive }) =>
+              isActive ? 'text-accent' : 'hover:text-accent'
+            }
+          >
+            Portfolio
+          </NavLink>
         </li>
+
+
         <li>
           <NavLink
             to="/about"
@@ -140,6 +153,7 @@ export function NavMenu({ mobile, open }: Props) {
             About
           </NavLink>
         </li>
+
         <li>
           <NavLink
             to="/pricing"
