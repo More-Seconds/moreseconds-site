@@ -167,7 +167,7 @@ const components = {
                               </div>
                             </div>
                           </div>
-                          <img className="object-fit w-[450px] lg:h-[450px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
+                          <img className="object-cover w-[450px] lg:h-[450px] rounded-lg justify-self-end	" src={ele.image && ele.image.asset.url}/>
 
 
                         </div>

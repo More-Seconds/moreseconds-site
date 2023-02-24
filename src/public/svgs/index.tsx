@@ -49,6 +49,7 @@ import { ReactComponent as BigSaturn } from './Big_Saturn.svg'
 import { ReactComponent as CircleHighlight } from './circle_highlight.svg'
 import { ReactComponent as Pillow } from './pillow.svg'
 import { ReactComponent as DropDown } from './dropdown-icon.svg'
+import { ReactComponent as Share } from './Share.svg'
 
 export {
   MSLogo,
@@ -101,5 +102,6 @@ export {
   BigSaturn,
   CircleHighlight,
   Pillow,
-  DropDown
+  DropDown,
+  Share
 }

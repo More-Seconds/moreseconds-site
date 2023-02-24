@@ -36,7 +36,8 @@ export function BlogPreviews() {
         _id,
         mainImage {
         asset->{url}
-        }
+        },
+        slug
     }`)
     .then(results => {
         setPosts(results);
@@ -61,7 +62,8 @@ export function BlogPreviews() {
                         </div>
                     </a> */}
 
-                    <a href={`/blog/${ele._id}`} id={ele._id} >
+                    {console.log(ele.slug.current)}
+                    <a href={`/blog/${ele.slug.current}`} id={ele.slug.current} >
                         <div className="max-w-[20rem]">
                             <img src={(ele.mainImage == null) ? 'https://via.placeholder.com/150' : ele.mainImage.asset.url} className="object-cover object-left h-48 rounded-lg w-80"></img>
                             <BodyText className="pt-2">BRAND MANAGEMENT</BodyText>
