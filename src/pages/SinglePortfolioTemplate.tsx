@@ -7,7 +7,7 @@ import { SectionBlur } from 'components/SectionBlur'
 import { Partners } from 'components/shared sections/Partners'
 import { Services } from 'components/shared sections/Services'
 import { BlogPreviews } from 'components/shared sections/BlogPreviews'
-
+import { Button } from 'components/Button'
 import { Link } from 'react-router-dom'
 import { Heading } from 'components/typography/Heading'
 import { BodyText } from 'components/typography/BodyText'
@@ -63,6 +63,7 @@ export function SinglePortfolioTemplate({id} : any) {
     client.fetch(`
     *[_type == 'portfolio' && slug.current == '${id}'] {
         title,
+        linkToProject,
         body[]{
           ...,
           nameOfSection,
@@ -132,6 +133,12 @@ const components = {
             </BodyText>
           {
               posts[0] && <img src={posts[0].heroImage.asset.url} className="max-w-[100rem] w-full object-cover rounded-lg" alt="" /> 
+
+          }
+
+          
+          {
+            posts[0] && <Button href={posts[0].linkToProject} className="block max-w-xs px-8 py-3 mx-auto mt-12 text-center">View Project Live</Button>
           }
             <div className="w-full max-w-7xl">
               
@@ -149,7 +156,7 @@ const components = {
                     
                     if (ele.sectionType == 'project-summary') {
                       return <>
-                        <div className="flex flex-col-reverse items-center content-center justify-between my-20 xl:flex-row justify-items-center project-summary"> 
+                        <div className="flex flex-col-reverse items-center content-center justify-between my-10 xl:flex-row justify-items-center project-summary"> 
                           <div className="xl:pr-24 2xl:pr-48">
                             <div className="lg:mb-20 project-info">
                               <BodyText className="py-8 text-lg leading-normal text-white">PROJECT SUMMARY</BodyText>

@@ -20,6 +20,10 @@ export default {
       type: 'string',
     },
     {
+      name: 'linkToProject',
+      type: 'string',
+    },
+    {
       title: 'Slug',
       name: 'slug',
       type: 'slug',
