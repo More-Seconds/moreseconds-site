@@ -37,6 +37,9 @@ export function BlogPreviews() {
         mainImage {
         asset->{url}
         },
+        thumbnail {
+            asset->{url}
+          },
         slug
     }`)
     .then(results => {
@@ -65,7 +68,7 @@ export function BlogPreviews() {
                     {console.log(ele.slug.current)}
                     <a href={`/blog/${ele.slug.current}`} id={ele.slug.current} >
                         <div className="max-w-[20rem]">
-                            <img src={(ele.mainImage == null) ? 'https://via.placeholder.com/150' : ele.mainImage.asset.url} className="object-cover object-left h-48 rounded-lg w-80"></img>
+                            <img src={(ele.thumbnail == null) ? 'https://via.placeholder.com/150' : ele.thumbnail.asset.url} className="object-cover object-left h-48 rounded-lg w-80"></img>
                             <BodyText className="pt-2">BRAND MANAGEMENT</BodyText>
                             <Heading level="2">{(ele.title.length >= 50) ? ele.title.slice(0,45).trim() + '...' : ele.title}</Heading>
                         </div>

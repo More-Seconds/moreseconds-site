@@ -59,7 +59,7 @@ export function NavMenu({ mobile, open }: Props) {
             : 'font-DM flex items-center gap-12 text-mid'
         }
       >
-        <li>
+        {/* <li>
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -68,7 +68,7 @@ export function NavMenu({ mobile, open }: Props) {
           >
             Home
           </NavLink>
-        </li>
+        </li> */}
         <li className="relative">
           <Link
             to="#"
@@ -175,7 +175,7 @@ export function NavMenu({ mobile, open }: Props) {
             Pricing
           </NavLink>
         </li>
-        <li className="min-w-max">
+        {/* <li className="min-w-max">
           <NavLink
             to="/who-we-help"
             className={({ isActive }) =>
@@ -184,7 +184,7 @@ export function NavMenu({ mobile, open }: Props) {
           >
             Why Us
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <a href="#contact" className="hover:text-accent">
             Contact

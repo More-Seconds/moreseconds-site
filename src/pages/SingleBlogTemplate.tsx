@@ -115,7 +115,7 @@ const components = {
                 </BodyText>
 
                   {/* POST TITLE AND IMAGE */}
-                  <Heading level="1" className="mb-10 text-[#FF7F00]">{ele.title}</Heading>
+                  {/* <Heading level="1" className="mb-10 text-[#FF7F00]">{ele.title}</Heading> */}
                   <img src={(ele.mainImage == null) ? 'https://via.placeholder.com/150' : ele.mainImage.asset.url} className="object-cover	w-full max-h-[400px] h-max mb-10 rounded-lg "></img>
 
                   {/* POST META DATA */}
