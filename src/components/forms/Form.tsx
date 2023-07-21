@@ -21,6 +21,7 @@ interface FormFields {
   email: string
   companyName: string
   companySize: string
+  message: string
 }
 // My modification
 // interface FormFields {
@@ -40,7 +41,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     fullName: '',
     email: '',
     companyName: '',
-    companySize: ''
+    companySize: '',
+    message: ''
   }
 
   // my modification
@@ -55,7 +57,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     fullName: Yup.string().required('This field is required'),
     email: Yup.string().email().required('This field is required'),
     companyName: Yup.string(),
-    companySize: Yup.string()
+    companySize: Yup.string(),
+    message: Yup.string().required()
   })
 
   // My modification
@@ -241,6 +244,28 @@ export function FooterForm({ levelUp }: Partial<Props>) {
             </label>
             <ErrorMessage
               name="companySize"
+              className="text-red-600"
+              component="div"
+            />
+          </div>
+          <div className={containerStyles}>
+            <Field
+              id="message"
+              name="message"
+              as="textarea" // Use a textarea for the message field
+              className={inputStyles(
+                props.touched.message,
+                props.errors.message
+              )}
+            />
+            <label
+              htmlFor="message"
+              className={labelStyles(props.values.message)}
+            >
+              MESSAGE
+            </label>
+            <ErrorMessage
+              name="message"
               className="text-red-600"
               component="div"
             />
