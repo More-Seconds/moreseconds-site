@@ -144,18 +144,6 @@ export function NavMenu({ mobile, open }: Props) {
 
         <li>
           <NavLink
-            to="/blogs"
-            className={({ isActive }) =>
-              isActive ? 'text-accent' : 'hover:text-accent'
-            }
-          >
-            Blog
-          </NavLink>
-        </li>
-
-
-        <li>
-          <NavLink
             to="/about"
             className={({ isActive }) =>
               isActive ? 'text-accent' : 'hover:text-accent'
