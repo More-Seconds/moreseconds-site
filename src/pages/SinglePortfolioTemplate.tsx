@@ -137,9 +137,9 @@ const components = {
           }
 
           
-          {
+          {/* {
             posts[0] && <Button href={posts[0].linkToProject} className="block max-w-xs px-8 py-3 mx-auto mt-12 text-center">View Project Live</Button>
-          }
+          } */}
             <div className="w-full max-w-7xl">
               
               {
