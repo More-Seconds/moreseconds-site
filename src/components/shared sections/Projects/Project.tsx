@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { BodyText } from '../../typography/BodyText'
+import { twMerge } from 'tailwind-merge'
 
 type Props = {
   title: string
@@ -10,21 +11,29 @@ type Props = {
 
 export function Project(props: Props) {
   return (
-    <li className={'relative ' + props.className} >
+    <li className={'relative ' + props.className}>
       <Link to={props.slug} reloadDocument>
-        <div className="w-full h-full overflow-hidden rounded-xl ">
-            <img
-              src={props.image}
-              alt={props.title}
-              className="object-cover w-[400px] h-[400px]"
-            />
-
-          </div>
+        <div
+          className={twMerge(
+            'w-full h-full overflow-hidden rounded-2xl',
+            props.className
+          )}
+        >
+          <img
+            src={props.image}
+            alt={props.title}
+            className="object-cover w-full h-full"
+          />
+        </div>
 
         <div className="absolute inset-0 flex flex-col justify-end w-full h-full sm:gap-[.55rem] sm:p-4 md:p-8 md:gap-0 ">
           <div className="max-w-full px-4 py-4 rounded-xl bg-neutral-900/50 w-max">
-            <BodyText className="font-DM sm:text-4 sm:leading-[1.35] md:text-2xl">{props.title}</BodyText>
-            <p className="text-light font-light sm:text-[.8rem] md:leading-normal md:text-md">See more</p>
+            <BodyText className="font-DM sm:text-4 sm:leading-[1.35] md:text-2xl">
+              {props.title}
+            </BodyText>
+            <p className="text-light font-light sm:text-[.8rem] md:leading-normal md:text-md">
+              See more
+            </p>
           </div>
         </div>
       </Link>
