@@ -18,11 +18,6 @@ export function Footer() {
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/case-studies" className="hover:text-accent">
-              Cases
-            </Link>
-          </li>
-          <li className="text-center">
             <Link to="/about" className="hover:text-accent">
               About
             </Link>
