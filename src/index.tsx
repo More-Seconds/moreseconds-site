@@ -24,6 +24,7 @@ import { Blogs } from 'pages/Blogs'
 // Before
 import { render } from 'react-dom'
 import { Services } from 'pages/Services'
+import { Agencies } from 'pages/Agencies'
 const container = document.getElementById('root')
 // asdasd
 render(
@@ -68,6 +69,7 @@ render(
       ></Route>
       <Route path="/blogs" element={<Blogs />}></Route>
       <Route path="/services" element={<Services />}></Route>
+      <Route path="/agencies" element={<Agencies />}></Route>
       {/* <Route path="/privacy-policy" element={PrivacyPolicy}></Route> */}
 
       <Route path="*" element={<Homepage />}></Route>
