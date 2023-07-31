@@ -66,7 +66,9 @@ const WebsiteDesign = () => {
         
       } `)
 
-    const sortedPosts = postResults.sort((a: any, b: any) => {
+    const slicedPosts = postResults.slice(0, 4)
+
+    const sortedPosts = slicedPosts.sort((a: any, b: any) => {
       return arrayOfIDs.indexOf(a._id) - arrayOfIDs.indexOf(b._id)
     })
 
@@ -147,7 +149,7 @@ const WebsiteDesign = () => {
                 return (
                   <React.Fragment key={ele.title}>
                     <div className="project-card-container relative">
-                      <div className="project-card rounded-[3rem] overflow-hidden">
+                      <div className="project-card relative rounded-[3rem] overflow-hidden shadow-2xl">
                         <Project
                           className="w-[200px] h-[200px]"
                           image={ele.thumbnailImage.asset.url}
@@ -155,6 +157,13 @@ const WebsiteDesign = () => {
                           title={''}
                           showSeeMore={false}
                         />
+
+                        {/* Overlay */}
+                        <div className="absolute bottom-0 left-0 w-full h-full bg-black bg-opacity-10"></div>
+
+                        <div className="absolute bottom-2 w-full text-left text-white text-xs font-bold  p-4 ml-3">
+                          {ele.title}
+                        </div>
                       </div>
                     </div>
                   </React.Fragment>
@@ -163,6 +172,70 @@ const WebsiteDesign = () => {
           </ul>
         </div>
       </section>
+
+      <section className="mb-20 px-4 md:px-0 pb-[20rem]">
+        <div className="relative flex flex-col content-center self-center justify-start flex-nowrap justify-items-center justify-self-center md:px-[10rem]">
+          <h1 className="text-xl md:text-2xl font-semibold uppercase text-white mb-6">
+            More Seconds White Label Services Include…
+          </h1>
+          <div className="flex flex-col md:flex-row gap-4">
+            <div className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] flex flex-col items-center rounded-xl text-white p-8 md:h-100 md:w-64">
+              <h1 className="font-semibold text-xl text-center mb-3">
+                Priced for Profitability
+              </h1>
+              <p className="text-center text-md font-light">
+                We offer our full suite of services at a rate far below most
+                major agency pricing so you can expand your client offerings at
+                your preferred rate, increase revenue, and effortlessly make a
+                profit.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] flex flex-col items-center rounded-xl text-white p-8 h-100 md:w-64">
+              <h1 className="font-semibold text-xl text-center mb-3">
+                Trusted by Top Agencies
+              </h1>
+              <p className="text-center text-md font-light">
+                Leading marketing agencies trust More Seconds with their web
+                development needs because we are a reliable, long-term
+                development partner with the expertise to bring their projects
+                to fruition on budget, on time, and with the highest degree of
+                accuracy.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] flex flex-col items-center rounded-xl text-white p-8 h-100 md:w-64">
+              <h1 className="font-semibold text-xl text-center mb-3">
+                24/7 Emergency Fixes
+              </h1>
+              <p className="text-center text-md font-light">
+                Our expert team of U.S.-based developers are available around
+                the clock to handle any after hours emergencies your clients may
+                run into so their sites never go down.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] flex flex-col items-center rounded-xl text-white p-8 h-100 md:w-64">
+              <h1 className="font-semibold text-xl text-center mb-3">
+                Lightning Fast Turnaround Times
+              </h1>
+              <p className="text-center text-md font-light">
+                We boast some of the fastest turnaround times in the industry.
+                We’ll work with you and your clients to ensure that everything
+                gets done on budget and on time.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center md:justify-end">
+            <h1 className="text-white font-bold uppercase text-2xl md:text-3xl mt-10">
+              ...And More!
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
     </div>
   )
 }

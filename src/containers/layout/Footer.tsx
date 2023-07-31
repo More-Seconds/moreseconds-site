@@ -13,6 +13,11 @@ export function Footer() {
             </Link>
           </li>
           <li className="text-center">
+            <Link to="/portfolio" className="hover:text-accent">
+              Portfolio
+            </Link>
+          </li>
+          <li className="text-center">
             <Link to="/uiux" className="hover:text-accent">
               Services
             </Link>
