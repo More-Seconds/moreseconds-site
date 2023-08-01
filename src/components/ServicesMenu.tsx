@@ -6,8 +6,8 @@ const ServicesMenu = (props: ServicesMenuProps) => {
   const { handleMenuItemClicked } = props
 
   return (
-    <div className="services-menu px-4 md:px-8 bg-black w-[410px]">
-      <div className="min-h-screen flex items-center justify-center bg-black md:w-[300px] ml-7">
+    <div className="services-menu px-4 md:px-8  w-[410px] z-999">
+      <div className="min-h-screen flex items-start mt-8 justify-center  md:w-[300px]">
         <div className="bg-black w-full md:w-80">
           <h1 className="text-accent text-5xl font-bold mb-8 mx-2">
             I want to...
