@@ -7,15 +7,15 @@ const ServicesMenu = (props: ServicesMenuProps) => {
 
   return (
     <div className="services-menu px-4 md:px-8  w-[410px] z-999">
-      <div className="min-h-screen flex items-start mt-8 justify-center  md:w-[300px]">
-        <div className="bg-black w-full md:w-80">
+      <div className="flex items-start mt-8 justify-center xl:w-[300px]">
+        <div className="bg-translucent w-full md:w-80">
           <h1 className="text-accent text-5xl font-bold mb-8 mx-2">
             I want to...
           </h1>
           <ul className="space-y-6">
             <li
               onClick={() => handleMenuItemClicked('Client Website Help')}
-              className="bg-black text-white rounded-2xl border-tl-2xl shadow-[5px_5px_0px_#ff7e22] border border-l-1 border-accent rounded-l-none py-4 text-sm font-semibold text-center hover:bg-white hover:text-accent transition-all duration-300 cursor-pointer"
+              className="bg-translucent text-white rounded-2xl border-tl-2xl shadow-[5px_5px_0px_#ff7e22] border border-l-1 border-accent rounded-l-none py-4 text-sm font-semibold text-center hover:bg-white hover:text-accent transition-all duration-300 cursor-pointer"
             >
               Help My Clients With Their Websites
             </li>

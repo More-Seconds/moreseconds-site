@@ -2,14 +2,19 @@ import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Planet } from 'public/svgs'
+import { Smoke } from 'public/svgs'
 
 const WebsiteDesign = () => {
   return (
     <div>
-      <section className="mb-[20rem] mt-[11rem] ml-7">
+      {/* <Smoke
+        width="100%"
+        height="100%"
+        className="h-auto scale-x-125 rotate-180 -scale-y-125  absolute"
+      /> */}
+      <section className="mt-[11rem] ml-7">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
-        <h1 className="max-w-4xl text-white text-4xl text-left mb-3 mt-2">
+        <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           White Label Service
         </h1>
         <div className="max-w-3xl">
@@ -27,7 +32,6 @@ const WebsiteDesign = () => {
           >
             Get More Seconds
           </Button>
-          <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
         </div>
       </section>
     </div>
