@@ -210,65 +210,71 @@ export function Services() {
           </div>
         </section>
 
-        {/* <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
-          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-            <Heading
-              level="1"
-              className=" mx-auto text-lg sm:text-base xl:text-2xl"
-            >
-              Priced for Profitability
-            </Heading>
-            <BodyText className="text-md font-light ">
-              We offer our full suite of services at a rate far below most major
-              agency pricing so you can expand your client offerings at your
-              preferred rate, increase revenue, and effortlessly make a profit.
-            </BodyText>
-          </Card>
-
-          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-            <Heading
-              level="1"
-              className=" mx-auto text-lg sm:text-base xl:text-2xl"
-            >
-              Trusted by Top Agencies
-            </Heading>
-            <BodyText className="text-md font-light">
-              Leading marketing agencies trust More Seconds with their web
-              development needs because we are a reliable, long-term development
-              partner with the expertise to bring their projects to fruition on
-              budget, on time, and with the highest degree of accuracy.
-            </BodyText>
-          </Card>
-
-          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-8">
-            <Heading
-              level="1"
-              className=" mx-auto text-lg sm:text-base xl:text-2xl"
-            >
-              24/7 Emergency Fixes
-            </Heading>
-            <BodyText className="text-md font-light">
-              Our expert team of U.S.-based developers are available around the
-              clock to handle any after hours emergencies your clients may run
-              into so their sites never go down.
-            </BodyText>
-          </Card>
-
-          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-9">
-            <Heading
-              level="1"
-              className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"
-            >
-              Lightning Fast Turnaround Times
-            </Heading>
-            <BodyText className="text-md font-light">
-              We boast some of the fastest turnaround times in the industry.
-              We’ll work with you and your clients to ensure that everything
-              gets done on budget and on time.
-            </BodyText>
-          </Card>
-          <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
-        </section> */}
+        <section className="pt-[6rem]">
+          <h1 className="sm:text-2xl text-white font-semibold mb-10 px-[8rem] xl:text-3xl">
+            Priced for Profitability
+          </h1>
+          <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 sm:grid-cols-4 sm:mb-8 sm:px-8 xl:px-32">
+            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 pt-10 sm:py-8 xl:gap-8">
+              <Heading
+                level="1"
+                className="mx-auto text-lg sm:text-base xl:text-2xl"
+              >
+                Priced for Profitability
+              </Heading>
+              <BodyText className="text-md font-light ">
+                We offer our full suite of services at a rate far below most
+                major agency pricing so you can expand your client offerings at
+                your preferred rate, increase revenue, and effortlessly make a
+                profit.
+              </BodyText>
+            </Card>
+            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 pt-10 sm:py-8 xl:gap-8">
+              <Heading
+                level="1"
+                className="mx-auto text-lg sm:text-base xl:text-2xl"
+              >
+                Trusted by Top Agencies
+              </Heading>
+              <BodyText className="text-md font-light">
+                Leading marketing agencies trust More Seconds with their web
+                development needs because we are a reliable, long-term
+                development partner with the expertise to bring their projects
+                to fruition on budget, on time, and with the highest degree of
+                accuracy.
+              </BodyText>
+            </Card>
+            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 pt-10 sm:py-8 sm:gap-4 xl:gap-8">
+              <Heading
+                level="1"
+                className="mx-auto text-lg sm:text-base xl:text-2xl"
+              >
+                24/7 Emergency Fixes
+              </Heading>
+              <BodyText className="text-md font-light">
+                Our expert team of U.S.-based developers are available around
+                the clock to handle any after hours emergencies your clients may
+                run into so their sites never go down.
+              </BodyText>
+            </Card>
+            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 pt-10 sm:py-8 sm:gap-4 xl:gap-9">
+              <Heading
+                level="1"
+                className="mx-auto text-lg sm:text-sm xl:text-2xl"
+              >
+                Lightning Fast Turnaround Times
+              </Heading>
+              <BodyText className="text-md font-light">
+                We boast some of the fastest turnaround times in the industry.
+                We’ll work with you and your clients to ensure that everything
+                gets done on budget and on time.
+              </BodyText>
+            </Card>
+          </div>
+          <div className="uppercase text-white sm:text-2xl font-semibold px-[8rem] flex justify-end">
+            ...And More!
+          </div>
+        </section>
         <Testimonials title="Good design" />
       </div>
     </Layout>
