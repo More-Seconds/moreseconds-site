@@ -13,7 +13,8 @@ import {
   ManArtist,
   Smoke,
   GrayStar,
-  Star
+  Star,
+  StarOutline
 } from 'public/svgs'
 import React, { useEffect, useState } from 'react'
 import sanityClient from '@sanity/client'
@@ -137,7 +138,12 @@ export function Services() {
   const visiblePosts = posts.slice(0, 4)
   return (
     <Layout footerVariant="">
-      <div className="">
+      <div className="relative">
+        <Smoke
+          width="80%"
+          height="50%"
+          className="h-auto absolute top-[4rem] right-[1rem] scale-x-125 rotate-180 -scale-y-125 z-100"
+        />
         <section className="flex flex-col items-center justify-center ">
           <div className="flex justify-center">
             <div className="z-30">
@@ -160,13 +166,13 @@ export function Services() {
           </div>
         </section>
 
-        <section className="relative items-center block sm:py-72 xl:px-[13rem]">
+        <section className="relative items-center block sm:pt-[10rem] sm:px-[8rem]">
           <div className="sm:translate-y-0">
-            <h1 className="text-xl font-semibold uppercase text-white mt-[-4.2rem] mb-10">
+            <h1 className="text-xl font-semibold uppercase text-white sm:mb-10">
               We Build Websites for Top Agencies
             </h1>
           </div>
-          <ul className="grid self-start gap-16 w-[45%] mb-20 grid-cols-1 md:grid-cols-2 max-w-7xl">
+          <ul className="grid self-start gap-10 w-[55%] mb-20 grid-cols-1 md:grid-cols-2 max-w-7xl">
             {visiblePosts &&
               visiblePosts.length > 0 &&
               visiblePosts.map((ele: any) => {
@@ -175,94 +181,95 @@ export function Services() {
                     <div className="project-card-container relative">
                       <div className="project-card rounded-[3rem]">
                         <Project
-                          className="w-[200px] h-[200px] relative rounded-[3rem] opacity-90 "
+                          className="w-[250px] h-[250px] relative rounded-[3rem] opacity-90 "
                           image={ele.thumbnailImage.asset.url}
                           slug={`/portfolio/${ele.slug.current}`}
                           title={''}
                           showSeeMore={false}
                         />
                       </div>
-                      <div className="absolute bottom-4 ml-6 text-xs text-white font-bold">
+                      <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
                         {ele.title}
                       </div>
                     </div>
                   </React.Fragment>
                 )
               })}
-            <BallPurple className="absolute -top-[2rem] right-[5rem] xl:scale-[200%]" />
+            <BallPurple className="absolute -top-[-3rem] right-[5rem] sm:scale-[200%]" />
           </ul>
           <div className="flex items-center -translate-y-16 w-screen h-96 relative -right-20 justify-self-start sm:absolute sm:top-28 sm:-right-2 sm:w-[378px] xl:translate-y-64">
-            <ManArtist className="absolute bottom-[8rem] -right-[4rem] h-full sm:scale-150 xl:scale-x-[200%] xl:scale-y-[200%]" />
-            <Star className="absolute -left-2 top-8 sm:-left-[40vw] sm:-top-12 sm:-scale-x-75 sm:scale-y-75 xl:-top-[22rem] xl:-left-[46rem] xl:-scale-x-50 xl:scale-y-50" />
-            <GrayStar className="absolute xl:top-[1rem] xl:-left-[65rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
-            <BallBlue className="absolute xl:top-[16rem] xl:-left-[61rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
-            <CloudFull className="absolute scale-75 top-10 sm:-scale-x-150 sm:scale-y-150 sm:-left-[65rem] sm:top-10 xl:-top-[18rem] xl:-scale-x-[150%] xl:scale-y-[150%] xl:-left-[65rem]" />
-            <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 sm:-left-[65rem] sm:top-10 xl: xl:-scale-x-[75%] xl:scale-y-[75%] xl:-left-[15rem] xl:top-[14rem]" />
-            <CloudFull className="absolute sm:scale-x-[-1] sm:scale-y-[-1] sm:-left-[65rem] transform scale-x-[-1] sm:top-10 xl:scale-x-[150%] xl:scale-y-[150%] xl:-left-[15rem] xl:top-[24rem]" />
+            <ManArtist className="absolute bottom-[6rem] -right-[8rem] h-full sm:scale-150 xl:scale-x-[200%] xl:scale-y-[200%]" />
+            <Star className="absolute -left-2 top-8 sm:-left-[40vw] sm:-top-10 sm:-scale-x-75 sm:scale-y-75 xl:-top-[22rem] xl:-left-[35rem] xl:-scale-x-50 xl:scale-y-50" />
+            <GrayStar className="absolute xl:-top-[2rem] xl:-left-[55rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
+            <BallBlue className="absolute xl:top-[16rem] xl:-left-[52rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
+            <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 sm:-left-[52rem] sm:top-8 xl:-top-[20rem] xl:-scale-x-[150%] xl:scale-y-[150%]" />
+            <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 sm:-left-[52rem] sm:-top-[0rem] xl:-scale-x-[75%] xl:scale-y-[75%] xl:-left-[4rem] xl:top-[18rem]" />
+            <Star className="absolute xl:-bottom-[4rem] xl:right-[24rem] xl:-scale-x-50 xl:scale-y-50" />
+            <CloudFull className="absolute sm:scale-x-[-1] sm:scale-y-[-1] sm:-left-[65rem] transform scale-x-[-1] sm:top-10 xl:scale-x-[150%] xl:scale-y-[150%] xl:-left-[4rem] xl:top-[26rem]" />
+            <StarOutline className="absolute xl:right-[60rem] xl:top-[28rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
           </div>
         </section>
 
-        <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
-          <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+        {/* <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
+          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
             <Heading
-              level="2"
-              className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
+              level="1"
+              className=" mx-auto text-lg sm:text-base xl:text-2xl"
             >
-              Full-cycle Website Design & Development
+              Priced for Profitability
             </Heading>
-            <BodyText className="text-xs xl:text-lg">
-              We provide full-cycle development services from market research
-              and business analysis to design, development, and launch.
+            <BodyText className="text-md font-light ">
+              We offer our full suite of services at a rate far below most major
+              agency pricing so you can expand your client offerings at your
+              preferred rate, increase revenue, and effortlessly make a profit.
             </BodyText>
           </Card>
 
-          <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
             <Heading
-              level="2"
-              className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
+              level="1"
+              className=" mx-auto text-lg sm:text-base xl:text-2xl"
             >
-              Targeted Landing Page Development
+              Trusted by Top Agencies
             </Heading>
-            <BodyText className="text-xs xl:text-lg">
-              A pixel-perfect landing page built in record time. Select the
-              platform, add any specifications, and we’ll handle the rest. It’s
-              that easy!
+            <BodyText className="text-md font-light">
+              Leading marketing agencies trust More Seconds with their web
+              development needs because we are a reliable, long-term development
+              partner with the expertise to bring their projects to fruition on
+              budget, on time, and with the highest degree of accuracy.
             </BodyText>
           </Card>
 
-          <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-8">
+          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-8">
             <Heading
-              level="2"
+              level="1"
+              className=" mx-auto text-lg sm:text-base xl:text-2xl"
+            >
+              24/7 Emergency Fixes
+            </Heading>
+            <BodyText className="text-md font-light">
+              Our expert team of U.S.-based developers are available around the
+              clock to handle any after hours emergencies your clients may run
+              into so their sites never go down.
+            </BodyText>
+          </Card>
+
+          <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-9">
+            <Heading
+              level="1"
               className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"
             >
-              Theme Customization & Development
+              Lightning Fast Turnaround Times
             </Heading>
-            <BodyText className="text-xs xl:text-lg">
-              We can help build anew or customize the current functionality of
-              your websites CMS theme and backend architecture structure.
+            <BodyText className="text-md font-light">
+              We boast some of the fastest turnaround times in the industry.
+              We’ll work with you and your clients to ensure that everything
+              gets done on budget and on time.
             </BodyText>
           </Card>
-
-          <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-9">
-            <Heading
-              level="2"
-              className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"
-            >
-              Custom Plugin & Feature Development
-            </Heading>
-            <BodyText className="text-xs xl:text-lg">
-              We use first-rate technologies to develop and implement new
-              features and plugins that drive user satisfaction and successful
-              conversions.
-            </BodyText>
-          </Card>
-          <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
           <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
-        </section>
-        <div className="hidden max-h-[0px] sm:flex items-center justify-end">
-          <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
-        </div>
-        <Testimonials title="Websites that wow." />
+        </section> */}
+        <Testimonials title="Good design" />
       </div>
     </Layout>
   )
