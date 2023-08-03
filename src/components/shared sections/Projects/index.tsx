@@ -135,21 +135,37 @@ export function Projects() {
       <span>I want to see</span>
 
         
-          <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-2 hover:cursor-pointer">
-            {activeFilter} 
-            <span><DropDown className="relative inline w-4 h-4 ml-4 text-lg fill-white "/></span>
-            <div id="spacer " className="h-8"></div>
-            <div className={'shadow-2xl	 absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' + visibility}>
-              {/* {console.log(posts)} */}
-              <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
-              {listOfFilters &&
+      <span onMouseEnter={e => {setVisibility('block')}} onMouseLeave={e => {setVisibility('hidden')}} className="z-10 h-full ml-2 hover:cursor-pointer">
+        {activeFilter} 
+        <span><DropDown className="relative inline w-4 h-4 ml-4 text-lg fill-white "/></span>
+        <div id="spacer " className="h-8"></div>
+        <div className={'shadow-2xl	 absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' + visibility}>
+          {/* {console.log(posts)} */}
+          <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl" id='default-filter' onClick={filter}>All Capabilities</button>
+          {listOfFilters &&
 
-                listOfFilters.map((ele:any) => {
-                  return <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
-                })
-              }
-            </div>
-          </span>
+            listOfFilters.map((ele:any) => {
+              return <button className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl " id={ele._id} onClick={filter}>{ele.title}</button>
+            })
+          }
+        </div>
+      </span>
+
+      <span>Sup</span>
+
+
+      
+      {
+        listOfFilters.map((ele:any) => {
+          return (
+              <div>
+                <input type="checkbox" id={ele.title}></input>
+                <label htmlFor={ele.title} className="ml-4">{ele.title}</label>
+              </div>
+          )
+        })
+      }
+
           
 
       </Heading>
