@@ -40,8 +40,12 @@ function getConditionalStyles(variant: string) {
 export function Signup(props: Props) {
   const [submitStatus, setSubmitStatus] = useState('')
 
-  async function submitForm(values: FormikValues) {
+  async function submitForm(
+    values: FormikValues,
+    actions: FormikHelpers<FormikValues>
+  ) {
     try {
+      console.log(values)
       const response = await fetch('/api/form', {
         method: 'POST',
         headers: {
@@ -51,15 +55,17 @@ export function Signup(props: Props) {
       })
       const result = await response.json()
       setSubmitStatus(result.response)
+      actions.resetForm()
     } catch {
       setSubmitStatus('fail')
+      actions.resetForm()
     }
   }
   return (
     <Formik
       initialValues={initialValue}
       validationSchema={validate}
-      onSubmit={(values, actions) => submitForm(values)}
+      onSubmit={(values, actions) => submitForm(values, actions)}
     >
       {({ handleSubmit, handleReset }) => (
         <Form
@@ -86,7 +92,6 @@ export function Signup(props: Props) {
                 className="'px-12 bg-gradient-to-b from-accent to-[#FFAD72] text-light justify-self-center text-center font-DM min-w-max max-h-fit sm:w-full sm:rounded-0 sm:mt-[.3rem] md:mt-0 xl:justify-self-auto font-bold text-sm sm:text-base px-4 xl:py-5 py-3  md:rounded-[60px] hover:from-[#FFAD72] hover:to-accent"
                 onClick={() => {
                   handleSubmit()
-                  handleReset()
                 }}
               >
                 Get More Seconds
