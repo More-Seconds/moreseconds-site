@@ -151,20 +151,7 @@ export function Projects() {
         </div>
       </span>
 
-      <span>Sup</span>
 
-
-      
-      {
-        listOfFilters.map((ele:any) => {
-          return (
-              <div>
-                <input type="checkbox" id={ele.title}></input>
-                <label htmlFor={ele.title} className="ml-4">{ele.title}</label>
-              </div>
-          )
-        })
-      }
 
           
 
