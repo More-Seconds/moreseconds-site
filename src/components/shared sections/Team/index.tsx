@@ -25,9 +25,7 @@ export function Team(props: Props) {
         svgStyles="relative self-start justify-self-start lg:-right-[10%] xl:-translate-x-10 xl:-right-[5%]"
       >
         <div className="2xl:w-fit 2xl:self-end">
-          <SmallTitle className="mb-4">
-            Our promise
-          </SmallTitle>
+          <SmallTitle className="mb-4">Our promise</SmallTitle>
           <Heading
             level="2"
             className=" mb-6 md:mb-10 md:text-[2.5rem] md:leading-[1] xl:max-w-lg xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
@@ -40,11 +38,7 @@ export function Team(props: Props) {
             ]}
           </Heading>
           <ul className="relative z-20 grid gap-3 sm:max-w-xl text-light font-Poppins">
-            <Accordian
-              title="Your Go To #dev-ops team"
-              image={Headset}
-              open
-            >
+            <Accordian title="Your Go To #dev-ops team" image={Headset} open>
               Get access to a dedicated team of digital professionals that you
               can count on. Each More Seconds dev team includes a technical
               project manager, project coordinator, lead Engineer, and two

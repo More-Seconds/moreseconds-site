@@ -29,22 +29,28 @@ import {
   StarOutline,
   BigSaturn,
   HollowStar,
-  HomeHeroBG
+  HomeHeroBG,
+  NoMaintenance,
+  TeamImage,
+  FormCharacter,
+  Rocket
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
+import Client1 from '../public/images/agencies-placeholder-1.png'
+import Client2 from '../public/images/client2.png'
 
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center w-min h-full pb-[18rem]">
+      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem]">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
           </SmallTitle>
-          <Heading level="1" className="max-w-4xl mx-auto text-center">
+          <h1 className=" text-white mb-2 md:text-5xl font-semibold max-w-4xl mx-auto text-center">
             Grow Your Agency with More Seconds
-          </Heading>
+          </h1>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
             Are you leaving money on the table because you’ve had bad
             experiences with outsourced web developers and/or haven’t been able
@@ -57,13 +63,13 @@ export function Agencies() {
           <div className="flex gap-12">
             <Button
               href="#contact"
-              className="block max-w-xs px-8 py-3 mx-auto mt-6 text-center"
+              className="block px-12 py-3 mx-auto mt-6 text-center"
             >
               Get Started
             </Button>
             <Button
               href="#"
-              className="block max-w-xs px-8 py-3 mx-auto mt-6 text-center"
+              className="block px-12 py-3 mx-auto mt-6 text-center"
             >
               Learn More
             </Button>
@@ -78,7 +84,7 @@ export function Agencies() {
         </HeroCentered>
       </section>
 
-      <section className="bg-black flex justify-center h-full min-h-full pt-10 ">
+      <section className="bg-black flex justify-center h-full min-h-full pt-10">
         <div className="flex flex-col sm:text-5xl font-semibold text-white">
           <Heading level="1" className="max-w-4xl my-6">
             Increase Your Revenue
@@ -156,6 +162,135 @@ export function Agencies() {
       <section className="mt-[-20rem]">
         <HomeHeroBG />
       </section>
+
+      <section className="how--it--works h-full flex flex-col items-center  bg-black">
+        <span className="relative text-white font-semibold mb-[6rem] lg:text-5xl">
+          How It Works
+          <NoMaintenance className="absolute left-0 mt-3 w-full" />
+        </span>
+
+        <div className="flex flex-col items-center">
+          <div className="flex ml-[22rem] max-w-xl my-[6rem]">
+            <BallBlue className="h-[20%] w-[20%] mr-6 relative" />
+            <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
+              1
+            </p>
+            <div className="mb-10">
+              <Heading
+                level="2"
+                className="text-2xl text-white font-semibold mb-4"
+              >
+                Sign Up with More Seconds
+              </Heading>
+              <BodyText className="text-sm font-light max-w-xl text-white">
+                Our team of web develoBodyTextment experts are ready to take on
+                any project. Once you’re set up in our system, simply send over
+                any client request and we’ll handle the rest!
+              </BodyText>
+            </div>
+            <TeamImage className="absolute -left-60 -bottom-[120rem] scale-x-[-1] h-[50%]" />
+          </div>
+
+          <div className="h-[70%] w-[70%] z-[999]">
+            <img src={Client1} alt="" />
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center mb-[8rem]">
+          <div className="flex w-full ml-[28rem] my-20">
+            <div className="flex items-center">
+              <BallOrange className=" h-[90px] w-[90px] relative" />
+              <p className="absolute  text-black text-6xl ml-7 font-semibold">
+                2
+              </p>
+              <div className="ml-6">
+                <Heading
+                  level="2"
+                  className="text-2xl text-white font-semibold mb-4"
+                >
+                  Submit Your Request in Plain English
+                </Heading>
+                <BodyText className="text-sm font-light max-w-xl text-white">
+                  No more meetings. No more emails. No more confusing tech
+                  terminology. Our BodyTextroprietary platform, mDash,
+                  automatically generates an accurate budget, timeline, and
+                  immediately assigns tasks to our team to take you from request
+                  to kickoff in seconds.
+                </BodyText>
+              </div>
+            </div>
+          </div>
+          <div className="h-[70%] w-[70%] z-[999]">
+            <img src={Client2} alt="" />
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center ">
+          <div className="flex justify-end w-full mr-[20rem] mb-[14rem]">
+            <div className="flex items-center">
+              <BallPurple className=" h-[90px] w-[90px] relative" />
+              <p className="absolute  text-black text-6xl ml-7 font-semibold">
+                3
+              </p>
+              <div className="ml-6">
+                <Heading
+                  level="2"
+                  className="text-2xl text-white font-semibold mb-4"
+                >
+                  Receive Updates on Your Project
+                </Heading>
+                <BodyText className="text-sm font-light max-w-lg text-white">
+                  We’ll keep you updated on the progress of your project with
+                  automatically generated reports tracking every metric and
+                  milestone so you can rest easy while staying informed.
+                </BodyText>
+              </div>
+
+              <FormCharacter className="absolute left-[6rem] scale-x-[-1]" />
+            </div>
+          </div>
+          <div className="h-[70%] w-[70%] z-[999]">
+            <img src={Client2} alt="" />
+          </div>
+
+          <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[5rem]">
+            <div className="flex items-center">
+              <BallBlue className=" h-[90px] w-[90px] relative" />
+              <p className="absolute text-black text-6xl ml-7 font-semibold">
+                4
+              </p>
+              <div className="ml-6">
+                <Heading
+                  level="2"
+                  className="text-2xl text-white font-semibold mb-4"
+                >
+                  Launch That Beautiful Website!
+                </Heading>
+                <Rocket className="absolute -rotate-45 scale-[50%] right-[12rem] -mt-[11rem]" />
+                <Planet className="absolute right-[12rem] scale-[175%]" />
+                <BodyText className="text-sm font-light max-w-xl text-white">
+                  There’s a reason why tastemakers like Pharrell Williams’ Black
+                  Ambition & YELLOW and top agencies like Hawke Media trust More
+                  Seconds with their web projects. Your clients will be thrilled
+                  with the results!
+                </BodyText>
+                <Button
+                  href="#"
+                  className="block mt-6 text-center max-w-[350px]"
+                >
+                  Get Started
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Testimonials title={'Good design converts'} />
     </Layout>
   )
+}
+
+{
+  /* <Highlight className="absolute left-0 scale-y-75 rotate-180 -scale-x-75 -top-8 sm:-left-12" /> */
 }
