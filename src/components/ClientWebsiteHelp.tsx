@@ -4,14 +4,9 @@ import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
 import { Smoke } from 'public/svgs'
 
-const WebsiteDesign = () => {
+const ClientWebsiteHelp = () => {
   return (
     <div>
-      {/* <Smoke
-        width="100%"
-        height="100%"
-        className="h-auto scale-x-125 rotate-180 -scale-y-125  absolute"
-      /> */}
       <section className="mt-[11rem] ml-7">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
@@ -38,4 +33,4 @@ const WebsiteDesign = () => {
   )
 }
 
-export default WebsiteDesign
+export default ClientWebsiteHelp

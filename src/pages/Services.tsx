@@ -207,7 +207,7 @@ export function Services() {
             <BallBlue className="absolute xl:top-[16rem] xl:-left-[52rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
             <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 md:-left-[52rem] md:top-8 xl:-top-[20rem] xl:-scale-x-[150%] xl:scale-y-[150%]" />
             <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 sm:-left-[52rem] sm:-top-[0rem] xl:-scale-x-[75%] xl:scale-y-[75%] xl:-left-[4rem] xl:top-[18rem]" />
-            <Star className="absolute xl:-bottom-[4rem] xl:right-[24rem] xl:-scale-x-50 xl:scale-y-50" />
+            <Star className="absolute xl:-bottom-[4rem] xl:right-[20rem] xl:-scale-x-50 xl:scale-y-50" />
             <CloudFull className="absolute sm:scale-x-[-1] sm:scale-y-[-1] md:-left-[65rem] transform scale-x-[-1] md:top-10 xl:scale-x-[150%] xl:scale-y-[150%] xl:-left-[4rem] xl:top-[26rem]" />
             <StarOutline className="absolute xl:right-[60rem] xl:top-[28rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
           </div>
