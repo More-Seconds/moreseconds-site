@@ -175,6 +175,7 @@ export function Projects() {
                   className=""
                   image={ele.thumbnailImage.asset.url}
                   slug={`/portfolio/${ele.slug.current}`}
+                  showSeeMore={true}
                 />
               </React.Fragment>
             )

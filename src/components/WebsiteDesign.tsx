@@ -145,6 +145,7 @@ const WebsiteDesign = () => {
                               image={ele.thumbnailImage.asset.url}
                               slug={`/portfolio/${ele.slug.current}`}
                               title={''}
+                              showSeeMore={false}
                             />
                           </div>
                         </div>

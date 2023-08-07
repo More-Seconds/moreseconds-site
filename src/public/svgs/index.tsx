@@ -33,12 +33,15 @@ import { ReactComponent as CaseStudy4 } from './casestudy4.svg'
 import { ReactComponent as CaseStudy5 } from './casestudy5.svg'
 import { ReactComponent as UFO } from './UFO.svg'
 import { ReactComponent as ManWithPhone } from './man_with_phone.svg'
+import { ReactComponent as SaturnPurple } from './Saturn_Purple.svg'
 import { ReactComponent as Sputnik } from './Sputnik.svg'
 import { ReactComponent as SmallSaturn } from './small_saturn.svg'
 import { ReactComponent as Rocket } from './Rocket.svg'
+import { ReactComponent as MusicLady } from './Music_Lady.svg'
 import { ReactComponent as Highlight } from './highlight.svg'
 import { ReactComponent as ManArtist } from './man_artist.svg'
 import { ReactComponent as StarOutline } from './star_outline.svg'
+import { ReactComponent as GradientDot1 } from './gradient_dot_1.svg'
 import { ReactComponent as AvatarHighlight } from './avatar_highlight.svg'
 import { ReactComponent as PricingHero } from './pricinghero.svg'
 import { ReactComponent as PlayIcon } from './play_icon.svg'
@@ -54,6 +57,8 @@ import { ReactComponent as Share } from './Share.svg'
 export {
   MSLogo,
   ArrowDown,
+  MusicLady,
+  SaturnPurple,
   FbIcon,
   YtIcon,
   InstaIcon,
@@ -93,6 +98,7 @@ export {
   Highlight,
   ManArtist,
   StarOutline,
+  GradientDot1,
   AvatarHighlight,
   PricingHero,
   PlayIcon,

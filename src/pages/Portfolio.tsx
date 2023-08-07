@@ -37,7 +37,7 @@ import { Signup } from 'components/forms/Signup'
 export function Portfolio() {
   return (
     <Layout footerVariant="connect">
-      <section className="flex flex-col items-center justify-center w-min">
+      <section className="flex flex-col items-center justify-center w-min h-screen mb-[6rem] pb-[8rem]">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading level="1" className="max-w-4xl mx-auto text-center">
@@ -70,7 +70,7 @@ export function Portfolio() {
         </HeroCentered>
       </section>
 
-      <Projects />
+      {/* <Projects /> */}
 
       {/* <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
         <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
