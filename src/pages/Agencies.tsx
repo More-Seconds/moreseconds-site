@@ -33,7 +33,6 @@ export function Agencies() {
   return (
     <Layout footerVariant="">
       <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem]">
-        ``
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
