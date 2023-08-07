@@ -1,35 +1,20 @@
 import { Button } from 'components/Button'
-import { Card } from 'components/Card'
-import { SectionBlur } from 'components/SectionBlur'
-import { Clients } from 'components/shared sections/Clients'
-import { Partners } from 'components/shared sections/Partners'
-import { Projects } from 'components/shared sections/Projects'
-import { Services } from 'components/shared sections/Services'
-import { Team } from 'components/shared sections/Team'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
 import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
-import { Brian } from 'public/images'
 import {
-  AboutHero,
   BallOrange,
   Cloud,
   CloudFull,
-  CloudOpaque,
   Star,
-  Smoke,
   Planet,
   PricingHero,
-  ManArtist,
   BallBlue,
   BallPurple,
   GradientDot1,
-  StarOutline,
-  BigSaturn,
-  HollowStar,
   HomeHeroBG,
   NoMaintenance,
   TeamImage,
