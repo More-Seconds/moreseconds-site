@@ -174,10 +174,10 @@ export function Agencies() {
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute -left-60 -bottom-[132rem] scale-x-[-1] h-[50%]" />
-            <BallBlue className="h-[20%] w-[20%] mr-6 relative" />
+            <TeamImage className="absolute lg:-left-60 lg:-bottom-[132rem] scale-x-[-1] h-[50%]" />
+            <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
             </p>
@@ -203,9 +203,9 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-[8rem]">
           <div className="flex w-full ml-[24rem] my-20">
-            <div className="flex items-center  mb-[6rem]">
+            <div className="flex items-center mb-[6rem]">
               <GradientDot1 className="h-[90px] w-[90px] relative" />
-              <p className="absolute  text-black text-6xl ml-7 font-semibold">
+              <p className="absolute text-black text-6xl ml-7 font-semibold">
                 2
               </p>
               <div className="ml-6">
@@ -215,7 +215,7 @@ export function Agencies() {
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-sm font-light max-w-md text-white">
+                <BodyText className="text-sm font-light max-w-lg text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our BodyTextroprietary platform, mDash,
                   automatically generates an accurate budget, timeline, and
@@ -224,8 +224,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute right-0 scale-[50%] top-[188rem] z-10" />
-            <SaturnPurple className="absolute right-[10rem] rotate-12 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute lg:right-20 scale-[50%] lg:top-[212rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[10rem] lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -246,21 +246,21 @@ export function Agencies() {
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-sm font-light max-w-md text-white">
+                <BodyText className="text-sm font-light max-w-[30rem] text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute left-[6rem] h-[280px] w-[280px] scale-x-[-1]" />
+              <FormCharacter className="absolute lg:left-[11rem] lg:h-[350px] w-[350px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client3} alt="" />
           </div>
 
-          <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[5rem]">
+          <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[8rem]">
             <div className="flex items-center">
               <BallBlue className=" h-[90px] w-[90px] relative" />
               <p className="absolute text-black text-6xl ml-7 font-semibold">
@@ -273,9 +273,12 @@ export function Agencies() {
                 >
                   Launch That Beautiful Website!
                 </Heading>
-                <Rocket className="absolute -rotate-45 scale-[50%] right-[4rem] -mt-[11rem]" />
-                <Planet className="absolute right-[4rem] scale-[175%]" />
-                <BodyText className="text-sm font-light max-w-md text-white">
+                <div>
+                  <Rocket className="absolute -rotate-45 scale-[55%] right-[10rem] -mt-[12rem]" />
+                  <Planet className="absolute right-[10rem] scale-[220%]" />
+                </div>
+
+                <BodyText className="text-sm font-light max-w-lg text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
