@@ -26,6 +26,7 @@ import {
   ManArtist,
   BallBlue,
   BallPurple,
+  GradientDot1,
   StarOutline,
   BigSaturn,
   HollowStar,
@@ -33,17 +34,21 @@ import {
   NoMaintenance,
   TeamImage,
   FormCharacter,
-  Rocket
+  Rocket,
+  MusicLady,
+  SaturnPurple
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
 import Client1 from '../public/images/agencies-placeholder-1.png'
-import Client2 from '../public/images/client2.png'
+import Client2 from '../public/images/agencies-placeholder-2.png'
+import Client3 from '../public/images/agencies-placeholder-3.png'
 
 export function Agencies() {
   return (
     <Layout footerVariant="">
       <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem]">
+        ``
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
@@ -171,6 +176,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
+            <TeamImage className="absolute -left-60 -bottom-[132rem] scale-x-[-1] h-[50%]" />
             <BallBlue className="h-[20%] w-[20%] mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -182,13 +188,12 @@ export function Agencies() {
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-sm font-light max-w-xl text-white">
+              <BodyText className="text-sm font-light max-w-lg text-white">
                 Our team of web develoBodyTextment experts are ready to take on
                 any project. Once you’re set up in our system, simply send over
                 any client request and we’ll handle the rest!
               </BodyText>
             </div>
-            <TeamImage className="absolute -left-60 -bottom-[120rem] scale-x-[-1] h-[50%]" />
           </div>
 
           <div className="h-[70%] w-[70%] z-[999]">
@@ -197,9 +202,9 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[8rem]">
-          <div className="flex w-full ml-[28rem] my-20">
-            <div className="flex items-center">
-              <BallOrange className=" h-[90px] w-[90px] relative" />
+          <div className="flex w-full ml-[24rem] my-20">
+            <div className="flex items-center  mb-[6rem]">
+              <GradientDot1 className="h-[90px] w-[90px] relative" />
               <p className="absolute  text-black text-6xl ml-7 font-semibold">
                 2
               </p>
@@ -210,7 +215,7 @@ export function Agencies() {
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-sm font-light max-w-xl text-white">
+                <BodyText className="text-sm font-light max-w-md text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our BodyTextroprietary platform, mDash,
                   automatically generates an accurate budget, timeline, and
@@ -219,14 +224,16 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
+            <MusicLady className="absolute right-0 scale-[50%] top-[188rem] z-10" />
+            <SaturnPurple className="absolute right-[10rem] rotate-12 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
           </div>
         </div>
 
-        <div className="flex flex-col items-center ">
-          <div className="flex justify-end w-full mr-[20rem] mb-[14rem]">
+        <div className="flex flex-col items-center">
+          <div className="flex justify-end w-full mr-[20rem] mb-[10rem]">
             <div className="flex items-center">
               <BallPurple className=" h-[90px] w-[90px] relative" />
               <p className="absolute  text-black text-6xl ml-7 font-semibold">
@@ -239,18 +246,18 @@ export function Agencies() {
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-sm font-light max-w-lg text-white">
+                <BodyText className="text-sm font-light max-w-md text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute left-[6rem] scale-x-[-1]" />
+              <FormCharacter className="absolute left-[6rem] h-[280px] w-[280px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
-            <img src={Client2} alt="" />
+            <img src={Client3} alt="" />
           </div>
 
           <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[5rem]">
@@ -266,9 +273,9 @@ export function Agencies() {
                 >
                   Launch That Beautiful Website!
                 </Heading>
-                <Rocket className="absolute -rotate-45 scale-[50%] right-[12rem] -mt-[11rem]" />
-                <Planet className="absolute right-[12rem] scale-[175%]" />
-                <BodyText className="text-sm font-light max-w-xl text-white">
+                <Rocket className="absolute -rotate-45 scale-[50%] right-[4rem] -mt-[11rem]" />
+                <Planet className="absolute right-[4rem] scale-[175%]" />
+                <BodyText className="text-sm font-light max-w-md text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
