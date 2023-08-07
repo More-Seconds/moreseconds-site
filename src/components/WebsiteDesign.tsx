@@ -1,13 +1,11 @@
 import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
-import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Layout } from 'containers/layout/Layout'
-import { Planet } from 'public/svgs'
-import { HeroCentered } from 'containers/shared/HeroCentered'
 import React, { useEffect, useState } from 'react'
 import sanityClient from '@sanity/client'
 import { Project } from 'components/shared sections/Projects/Project'
+import { Heading } from './typography/Heading'
+import { Card } from './Card'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -106,29 +104,67 @@ const WebsiteDesign = () => {
   if (loading) {
     return <div>Loading...</div>
   }
+  const visiblePosts = posts.slice(0, 4)
 
   return (
-    <section className="mt-[11rem] ml-7">
-      <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
-      <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
-        Website Design
-      </h1>
-      <div className="max-w-3xl">
-        <BodyText className="text-leftsm:px-10 xl:text-lg max-w-2xl">
-          Get a beautifully designed website that doesn't break the bank. We
-          provide stunning design options to ensure each web project we deliver
-          is an aesthetic masterpiece. Work with our expert design team to
-          create a website that wows and start maximizing your conversion rate
-          today.
-        </BodyText>
-        <Button
-          href="#contact"
-          className="block w-[50%] px-8 mt-10 mb-8 text-center"
-        >
-          Generate Time Cost Estimate
-        </Button>
-      </div>
-    </section>
+    <div className="flex flex-col items-start">
+      <section className="mt-[11rem] ml-7">
+        <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
+        <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
+          Website Design
+        </h1>
+        <div className="max-w-3xl xl:min-h-[260px]">
+          <BodyText className="text-left xl:text-lg max-w-2xl">
+            Get a beautifully designed website that doesn’t break the bank. We
+            provide stunning design options to ensure each web project we
+            deliver is an aesthetic masterpiece. Work with our expert design
+            team to create a website that wows and start maximizing your
+            conversion rate today.
+          </BodyText>
+          <Button
+            href="#contact"
+            className="block w-[50%] px-8 mt-10 mb-8 text-center"
+          >
+            Generate Time / Cost Estimate
+          </Button>
+        </div>
+      </section>
+
+      <section className="portfolio--section sm:pt-[12rem] ml-[-24rem]">
+        <div className="sm:translate-y-0">
+          <h1
+            className="text-xl font-semibold max-w-xl
+           uppercase text-white sm:mb-10"
+          >
+            We’ve Designed Breathtaking Websites For Top Companies
+          </h1>
+        </div>
+        <ul className="grid self-start gap-14 mb-20 grid-cols-1 md:grid-cols-2 max-w-7xl">
+          {visiblePosts &&
+            visiblePosts.length > 0 &&
+            visiblePosts.map((ele: any) => {
+              return (
+                <React.Fragment key={ele.title}>
+                  <div className="project-card-container relative">
+                    <div className="project-card rounded-[3rem]">
+                      <Project
+                        className="w-[250px] h-[250px] relative rounded-[3rem] opacity-90 "
+                        image={ele.thumbnailImage.asset.url}
+                        slug={`/portfolio/${ele.slug.current}`}
+                        title={''}
+                        showSeeMore={false}
+                      />
+                    </div>
+                    <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
+                      {ele.title}
+                    </div>
+                  </div>
+                </React.Fragment>
+              )
+            })}
+        </ul>
+      </section>
+    </div>
   )
 }
 

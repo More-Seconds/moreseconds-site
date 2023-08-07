@@ -41,7 +41,10 @@ const client = sanityClient({
 
 export function Services() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('Website Design')
-  const [isGeneralService, setIsGeneralService] = useState('')
+  const [serviceTitle, setServiceTitle] = useState('Priced for Profitability')
+  const [serviceBody, setServiceBody] = useState(
+    'We offer our full suite of services at a rate far below most major agency pricing so you can expand your client offerings at your preferred rate, increase revenue, and effortlessly make a profit.'
+  )
 
   const handleMenuItemClick = (menuItem: string) => {
     setSelectedMenuItem(menuItem)
@@ -138,7 +141,6 @@ export function Services() {
     return <div>Loading...</div>
   }
 
-  const visiblePosts = posts.slice(0, 4)
   return (
     <Layout footerVariant="">
       <div className="relative">
@@ -151,6 +153,8 @@ export function Services() {
           <div className="flex justify-center">
             <div className="z-30">
               <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
+              <CloudFull className="absolute left-[4rem] mt-10 scale-x-[-1] xl:-scale-x-[140%] xl:scale-y-[140%]" />
+              <Star className="absolute ml-[14rem] mt-2 xl:-scale-x-50 xl:scale-y-50" />
             </div>
             <div className="services-content">
               {selectedMenuItem === 'Client Website Help' && (
@@ -170,55 +174,24 @@ export function Services() {
         </section>
 
         <section className="relative items-center block sm:pt-[10rem] sm:px-[8rem]">
-          <div className="sm:translate-y-0">
-            <h1 className="text-xl font-semibold uppercase text-white sm:mb-10">
-              We Build Websites for Top Agencies
-            </h1>
-          </div>
-          <ul className="grid self-start gap-10 w-[55%] mb-20 grid-cols-1 md:grid-cols-2 max-w-7xl">
-            {visiblePosts &&
-              visiblePosts.length > 0 &&
-              visiblePosts.map((ele: any) => {
-                return (
-                  <React.Fragment key={ele.title}>
-                    <div className="project-card-container relative">
-                      <div className="project-card rounded-[3rem]">
-                        <Project
-                          className="w-[250px] h-[250px] relative rounded-[3rem] opacity-90 "
-                          image={ele.thumbnailImage.asset.url}
-                          slug={`/portfolio/${ele.slug.current}`}
-                          title={''}
-                          showSeeMore={false}
-                        />
-                      </div>
-                      <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
-                        {ele.title}
-                      </div>
-                    </div>
-                  </React.Fragment>
-                )
-              })}
-            <BallPurple className="absolute -top-[-3rem] right-[5rem] sm:scale-[200%]" />
-          </ul>
+          <BallBlue className="absolute -top-[14rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
+          <BallPurple className="absolute -top-[50rem] right-[8rem] sm:scale-[250%]" />
+          <GrayStar className="absolute xl:-top-[34rem] mml-10 xl:scale-x-[60%] xl:scale-y-[60%]" />
           <div className="flex items-center -translate-y-16 w-screen h-96 relative -right-20 justify-self-start sm:absolute sm:top-28 sm:-right-2 sm:w-[378px] xl:translate-y-64">
-            <ManArtist className="absolute bottom-[6rem] -right-[8rem] h-full sm:scale-150 xl:scale-x-[200%] xl:scale-y-[200%]" />
-            <Star className="absolute -left-2 top-8 sm:-left-[40vw] sm:-top-10 sm:-scale-x-75 sm:scale-y-75 xl:-top-[22rem] xl:-left-[35rem] xl:-scale-x-50 xl:scale-y-50" />
-            <GrayStar className="absolute xl:-top-[2rem] xl:-left-[55rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
-            <BallBlue className="absolute xl:top-[16rem] xl:-left-[52rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
-            <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 md:-left-[52rem] md:top-8 xl:-top-[20rem] xl:-scale-x-[150%] xl:scale-y-[150%]" />
-            <CloudFull className="absolute scale-75 sm:-scale-x-150 sm:scale-y-150 sm:-left-[52rem] sm:-top-[0rem] xl:-scale-x-[75%] xl:scale-y-[75%] xl:-left-[4rem] xl:top-[18rem]" />
-            <Star className="absolute xl:-bottom-[4rem] xl:right-[20rem] xl:-scale-x-50 xl:scale-y-50" />
-            <CloudFull className="absolute sm:scale-x-[-1] sm:scale-y-[-1] md:-left-[65rem] transform scale-x-[-1] md:top-10 xl:scale-x-[150%] xl:scale-y-[150%] xl:-left-[4rem] xl:top-[26rem]" />
-            <StarOutline className="absolute xl:right-[60rem] xl:top-[28rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
+            <ManArtist className="absolute bottom-[55rem] -right-[4rem] h-full sm:scale-150 xl:scale-x-[200%] xl:scale-y-[200%]" />
+            <CloudFull className="absolute scale-x-[-1] -top-[34rem] right-[20rem] h-[300px] w-[300px]" />
+            <CloudFull className="absolute bottom-[40rem]" />
           </div>
         </section>
 
-        <section className="pt-[6rem]">
-          <Smoke
-            width="40%"
-            height="40%"
-            className="h-auto absolute -left-[2rem] top-[89rem] scale-x-[-1] rotate-180 -scale-y-125 z-100"
-          />
+        <Smoke
+          width="40%"
+          height="40%"
+          className="h-auto absolute -left-[2rem] top-[89rem] scale-x-[-1] rotate-180 -scale-y-125 z-100"
+        />
+        <StarOutline className="absolute right-[60rem] top-[84rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
+
+        <section className="services--cards px-[3rem]">
           <h1 className="sm:text-2xl text-white font-semibold mb-10 px-[8rem] xl:text-3xl">
             More Seconds White Label Services Include…
           </h1>
@@ -228,14 +201,9 @@ export function Services() {
                 level="1"
                 className="mx-auto text-lg sm:text-base xl:text-2xl"
               >
-                Priced for Profitability
+                {serviceTitle}
               </Heading>
-              <BodyText className="text-md font-light ">
-                We offer our full suite of services at a rate far below most
-                major agency pricing so you can expand your client offerings at
-                your preferred rate, increase revenue, and effortlessly make a
-                profit.
-              </BodyText>
+              <BodyText className="text-md font-light ">{serviceBody}</BodyText>
             </Card>
             <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 pt-10 sm:py-8 xl:gap-8">
               <Heading
@@ -284,7 +252,7 @@ export function Services() {
           </div>
         </section>
 
-        <section className="py-[6rem]">
+        <section className="py-[4rem]">
           <div>
             <Smoke className="absolute left-1  w-[100vw]" />
             <div className="flex items-center justify-center md:mx-4 md:flex-row md:mr-8">

@@ -70,9 +70,9 @@ export function Portfolio() {
         </HeroCentered>
       </section>
 
-      {/* <Projects /> */}
+      <Projects />
 
-      {/* <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
+      <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
         <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
           <BigSaturn className="w-[70%] mx-auto sm:w-full xl:w-full xl:scale-110" />
           <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
@@ -99,9 +99,9 @@ export function Portfolio() {
           </BodyText>
           <HollowStar className="absolute right-16 top-12 scale-75 sm:top-[10%] sm:-right-16 sm:scale-50" />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
+      <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
         <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
@@ -156,11 +156,11 @@ export function Portfolio() {
         </Card>
         <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
         <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
-      </section> */}
-      {/* <div className="hidden max-h-[0px] sm:flex items-center justify-end">
+      </section>
+      <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
-      </div> */}
-      {/* <Testimonials title="Websites that wow." /> */}
+      </div>
+      <Testimonials title="Websites that wow." />
     </Layout>
   )
 }
