@@ -9,6 +9,7 @@ import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 import { ReactComponent as Hamburger } from './hamburger.svg'
 import { ReactComponent as Star } from './star.svg'
+import { ReactComponent as GrayStar } from './gray-star.svg'
 import { ReactComponent as BallPurple } from './ball_purple.svg'
 import { ReactComponent as BallOrange } from './ball_orange.svg'
 import { ReactComponent as BallBlue } from './ball_blue.svg'
@@ -68,6 +69,7 @@ export {
   HomeHeroBG,
   Hamburger,
   Star,
+  GrayStar,
   BallPurple,
   BallOrange,
   BallBlue,
