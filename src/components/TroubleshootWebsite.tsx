@@ -28,7 +28,7 @@ const TroubleshootWebsite = () => {
   return (
     <>
       <div className="flex flex-col items-center">
-        <section className="mt-[11rem] xl:ml-[26rem] mb-[10rem] min-h-[400px]">
+        <section className="mt-[11rem] xl:ml-[20rem] mb-[10rem] min-h-[400px]">
           <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
           <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
             Website Maintenance
@@ -95,7 +95,7 @@ const TroubleshootWebsite = () => {
           <GrayStar className="absolute xl:-top-[-12rem]  xl:left-[-10rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
           <BallBlue className="absolute  xl:bottom-[14rem] xl:left-[-5rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
           <BallPurple className="absolute xl:top-[-10rem] xl:left-[60rem] sm:scale-[250%]" />
-          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[40rem]" />
+          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[45rem]" />
           <CloudFull className="absolute top-[22rem] right-[-16rem] h-[200px] w-[200px]" />
           <Star className="absolute scale-x-[-1] h-[25px] w-[25px] xl:top-[32rem] xl:left-[44rem]" />
           <CloudFull className="absolute xl:right-[-32rem] xl:bottom-[-7rem] h-[450px] w-[450px]" />
@@ -107,7 +107,7 @@ const TroubleshootWebsite = () => {
           className="h-auto absolute scale-x-[-1] -left-12 top-[82rem] rotate-180 -scale-y-125 z-[999]"
         />
 
-        <section className="service--cards container xl:px-[5rem]">
+        <section className="service--cards container xl:px-[5rem] pt-28">
           <h1 className="text-white text-2xl font-semibold uppercase mx-8 mb-10">
             More Seconds Website Maintenance Packages Include…
           </h1>
@@ -130,7 +130,7 @@ const TroubleshootWebsite = () => {
               <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
                 With our in-depth reporting, you'll have a clear understanding
                 of the maintenance activities performed, allowing you to make
-                informed decisions about the future of your website.
+                informed decisions about the future of your website. accuracy.
               </BodyText>
             </Card>
 
@@ -157,7 +157,131 @@ const TroubleshootWebsite = () => {
           </div>
         </section>
 
-        <section className="additional--info h-full mt-24">
+        <section className="service--cards h-screen container xl:px-[5rem] sm:mx-8">
+          <h1 className="text-white text-4xl font-semibold uppercase mb-10">
+            Maintenance Package Options
+          </h1>
+
+          <div className="menu">
+            <ul className="flex gap-4">
+              <li className="bg-translucent text-white rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4  border border-r-[6px] border-b-4 border-accent py-4 text-sm font-semibold text-center hover:bg-white hover:text-accent transition-all duration-300 cursor-pointer">
+                Monthly Pricing
+              </li>
+              <li className="bg-translucent text-white rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4  border border-r-[6px] border-b-4 border-accent py-4 text-sm font-semibold text-center hover:bg-white hover:text-accent transition-all duration-300 cursor-pointer">
+                Quarterly Pricing
+              </li>
+              <li className="bg-translucent text-white rounded-tr-2xl rounded-br-2xl rounded-bl-2xl p-4  border border-r-[6px] border-b-4 border-accent py-4 text-sm font-semibold text-center hover:bg-white hover:text-accent transition-all duration-300 cursor-pointer">
+                Yearly Pricing
+              </li>
+            </ul>
+          </div>
+
+          <section className="service--cards--container flex w-full h-full mt-10 gap-4">
+            <Card
+              backgroundColor="#3C3C59"
+              className="w-full h-full gap-2 xl:gap-8"
+            >
+              <div className="space-y-4">
+                <Heading
+                  level="1"
+                  className="mx-auto pt-10 font-bold xl:text-4xl"
+                >
+                  Gold Package
+                </Heading>
+                <p>$x</p>
+              </div>
+              <ul className="text-white list-disc px-8 space-y-4">
+                <li className="text-left text-sm">
+                  Website Uptime Monitoring & Downtime Alert Reporting
+                </li>
+                <li className="text-left text-sm">
+                  Custom Maintenance PDF Report
+                </li>
+                <li className="text-left text-sm">
+                  Website Backup System Configuration Report
+                </li>
+                <li className="text-left text-sm">WP Core Updates</li>
+                <li className="text-left text-sm">WP Theme Updates</li>
+                <li className="text-left text-sm">
+                  Non-Premium Plugin Updates
+                </li>
+                <li className="text-left text-sm">Premium Plugin Updates</li>
+                <li className="text-left text-sm">
+                  Core Website Feature & Form Delivery Testing
+                </li>
+              </ul>
+              <Button href={'#contact'}>Get Started</Button>
+            </Card>
+
+            <Card
+              backgroundColor="#3C3C59"
+              className="w-full h-full gap-2 xl:gap-8"
+            >
+              <div className="space-y-4">
+                <Heading
+                  level="1"
+                  className="mx-auto pt-10 font-bold xl:text-4xl"
+                >
+                  Silver Package
+                </Heading>
+                <p>$x</p>
+              </div>
+              <ul className="text-white list-disc px-8 space-y-4">
+                <li className="text-left text-sm">
+                  Website Uptime Monitoring & Downtime Alert Reporting
+                </li>
+                <li className="text-left text-sm">
+                  Custom Maintenance PDF Report
+                </li>
+                <li className="text-left text-sm">
+                  Website Backup System Configuration Report
+                </li>
+                <li className="text-left text-sm">WP Core Updates</li>
+                <li className="text-left text-sm">WP Theme Updates</li>
+                <li className="text-left text-sm">
+                  Non-Premium Plugin Updates
+                </li>
+                <li className="text-left text-sm">Premium Plugin Updates</li>
+                <li className="text-left text-sm">
+                  Core Website Feature & Form Delivery Testing
+                </li>
+              </ul>
+              <Button href={'#contact'}>Get Started</Button>
+            </Card>
+
+            <Card
+              backgroundColor="#323249"
+              className="w-full h-full gap-2 xl:gap-8"
+            >
+              <div className="space-y-4">
+                <Heading
+                  level="1"
+                  className="mx-auto pt-10 font-bold xl:text-4xl"
+                >
+                  Gold Package
+                </Heading>
+                <p>$x</p>
+              </div>
+              <ul className="text-white list-disc px-8 space-y-4">
+                <li className="text-left text-sm">
+                  Website Uptime Monitoring & Downtime Alert Reporting
+                </li>
+                <li className="text-left text-sm">
+                  Custom Maintenance PDF Report
+                </li>
+                <li className="text-left text-sm">WP Core Updates</li>
+                <li className="text-left text-sm">WP Theme Updates</li>
+                <li className="text-left text-sm">
+                  Non-Premium Plugin Updates
+                </li>
+                <li className="text-left text-sm">Premium Plugin Updates</li>
+              </ul>
+              <Button href={'#contact'}>Get Started</Button>
+            </Card>
+          </section>
+        </section>
+
+        <section className="additional--info my-[20rem]">
           <ServicesAdditionalInfo
             title={'MAINTAIN MAGNIFICENCE'}
             subTitle={

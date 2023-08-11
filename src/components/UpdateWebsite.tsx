@@ -121,7 +121,7 @@ const UpdateWebsite = () => {
   return (
     <>
       <div className="flex flex-col items-center">
-        <section className="mt-[11rem] xl:ml-[26rem] mb-[10rem] min-h-[400px]">
+        <section className="mt-[11rem] xl:ml-[20rem] mb-[10rem] min-h-[400px]">
           <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
           <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
             Website Updates
@@ -174,18 +174,13 @@ const UpdateWebsite = () => {
           <GrayStar className="absolute xl:-top-[-12rem]  xl:left-[-10rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
           <BallBlue className="absolute  xl:bottom-[14rem] xl:left-[-5rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
           <BallPurple className="absolute xl:top-[-10rem] xl:left-[60rem] sm:scale-[250%]" />
-          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[40rem]" />
+          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[45rem]" />
           <CloudFull className="absolute top-[22rem] right-[-16rem] h-[200px] w-[200px]" />
           <Star className="absolute scale-x-[-1] h-[25px] w-[25px] xl:top-[32rem] xl:left-[44rem]" />
           <CloudFull className="absolute xl:right-[-32rem] xl:bottom-[-7rem] h-[450px] w-[450px]" />
         </section>
 
         <section className="service--cards container xl:px-[5rem] pt-28">
-          <Smoke
-            width="50%"
-            height="50%"
-            className="h-auto absolute scale-x-[-1] left-0 top-1 rotate-180 -scale-y-125 z-[999]"
-          />
           <h1 className="text-white text-2xl font-semibold uppercase mx-8 mb-10">
             More Seconds Website Update Services Include…
           </h1>

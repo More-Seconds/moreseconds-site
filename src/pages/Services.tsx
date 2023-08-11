@@ -174,7 +174,6 @@ export function Services() {
             </div>
           </div>
         </section>
-
         <StarOutline className="absolute right-[60rem] top-[86rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
       </div>
     </Layout>
