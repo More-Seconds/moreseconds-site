@@ -51,6 +51,8 @@ import { ReactComponent as CircleHighlight } from './circle_highlight.svg'
 import { ReactComponent as Pillow } from './pillow.svg'
 import { ReactComponent as DropDown } from './dropdown-icon.svg'
 import { ReactComponent as Share } from './Share.svg'
+import { ReactComponent as OrangeGradientBall } from './Gradient_Dot_1.svg'
+import { ReactComponent as BlueSaturn } from './Saturn_Blue.svg'
 
 export {
   MSLogo,
@@ -105,5 +107,7 @@ export {
   CircleHighlight,
   Pillow,
   DropDown,
-  Share
+  Share,
+  OrangeGradientBall,
+  BlueSaturn
 }

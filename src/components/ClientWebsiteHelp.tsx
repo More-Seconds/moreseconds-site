@@ -121,7 +121,7 @@ const ClientWebsiteHelp = () => {
   return (
     <>
       <div className="flex flex-col items-center">
-        <section className="mt-[11rem] xl:ml-[20rem] mb-[10rem] min-h-[400px]">
+        <section className="mt-[11rem] xl:ml-[24rem] mb-[10rem] min-h-[400px]">
           <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
           <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
             White Label Service
@@ -143,6 +143,14 @@ const ClientWebsiteHelp = () => {
             </Button>
           </div>
         </section>
+
+        <Smoke
+          width="50%"
+          height="50%"
+          className="h-auto absolute scale-x-[-1] -left-12 top-[88rem] rotate-180 -scale-y-125 z-[999]"
+        />
+
+        <StarOutline className="absolute right-[58rem] top-[86rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
 
         <section className="portfolio--section relative h-screen ml-[-20rem]">
           <CloudFull className="absolute xl:left-[-12rem] xl:top-[-20rem] xl:h-[500px] xl:w-[500px] scale-x-[-1]" />
@@ -181,18 +189,13 @@ const ClientWebsiteHelp = () => {
           <CloudFull className="absolute top-[22rem] right-[-16rem] h-[200px] w-[200px]" />
           <Star className="absolute scale-x-[-1] h-[25px] w-[25px] xl:top-[32rem] xl:left-[44rem]" />
           <CloudFull className="absolute xl:right-[-32rem] xl:bottom-[-7rem] h-[450px] w-[450px]" />
-
-          {/* <StarOutline
-            className="absolute xl:left-36 xl:top-[42
-            rem] xl:scale-x-[60%] xl:scale-y-[60%]"
-          /> */}
         </section>
 
         <section className="service--cards container xl:px-[5rem] pt-28">
           <h1 className="text-white text-2xl font-semibold uppercase mx-8 mb-10">
             More Seconds White Label Services Include…
           </h1>
-          <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mb-4 sm:grid-cols-4 sm:mt-4 sm:mb-48 sm:px-8 ">
+          <div className="relative grid items-center justify-center w-full gap-3 px-4 mb-8 sm:grid-cols-4 sm:mt-4 sm:px-8 ">
             <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
               <Heading level="1" className="mx-auto font-bold xl:text-xl">
                 Priced for Profitability
@@ -229,7 +232,7 @@ const ClientWebsiteHelp = () => {
               </BodyText>
             </Card>
 
-            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+            <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full min-w-full gap-2 py-10 sm:py-8 xl:gap-8">
               <Heading level="1" className="mx-auto font-bold xl:text-xl">
                 Lightning Fast Turnaround Times
               </Heading>
@@ -240,9 +243,12 @@ const ClientWebsiteHelp = () => {
               </BodyText>
             </Card>
           </div>
+          <div className="flex justify-end px-4 sm:mt-4 sm:mb-48 sm:px-8">
+            <p className="uppercase text-white text-2xl">...and more!</p>
+          </div>
         </section>
 
-        <section className="additional--info h-full mt-24">
+        <section className="additional--info h-full">
           <ServicesAdditionalInfo
             title={'INCREASE YOUR REVENUE'}
             subTitle={'Make More Money With More Seconds'}
