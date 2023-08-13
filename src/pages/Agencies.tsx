@@ -160,7 +160,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute lg:-left-60 lg:-bottom-[132rem] scale-x-[-1] h-[50%]" />
+            <TeamImage className="absolute lg:-left-60 lg:-bottom-[122rem] scale-x-[-1] h-[50%]" />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -208,8 +208,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute lg:right-20 scale-[50%] lg:top-[212rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[10rem] lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute lg:right-[-4rem] scale-[50%] lg:top-[189rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[2rem] lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -237,7 +237,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute lg:left-[11rem] lg:h-[350px] w-[350px] scale-x-[-1]" />
+              <FormCharacter className="absolute lg:left-[11rem] lg:h-[300px] w-[300px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -258,8 +258,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[55%] right-[10rem] -mt-[12rem]" />
-                  <Planet className="absolute right-[10rem] scale-[220%]" />
+                  <Rocket className="absolute -rotate-45 scale-[45%] right-[4rem] -mt-[11rem]" />
+                  <Planet className="absolute right-[4rem] scale-[180%]" />
                 </div>
 
                 <BodyText className="text-sm font-light max-w-lg text-white">
