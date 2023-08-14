@@ -32,7 +32,7 @@ import Client3 from '../public/images/agencies-placeholder-3.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem]">
+      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem] max-w-full">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
@@ -208,7 +208,7 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute lg:right-[-4rem] scale-[50%] lg:top-[189rem] z-10" />
+            <MusicLady className="absolute xl:right-[-4rem] scale-[50%] xl:top-[189rem] 2xl:top-[200rem] z-10" />
             <SaturnPurple className="absolute lg:right-[2rem] lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -258,8 +258,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[45%] right-[4rem] -mt-[11rem]" />
-                  <Planet className="absolute right-[4rem] scale-[180%]" />
+                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[7rem] xl:-mt-[11rem]" />
+                  <Planet className="absolute right-[7rem] scale-[180%]" />
                 </div>
 
                 <BodyText className="text-sm font-light max-w-lg text-white">
