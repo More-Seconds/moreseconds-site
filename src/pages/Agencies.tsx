@@ -32,7 +32,7 @@ import Client3 from '../public/images/agencies-placeholder-3.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem]">
+      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem] max-w-full">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
@@ -160,7 +160,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute lg:-left-60 lg:-bottom-[132rem] scale-x-[-1] h-[50%]" />
+            <TeamImage className="absolute lg:-left-60 lg:-bottom-[125rem] scale-x-[-1] h-[50%]" />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -172,7 +172,7 @@ export function Agencies() {
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-sm font-light max-w-lg text-white">
+              <BodyText className="text-md font-light max-w-lg text-white">
                 Our team of web develoBodyTextment experts are ready to take on
                 any project. Once you’re set up in our system, simply send over
                 any client request and we’ll handle the rest!
@@ -199,17 +199,17 @@ export function Agencies() {
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-sm font-light max-w-lg text-white">
+                <BodyText className="text-md font-light max-w-lg text-white">
                   No more meetings. No more emails. No more confusing tech
-                  terminology. Our BodyTextroprietary platform, mDash,
-                  automatically generates an accurate budget, timeline, and
-                  immediately assigns tasks to our team to take you from request
-                  to kickoff in seconds.
+                  terminology. Our proprietary platform, mDash, automatically
+                  generates an accurate budget, timeline, and immediately
+                  assigns tasks to our team to take you from request to kickoff
+                  in seconds.
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute lg:right-20 scale-[50%] lg:top-[212rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[10rem] lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute xl:right-[-5rem] scale-[50%] xl:top-[190rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[6rem] lg:mt-20 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -230,14 +230,14 @@ export function Agencies() {
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-sm font-light max-w-[30rem] text-white">
+                <BodyText className="text-md font-light max-w-[30rem] text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute lg:left-[11rem] lg:h-[350px] w-[350px] scale-x-[-1]" />
+              <FormCharacter className="absolute lg:left-[11rem] lg:h-[300px] w-[300px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -258,8 +258,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[55%] right-[10rem] -mt-[12rem]" />
-                  <Planet className="absolute right-[10rem] scale-[220%]" />
+                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[7rem] xl:-mt-[11rem]" />
+                  <Planet className="absolute right-[7rem] scale-[180%]" />
                 </div>
 
                 <BodyText className="text-sm font-light max-w-lg text-white">
