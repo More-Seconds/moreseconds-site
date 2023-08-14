@@ -160,7 +160,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute lg:-left-60 lg:-bottom-[133rem] scale-x-[-1] h-[50%]" />
+            <TeamImage className="absolute lg:-left-60 lg:-bottom-[125rem] scale-x-[-1] h-[50%]" />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -208,8 +208,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute xl:right-[-4rem] scale-[50%] xl:top-[210rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[6rem]  lg:mt-12 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute xl:right-[-5rem] scale-[50%] xl:top-[190rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[6rem] lg:mt-20 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
