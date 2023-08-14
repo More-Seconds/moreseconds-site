@@ -120,7 +120,7 @@ export function WebDevelopment() {
       </section>
 
       <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
-        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8 hover:bg-gradient-to-b from-accent">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
@@ -133,7 +133,7 @@ export function WebDevelopment() {
           </BodyText>
         </Card>
 
-        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8 hover:bg-gradient-to-b from-accent">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-base xl:text-2xl"
@@ -147,7 +147,7 @@ export function WebDevelopment() {
           </BodyText>
         </Card>
 
-        <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-8">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-8 hover:bg-gradient-to-b from-accent">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"
@@ -160,7 +160,7 @@ export function WebDevelopment() {
           </BodyText>
         </Card>
 
-        <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-9">
+        <Card className="w-full h-full gap-2 py-10 sm:py-8 sm:gap-4 xl:gap-9 hover:bg-gradient-to-b from-accent">
           <Heading
             level="2"
             className="max-w-[16ch] mx-auto text-lg sm:text-sm xl:text-2xl"

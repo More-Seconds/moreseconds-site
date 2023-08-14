@@ -63,7 +63,7 @@ export function WebsiteUpdates() {
 
       <section className="relative block items-center sm:py-72">
         <div className="flex items-center -translate-y-16 w-screen h-96 relative -right-20 justify-self-start sm:absolute sm:top-28 sm:-right-2 sm:w-[378px] xl:translate-y-64 xl:right-40">
-          <ManArtist className="h-full sm:scale-150 xl:scale-[300%]" />
+          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[45rem]" />
           <Star className="absolute -left-12 top-8 scale-50 sm:-left-[40vw] sm:-top-12 sm:-scale-x-75 sm:scale-y-75 xl:-top-72 xl:-left-[50vw] xl:-scale-x-100 xl:scale-y-100" />
           <Star className="hidden sm:block sm:absolute sm:-top-40 sm:right-32 sm:scale-50" />
           <CloudFull className="absolute -left-52 scale-75 top-10 sm:-scale-x-150 sm:scale-y-150 sm:-left-[65vw] sm:top-0 xl:-top-56 xl:-scale-x-[200%] xl:scale-y-[200%]" />
