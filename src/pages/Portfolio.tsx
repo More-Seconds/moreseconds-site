@@ -37,25 +37,22 @@ import { Signup } from 'components/forms/Signup'
 export function Portfolio() {
   return (
     <Layout footerVariant="connect">
-      <section className="flex flex-col items-center justify-center w-min h-screen mb-[6rem] pb-[8rem]">
+      <section className="flex flex-col items-center h-screen lg:h-full justify-center w-min">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
-          <Heading level="1" className="max-w-4xl mx-auto text-center">
-            Take A Peek At What More Seconds Can Do For You
+          <Heading
+            level="1"
+            className="max-w-4xl mx-auto text-center mb-[1.35rem]"
+          >
+            <span>Take A Peek At What More Seconds</span>
+            <span className="text-accent"> Can Do For You</span>
           </Heading>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
             Our top tier, U.S.-based team of developers have completed hundreds
             of stunning projects for our impressive client roster including top
             marketing agencies, venture capital firms, gaming companies, social
             impact initiatives, and more. We can’t wait to work our More Seconds
-            magic for you and your clients! Leading companies like Hawke Media,
-            March Capital, and Pharrell Williams’ Black Ambition trust More
-            Seconds with their web development needs because we are a reliable,
-            long-term development partner with the expertise to bring their
-            projects to fruition on budget, on time, and with the highest degree
-            of accuracy. Check out what we’ve done and you’ll see why so many
-            businesses use More Seconds to take all of their web projects from
-            headache to handled.
+            magic for you and your clients!
           </BodyText>
           <Button
             href="#contact"
@@ -85,8 +82,11 @@ export function Portfolio() {
             level="1"
             className="capitalize mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
           >
-            Have an exciting vision for your website? More Seconds has the tech
-            talent to bring it to life.
+            <span>
+              Have an exciting vision for your website? More Seconds has the
+              tech talent to
+            </span>
+            <span className="text-accent"> bring it to life.</span>
           </Heading>
           <BodyText className="max-w-[35ch] sm:max-w-none xl:text-lg xl:max-w-[53ch]">
             Your website is essential to the success of your business. We
@@ -160,7 +160,6 @@ export function Portfolio() {
       <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
       </div>
-      <Testimonials title="Websites that wow." />
     </Layout>
   )
 }
