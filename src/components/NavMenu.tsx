@@ -174,8 +174,11 @@ export function NavMenu({ mobile, open }: Props) {
           </NavLink>
         </li> */}
         <li>
-          <a href="#contact" className="hover:text-accent">
-            Contact
+          <a
+            href="#contact"
+            className="bg-transparent text-accent border-2 py-[0.7rem] px-[0.8rem] roundned-[0.25rem] border-accent hover:text-white hover:bg-accent transition"
+          >
+            Book a Demo
           </a>
         </li>
       </ul>
