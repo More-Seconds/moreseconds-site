@@ -38,7 +38,7 @@ export function Portfolio() {
   return (
     <Layout footerVariant="connect">
       <section className="flex flex-col items-center h-screen lg:h-full justify-center w-min">
-        <HeroCentered className="py-0">
+        <HeroCentered className="pt-[8rem]">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading
             level="1"
@@ -54,12 +54,7 @@ export function Portfolio() {
             impact initiatives, and more. We can’t wait to work our More Seconds
             magic for you and your clients!
           </BodyText>
-          <Button
-            href="#contact"
-            className="block max-w-xs px-8 py-3 mx-auto mt-6 text-center"
-          >
-            Get More Seconds
-          </Button>
+
           <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
           <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
