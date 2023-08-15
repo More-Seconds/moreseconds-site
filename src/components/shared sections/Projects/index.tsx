@@ -115,7 +115,7 @@ export function Projects() {
   return (
     <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
       <Heading level="2" className="self-center w-full mb-10 max-w-7xl">
-        <span className="text-[2.75rem] font-medium">I want to see</span>
+        <span className="text-[2.75rem]">I want to see</span>
 
         <span
           onMouseEnter={(e) => {
@@ -139,7 +139,7 @@ export function Projects() {
           >
             {/* {console.log(posts)} */}
             <button
-              className="px-4 py-2 text-black hover:bg-blue-100 w-min-content rounded-xl"
+              className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl "
               id="default-filter"
               onClick={filter}
             >
