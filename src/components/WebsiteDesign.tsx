@@ -142,9 +142,9 @@ const WebsiteDesign = () => {
             </Button>
           </div>
         </section>
-        <section className="portfolio--section relative h-screen ml-[-20rem]">
-          <CloudFull className="absolute xl:left-[-12rem] xl:top-[-20rem] xl:h-[500px] xl:w-[500px] scale-x-[-1]" />
-          <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:left-[12rem] xl:bottom-[50rem]" />
+        <section className="portfolio--section relative h-screen ml-[-35rem]">
+          <CloudFull className="absolute xl:left-[-10rem] xl:top-[-20rem] xl:h-[500px] xl:w-[500px] scale-x-[-1]" />
+          <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:left-[12rem] xl:bottom-[58rem]" />
           <h1 className="text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10">
             We’ve Designed Breathtaking Websites For Top Companies
           </h1>
@@ -172,22 +172,22 @@ const WebsiteDesign = () => {
                 )
               })}
           </ul>
-          <GrayStar className="absolute xl:-top-[-12rem]  xl:left-[-10rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
-          <BallBlue className="absolute  xl:bottom-[14rem] xl:left-[-5rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
-          <BallPurple className="absolute xl:top-[-10rem] xl:left-[60rem] sm:scale-[250%]" />
-          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[45rem]" />
-          <CloudFull className="absolute top-[22rem] right-[-16rem] h-[200px] w-[200px]" />
-          <Star className="absolute scale-x-[-1] h-[25px] w-[25px] xl:top-[32rem] xl:left-[44rem]" />
-          <CloudFull className="absolute xl:right-[-32rem] xl:bottom-[-7rem] h-[450px] w-[450px]" />
+          <GrayStar className="absolute xl:-top-[-12rem]  xl:left-[-8rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
+          <BallBlue className="absolute xl:bottom-[20rem] xl:left-[-8rem] xl:scale-x-[110%] xl:scale-y-[110%]" />
+          <BallPurple className="absolute xl:top-[-10rem] xl:left-[70rem] 2xl:left-[80rem] sm:scale-[250%]" />
+          <ManArtist className="absolute xl:scale-x-[75%] xl:scale-y-[75%] xl:top-[-16rem] xl:-right-[52rem] 2xl:-right-[67rem]" />
+          <CloudFull className="absolute xl:top-[25rem] xl:right-[-26rem] h-[200px] w-[200px]" />
+          <Star className="absolute scale-x-[-1] h-[25px] w-[25px] xl:top-[38rem] xl:left-[55rem]" />
+          <CloudFull className="absolute xl:right-[-45rem] xl:bottom-[-5rem] h-[450px] w-[450px]" />
         </section>
         <Smoke
           width="50%"
           height="50%"
-          className="h-auto absolute scale-x-[-1] -left-12 top-[88rem] rotate-180 -scale-y-125 z-[999]"
+          className="h-auto absolute scale-x-[-1] -left-12 top-[90rem] rotate-180 -scale-y-125 z-[999]"
         />
-        <StarOutline className="absolute right-[60rem] top-[86rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
+        <StarOutline className="absolute right-[64rem] top-[86rem] xl:scale-x-[60%] xl:scale-y-[60%]" />
 
-        <section className="service--cards container xl:px-[5rem] pt-28">
+        <section className="service--cards container xl:px-[5rem] pt-4">
           <h1 className="text-white text-2xl font-semibold uppercase mx-8 mb-10">
             More Seconds Website Design Services Include…
           </h1>
@@ -239,7 +239,7 @@ const WebsiteDesign = () => {
             <p className="uppercase text-white text-2xl">...and more!</p>
           </div>
         </section>
-        <section className="additional--info h-full mt-24">
+        <section className="additional--info h-full mt-4">
           <ServicesAdditionalInfo
             title={'DESIGN THAT DRIVES CONVERSION'}
             subTitle={'More Seconds Delivers Fresh, Modern Design Daily'}
