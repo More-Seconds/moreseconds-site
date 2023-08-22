@@ -27,11 +27,6 @@ import WebsiteDevelopment from 'components/WebsiteDevelopment'
 import UpdateWebsite from 'components/UpdateWebsite'
 import TroubleshootWebsite from 'components/TroubleshootWebsite'
 import HostWebsite from 'components/HostWebsite'
-import { Card } from 'components/Card'
-import { Signup } from 'components/forms/Signup'
-import { Testimonials } from 'components/shared sections/Testimonials'
-import { Partners } from 'components/shared sections/Partners'
-import { Button } from 'components/Button'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -41,21 +36,16 @@ const client = sanityClient({
 
 export function Services() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('Website Design')
-  const [serviceTitle, setServiceTitle] = useState('Priced for Profitability')
-  const [serviceBody, setServiceBody] = useState(
-    'We offer our full suite of services at a rate far below most major agency pricing so you can expand your client offerings at your preferred rate, increase revenue, and effortlessly make a profit.'
-  )
-
-  const handleMenuItemClick = (menuItem: string) => {
-    setSelectedMenuItem(menuItem)
-  }
-
   const [posts, setPosts] = useState<any>([])
   const [postsArchive, setPostsArchive] = useState<any>([])
   const [featured, setFeatured] = useState<any>([])
   const [loading, setLoading] = useState(true)
   const [listOfFilters, setListOfFilters] = useState<any>([])
   const [activeFilter, setActiveFilter] = useState('All Capabilities')
+
+  const handleMenuItemClick = (menuItem: string) => {
+    setSelectedMenuItem(menuItem)
+  }
 
   async function fetchCategory() {
     const results = await client.fetch(
@@ -140,6 +130,7 @@ export function Services() {
   if (loading) {
     return <div>Loading...</div>
   }
+  const visiblePosts = posts.slice(0, 4)
 
   return (
     <Layout footerVariant="">
@@ -149,8 +140,8 @@ export function Services() {
           height="50%"
           className="h-auto absolute top-[4rem] right-[1rem] scale-x-125 rotate-180 -scale-y-125 z-100"
         />
-        <section className="">
-          <div className="flex justify-center gap-[4rem]">
+        <div className="flex flex-col ">
+          <section className="hero--section flex justify-center gap-[4rem]">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
@@ -170,8 +161,40 @@ export function Services() {
               )}
               {selectedMenuItem === 'Host Website' && <HostWebsite />}
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section className="portfolio--section flex flex-col px-[15rem]">
+            <h1 className="text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10">
+              We’ve Built Unparalleled Websites With Custom Functionality For
+              Top Companies
+            </h1>
+
+            <ul className="grid grid-cols-2 max-w-xl gap-10">
+              {visiblePosts &&
+                visiblePosts.length > 0 &&
+                visiblePosts.map((ele: any) => {
+                  return (
+                    <React.Fragment key={ele.title}>
+                      <div className="project-card-container relative">
+                        <div className="project-card rounded-[3rem]">
+                          <Project
+                            className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
+                            image={ele.thumbnailImage.asset.url}
+                            slug={`/portfolio/${ele.slug.current}`}
+                            title={''}
+                            showSeeMore={false}
+                          />
+                        </div>
+                        <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
+                          {ele.title}
+                        </div>
+                      </div>
+                    </React.Fragment>
+                  )
+                })}
+            </ul>
+          </section>
+        </div>
       </div>
     </Layout>
   )
