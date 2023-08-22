@@ -149,14 +149,12 @@ export function Services() {
           height="50%"
           className="h-auto absolute top-[4rem] right-[1rem] scale-x-125 rotate-180 -scale-y-125 z-100"
         />
-        <section className="flex flex-col items-center justify-center ">
-          <div className="flex justify-center">
+        <section className="">
+          <div className="flex justify-center gap-[4rem]">
             <div className="z-30">
-              <div className="absolute left-[9rem]">
+              <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
               </div>
-              {/* <CloudFull className="absolute left-[4rem] mt-10 scale-x-[-1] xl:-scale-x-[140%] xl:scale-y-[140%]" />
-              <Star className="absolute ml-[14rem] mt-2 xl:-scale-x-50 xl:scale-y-50" /> */}
             </div>
             <div className="services-content">
               {selectedMenuItem === 'Client Website Help' && (
