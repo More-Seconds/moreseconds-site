@@ -24,6 +24,8 @@ import HostWebsite from 'components/HostWebsite'
 import { Card } from 'components/Card'
 import ServicesAdditionalInfo from 'components/ServicesAdditionalInfo'
 import { Testimonials } from 'components/shared sections/Testimonials'
+import { MontyLogo, HelpGoodLogo, HawkeMediaLogo, PCTLogo } from 'public/images'
+import { Button } from 'components/Button'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -258,105 +260,335 @@ export function Services() {
               {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
             </h1>
 
-            <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
-            <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
+            {selectedMenuItem === 'Troubleshoot Website' ||
+            selectedMenuItem === 'Host Website' ? (
+              <GrayStar className="absolute xl:scale-[50%] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+            ) : (
+              <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+            )}
+
+            {selectedMenuItem === 'Troubleshoot Website' ||
+            selectedMenuItem === 'Host Website' ? (
+              <BallBlue className="absolute xl:left-[10rem] xl:top-[65rem] 2xl:left-[12rem] " />
+            ) : (
+              <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
+            )}
+
             <CloudFull className="absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
             <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
-            <ul className="grid grid-cols-2 max-w-xl gap-10">
-              {visiblePosts &&
-                visiblePosts.length > 0 &&
-                visiblePosts.map((ele: any) => {
-                  return (
-                    <React.Fragment key={ele.title}>
-                      <div className="project-card-container relative">
-                        <div className="project-card rounded-[3rem]">
-                          <Project
-                            className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
-                            image={ele.thumbnailImage.asset.url}
-                            slug={`/portfolio/${ele.slug.current}`}
-                            title={''}
-                            showSeeMore={false}
-                          />
-                        </div>
-                        <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
-                          {ele.title}
-                        </div>
-                      </div>
-                    </React.Fragment>
-                  )
-                })}
-            </ul>
+            {selectedMenuItem === 'Troubleshoot Website' ||
+            selectedMenuItem === 'Host Website' ? (
+              <ul className="org--logos grid grid-cols-2 max-w-lg gap-8 py-10">
+                <li className="p-4 sm:p-0">
+                  <img
+                    src={MontyLogo}
+                    alt="Montgomery Summit"
+                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[9rem] md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[8rem] xl:min-w-[9rem] "
+                  />
+                </li>
 
-            <Smoke
-              width="60%"
-              height="50%"
-              className="absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
-            />
+                <li className="p-4 sm:p-0">
+                  <img
+                    src={HelpGoodLogo}
+                    alt="Help Good"
+                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[6rem] md:min-w-[5rem] lg:max-w-[5rem] "
+                  />
+                </li>
+
+                <li className="p-4 sm:p-0">
+                  <img
+                    src={HawkeMediaLogo}
+                    alt="Madison Miles Media"
+                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[7rem] md:min-w-[6rem] lg:max-w-[5rem] lg:min-w-[6rem] xl:min-w-[10rem]"
+                  />
+                </li>
+
+                <li className="p-4 sm:p-0">
+                  <img
+                    src={PCTLogo}
+                    alt="Plant Cell Technology"
+                    className="saturate-0 sm:max-w-[6rem] sm:min-w-[6rem]  md:max-w-[6rem] md:min-w-[6rem] lg:max-w-[5rem] xl:min-w-[6rem]"
+                  />
+                </li>
+              </ul>
+            ) : (
+              <ul className="portfolio--grid grid grid-cols-2 max-w-xl gap-10">
+                {visiblePosts &&
+                  visiblePosts.length > 0 &&
+                  visiblePosts.map((ele: any) => {
+                    return (
+                      <React.Fragment key={ele.title}>
+                        <div className="project-card-container relative">
+                          <div className="project-card rounded-[3rem]">
+                            <Project
+                              className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
+                              image={ele.thumbnailImage.asset.url}
+                              slug={`/portfolio/${ele.slug.current}`}
+                              title={''}
+                              showSeeMore={false}
+                            />
+                          </div>
+                          <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
+                            {ele.title}
+                          </div>
+                        </div>
+                      </React.Fragment>
+                    )
+                  })}
+              </ul>
+            )}
+
+            {selectedMenuItem === 'Troubleshoot Website' ||
+            selectedMenuItem === 'Host Website' ? (
+              <Smoke
+                width="60%"
+                height="50%"
+                className="absolute xl:-left-[4rem] xl:top-[25rem] 2xl:-left-[6rem]"
+              />
+            ) : (
+              <Smoke
+                width="60%"
+                height="50%"
+                className="absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
+              />
+            )}
+
             <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
 
-          <section className="service--cards container flex flex-col justify-center mx-auto xl:py-[13rem] px-[8rem]">
-            <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
-              {
-                specificInfoTitleMap[
-                  selectedMenuItem as keyof SpecificInfoTitleMap
-                ]
-              }
-            </h1>
-            <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
-              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  Full-cycle Website Design & Development
-                </Heading>
-                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  We provide full-cycle development services from market
-                  research and business analysis to design, development, and
-                  launch. We’ll handle every step of the process and deliver the
-                  website of your dreams.
-                </BodyText>
+          {selectedMenuItem === 'Troubleshoot Website' ||
+          selectedMenuItem === 'Host Website' ? (
+            <section className="service--cards container flex flex-col justify-center mx-auto xl:pt-[23rem] xl:pb-[4rem] px-[8rem]">
+              <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
+                {
+                  specificInfoTitleMap[
+                    selectedMenuItem as keyof SpecificInfoTitleMap
+                  ]
+                }
+              </h1>
+              <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Full-cycle Website Design & Development
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We provide full-cycle development services from market
+                    research and business analysis to design, development, and
+                    launch. We’ll handle every step of the process and deliver
+                    the website of your dreams.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Custom Functionality and Features
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We’ll help you provide your users with an unforgettable
+                    experience by bringing all of your unique functionality and
+                    feature requests to life.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Ecommerce, API, and Plugin Integration and Configuration
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    No matter what you need your site to do, we’ll get it
+                    configured with all of the necessary plugins and
+                    integrations to do exactly what you desire.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Desktop, Mobile, and Tablet Responsive
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We’ll ensure that every page maintains its seamless design
+                    and functionality, no matter if it’s viewed on desktop,
+                    mobile, or tablet.
+                  </BodyText>
+                </Card>
+              </div>
+              <div className="flex justify-end sm:mt-4 ">
+                <p className="uppercase text-white text-2xl">...and more!</p>
+              </div>
+            </section>
+          ) : (
+            <section className="service--cards container flex flex-col justify-center mx-auto xl:py-[13rem] px-[8rem]">
+              <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
+                {
+                  specificInfoTitleMap[
+                    selectedMenuItem as keyof SpecificInfoTitleMap
+                  ]
+                }
+              </h1>
+              <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Full-cycle Website Design & Development
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We provide full-cycle development services from market
+                    research and business analysis to design, development, and
+                    launch. We’ll handle every step of the process and deliver
+                    the website of your dreams.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Custom Functionality and Features
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We’ll help you provide your users with an unforgettable
+                    experience by bringing all of your unique functionality and
+                    feature requests to life.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Ecommerce, API, and Plugin Integration and Configuration
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    No matter what you need your site to do, we’ll get it
+                    configured with all of the necessary plugins and
+                    integrations to do exactly what you desire.
+                  </BodyText>
+                </Card>
+
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                    Desktop, Mobile, and Tablet Responsive
+                  </Heading>
+                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                    We’ll ensure that every page maintains its seamless design
+                    and functionality, no matter if it’s viewed on desktop,
+                    mobile, or tablet.
+                  </BodyText>
+                </Card>
+              </div>
+              <div className="flex justify-end sm:mt-4 ">
+                <p className="uppercase text-white text-2xl">...and more!</p>
+              </div>
+            </section>
+          )}
+
+          {selectedMenuItem === 'Troubleshoot Website' ||
+          selectedMenuItem === 'Host Website' ? (
+            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 mt-10 gap-4">
+              <Card
+                backgroundColor="#3C3C59"
+                className="w-full h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Gold Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">
+                    Website Backup System Configuration Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">
+                    Core Website Feature & Form Delivery Testing
+                  </li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
               </Card>
 
-              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  Custom Functionality and Features
-                </Heading>
-                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  We’ll help you provide your users with an unforgettable
-                  experience by bringing all of your unique functionality and
-                  feature requests to life.
-                </BodyText>
+              <Card
+                backgroundColor="#3C3C59"
+                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Silver Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">
+                    Website Backup System Configuration Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">
+                    Core Website Feature & Form Delivery Testing
+                  </li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
               </Card>
 
-              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  Ecommerce, API, and Plugin Integration and Configuration
-                </Heading>
-                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  No matter what you need your site to do, we’ll get it
-                  configured with all of the necessary plugins and integrations
-                  to do exactly what you desire.
-                </BodyText>
+              <Card
+                backgroundColor="#323249"
+                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Bronze Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
               </Card>
+            </section>
+          ) : (
+            <></>
+          )}
 
-              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  Desktop, Mobile, and Tablet Responsive
-                </Heading>
-                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  We’ll ensure that every page maintains its seamless design and
-                  functionality, no matter if it’s viewed on desktop, mobile, or
-                  tablet.
-                </BodyText>
-              </Card>
-            </div>
-            <div className="flex justify-end sm:mt-4 ">
-              <p className="uppercase text-white text-2xl">...and more!</p>
-            </div>
-          </section>
-
-          <section className="additional--info h-full">
+          <section className="additional--info">
             <ServicesAdditionalInfo
               title={
                 (
