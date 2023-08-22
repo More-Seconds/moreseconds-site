@@ -1,6 +1,7 @@
 import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
 import { SmallTitle } from 'components/typography/SmallTitle'
+import { Highlight } from 'public/svgs'
 
 const TroubleshootWebsite = () => {
   return (
@@ -10,7 +11,7 @@ const TroubleshootWebsite = () => {
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Maintenance
         </h1>
-        <div className="max-w-3xl">
+        <div className="max-w-3xl relative">
           <BodyText className="text-left xl:text-lg max-w-xl ">
             Never worry about your website going down again! Take full advantage
             of our troubleshooting and maintenance expertise. We’ll take a look
@@ -26,6 +27,7 @@ const TroubleshootWebsite = () => {
           >
             Generate Time / Cost Estimate
           </Button>
+          <Highlight className="absolute right-[14.5rem] top-[19.2rem] h-[40px] w-[40px] scale-x-[-1]" />
         </div>
       </section>
     </div>

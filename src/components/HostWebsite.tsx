@@ -1,6 +1,7 @@
 import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
 import { SmallTitle } from 'components/typography/SmallTitle'
+import { Highlight } from 'public/svgs'
 
 const HostWebsite = () => {
   return (
@@ -10,7 +11,7 @@ const HostWebsite = () => {
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Hosting
         </h1>
-        <div className="max-w-3xl">
+        <div className="max-w-3xl relative">
           <BodyText className="text-left xl:text-lg max-w-xl ">
             We offer a variety of reliable, hands-off hosting options to suit
             your every need. Our affordable package options enable you to set it
@@ -24,6 +25,7 @@ const HostWebsite = () => {
           >
             View Hosting Package Options
           </Button>
+          <Highlight className="absolute right-[14.5rem] top-[14.4rem] h-[40px] w-[40px] scale-x-[-1]" />
         </div>
       </section>
     </div>

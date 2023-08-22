@@ -1,6 +1,7 @@
 import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
 import { SmallTitle } from 'components/typography/SmallTitle'
+import { Highlight } from 'public/svgs'
 
 const WebsiteDevelopment = () => {
   return (
@@ -10,7 +11,7 @@ const WebsiteDevelopment = () => {
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Builds
         </h1>
-        <div className="max-w-3xl">
+        <div className="max-w-3xl relative">
           <BodyText className="text-left xl:text-lg max-w-xl ">
             We build breathtaking websites in record time. From small, simple
             sites to massive, multiple page builds, we utilize the latest
@@ -28,6 +29,7 @@ const WebsiteDevelopment = () => {
           >
             Generate Time / Cost Estimate
           </Button>
+          <Highlight className="absolute right-[14.5rem] top-[21rem] h-[40px] w-[40px] scale-x-[-1]" />
         </div>
       </section>
     </div>
