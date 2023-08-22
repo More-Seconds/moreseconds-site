@@ -27,6 +27,7 @@ import WebsiteDevelopment from 'components/WebsiteDevelopment'
 import UpdateWebsite from 'components/UpdateWebsite'
 import TroubleshootWebsite from 'components/TroubleshootWebsite'
 import HostWebsite from 'components/HostWebsite'
+import { Card } from 'components/Card'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -141,7 +142,7 @@ export function Services() {
           className="h-auto absolute xl:top-[4rem] 2xl:top-[5rem] right-[1rem] scale-x-125 rotate-180 xl:-scale-y-125 z-100"
         />
         <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[8rem] 2xl:scale-[70%]" />
-        <div className="flex flex-col ">
+        <div className="flex flex-col">
           <section className="hero--section flex justify-center gap-[4rem]">
             <div className="z-30">
               <div className="">
@@ -164,7 +165,7 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem] xl:pb-[20rem] 2xl:pb-[30rem]">
+          <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem]">
             <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
             <CloudFull className="absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
             <BallPurple className="absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
@@ -177,8 +178,8 @@ export function Services() {
             <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
             <CloudFull className="absolute scale-x-[-1] xl-h-[320px] xl:w-[320px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
-            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:bottom-[22rem] xl:right-[28rem] 2xl:right-[45rem]" />
-            <CloudFull className="absolute xl:right-0 xl:bottom-[2rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem]" />
+            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[28rem] 2xl:right-[45rem]" />
+            <CloudFull className="absolute xl:right-0 xl:bottom-[50rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:bottom-[40rem]" />
 
             <ul className="grid grid-cols-2 max-w-xl gap-10">
               {visiblePosts &&
@@ -208,16 +209,63 @@ export function Services() {
             <Smoke
               width="60%"
               height="50%"
-              className="absolute xl:-left-[4rem] xl:top-[72rem]"
+              className="absolute xl:-left-[5rem] xl:top-[60rem] 2xl:top-[65rem]"
             />
             <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[87rem] 2xl:top-[87rem] 2xl:left-[36rem]" />
           </section>
 
-          <section className="py-20  ">
-            <div className="services--cards--container flex flex-col">
-              <h1 className="text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10">
-                More Seconds Website Design Services Include...
-              </h1>
+          <section className="service--cards container flex flex-col justify-center mx-auto py-[15rem] px-[4rem]">
+            <h1 className="text-white text-2xl font-semibold uppercase mb-10">
+              More Seconds Website Design Development Include…
+            </h1>
+            <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
+              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  Full-cycle Website Design & Development
+                </Heading>
+                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  We provide full-cycle development services from market
+                  research and business analysis to design, development, and
+                  launch. We’ll handle every step of the process and deliver the
+                  website of your dreams.
+                </BodyText>
+              </Card>
+
+              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  Custom Functionality and Features
+                </Heading>
+                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  We’ll help you provide your users with an unforgettable
+                  experience by bringing all of your unique functionality and
+                  feature requests to life.
+                </BodyText>
+              </Card>
+
+              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  Ecommerce, API, and Plugin Integration and Configuration
+                </Heading>
+                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  No matter what you need your site to do, we’ll get it
+                  configured with all of the necessary plugins and integrations
+                  to do exactly what you desire.
+                </BodyText>
+              </Card>
+
+              <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  Desktop, Mobile, and Tablet Responsive
+                </Heading>
+                <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  We’ll ensure that every page maintains its seamless design and
+                  functionality, no matter if it’s viewed on desktop, mobile, or
+                  tablet.
+                </BodyText>
+              </Card>
+            </div>
+            <div className="flex justify-end sm:mt-4 sm:mb-48">
+              <p className="uppercase text-white text-2xl">...and more!</p>
             </div>
           </section>
         </div>
