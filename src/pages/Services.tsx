@@ -28,6 +28,8 @@ import UpdateWebsite from 'components/UpdateWebsite'
 import TroubleshootWebsite from 'components/TroubleshootWebsite'
 import HostWebsite from 'components/HostWebsite'
 import { Card } from 'components/Card'
+import ServicesAdditionalInfo from 'components/ServicesAdditionalInfo'
+import { Testimonials } from 'components/shared sections/Testimonials'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -179,7 +181,7 @@ export function Services() {
             <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
             <CloudFull className="absolute scale-x-[-1] xl-h-[320px] xl:w-[320px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[28rem] 2xl:right-[45rem]" />
-            <CloudFull className="absolute xl:right-0 xl:bottom-[50rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:bottom-[40rem]" />
+            <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
             <ul className="grid grid-cols-2 max-w-xl gap-10">
               {visiblePosts &&
@@ -209,12 +211,12 @@ export function Services() {
             <Smoke
               width="60%"
               height="50%"
-              className="absolute xl:-left-[5rem] xl:top-[60rem] 2xl:top-[65rem]"
+              className="absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
             />
-            <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[87rem] 2xl:top-[87rem] 2xl:left-[36rem]" />
+            <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
 
-          <section className="service--cards container flex flex-col justify-center mx-auto py-[15rem] px-[4rem]">
+          <section className="service--cards container flex flex-col justify-center mx-auto xl:py-[13rem] px-[8rem]">
             <h1 className="text-white text-2xl font-semibold uppercase mb-10">
               More Seconds Website Design Development Include…
             </h1>
@@ -264,10 +266,26 @@ export function Services() {
                 </BodyText>
               </Card>
             </div>
-            <div className="flex justify-end sm:mt-4 sm:mb-48">
+            <div className="flex justify-end sm:mt-4 ">
               <p className="uppercase text-white text-2xl">...and more!</p>
             </div>
           </section>
+
+          <section className="additional--info h-full">
+            <ServicesAdditionalInfo
+              title={'UPGRADE YOUR UPDATES'}
+              subTitle={
+                'Do You Need On-Demand Website Updates? Get More Seconds’ Lightning Fast Support.'
+              }
+              content={
+                'We offer on-call and on-demand web support that seamlessly integrates into your project management workflow. Our expert #dev-ops team is always available to handle any desired changes or unexpected issues.'
+              }
+              buttonText={'Get More Seconds'}
+              buttonHref={'/contact'}
+            />
+          </section>
+
+          <Testimonials title={'We Want Our Clients To Win'} />
         </div>
       </div>
     </Layout>
