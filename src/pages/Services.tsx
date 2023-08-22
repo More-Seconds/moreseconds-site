@@ -285,6 +285,8 @@ export function Services() {
             />
           </section>
 
+          <StarOutline className="absolute xl:scale-[60%] xl:bottom-[48rem] xl:right-[15rem]" />
+
           <Testimonials title={'We Want Our Clients To Win'} />
         </div>
       </div>
