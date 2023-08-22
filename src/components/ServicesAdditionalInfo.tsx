@@ -30,13 +30,13 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
   return (
     <div className="flex items-center justify-center md:mx-4 md:flex-row md:mr-8">
       <div className="z-20 md:w-1/2">
-        <GrayStar className="absolute xl:left-56 xl:top-[133rem] scale-[60%]" />
-
         <Smoke
           width="60%"
           height="60%"
           className="h-auto absolute xl:left-[0rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100"
         />
+        <GrayStar className="absolute xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
+
         <Satellite className="md:w-1/2 z-20 xl:w-[70%] sm:-translate-x-14 sm:-translate-y-24 h-auto xl:translate-x-14" />
         <BlueSaturn className="absolute h-[100px] xl:-left-[8rem] xl:bottom-[55rem]" />
       </div>
