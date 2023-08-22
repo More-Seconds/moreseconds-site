@@ -33,7 +33,7 @@ import Client3 from '../public/images/SuncoastGradient.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center w-min h-screen pb-[18rem] pt-[1rem] max-w-full">
+      <section className="flex flex-col items-center justify-center w-min h-screen pb-[19rem] pt-[1rem] max-w-full">
         <HeroCentered className="py-0">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
