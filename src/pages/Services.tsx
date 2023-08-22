@@ -138,8 +138,9 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute top-[4rem] right-[1rem] scale-x-125 rotate-180 -scale-y-125 z-100"
+          className="h-auto absolute xl:top-[4rem] 2xl:top-[5rem] right-[1rem] scale-x-125 rotate-180 xl:-scale-y-125 z-100"
         />
+        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[8rem] 2xl:scale-[70%]" />
         <div className="flex flex-col ">
           <section className="hero--section flex justify-center gap-[4rem]">
             <div className="z-30">
@@ -163,11 +164,21 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section flex flex-col px-[15rem]">
+          <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem] xl:pb-[20rem] 2xl:pb-[30rem]">
+            <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
+            <CloudFull className="absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <BallPurple className="absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
+            <ManArtist className="absolute xl:scale-[70%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem] 2xl:scale-[80%]" />
             <h1 className="text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10">
               We’ve Built Unparalleled Websites With Custom Functionality For
               Top Companies
             </h1>
+
+            <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+            <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
+            <CloudFull className="absolute scale-x-[-1] xl-h-[320px] xl:w-[320px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
+            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:bottom-[22rem] xl:right-[28rem] 2xl:right-[45rem]" />
+            <CloudFull className="absolute xl:right-0 xl:bottom-[2rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem]" />
 
             <ul className="grid grid-cols-2 max-w-xl gap-10">
               {visiblePosts &&
@@ -193,6 +204,21 @@ export function Services() {
                   )
                 })}
             </ul>
+
+            <Smoke
+              width="60%"
+              height="50%"
+              className="absolute xl:-left-[4rem] xl:top-[72rem]"
+            />
+            <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[87rem] 2xl:top-[87rem] 2xl:left-[36rem]" />
+          </section>
+
+          <section className="py-20  ">
+            <div className="services--cards--container flex flex-col">
+              <h1 className="text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10">
+                More Seconds Website Design Services Include...
+              </h1>
+            </div>
           </section>
         </div>
       </div>
