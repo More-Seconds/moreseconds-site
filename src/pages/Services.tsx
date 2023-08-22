@@ -25,6 +25,7 @@ import { Card } from 'components/Card'
 import ServicesAdditionalInfo from 'components/ServicesAdditionalInfo'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { MontyLogo, HelpGoodLogo, HawkeMediaLogo, PCTLogo } from 'public/images'
+import { Button } from 'components/Button'
 
 const client = sanityClient({
   projectId: '1l0nc7l2',
@@ -476,6 +477,115 @@ export function Services() {
                 <p className="uppercase text-white text-2xl">...and more!</p>
               </div>
             </section>
+          )}
+
+          {selectedMenuItem === 'Troubleshoot Website' ||
+          selectedMenuItem === 'Host Website' ? (
+            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 mt-10 gap-4">
+              <Card
+                backgroundColor="#3C3C59"
+                className="w-full h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Gold Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">
+                    Website Backup System Configuration Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">
+                    Core Website Feature & Form Delivery Testing
+                  </li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
+              </Card>
+
+              <Card
+                backgroundColor="#3C3C59"
+                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Silver Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">
+                    Website Backup System Configuration Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">
+                    Core Website Feature & Form Delivery Testing
+                  </li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
+              </Card>
+
+              <Card
+                backgroundColor="#323249"
+                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+              >
+                <div className="space-y-4">
+                  <Heading
+                    level="1"
+                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                  >
+                    Bronze Package
+                  </Heading>
+                  <p>$x</p>
+                </div>
+                <ul className="text-white list-disc px-8 space-y-4">
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
+                  </li>
+                  <li className="text-left text-sm">
+                    Custom Maintenance PDF Report
+                  </li>
+                  <li className="text-left text-sm">WP Core Updates</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                </ul>
+                <Button href={'#contact'}>Get Started</Button>
+              </Card>
+            </section>
+          ) : (
+            <></>
           )}
 
           <section className="additional--info">
