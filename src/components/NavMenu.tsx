@@ -49,7 +49,7 @@ export function NavMenu({ mobile, open }: Props) {
       className={
         mobile
           ? 'absolute z-30 top-16 w-[100vw] bg-surface inset-0 h-screen -translate-x-full pt-10'
-          : 'hidden  xl:mx-16 xl:block xl:max-w-3xl xl:justify-self-end'
+          : 'hidden  xl:mr-12 xl:block xl:max-w-full xl:justify-self-end'
       }
     >
       <ul
@@ -102,35 +102,6 @@ export function NavMenu({ mobile, open }: Props) {
           </ul>
         </li>
 
-        {/* <li className="relative">
-          <Link
-            to="#"
-            className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
-            onClick={() => toggleCases()}
-          >
-            Cases
-            <ArrowDown className="inline scale-150 fill-light" />
-          </Link>
-          <ul
-            className={
-              !cases
-                ? 'hidden'
-                : mobile
-                ? 'flex flex-col gap-8 mt-8'
-                : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-light border border-darkmid'
-            }
-          >
-            <li className={submenuStyles}>
-              <Link to="/case-studies">Case Studies</Link>
-            </li>
-            <li className={submenuStyles}>
-              <Link to="/algorithm-agency">Algorithm Agency</Link>
-            </li>
-            <li className={submenuStyles}>
-              <Link to="/pct">Plant Cell Technology</Link>
-            </li>
-          </ul>
-        </li> */}
         <li>
           <NavLink
             to="/portfolio"
@@ -163,17 +134,7 @@ export function NavMenu({ mobile, open }: Props) {
             Pricing
           </NavLink>
         </li>
-        {/* <li className="min-w-max">
-          <NavLink
-            to="/who-we-help"
-            className={({ isActive }) =>
-              isActive ? 'text-accent' : 'hover:text-accent'
-            }
-          >
-            Why Us
-          </NavLink>
-        </li> */}
-        <li>
+        <li className="ml-auto">
           <a
             href="#contact"
             className="bg-transparent text-accent border-2 py-[0.7rem] px-[0.8rem] roundned-[0.25rem] border-accent hover:text-white hover:bg-accent transition"
