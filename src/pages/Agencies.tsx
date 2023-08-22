@@ -21,13 +21,14 @@ import {
   FormCharacter,
   Rocket,
   MusicLady,
-  SaturnPurple
+  SaturnPurple,
+  Highlight
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
-import Client1 from '../public/images/agencies-placeholder-1.png'
-import Client2 from '../public/images/agencies-placeholder-2.png'
-import Client3 from '../public/images/agencies-placeholder-3.png'
+import Client1 from '../public/images/BAPGradient.png'
+import Client2 from '../public/images/MontyGradient.png'
+import Client3 from '../public/images/SuncoastGradient.png'
 
 export function Agencies() {
   return (
@@ -49,7 +50,7 @@ export function Agencies() {
             needs with confidence.
           </BodyText>
 
-          <div className="flex gap-12">
+          <div className="flex gap-8">
             <Button
               href="#contact"
               className="block px-12 py-3 mx-auto mt-6 text-center"
@@ -208,7 +209,7 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute xl:right-[-5rem] scale-[50%] xl:top-[190rem] z-10" />
+            <MusicLady className="absolute xl:right-[-1rem] scale-[50%] xl:top-[198rem] z-10" />
             <SaturnPurple className="absolute lg:right-[6rem] lg:mt-20 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -247,7 +248,7 @@ export function Agencies() {
           <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[8rem]">
             <div className="flex items-center">
               <BallBlue className=" h-[90px] w-[90px] relative" />
-              <p className="absolute text-black text-6xl ml-7 font-semibold">
+              <p className="absolute text-black text-6xl ml-6 font-semibold">
                 4
               </p>
               <div className="ml-6">
@@ -258,7 +259,7 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[7rem] xl:-mt-[11rem]" />
+                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[6.5rem] xl:-mt-[10.5rem]" />
                   <Planet className="absolute right-[7rem] scale-[180%]" />
                 </div>
 
@@ -270,10 +271,11 @@ export function Agencies() {
                 </BodyText>
                 <Button
                   href="#"
-                  className="block mt-6 text-center max-w-[350px]"
+                  className="block mt-6 text-center max-w-[250px]"
                 >
                   Get Started
                 </Button>
+                <Highlight className="absolute right-[685px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
               </div>
             </div>
           </div>
@@ -283,8 +285,4 @@ export function Agencies() {
       <Testimonials title={'Good design converts'} />
     </Layout>
   )
-}
-
-{
-  /* <Highlight className="absolute left-0 scale-y-75 rotate-180 -scale-x-75 -top-8 sm:-left-12" /> */
 }
