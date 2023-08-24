@@ -58,11 +58,6 @@ export function Footer() {
         </span>
         <ul className="flex items-center gap-6 sm:justify-center sm:w-full md:w-auto md:justify-self-end">
           <li>
-            <a href="https://www.facebook.com/More-Seconds-104270218954241">
-              <FbIcon />
-            </a>
-          </li>
-          <li>
             <a href="https://www.youtube.com/channel/UCooFeC30xA943Uear0-3yKA">
               <YtIcon />
             </a>
@@ -70,11 +65,6 @@ export function Footer() {
           <li>
             <a href="https://instagram.com/getmoreseconds">
               <InstaIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/getmoreseconds">
-              <TwitterIcon />
             </a>
           </li>
         </ul>
