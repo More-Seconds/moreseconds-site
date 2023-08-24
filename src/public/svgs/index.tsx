@@ -4,6 +4,8 @@ import { ReactComponent as FbIcon } from './fb.svg'
 import { ReactComponent as YtIcon } from './yt.svg'
 import { ReactComponent as InstaIcon } from './instagram.svg'
 import { ReactComponent as TwitterIcon } from './twitter.svg'
+import { ReactComponent as LinkedInIcon } from './linkedin.svg'
+import { ReactComponent as EmailIcon } from './email.svg'
 import { ReactComponent as Planet } from './Planet.svg'
 import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
@@ -115,5 +117,7 @@ export {
   DropDown,
   Share,
   OrangeGradientBall,
-  BlueSaturn
+  BlueSaturn,
+  LinkedInIcon,
+  EmailIcon
 }
