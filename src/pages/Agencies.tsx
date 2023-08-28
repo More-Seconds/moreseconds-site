@@ -68,8 +68,8 @@ export function Agencies() {
           <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
           <PricingHero className=" absolute -bottom-[20rem] -left-[7rem] transform scale-x-[-1] h-full w-full max-w-screen-lg" />
-          <CloudFull className="absolute top-[25rem] left-[50rem] transform scale-x-[-1] h-[140px] w-[140px]" />
-          <CloudFull className="absolute -bottom-[26rem] right-[5rem] transform scale-x-[-1] h-[260px] w-[260px]" />
+          <CloudFull className="absolute top-[25rem] xl:left-[50rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
+          <CloudFull className="absolute -bottom-[26rem] xl:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
           <Star className="absolute right-4" />
         </HeroCentered>
       </section>
@@ -154,14 +154,14 @@ export function Agencies() {
       </section>
 
       <section className="how--it--works h-full flex flex-col items-center  bg-black">
-        <span className="relative text-white font-semibold mb-[6rem] lg:text-5xl">
+        <span className="relative text-white font-semibold mb-[6rem] lg:text-5xl 2xl:text-6xl">
           How It Works
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute lg:-left-60 lg:-bottom-[125rem] scale-x-[-1] h-[50%]" />
+            <TeamImage className="absolute scale-x-[-1] sm:h-[55%]  xl:top-[158rem] xl: left-[-11rem] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%] " />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -169,14 +169,14 @@ export function Agencies() {
             <div className="mb-10">
               <Heading
                 level="2"
-                className="text-2xl text-white font-semibold mb-4"
+                className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-md font-light max-w-lg text-white">
-                Our team of web develoBodyTextment experts are ready to take on
-                any project. Once you’re set up in our system, simply send over
-                any client request and we’ll handle the rest!
+              <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                Our team of web development experts are ready to take on any
+                project. Once you’re set up in our system, simply send over any
+                client request and we’ll handle the rest!
               </BodyText>
             </div>
           </div>
@@ -196,11 +196,11 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-md font-light max-w-lg text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our proprietary platform, mDash, automatically
                   generates an accurate budget, timeline, and immediately
@@ -209,8 +209,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute xl:right-[-1rem] scale-[50%] xl:top-[198rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[6rem] lg:mt-20 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute xl:right-[3rem] lg:scale-[65%] xl:top-[220rem] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[6rem] 2xl:right-[14rem] lg:mt-20 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[320px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -227,18 +227,18 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-md font-light max-w-[30rem] text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute lg:left-[11rem] lg:h-[300px] w-[300px] scale-x-[-1]" />
+              <FormCharacter className="absolute xl:left-[11rem] xl:h-[400px] xl:w-[400px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -254,16 +254,16 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[6.5rem] xl:-mt-[10.5rem]" />
-                  <Planet className="absolute right-[7rem] scale-[180%]" />
+                  <Rocket className="absolute -rotate-45 xl:scale-[55%] 2xl:scale-[65%] xl:right-[10rem] 2xl:right-[20rem] 2xl:-mt-[10rem] xl:-mt-[10.5rem]" />
+                  <Planet className="absolute xl:right-[10rem] 2xl:right-[20rem] xl:-bottom-[325rem] 2xl:-bottom-[366rem] xl:scale-[250%] 2xl:scale-[270%]" />
                 </div>
 
-                <BodyText className="text-sm font-light max-w-lg text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
@@ -275,7 +275,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[685px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
+                <Highlight className="absolute xl:left-[574px] 2xl:left-[735px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
               </div>
             </div>
           </div>
