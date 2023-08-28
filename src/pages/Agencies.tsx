@@ -161,7 +161,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute scale-x-[-1] sm:h-[55%]  xl:top-[158rem] xl: left-[-11rem] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%] " />
+            <TeamImage className="absolute scale-x-[-1] sm:h-[55%]  xl:top-[145rem] xl:left-[-14rem] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%] " />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -209,8 +209,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute xl:right-[3rem] lg:scale-[65%] xl:top-[220rem] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[6rem] 2xl:right-[14rem] lg:mt-20 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[320px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
+            <MusicLady className="absolute xl:right-[0rem] lg:scale-[50%] xl:top-[197rem] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[6rem] 2xl:right-[14rem] lg:mt-20 rotate-14 lg:h-[220px] lg:w-[220px] 2xl:h-[250px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -238,7 +238,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute xl:left-[11rem] xl:h-[400px] xl:w-[400px] scale-x-[-1]" />
+              <FormCharacter className="absolute xl:left-[6rem] xl:h-[330px] xl:w-[330px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -259,8 +259,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 xl:scale-[55%] 2xl:scale-[65%] xl:right-[10rem] 2xl:right-[20rem] 2xl:-mt-[10rem] xl:-mt-[10.5rem]" />
-                  <Planet className="absolute xl:right-[10rem] 2xl:right-[20rem] xl:-bottom-[325rem] 2xl:-bottom-[366rem] xl:scale-[250%] 2xl:scale-[270%]" />
+                  <Rocket className="absolute -rotate-45 xl:scale-[50%] 2xl:scale-[65%] xl:right-[6rem] 2xl:right-[20rem] 2xl:-mt-[10rem] xl:-mt-[9.5rem]" />
+                  <Planet className="absolute xl:right-[6rem] 2xl:right-[20rem] xl:-bottom-[300rem] 2xl:-bottom-[360rem] xl:scale-[200%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
