@@ -68,8 +68,8 @@ export function Agencies() {
           <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
           <PricingHero className=" absolute -bottom-[20rem] -left-[7rem] transform scale-x-[-1] h-full w-full max-w-screen-lg" />
-          <CloudFull className="absolute top-[25rem] left-[50rem] transform scale-x-[-1] h-[140px] w-[140px]" />
-          <CloudFull className="absolute -bottom-[26rem] right-[5rem] transform scale-x-[-1] h-[260px] w-[260px]" />
+          <CloudFull className="absolute top-[25rem] xl:left-[50rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
+          <CloudFull className="absolute -bottom-[26rem] xl:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
           <Star className="absolute right-4" />
         </HeroCentered>
       </section>
@@ -238,7 +238,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute lg:left-[11rem] lg:h-[300px] w-[300px] scale-x-[-1]" />
+              <FormCharacter className="absolute xl:left-[11rem] xl:h-[400px] xl:w-[400px] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -259,8 +259,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[45%] xl:right-[6.5rem] xl:-mt-[10.5rem]" />
-                  <Planet className="absolute right-[7rem] scale-[180%]" />
+                  <Rocket className="absolute -rotate-45 xl:scale-[55%] 2xl:scale-[65%] xl:right-[10rem] 2xl:right-[20rem] 2xl:-mt-[10rem] xl:-mt-[10.5rem]" />
+                  <Planet className="absolute xl:right-[10rem] 2xl:right-[20rem] xl:-bottom-[325rem] 2xl:-bottom-[366rem] xl:scale-[250%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
@@ -275,7 +275,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[685px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
+                <Highlight className="absolute xl:left-[574px] 2xl:left-[735px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
               </div>
             </div>
           </div>
