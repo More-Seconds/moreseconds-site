@@ -20,7 +20,12 @@ export function HeroCentered(props: Props) {
         props.className
       )}
     >
-      <div className="inset-0 z-10 flex flex-col items-center justify-center gap-2 py-20 xl:gap-4">
+      <div
+        className={twMerge(
+          'inset-0 z-10 flex flex-col items-center justify-center gap-2 py-20 xl:gap-4',
+          props.className
+        )}
+      >
         {props.children}
       </div>
       <div className={bgClass}>

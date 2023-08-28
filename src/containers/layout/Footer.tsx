@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MSLogo, FbIcon, YtIcon, InstaIcon, TwitterIcon } from 'public/svgs'
+import { MSLogo, YtIcon, InstaIcon, LinkedInIcon, EmailIcon } from 'public/svgs'
 
 export function Footer() {
   return (
@@ -15,11 +15,6 @@ export function Footer() {
           <li className="text-center">
             <Link to="/uiux" className="hover:text-accent">
               Services
-            </Link>
-          </li>
-          <li className="text-center">
-            <Link to="/case-studies" className="hover:text-accent">
-              Cases
             </Link>
           </li>
           <li className="text-center">
@@ -48,12 +43,12 @@ export function Footer() {
       <section className="grid grid-flow-col py-12 sm:justify-items-center sm:grid-rows-3 sm:gap-0 sm:pt-4 sm:grid-cols-1 sm:items-center sm:text-center md:grid-cols-3 md:pt-4 md:mx-4 md:grid-rows-1 lg:pt-8">
         <ul className="hidden gap-4 sm:flex sm:w-full sm:justify-center font-DM justify-self-start text-light">
           <li>
-            <Link to="" className="hover:text-accent">
+            <Link to="" className="hover:text-accent transition">
               Privacy Policy
             </Link>
           </li>
           <li>
-            <Link to="" className="hover:text-accent">
+            <Link to="" className="hover:text-accent transition">
               Terms of Use
             </Link>
           </li>
@@ -63,8 +58,13 @@ export function Footer() {
         </span>
         <ul className="flex items-center gap-6 sm:justify-center sm:w-full md:w-auto md:justify-self-end">
           <li>
-            <a href="https://www.facebook.com/More-Seconds-104270218954241">
-              <FbIcon />
+            <a href="https://www.linkedin.com/company/moreseconds/">
+              <LinkedInIcon />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:hello@moreseconds.com">
+              <EmailIcon />
             </a>
           </li>
           <li>
@@ -75,11 +75,6 @@ export function Footer() {
           <li>
             <a href="https://instagram.com/getmoreseconds">
               <InstaIcon />
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/getmoreseconds">
-              <TwitterIcon />
             </a>
           </li>
         </ul>

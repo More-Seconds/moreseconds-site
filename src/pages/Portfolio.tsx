@@ -37,21 +37,24 @@ import { Signup } from 'components/forms/Signup'
 export function Portfolio() {
   return (
     <Layout footerVariant="connect">
-      <section className="flex flex-col items-center justify-center w-min">
-        <HeroCentered className="py-0">
+      <section className="flex flex-col items-center h-screen lg:h-full justify-center w-min">
+        <HeroCentered className="pt-[8rem]">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
-          <Heading level="1" className="max-w-4xl mx-auto text-center">
-          See Why You Should Use More Seconds
+          <Heading
+            level="1"
+            className="max-w-4xl mx-auto text-center mb-[1.35rem]"
+          >
+            <span>Take A Peek At What More Seconds</span>
+            <span className="text-accent"> Can Do For You</span>
           </Heading>
           <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
-          Our astronomical design teams have helped some of the world’s top brands leverage a full range of conceptual and production expertise to execute sensational campaigns and scale at the speed of light.
+            Our top tier, U.S.-based team of developers have completed hundreds
+            of stunning projects for our impressive client roster including top
+            marketing agencies, venture capital firms, gaming companies, social
+            impact initiatives, and more. We can’t wait to work our More Seconds
+            magic for you and your clients!
           </BodyText>
-          <Button
-            href="#contact"
-            className="block max-w-xs px-8 py-3 mx-auto mt-6 text-center"
-          >
-            Get More Seconds
-          </Button>
+
           <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
           <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
@@ -59,16 +62,9 @@ export function Portfolio() {
         </HeroCentered>
       </section>
 
-
-
-
       <Projects />
 
-      
-
-
-
-      {/* <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
+      <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
         <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
           <BigSaturn className="w-[70%] mx-auto sm:w-full xl:w-full xl:scale-110" />
           <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
@@ -81,8 +77,11 @@ export function Portfolio() {
             level="1"
             className="capitalize mt-2 max-w-1xl mb-5 text-[30px] leading-[33px] max-w-xs sm:max-w-md xl:text-[46px] xl:leading-[56px] xl:max-w-[17ch] tracking-tighter"
           >
-            Have an exciting vision for your website? More Seconds has the tech
-            talent to bring it to life.
+            <span>
+              Have an exciting vision for your website? More Seconds has the
+              tech talent to
+            </span>
+            <span className="text-accent"> bring it to life.</span>
           </Heading>
           <BodyText className="max-w-[35ch] sm:max-w-none xl:text-lg xl:max-w-[53ch]">
             Your website is essential to the success of your business. We
@@ -95,9 +94,9 @@ export function Portfolio() {
           </BodyText>
           <HollowStar className="absolute right-16 top-12 scale-75 sm:top-[10%] sm:-right-16 sm:scale-50" />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
+      <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
         <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
@@ -152,11 +151,10 @@ export function Portfolio() {
         </Card>
         <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
         <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
-      </section> */}
-      {/* <div className="hidden max-h-[0px] sm:flex items-center justify-end">
+      </section>
+      <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
-      </div> */}
-      {/* <Testimonials title="Websites that wow." /> */}
+      </div>
     </Layout>
   )
 }

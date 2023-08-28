@@ -58,7 +58,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
     email: Yup.string().email().required('This field is required'),
     companyName: Yup.string(),
     companySize: Yup.string(),
-    message: Yup.string()
+    message: Yup.string().required()
   })
 
   // My modification
@@ -253,6 +253,8 @@ export function FooterForm({ levelUp }: Partial<Props>) {
             <Field
               id="message"
               name="message"
+              as="textarea" // Use a textarea for the message field
+
               className={inputStyles(
                 props.touched.message,
                 props.errors.message

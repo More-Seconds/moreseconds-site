@@ -1,11 +1,16 @@
-import { PageBuilding, PageDesign, WebCare, FeatureFunction, AuditReport } from 'public/images'
+import {
+  PageBuilding,
+  PageDesign,
+  WebCare,
+  FeatureFunction,
+  AuditReport
+} from 'public/images'
 import { Heading } from '../../typography/Heading'
 import { Service } from './Service'
 import { SmallTitle } from '../../typography/SmallTitle'
 import { BallPurple } from 'public/svgs'
 import { BodyText } from 'components/typography/BodyText'
 import { Button } from 'components/Button'
-
 
 export function Services() {
   return (
@@ -20,23 +25,29 @@ export function Services() {
 
       <div className=" pt-4 pb-8 overflow-hidden sm:px-[25px] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="2xl:w-fit 2xl:self-start">
-          <SmallTitle className="mb-4">
-            Our Services
-          </SmallTitle>
+          <SmallTitle className="mb-4">Our Services</SmallTitle>
           <Heading
             level="2"
             className="mb-6 md:text-[2.5rem] md:leading-[1] xl:text-5xl xl:mr-0 xl:min-w-[20ch]"
           >
-            {[<>Access a broad slate of services and <span className="text-accent">innovative solutions.</span></>]}
-            
+            {[
+              <>
+                Access a broad slate of services and{' '}
+                <span className="text-accent">innovative solutions.</span>
+              </>
+            ]}
           </Heading>
           <BodyText className="mb-2 xl:text-5xl xl:mr-0 xl:min-w-[20ch] xl:text-lg">
-          Transform your marketing, creative, and management teams into digital superheroes—literally. Whether it’s an eye-catching site redesign, a couple of landing page builds, an api integration, or a unique problem, you can rest easy knowing that we’re on top of everything and then some.
+            Transform your marketing, creative, and management teams into
+            digital superheroes—literally. Whether it’s an eye-catching site
+            redesign, a couple of landing page builds, an api integration, or a
+            unique problem, you can rest easy knowing that we’re on top of
+            everything and then some.
           </BodyText>
         </div>
 
         <div className="content-end justify-self-center md:justify-self-end xl:justify-self-end 2xl:w-fit 2xl:self-start">
-          <Button href="/case-studies">View our work</Button>
+          <Button href="/portfolio">View our work</Button>
         </div>
       </div>
 
@@ -73,8 +84,6 @@ export function Services() {
         />
       </ul>
 
-      
-      
       <BallPurple className="absolute top-0 scale-50 right-20" />
     </section>
   )
