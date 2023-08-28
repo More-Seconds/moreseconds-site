@@ -154,14 +154,14 @@ export function Agencies() {
       </section>
 
       <section className="how--it--works h-full flex flex-col items-center  bg-black">
-        <span className="relative text-white font-semibold mb-[6rem] lg:text-5xl">
+        <span className="relative text-white font-semibold mb-[6rem] lg:text-5xl 2xl:text-6xl">
           How It Works
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute lg:-left-60 lg:-bottom-[125rem] scale-x-[-1] h-[50%]" />
+            <TeamImage className="absolute scale-x-[-1] sm:h-[55%]  xl:top-[158rem] xl: left-[-11rem] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%] " />
             <BallBlue className="h-[20%] w-[20%] lg:mr-6 relative" />
             <p className="absolute mt-[1rem] ml-[2rem] text-black text-6xl font-semibold">
               1
@@ -169,14 +169,14 @@ export function Agencies() {
             <div className="mb-10">
               <Heading
                 level="2"
-                className="text-2xl text-white font-semibold mb-4"
+                className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-md font-light max-w-lg text-white">
-                Our team of web develoBodyTextment experts are ready to take on
-                any project. Once you’re set up in our system, simply send over
-                any client request and we’ll handle the rest!
+              <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                Our team of web development experts are ready to take on any
+                project. Once you’re set up in our system, simply send over any
+                client request and we’ll handle the rest!
               </BodyText>
             </div>
           </div>
@@ -196,11 +196,11 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-md font-light max-w-lg text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our proprietary platform, mDash, automatically
                   generates an accurate budget, timeline, and immediately
@@ -209,8 +209,8 @@ export function Agencies() {
                 </BodyText>
               </div>
             </div>
-            <MusicLady className="absolute xl:right-[-1rem] scale-[50%] xl:top-[198rem] z-10" />
-            <SaturnPurple className="absolute lg:right-[6rem] lg:mt-20 rotate-14 h-[230px] w-[230px] scale-x-[-1]" />
+            <MusicLady className="absolute xl:right-[3rem] lg:scale-[65%] xl:top-[220rem] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="absolute lg:right-[6rem] 2xl:right-[14rem] lg:mt-20 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[320px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -227,11 +227,11 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-md font-light max-w-[30rem] text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
@@ -254,7 +254,7 @@ export function Agencies() {
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="text-2xl text-white font-semibold mb-4"
+                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Launch That Beautiful Website!
                 </Heading>
@@ -263,7 +263,7 @@ export function Agencies() {
                   <Planet className="absolute right-[7rem] scale-[180%]" />
                 </div>
 
-                <BodyText className="text-sm font-light max-w-lg text-white">
+                <BodyText className="lg:text-md 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
