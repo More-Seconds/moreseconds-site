@@ -2,33 +2,53 @@ import { Link } from 'react-router-dom'
 import { MSLogo, YtIcon, InstaIcon, LinkedInIcon, EmailIcon } from 'public/svgs'
 
 export function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <footer className="max-w-4xl mx-auto sm:mx-16 sm:mt-10 xl:mt-0 md:mx-16 md:max-w-6xl xl:mx-auto">
       <section className="flex flex-col items-center justify-between xl:flex-row ">
         <MSLogo className="mt-10 sm:mt-0" />
         <ul className="font-DM text-light sm:grid sm:gap-[2rem] sm:py-[2rem] smgrid-cols-1 md:flex md:flex-row md:gap-4 md:py-12">
           <li className="text-center">
-            <Link to="/" className="hover:text-accent">
+            <Link to="/" className="hover:text-accent" onClick={scrollToTop}>
               Home
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/uiux" className="hover:text-accent">
+            <Link
+              to="/uiux"
+              className="hover:text-accent"
+              onClick={scrollToTop}
+            >
               Services
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/about" className="hover:text-accent">
+            <Link
+              to="/about"
+              className="hover:text-accent"
+              onClick={scrollToTop}
+            >
               About
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/pricing" className="hover:text-accent">
+            <Link
+              to="/pricing"
+              className="hover:text-accent"
+              onClick={scrollToTop}
+            >
               Pricing
             </Link>
           </li>
           <li className="text-center">
-            <Link to="/who-we-help" className="hover:text-accent">
+            <Link
+              to="/who-we-help"
+              className="hover:text-accent"
+              onClick={scrollToTop}
+            >
               Why Us
             </Link>
           </li>
