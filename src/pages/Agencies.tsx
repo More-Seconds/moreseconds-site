@@ -161,7 +161,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center mb-10">
           <div className="flex items-center ml-[17rem] lg:ml-[22rem] max-w-xl my-[6rem]">
-            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[325%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
             <BallBlue className="h-[90px] w-[90px] relative" />
             <p className="absolute text-black text-6xl ml-7 font-semibold">1</p>
             <div className="ml-6 ">
@@ -217,7 +217,7 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex justify-end w-full mr-[20rem] mb-[10rem]">
+          <div className="flex justify-end w-full mr-[20rem] mb-[10rem] lg:mb-[12rem]">
             <div className="flex items-center">
               <BallPurple className="h-[90px] w-[90px] relative" />
               <p className="absolute text-black text-6xl ml-7 font-semibold">
