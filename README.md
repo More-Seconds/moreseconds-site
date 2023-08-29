@@ -81,7 +81,7 @@ Make all your commits and pushes in this branch
 
 ## Merging your branch
 
-When your feature is complete and all your changes are pushed to your current branch go to the project github and click on branches next to the branch dropdown. from this page you can create a pull request and let someone know so they can review the changes and merge the branch with main
+When your feature is complete and all your changes are pushed to your current branch go to the project github and click on branches next to the branch dropdown. from this page you can create a pull request on the staging branch and let Erik know so he can review the changes and merge the branch with main
 
 ---
 

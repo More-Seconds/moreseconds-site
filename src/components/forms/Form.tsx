@@ -248,11 +248,13 @@ export function FooterForm({ levelUp }: Partial<Props>) {
               component="div"
             />
           </div>
+
           <div className={containerStyles}>
             <Field
               id="message"
               name="message"
               as="textarea" // Use a textarea for the message field
+
               className={inputStyles(
                 props.touched.message,
                 props.errors.message

@@ -1,43 +1,33 @@
 import { Button } from 'components/Button'
 import { BodyText } from 'components/typography/BodyText'
-import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Planet } from 'public/svgs'
-import { HeroCentered } from 'containers/shared/HeroCentered'
+import { Highlight } from 'public/svgs'
 
 const HostWebsite = () => {
   return (
-    <div>
-      <div>
-        <section className="pl-[12rem] mb-[20rem]">
-          <HeroCentered className="py-2">
-            <SmallTitle className="mx-auto text-center">
-              Our Services
-            </SmallTitle>
-            <Heading level="1" className="max-w-4xl mx-auto text-center">
-              Website Hosting
-            </Heading>
-            <div className="max-w-3xl mx-auto">
-              <BodyText className="px-5 mx-auto text-center sm:px-10 xl:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                cumque omnis saepe in, incidunt quasi pariatur, numquam eligendi
-                alias porro repudiandae, necessitatibus unde accusantium?
-                Consequatur, laboriosam nisi omnis mollitia repudiandae nostrum
-                sapiente eum sed dolore beatae nihil aspernatur ut explicabo
-                voluptatum et similique rerum accusamus nobis odit dicta
-                adipisci. Debitis.
-              </BodyText>
-              <Button
-                href="#contact"
-                className="block max-w-[10rem] px-8 mx-auto mt-10 mb-8 text-center"
-              >
-                Get More Seconds
-              </Button>
-              <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
-            </div>
-          </HeroCentered>
-        </section>
-      </div>
+    <div className="">
+      <section className="mt-[11rem] mb-[10rem] min-h-[400px]">
+        <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
+        <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
+          Website Hosting
+        </h1>
+        <div className="max-w-3xl relative">
+          <BodyText className="text-left xl:text-lg max-w-xl ">
+            We offer a variety of reliable, hands-off hosting options to suit
+            your every need. Our affordable package options enable you to set it
+            and forget it. We’ll get everything set up properly to keep your
+            data, and that of your clients, safe and secure, so you can rest
+            easy.
+          </BodyText>
+          <Button
+            href="#contact"
+            className="block w-[50%] px-8 mt-10 text-center"
+          >
+            View Hosting Package Options
+          </Button>
+          <Highlight className="absolute right-[14.5rem] top-[14.4rem] h-[40px] w-[40px] scale-x-[-1]" />
+        </div>
+      </section>
     </div>
   )
 }

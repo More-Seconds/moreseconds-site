@@ -4,11 +4,14 @@ import { ReactComponent as FbIcon } from './fb.svg'
 import { ReactComponent as YtIcon } from './yt.svg'
 import { ReactComponent as InstaIcon } from './instagram.svg'
 import { ReactComponent as TwitterIcon } from './twitter.svg'
+import { ReactComponent as LinkedInIcon } from './linkedin.svg'
+import { ReactComponent as EmailIcon } from './email.svg'
 import { ReactComponent as Planet } from './Planet.svg'
 import { ReactComponent as FormCharacter } from './coffee_man.svg'
 import { ReactComponent as HomeHeroBG } from './home_hero.svg'
 import { ReactComponent as Hamburger } from './hamburger.svg'
 import { ReactComponent as Star } from './star.svg'
+import { ReactComponent as GrayStar } from './gray-star.svg'
 import { ReactComponent as BallPurple } from './ball_purple.svg'
 import { ReactComponent as BallOrange } from './ball_orange.svg'
 import { ReactComponent as BallBlue } from './ball_blue.svg'
@@ -33,12 +36,15 @@ import { ReactComponent as CaseStudy4 } from './casestudy4.svg'
 import { ReactComponent as CaseStudy5 } from './casestudy5.svg'
 import { ReactComponent as UFO } from './UFO.svg'
 import { ReactComponent as ManWithPhone } from './man_with_phone.svg'
+import { ReactComponent as SaturnPurple } from './Saturn_Purple.svg'
 import { ReactComponent as Sputnik } from './Sputnik.svg'
 import { ReactComponent as SmallSaturn } from './small_saturn.svg'
 import { ReactComponent as Rocket } from './Rocket.svg'
+import { ReactComponent as MusicLady } from './Music_Lady.svg'
 import { ReactComponent as Highlight } from './highlight.svg'
 import { ReactComponent as ManArtist } from './man_artist.svg'
 import { ReactComponent as StarOutline } from './star_outline.svg'
+import { ReactComponent as GradientDot1 } from './gradient_dot_1.svg'
 import { ReactComponent as AvatarHighlight } from './avatar_highlight.svg'
 import { ReactComponent as PricingHero } from './pricinghero.svg'
 import { ReactComponent as PlayIcon } from './play_icon.svg'
@@ -50,10 +56,14 @@ import { ReactComponent as CircleHighlight } from './circle_highlight.svg'
 import { ReactComponent as Pillow } from './pillow.svg'
 import { ReactComponent as DropDown } from './dropdown-icon.svg'
 import { ReactComponent as Share } from './Share.svg'
+import { ReactComponent as OrangeGradientBall } from './Gradient_Dot_1.svg'
+import { ReactComponent as BlueSaturn } from './Saturn_Blue.svg'
 
 export {
   MSLogo,
   ArrowDown,
+  MusicLady,
+  SaturnPurple,
   FbIcon,
   YtIcon,
   InstaIcon,
@@ -63,6 +73,7 @@ export {
   HomeHeroBG,
   Hamburger,
   Star,
+  GrayStar,
   BallPurple,
   BallOrange,
   BallBlue,
@@ -93,6 +104,7 @@ export {
   Highlight,
   ManArtist,
   StarOutline,
+  GradientDot1,
   AvatarHighlight,
   PricingHero,
   PlayIcon,
@@ -103,5 +115,9 @@ export {
   CircleHighlight,
   Pillow,
   DropDown,
-  Share
+  Share,
+  OrangeGradientBall,
+  BlueSaturn,
+  LinkedInIcon,
+  EmailIcon
 }

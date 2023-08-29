@@ -114,8 +114,8 @@ export function Projects() {
 
   return (
     <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
-      <Heading level="2" className="self-center w-full mb-10 text-xl max-w-7xl">
-        <span>I want to see</span>
+      <Heading level="2" className="self-center w-full mb-10 max-w-7xl">
+        <span className="text-[2.75rem]">I want to see</span>
 
         <span
           onMouseEnter={(e) => {
@@ -124,7 +124,7 @@ export function Projects() {
           onMouseLeave={(e) => {
             setVisibility('hidden')
           }}
-          className="z-10 h-full ml-2 hover:cursor-pointer"
+          className="z-10 h-full ml-2 text-[2.75rem] text-accent font-bold hover:cursor-pointer"
         >
           {activeFilter}
           <span>
@@ -133,13 +133,13 @@ export function Projects() {
           <div id="spacer " className="h-8"></div>
           <div
             className={
-              'shadow-2xl	 absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' +
+              'shadow-2xl absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' +
               visibility
             }
           >
             {/* {console.log(posts)} */}
             <button
-              className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl"
+              className="px-4 py-2 text-lg text-black hover:bg-blue-100 w-min-content rounded-xl "
               id="default-filter"
               onClick={filter}
             >
@@ -186,3 +186,4 @@ export function Projects() {
     </section>
   )
 }
+
