@@ -25,7 +25,7 @@ const TroubleshootWebsite = () => {
             href="#contact"
             className="block w-[50%] px-8 mt-10 text-center"
           >
-            Generate Time / Cost Estimate
+            Get Estimate
           </Button>
           <Highlight className="absolute right-[14.5rem] top-[19.2rem] h-[40px] w-[40px] scale-x-[-1]" />
         </div>
