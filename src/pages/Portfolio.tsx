@@ -155,7 +155,6 @@ export function Portfolio() {
       <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
       </div>
-      <Testimonials title="Websites that wow." />
     </Layout>
   )
 }

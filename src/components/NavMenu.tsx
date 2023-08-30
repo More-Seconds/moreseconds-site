@@ -112,7 +112,7 @@ export function NavMenu({ mobile, open }: Props) {
             Pricing
           </NavLink>
         </li>
-        <li className="ml-auto">
+        <li className="mt-4">
           <a
             href="#contact"
             className="bg-transparent text-accent border-2 py-[0.7rem] px-[0.8rem] roundned-[0.25rem] border-accent hover:text-white hover:bg-accent transition"
