@@ -267,13 +267,6 @@ export function Services() {
               <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            {selectedMenuItem === 'Troubleshoot Website' ||
-            selectedMenuItem === 'Host Website' ? (
-              <BallBlue className="absolute xl:left-[10rem] xl:top-[65rem] 2xl:left-[12rem] " />
-            ) : (
-              <BallBlue className="absolute xl:left-[10rem] xl:top-[80rem] 2xl:left-[12rem] " />
-            )}
-
             <CloudFull className="absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
             <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
@@ -493,7 +486,6 @@ export function Services() {
                   >
                     Gold Package
                   </Heading>
-                  <p>$x</p>
                 </div>
                 <ul className="text-white list-disc px-8 space-y-4">
                   <li className="text-left text-sm">
@@ -529,7 +521,6 @@ export function Services() {
                   >
                     Silver Package
                   </Heading>
-                  <p>$x</p>
                 </div>
                 <ul className="text-white list-disc px-8 space-y-4">
                   <li className="text-left text-sm">
@@ -565,7 +556,6 @@ export function Services() {
                   >
                     Bronze Package
                   </Heading>
-                  <p>$x</p>
                 </div>
                 <ul className="text-white list-disc px-8 space-y-4">
                   <li className="text-left text-sm">
