@@ -14,7 +14,7 @@ import { ReactComponent as Star } from './star.svg'
 import { ReactComponent as GrayStar } from './gray-star.svg'
 import { ReactComponent as BallPurple } from './ball_purple.svg'
 import { ReactComponent as BallOrange } from './ball_orange.svg'
-import { ReactComponent as BallBlue } from './ball_blue.svg'
+import { ReactComponent as BallLightBlue } from './ball_light_blue.svg'
 import { ReactComponent as TeamImage } from './team.svg'
 import { ReactComponent as Headset } from './headphones.svg'
 import { ReactComponent as Fast } from './fast.svg'
@@ -57,6 +57,8 @@ import { ReactComponent as Pillow } from './pillow.svg'
 import { ReactComponent as DropDown } from './dropdown-icon.svg'
 import { ReactComponent as Share } from './Share.svg'
 import { ReactComponent as OrangeGradientBall } from './Gradient_Dot_1.svg'
+import { ReactComponent as PurplePinkBall } from './Gradient_Dot_4.svg'
+import { ReactComponent as BallBlue } from './Gradient_Dot_2.svg'
 import { ReactComponent as BlueSaturn } from './Saturn_Blue.svg'
 
 export {
@@ -76,7 +78,6 @@ export {
   GrayStar,
   BallPurple,
   BallOrange,
-  BallBlue,
   TeamImage,
   Headset,
   Fast,
@@ -119,5 +120,8 @@ export {
   OrangeGradientBall,
   BlueSaturn,
   LinkedInIcon,
-  EmailIcon
+  EmailIcon,
+  BallLightBlue,
+  PurplePinkBall,
+  BallBlue
 }

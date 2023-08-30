@@ -18,7 +18,7 @@ export function Footer() {
           </li>
           <li className="text-center">
             <Link
-              to="/uiux"
+              to="/services"
               className="hover:text-accent"
               onClick={scrollToTop}
             >

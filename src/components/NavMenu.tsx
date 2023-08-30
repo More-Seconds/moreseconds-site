@@ -70,36 +70,14 @@ export function NavMenu({ mobile, open }: Props) {
           </NavLink>
         </li> */}
         <li className="relative">
-          <Link
-            to="#"
-            className="flex items-center justify-center gap-2 hover:text-accent flex-nowrap"
-            onClick={() => toggleServices()}
-          >
-            Capabilities
-            <ArrowDown className="inline scale-150 fill-light" />
-          </Link>
-          <ul
-            className={
-              !services
-                ? 'hidden'
-                : mobile
-                ? 'flex flex-col gap-8 mt-8'
-                : 'absolute top-full left-0 -right-20 flex flex-col items-center mt-2 bg-darkmid border border-mid'
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? 'text-accent' : 'hover:text-accent'
             }
           >
-            <li className={submenuStyles}>
-              <Link to="/web-development">Web Development</Link>
-            </li>
-            <li className={submenuStyles}>
-              <Link to="/uiux">UI/UX Design</Link>
-            </li>
-            <li className={submenuStyles}>
-              <Link to="/website-updates">Website Updates</Link>
-            </li>
-            <li className={submenuStyles}>
-              <Link to="/research-and-analysis">Research &#38; Analysis</Link>
-            </li>
-          </ul>
+            Services
+          </NavLink>
         </li>
 
         <li>
@@ -134,7 +112,7 @@ export function NavMenu({ mobile, open }: Props) {
             Pricing
           </NavLink>
         </li>
-        <li className="ml-auto">
+        <li className="mt-4">
           <a
             href="#contact"
             className="bg-transparent text-accent border-2 py-[0.7rem] px-[0.8rem] roundned-[0.25rem] border-accent hover:text-white hover:bg-accent transition"
