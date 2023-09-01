@@ -71,7 +71,8 @@ export function Agencies() {
           <PricingHero className="absolute left-0 h-[350px] w-[350px] top-[80%] lg:-bottom-[20rem] lg:left-[0%] transform scale-x-[-1] lg:h-full lg:w-full max-w-screen-lg" />
           <CloudFull className="hidden md:block absolute top-[40rem] xl:left-[50rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[26rem] lg:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
-          <CloudFull className=" md:block absolute lg:-bottom-[48rem] lg:right-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[320px] w-[320px]" />
+          <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:right-[0rem] 2xl:right-[12rem]] transform scale-x-[-1] h-[320px] w-[320px]" />
+          <CloudFull className="hidden md:block absolute lg:-bottom-[65rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[200px] w-[200px]" />
           <Star className="absolute scale-x-[-1] h-[20px] w-[20px] md:h-[35px] md:w-[35px] top-[30rem] md:top-[40rem] right-[10rem]" />
         </HeroCentered>
       </section>
