@@ -93,12 +93,7 @@ export function Footer() {
             </a>
           </li>
           <li>
-<<<<<<< HEAD
             <a href="https://instagram.com/getmoreseconds" target="_blank">
-              {' '}
-=======
-            <a href="https://instagram.com/getmoreseconds">
->>>>>>> 03a42df7c750f804434b59377662bfbf8de24c24
               <InstaIcon />
             </a>
           </li>
