@@ -35,8 +35,8 @@ import Client3 from '../public/images/SuncoastGradient.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center h-screen lg:pb-[19rem] md:mt-[4rem] max-w-full">
-        <HeroCentered className="pt-[4rem] md:pt-[10rem]">
+      <section className="flex flex-col items-center justify-center md:pb-[18rem] h-screen max-w-full">
+        <HeroCentered className="pt-[4rem] ">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
           </SmallTitle>
@@ -51,8 +51,6 @@ export function Agencies() {
             say, “Yes!” to all of your existing and prospective clients' website
             needs with confidence.
           </BodyText>
-
-          <GrayStar className="absolute h-[30px] top-[30%] right-24" />
 
           <div className="flex gap-4 md:gap-8">
             <Button
@@ -71,20 +69,20 @@ export function Agencies() {
 
           <BallBlue className="hidden md:absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
-          <PricingHero className="absolute left-0 h-[350px] w-[350px] top-[80%] lg:-bottom-[20rem] lg:left-[0%] transform scale-x-[-1] lg:h-full lg:w-full max-w-screen-lg" />
-          <CloudFull className="hidden md:block absolute top-[40rem] xl:left-[50rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
+          <PricingHero className="absolute left-0 h-[350px] w-[350px] top-[80%] lg:top-[68%] lg:left-[-6%] transform scale-x-[-1] lg:h-[75%] lg:w-[75%] max-w-screen-lg" />
+          <CloudFull className="hidden md:block absolute top-[30rem] xl:left-[60rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[26rem] lg:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
-          <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:right-[0rem] 2xl:right-[12rem]] transform scale-x-[-1] h-[320px] w-[320px]" />
-          <CloudFull className="hidden md:block absolute lg:-bottom-[65rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[200px] w-[200px]" />
+          <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[250px] w-[250px]" />
+          <GrayStar className="absolute right-14 h-[30px]" />
           <Star className="absolute scale-x-[-1] h-[20px] w-[20px] md:h-[35px] md:w-[35px] top-[30rem] md:top-[40rem] right-[10rem]" />
         </HeroCentered>
       </section>
 
-      <section className="bg-black flex justify-center lg:h-full min-h-full mt-10 lg:mt-[15rem]">
+      <section className="bg-black flex justify-center lg:h-full min-h-full">
         <div className="flex flex-col sm:text-5xl font-semibold text-white">
           <Heading
             level="1"
-            className="px-8 lg:max-w-4xl my-6 text-center md:text-left"
+            className="px-8 lg:max-w-4xl mb-6 text-center md:text-left"
           >
             Increase Your Revenue
           </Heading>
@@ -172,7 +170,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center justify-center mb-10">
           <div className="flex items-center px-2 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem]">
-            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[355%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
             <BallLightBlue className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 font-semibold">
               1
@@ -200,8 +198,8 @@ export function Agencies() {
         <div className="flex flex-col items-center mb-[8rem]">
           <div className="flex w-full ml-[24rem] my-20">
             <div className="flex items-center mb-[6rem]">
-              <GradientDot1 className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] 2xl:w-[110px] 2xl:h-[110px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl ml-4 lg:ml-7 2xl:ml-10 font-semibold">
+              <GradientDot1 className="h-[90px] w-[90px] relative" />
+              <p className="absolute text-black text-6xl ml-7 font-semibold">
                 2
               </p>
               <div className="ml-6">
@@ -221,8 +219,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[470%] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] lg:mt-10 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
+            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -250,7 +248,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[610%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[570%] scale-x-[-1]" />
+              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[570%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -271,8 +269,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:-mt-[10rem] top-[546%] lg:top-[738%]" />
-                  <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[764%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
+                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:-mt-[10rem] top-[546%] lg:top-[704%]" />
+                  <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
