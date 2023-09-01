@@ -28,42 +28,36 @@ import {
 } from '../../public/svgs'
 import { FAQ } from './FAQ'
 import { VideoModal } from './VideoModal'
+import { Button } from 'components/Button'
 
 export function Pricing() {
   return (
     <Layout footerVariant="simplified">
       <Hero
         svg={PricingHero}
-        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0"
+        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0 pt-[10rem]"
       >
         <Heading
           level="1"
           className="sm:max-w-[18ch] tracking-tighter text-[45px] mr-4 sm:text-[40px] leading-[3rem]"
         >
-          <>Only pay for the work you actually need. No monthly retainers. </>
-          <br className="sm:hidden" />
-          <span className="relative">
-            No minimums.
-            <NoMaintenance className="absolute left-0 bottom-0 w-full" />
+          <span>Only pay for the work you actually need. </span>
+          <span className="text-accent">
+            No monthly retainers. No minimums. Zero risk.
           </span>
-          <> Zero risk.</>
         </Heading>
         <BodyText className="max-w-[27ch] xl:max-w-md sm:max-w-[40ch] xl:text-lg">
           Benefit from the power of an entire development team for only $85 an
-          hour.
+          hour for most projects. We also offer a competitive fixed rate for
+          large builds and affordable maintenance options.
         </BodyText>
-        <Sputnik className="absolute -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
+
+        <Button href="#contact" className="max-w-[10rem] px-8 py-3 mt-6">
+          Get an Estimate
+        </Button>
+        <Sputnik className="hidden md:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
       </Hero>
-      <section className="my-10 sm:mx-16 xl:my-20 xl:mx-0 xl:">
-        <picture>
-          <source media="(min-width: 640px" srcSet={PricingTable} />
-          <img
-            src={PricingTableMobile}
-            alt=""
-            className="px-4 pt-4 xl:mx-auto"
-          />
-        </picture>
-      </section>
+
       <Testimonials title="No commitment. No hidden fees. Just great service" />
       <section className="relative grid grid-cols-1 grid-rows-3 gap-8 py-24 mx-4 sm:grid-cols-3 sm:grid-rows-1 sm:mx-16 sm:gap-4 xl:mx-32">
         <VideoModal

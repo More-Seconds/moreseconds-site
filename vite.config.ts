@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
   root: './',
   build: {
-    outDir: './build'
+    outDir: './build',
+    chunkSizeWarningLimit: 1024 * 1024
   }
 })

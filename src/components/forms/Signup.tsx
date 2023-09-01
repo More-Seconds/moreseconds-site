@@ -43,6 +43,8 @@ export function Signup(props: Props) {
   async function submitForm(
     values: FormikValues,
     actions: FormikHelpers<FormikValues>
+    actions: FormikHelpers<{signUpEmail: string}>
+
   ) {
     try {
       console.log(values)
