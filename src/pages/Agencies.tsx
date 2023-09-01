@@ -34,7 +34,7 @@ import Client3 from '../public/images/SuncoastGradient.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center md:h-screen lg:pb-[19rem] md:mt-[4rem] max-w-full">
+      <section className="flex flex-col items-center justify-center h-screen lg:pb-[19rem] md:mt-[4rem] max-w-full">
         <HeroCentered className="pt-[4rem] md:pt-[10rem]">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
@@ -76,7 +76,7 @@ export function Agencies() {
         </HeroCentered>
       </section>
 
-      <section className="bg-black flex justify-center h-full mt-[10rem] md:mt-10 lg:mt-[15rem]">
+      <section className="bg-black flex justify-center lg:h-full min-h-full mt-10 lg:mt-[15rem]">
         <div className="flex flex-col sm:text-5xl font-semibold text-white">
           <Heading
             level="1"
@@ -167,9 +167,9 @@ export function Agencies() {
         </span>
 
         <div className="flex flex-col items-center justify-center mb-10">
-          <div className="flex items-center px-2 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem] md:my-[6rem]">
-            <TeamImage className="hidden md:block absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[355%] lg:left-[-16%] 2xl:top-[345%] 2xl:left-[-7rem] 2xl:h-[60%]" />
-            <BallLightBlue className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] 2xl:w-[110px] 2xl:h-[110px] relative" />
+          <div className="flex items-center px-2 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem]">
+            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[355%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <BallLightBlue className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 font-semibold">
               1
             </p>
@@ -194,10 +194,10 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[8rem]">
-          <div className="flex w-full md:ml-[24rem] mt-10 md:my-20">
+          <div className="flex w-full ml-[24rem] my-20">
             <div className="flex items-center mb-[6rem]">
-              <GradientDot1 className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] 2xl:w-[110px] 2xl:h-[110px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 2xl:ml-10 font-semibold">
+              <GradientDot1 className="h-[90px] w-[90px] relative" />
+              <p className="absolute text-black text-6xl ml-7 font-semibold">
                 2
               </p>
               <div className="ml-6">
@@ -217,8 +217,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[465%] 2xl:top-[467%] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="hidden md:block absolute right-[8%] lg:right-[8%] h-[160px] w-[160px] 2xl:right-[14rem] mt-[4rem] lg:mt-10 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[490%] scale-x-[-1]" />
+            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[470%] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] lg:mt-10 rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -226,10 +226,10 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex ml-[10rem] md:ml-0 justify-end w-full mr-[20rem] mb-[10rem] lg:mb-[12rem]">
+          <div className="flex justify-end w-full mr-[20rem] mb-[10rem] lg:mb-[12rem]">
             <div className="flex items-center">
-              <BallPurple className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] 2xl:w-[110px] 2xl:h-[110px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 2xl:ml-10 font-semibold">
+              <BallPurple className="h-[90px] w-[90px] relative" />
+              <p className="absolute text-black text-6xl ml-7 font-semibold">
                 3
               </p>
               <div className="ml-6">
@@ -246,7 +246,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[610%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[600%] scale-x-[-1]" />
+              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[610%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[570%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -267,8 +267,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[716%] top-[546%] lg:top-[738%]" />
-                  <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[740%] scale-[125%] lg:top-[764%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
+                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:-mt-[10rem] top-[546%] lg:top-[738%]" />
+                  <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[764%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">

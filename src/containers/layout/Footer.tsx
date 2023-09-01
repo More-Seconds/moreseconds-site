@@ -78,10 +78,7 @@ export function Footer() {
         </span>
         <ul className="flex items-center gap-6 sm:justify-center sm:w-full md:w-auto md:justify-self-end">
           <li>
-            <a
-              href="https://www.linkedin.com/company/moreseconds/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/company/moreseconds/">
               <LinkedInIcon />
             </a>
           </li>
@@ -91,16 +88,17 @@ export function Footer() {
             </a>
           </li>
           <li>
-            <a
-              href="https://www.youtube.com/channel/UCooFeC30xA943Uear0-3yKA"
-              target="_blank"
-            >
+            <a href="https://www.youtube.com/channel/UCooFeC30xA943Uear0-3yKA">
               <YtIcon />
             </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="https://instagram.com/getmoreseconds" target="_blank">
               {' '}
+=======
+            <a href="https://instagram.com/getmoreseconds">
+>>>>>>> 03a42df7c750f804434b59377662bfbf8de24c24
               <InstaIcon />
             </a>
           </li>

@@ -8,13 +8,7 @@ import {
   KellyT,
   MikeD
 } from 'public/images'
-import {
-  BallBlue,
-  BallLightBlue,
-  BallPurple,
-  CarouselArrow,
-  Star
-} from 'public/svgs'
+import { BallBlue, BallPurple, CarouselArrow, Star } from 'public/svgs'
 import { useState } from 'react'
 import { Dots } from './Dots'
 import { Testimonial } from './Testimonial'
@@ -112,7 +106,7 @@ export function Testimonials(props: Props) {
           support that we receive from Brian and the More Seconds team. Last
           week, we hit our highest engagement score on record."
         </Testimonial>
-
+        
         <div className="absolute flex items-center justify-center w-8 h-8 border rounded-full right-10 sm:-left-[3rem] sm:top-1/2 sm:-translate-y-1/2 sm:-left-20 lg:top-[35%] xl:w-12 xl:h-12 xl:-translate-y-24 xl:-left-[10rem] hover:border-accent">
           <CarouselArrow
             className="w-full h-full scale-125 rotate-180 cursor-pointer fill-mid hover:fill-accent"
@@ -130,7 +124,7 @@ export function Testimonials(props: Props) {
       <Star className="absolute scale-75 -right-48 top-52 xl:hidden" />
       <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 xl:-left-48" />
       <BallPurple className="absolute hidden sm:block sm:top-40 sm:-right-24 xl:-right-48 sm:scale-75" />
-      <BallLightBlue className="h-[20px] absolute hidden sm:block sm:bottom-40 sm:-left-28 xl:-left-56" />
+      <BallBlue className="absolute hidden sm:block sm:bottom-40 sm:-left-28 xl:-left-56" />
     </section>
   )
 }
