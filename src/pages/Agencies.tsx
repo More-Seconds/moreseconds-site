@@ -52,19 +52,9 @@ export function Agencies() {
             needs with confidence.
           </BodyText>
 
-          <div className="flex gap-4 md:gap-8">
-            <Button
-              href="#contact"
-              className="block px-4 lg:px-12 py-3 mx-auto mt-6 text-center text-xs md:text-base"
-            >
-              Get Started
-            </Button>
-            <Button
-              href="#"
-              className="block px-4 lg:px-12 py-3 mx-auto mt-6 text-center text-xs md:text-base"
-            >
-              Learn More
-            </Button>
+          <div className="flex gap-4 md:gap-8 mt-10">
+            <Button href="#contact">Get Started</Button>
+            <Button href="#">Learn More</Button>
           </div>
 
           <BallBlue className="hidden md:absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />

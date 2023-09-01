@@ -14,6 +14,7 @@ import { HomeHeroBG, NoMaintenance } from 'public/svgs'
 import { Testimonials } from 'components/shared sections/Testimonials'
 import { CenteredCTA } from 'components/shared sections/CenteredCta'
 import { Signup } from 'components/forms/Signup'
+import { Button } from 'components/Button'
 
 export function Homepage() {
   return (
@@ -35,10 +36,14 @@ export function Homepage() {
           frictionless #dev-ops platform, designed to take your web projects
           from “headache to handled” in seconds.
         </BodyText>
-        <Signup variant="primary" />
+
+        <div className="flex gap-4 ">
+          <Button href="#contact">Get Started</Button>
+          <Button href="#">Learn More</Button>
+        </div>
       </Hero>
       <Clients className="relative z-10 sm:-top-10 md:-top-16 xl:-top-32" />
-      
+
       <Team />
       <SectionBlur />
       <Partners />
