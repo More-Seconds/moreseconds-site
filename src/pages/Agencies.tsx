@@ -23,7 +23,8 @@ import {
   SaturnPurple,
   Highlight,
   BallLightBlue,
-  PurplePinkBall
+  PurplePinkBall,
+  GrayStar
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
@@ -50,6 +51,8 @@ export function Agencies() {
             say, “Yes!” to all of your existing and prospective clients' website
             needs with confidence.
           </BodyText>
+
+          <GrayStar className="absolute h-[30px] top-[30%] right-24" />
 
           <div className="flex gap-4 md:gap-8">
             <Button
