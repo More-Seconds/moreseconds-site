@@ -48,7 +48,7 @@ export function Homepage() {
       <SectionBlur />
       <Partners />
 
-      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[25px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:gap-12 md:gap-[1rem] md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[25px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4  md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Speed
