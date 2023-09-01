@@ -201,7 +201,7 @@ export function Agencies() {
           <div className="flex w-full md:ml-[24rem] mt-10 md:my-20">
             <div className="flex items-center mb-[6rem]">
               <GradientDot1 className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] 2xl:w-[110px] 2xl:h-[110px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 2xl:ml-10 font-semibold">
+              <p className="absolute text-black text-3xl lg:text-6xl ml-4 lg:ml-7 2xl:ml-10 font-semibold">
                 2
               </p>
               <div className="ml-6">
