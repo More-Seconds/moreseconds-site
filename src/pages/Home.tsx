@@ -38,8 +38,8 @@ export function Homepage() {
         </BodyText>
 
         <div className="flex gap-4 ">
+          <Button href="/agencies">Agencies</Button>
           <Button href="#contact">Get Started</Button>
-          <Button href="#">Learn More</Button>
         </div>
       </Hero>
       <Clients className="relative z-10 sm:-top-10 md:-top-16 xl:-top-32" />
