@@ -58,7 +58,7 @@ import { ReactComponent as DropDown } from './dropdown-icon.svg'
 import { ReactComponent as Share } from './Share.svg'
 import { ReactComponent as OrangeGradientBall } from './gradient_dot_1.svg'
 import { ReactComponent as PurplePinkBall } from './gradient_dot_4.svg'
-import { ReactComponent as BallBlue } from './gradient.svg'
+import { ReactComponent as BallBlue } from './gradient_dot_2.svg'
 import { ReactComponent as BlueSaturn } from './Saturn_Blue.svg'
 
 export {
