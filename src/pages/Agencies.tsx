@@ -160,8 +160,8 @@ export function Agencies() {
 
         <div className="flex flex-col items-center justify-center mb-10">
           <div className="flex items-center px-2 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem]">
-            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[185rem] 2xl:left-[-7rem] 2xl:h-[60%]" />
-            <BallLightBlue className="h-[60px] w-[60px] lg:h-[90px] lg:w-[90px] relative" />
+            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <BallLightBlue className="h-[110px] w-[110px] relative" />{' '}
             <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 font-semibold">
               1
             </p>
@@ -209,8 +209,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[258rem] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:-bottom-[232rem] scale-x-[-1]" />
+            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -238,7 +238,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[570%] scale-x-[-1]" />
+              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -259,7 +259,7 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:-mt-[10rem] top-[546%] lg:top-[704%]" />
+                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] lg:top-[704%]" />
                   <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
