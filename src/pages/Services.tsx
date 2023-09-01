@@ -2,7 +2,6 @@ import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { Layout } from 'containers/layout/Layout'
 import {
-  BallBlue,
   BallPurple,
   CloudFull,
   ManArtist,
