@@ -100,6 +100,7 @@ export function Footer() {
           </li>
           <li>
             <a href="https://instagram.com/getmoreseconds" target="_blank">
+              {' '}
               <InstaIcon />
             </a>
           </li>
