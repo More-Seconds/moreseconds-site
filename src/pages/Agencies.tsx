@@ -80,7 +80,7 @@ export function Agencies() {
           >
             Increase Your Revenue
           </Heading>
-          <BodyText className="font-thin px-8 text-center md:text-left text-xs md:text-sm md:max-w-xl xl:max-w-3xl xl:text-lg">
+          <BodyText className="px-5 text-sm mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
             We know this can be a challenging time for agencies. We make it easy
             for agencies to make more money with More Seconds with multiple
             income streams that are a win-win for you and your clients. Offer
@@ -176,7 +176,7 @@ export function Agencies() {
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+              <BodyText className="text-xs max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                 Our team of web development experts are ready to take on any
                 project. Once you’re set up in our system, simply send over any
                 client request and we’ll handle the rest!
@@ -189,8 +189,8 @@ export function Agencies() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mb-[6rem] md:mb-[8rem]">
-          <div className="flex w-full md:ml-[12rem] lg:ml-[24rem] my-20">
+        <div className="flex flex-col items-center justify-center mb-[6rem] md:mb-[8rem]">
+          <div className="flex md:w-full md:ml-[12rem] lg:ml-[24rem] my-20">
             <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
               <GradientDot1 className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
               <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
@@ -203,7 +203,7 @@ export function Agencies() {
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-xs max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our proprietary platform, mDash, automatically
                   generates an accurate budget, timeline, and immediately
@@ -249,7 +249,7 @@ export function Agencies() {
             <img src={Client3} alt="" />
           </div>
 
-          <div className="flex justify-start md:ml-[10rem] lg:ml-[26rem] w-full mt-[6rem] mb-[8rem]">
+          <div className="flex justify-start md:ml-[10rem] lg:ml-[26rem] w-full mt-[5rem] mb-[6rem]">
             <div className="flex flex-col md:flex-row items-center px-6 md:px-0">
               <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
               <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0  md:ml-5 lg:ml-7 font-semibold">
