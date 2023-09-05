@@ -63,8 +63,8 @@ export function Agencies() {
 
           <BallBlue className="hidden md:absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
-          <PricingHero className="absolute left-0 h-[350px] w-[350px] top-[80%] lg:top-[68%] lg:left-[-6%] transform scale-x-[-1] lg:h-[75%] lg:w-[75%] max-w-screen-lg" />
-          <CloudFull className="hidden md:block absolute top-[30rem] xl:left-[60rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
+          <PricingHero className="absolute left-0 h-[350px] w-[350px] top-[80%] md:top-[95%] lg:top-[68%] lg:left-[-6%] transform scale-x-[-1] md:w-[90%] lg:h-[75%] lg:w-[100%] max-w-screen-lg" />
+          <CloudFull className="hidden lg:block absolute top-[30rem] xl:left-[60rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[26rem] lg:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[250px] w-[250px]" />
           <GrayStar className="absolute h-[15px] top-[15%] right-[15%] lg:top-[50%] lg:right-14 lg:h-[30px]" />
@@ -163,10 +163,10 @@ export function Agencies() {
         </span>
 
         <div className="flex flex-col items-center justify-center md:mb-10">
-          <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-2">
-            <TeamImage className="hidden md:block absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
-            <BallLightBlue className="h-[60px] w-[60px] md:h-[110px] md:w-[110px] relative" />
-            <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-8 font-semibold">
+          <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-10 lg:px-2">
+            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[110px] lg:w-[110px] relative" />
+            <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
               1
             </p>
             <div className="ml-6 ">
@@ -176,7 +176,7 @@ export function Agencies() {
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+              <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                 Our team of web development experts are ready to take on any
                 project. Once you’re set up in our system, simply send over any
                 client request and we’ll handle the rest!
@@ -190,10 +190,10 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[6rem] md:mb-[8rem]">
-          <div className="flex w-full md:ml-[24rem] my-20">
+          <div className="flex w-full ml-[12rem] lg:ml-[24rem] my-20">
             <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
-              <GradientDot1 className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
+              <GradientDot1 className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
                 2
               </p>
               <div className="md:ml-6">
@@ -203,7 +203,7 @@ export function Agencies() {
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our proprietary platform, mDash, automatically
                   generates an accurate budget, timeline, and immediately
@@ -213,8 +213,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="hidden md:block absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
+            <MusicLady className="hidden md:block absolute right-[-8%] md:right-[-18%] top-[336%] scale-[30%] md:scale-[35%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] md:top-[288%] xl:top-[428%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] md:right-[4%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] md:mt-[7rem] lg:mt-[4rem] rotate-14 md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -222,10 +222,10 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex px-6 md:px-0 justify-center md:justify-end w-full md:mr-[20rem] mb-[6rem] md:mb-[10rem] lg:mb-[12rem]">
+          <div className="flex px-6 md:px-0 justify-center md:justify-end w-full md:mr-[6rem] lg:mr-[20rem] mb-[6rem] md:mb-[10rem] lg:mb-[12rem]">
             <div className="flex flex-col md:flex-row items-center">
-              <BallPurple className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
+              <BallPurple className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0  md:ml-5 lg:ml-7 font-semibold">
                 3
               </p>
               <div className="ml-6">
@@ -235,24 +235,24 @@ export function Agencies() {
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
                 </BodyText>
               </div>
 
-              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
+              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] md:h-[200px] md:w-[200px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client3} alt="" />
           </div>
 
-          <div className="flex justify-start md:ml-[26rem] w-full mt-[6rem] mb-[8rem]">
+          <div className="flex justify-start md:ml-[10rem] lg:ml-[26rem] w-full mt-[6rem] mb-[8rem]">
             <div className="flex flex-col md:flex-row items-center px-6 md:px-0">
-              <BallLightBlue className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
+              <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0  md:ml-5 lg:ml-7 font-semibold">
                 4
               </p>
               <div className="ml-6 flex flex-col items-center md:items-start">
@@ -263,11 +263,11 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] lg:top-[704%]" />
-                  <Planet className="hidden md:block absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
+                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] md:right-[3%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] md:top-[441%] lg:top-[704%]" />
+                  <Planet className="hidden md:block absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] md:top-[455%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
-                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
@@ -279,7 +279,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[20%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] mt-[12.5rem] md:mt-[14rem]" />
+                <Highlight className="absolute right-[20%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>
