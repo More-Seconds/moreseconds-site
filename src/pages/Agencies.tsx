@@ -80,7 +80,7 @@ export function Agencies() {
           >
             Increase Your Revenue
           </Heading>
-          <BodyText className="px-5 text-sm mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
+          <BodyText className="px-5 text-sm mx-auto font-thin text-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg">
             We know this can be a challenging time for agencies. We make it easy
             for agencies to make more money with More Seconds with multiple
             income streams that are a win-win for you and your clients. Offer
