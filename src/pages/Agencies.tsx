@@ -164,7 +164,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center justify-center md:mb-10">
           <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-10 lg:px-2">
-            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[45%] lg:top-[310%] lg:left-[-16%] 2xl:top-[305%] 2xl:left-[-7rem] 2xl:h-[60%]" />
             <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[110px] lg:w-[110px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
               1
@@ -213,8 +213,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="hidden md:block absolute right-[-8%] md:right-[-18%] top-[336%] scale-[30%] md:scale-[35%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] md:top-[288%] xl:top-[428%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] md:right-[4%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] md:mt-[7rem] lg:mt-[4rem] rotate-14 md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
+            <MusicLady className="hidden md:block absolute right-[-8%] md:right-[-18%] top-[336%] scale-[30%] md:scale-[35%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] md:top-[288%] xl:top-[420%] 2xl:top-[425%] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] md:right-[4%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] md:mt-[7rem] lg:mt-[4rem] rotate-14 md:h-[180px] md:w-[180px] lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[445%] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -242,7 +242,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] md:h-[200px] md:w-[200px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
+              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] md:h-[200px] md:w-[200px] 2xl:left-[15%] 2xl:top-[560%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
