@@ -263,7 +263,7 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] lg:top-[704%]" />
+                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] lg:top-[704%]" />
                   <Planet className="hidden md:block absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
