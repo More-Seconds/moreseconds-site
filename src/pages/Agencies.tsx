@@ -279,7 +279,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[20%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] mt-[12.5rem] md:mt-[14rem]" />
+                <Highlight className="absolute right-[20%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>
