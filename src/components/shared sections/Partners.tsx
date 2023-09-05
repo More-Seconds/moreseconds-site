@@ -52,7 +52,7 @@ export function Partners() {
       </div>
       <BallOrange className="absolute top-0 z-0 sm:block -left-full sm:scale-50 xl:scale-100 sm:left-10" />
       <HollowStar className="absolute z-0 -left-full sm:left-1/2 lg:top-[2rem] xl:top-24" />
-      <BallBlue className="absolute sm:top-0 scale-50  xl:scale-[8%] xl:right-[10%] xl:top-10" />
+      <BallBlue className="absolute sm:top-0 scale-[8%] xl:right-[10%] xl:top-10" />
       <Cloud className="absolute right-0 z-0 sm:top-[21rem] md:top-44" />
       <HollowStar className="absolute z-0 top-80 lg:right-10 xl:right-20" />
       <Star className="absolute z-0 scale-50 lg:top-60 lg:right-16 xl:top-48 xl:right-16 md:hidden" />

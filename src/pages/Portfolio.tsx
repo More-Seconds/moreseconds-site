@@ -57,7 +57,7 @@ export function Portfolio() {
 
           <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
-          <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-[8%] xl:left-24 xl:top-4" />
+          <BallBlue className="absolute top-0  left-4 scale-[8%] xl:left-24 xl:top-4" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
         </HeroCentered>
       </section>
@@ -68,7 +68,7 @@ export function Portfolio() {
         <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
           <BigSaturn className="w-[70%] mx-auto sm:w-full xl:w-full xl:scale-110" />
           <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
-          <BallBlue className="absolute scale-50 top-16 right-20 xl:hidden" />
+          <BallBlue className="absolute scale-[8%] top-16 right-20 xl:hidden" />
           <Star className="absolute scale-50 -right-4 top-1/2 sm:hidden" />
         </div>
         <div className="w-[120%] relative -mt-16 sm:mt-0 xl:w-full">
@@ -150,7 +150,7 @@ export function Portfolio() {
           </BodyText>
         </Card>
         <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
-        <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
+        <BallBlue className="absolute -bottom-12 right-2 scale-[8%]" />
       </section>
       <div className="hidden max-h-[0px] sm:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />

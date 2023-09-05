@@ -96,7 +96,7 @@ export function About() {
           </BodyText>
         </div>
         <Rocket className="hidden sm:block sm:absolute sm:scale-75 sm:right-0 sm:-top-24 xl:right-24 xl:-top-16" />
-        <BallBlue className="absolute top-0 scale-50 xl:scale-[8%] xl:top-40 xl:right-[2%]" />
+        <BallBlue className="absolute top-0 scale-[8%] xl:top-40 xl:right-[2%]" />
         <BallOrange className="absolute hidden scale-50 sm:block bottom-10 left-4" />
         <BallPurple className="absolute hidden scale-75 sm:block top-16 left-4" />
       </section>
