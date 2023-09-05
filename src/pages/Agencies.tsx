@@ -157,22 +157,22 @@ export function Agencies() {
       </section>
 
       <section className="how--it--works h-full flex flex-col items-center bg-black">
-        <span className="relative text-white font-semibold lg:mb-[6rem] text-4xl lg:text-5xl 2xl:text-6xl">
+        <span className="mt-10 md:mt-0 relative text-white font-semibold lg:mb-[6rem] text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
           How It Works
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
 
         <div className="flex flex-col items-center justify-center mb-10">
-          <div className="flex items-center px-2 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem]">
-            <TeamImage className="absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
-            <BallLightBlue className="h-[110px] w-[110px] relative" />{' '}
+          <div className="flex items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem] md:px-2">
+            <TeamImage className="hidden md:block absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <BallLightBlue className="h-[75px] w-[75px] md:h-[110px] md:w-[110px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 font-semibold">
               1
             </p>
             <div className="ml-6 ">
               <Heading
                 level="2"
-                className="md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                className="sm:text-[18px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
               >
                 Sign Up with More Seconds
               </Heading>
@@ -190,16 +190,16 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[8rem]">
-          <div className="flex w-full ml-[24rem] my-20">
-            <div className="flex items-center mb-[6rem]">
-              <GradientDot1 className="h-[90px] w-[90px] relative" />
-              <p className="absolute text-black text-6xl ml-7 font-semibold">
+          <div className="flex w-full md:ml-[24rem] my-20 px-6 md:px-0">
+            <div className="flex items-center md:mb-[6rem]">
+              <GradientDot1 className="h-[75px] w-[75px] md:h-[95px] md:w-[95px] relative" />
+              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
                 2
               </p>
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                  className="sm:text-[18px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Submit Your Request in Plain English
                 </Heading>
@@ -213,8 +213,8 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
-            <SaturnPurple className="h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
+            <MusicLady className="hidden md:block absolute right-[-8%] top-[336%] scale-[30%] xl:right-[2%] lg:scale-[50%] 2xl:scale-[60%] xl:top-[425%] 2xl:top-[435%] 2xl:right-[14rem] z-10" />
+            <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] rotate-14 lg:h-[250px] lg:w-[250px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[455%] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client2} alt="" />
@@ -222,7 +222,7 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex justify-end w-full mr-[20rem] mb-[10rem] lg:mb-[12rem]">
+          <div className="flex justify-end w-full md:mr-[20rem] mb-[10rem] lg:mb-[12rem]">
             <div className="flex items-center">
               <BallPurple className="h-[90px] w-[90px] relative" />
               <p className="absolute text-black text-6xl ml-7 font-semibold">
