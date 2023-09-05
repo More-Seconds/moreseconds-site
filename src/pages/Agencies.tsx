@@ -80,7 +80,7 @@ export function Agencies() {
           >
             Increase Your Revenue
           </Heading>
-          <BodyText className="px-5 text-sm mx-auto font-thin text-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg">
+          <BodyText className="px-5 text-sm mx-auto font-thintext-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg">
             We know this can be a challenging time for agencies. We make it easy
             for agencies to make more money with More Seconds with multiple
             income streams that are a win-win for you and your clients. Offer
@@ -279,7 +279,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[22%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
+                <Highlight className="absolute right-[22%] md:right-[54%] xl:left-[35%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>
