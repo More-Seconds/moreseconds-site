@@ -157,26 +157,26 @@ export function Agencies() {
       </section>
 
       <section className="how--it--works h-full flex flex-col items-center bg-black">
-        <span className="mt-10 md:mt-0 relative text-white font-semibold lg:mb-[6rem] text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
+        <span className="mt-10 md:mt-0 relative text-white font-semibold mb-[4rem] md:mb-[6rem] text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
           How It Works
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
 
-        <div className="flex flex-col items-center justify-center mb-10">
-          <div className="flex items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[6rem] md:px-2">
+        <div className="flex flex-col items-center justify-center md:mb-10">
+          <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-2">
             <TeamImage className="hidden md:block absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
-            <BallLightBlue className="h-[75px] w-[75px] md:h-[110px] md:w-[110px] relative" />
-            <p className="absolute text-black text-3xl lg:text-6xl ml-5 lg:ml-7 font-semibold">
+            <BallLightBlue className="h-[60px] w-[60px] md:h-[110px] md:w-[110px] relative" />
+            <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
               1
             </p>
             <div className="ml-6 ">
               <Heading
                 level="2"
-                className="sm:text-[18px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                className="sm:text-[16px] text-center md:text-left md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4 mt-10 md:mt-0"
               >
                 Sign Up with More Seconds
               </Heading>
-              <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+              <BodyText className="text-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                 Our team of web development experts are ready to take on any
                 project. Once you’re set up in our system, simply send over any
                 client request and we’ll handle the rest!
@@ -190,20 +190,20 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[8rem]">
-          <div className="flex w-full md:ml-[24rem] my-20 px-6 md:px-0">
-            <div className="flex items-center md:mb-[6rem]">
-              <GradientDot1 className="h-[75px] w-[75px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
+          <div className="flex w-full md:ml-[24rem] my-20">
+            <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
+              <GradientDot1 className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
                 2
               </p>
-              <div className="ml-6">
+              <div className="md:ml-6">
                 <Heading
                   level="2"
-                  className="sm:text-[18px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                  className="sm:text-[16px] text-center md:text-left md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4 mt-10 md:mt-0"
                 >
                   Submit Your Request in Plain English
                 </Heading>
-                <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   No more meetings. No more emails. No more confusing tech
                   terminology. Our proprietary platform, mDash, automatically
                   generates an accurate budget, timeline, and immediately
@@ -222,16 +222,16 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex justify-end w-full md:mr-[20rem] mb-[10rem] lg:mb-[12rem]">
+          <div className="flex px-[11rem] md:px-0 justify-center md:justify-end w-full md:mr-[20rem] mb-[10rem] lg:mb-[12rem]">
             <div className="flex items-center">
-              <BallPurple className="h-[90px] w-[90px] relative" />
-              <p className="absolute text-black text-6xl ml-7 font-semibold">
+              <BallPurple className="h-[75px] w-[75px] md:h-[95px] md:w-[95px] relative" />
+              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
                 3
               </p>
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                  className="sm:text-[16px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
                 >
                   Receive Updates on Your Project
                 </Heading>
@@ -242,17 +242,17 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
+              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[16%] xl:top-[570%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] 2xl:left-[15%] 2xl:top-[565%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
             <img src={Client3} alt="" />
           </div>
 
-          <div className="flex justify-start ml-[26rem] w-full mt-[10rem] mb-[8rem]">
+          <div className="flex justify-start md:ml-[26rem] w-full mt-[10rem] mb-[8rem]">
             <div className="flex items-center">
-              <BallLightBlue className=" h-[90px] w-[90px] relative" />
-              <p className="absolute text-black text-6xl ml-6 font-semibold">
+              <BallLightBlue className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
+              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
                 4
               </p>
               <div className="ml-6">
