@@ -35,7 +35,7 @@ import Client3 from '../public/images/SuncoastGradient.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center md:pb-[18rem] h-screen max-w-full">
+      <section className="flex flex-col items-center justify-center md:pb-[18rem] md:h-screen max-w-full">
         <HeroCentered className="pt-[4rem] ">
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
@@ -52,9 +52,13 @@ export function Agencies() {
             needs with confidence.
           </BodyText>
 
-          <div className="flex gap-4 md:gap-8 mt-10">
-            <Button href="#contact">Get Started</Button>
-            <Button href="#">Learn More</Button>
+          <div className="flex gap-4 md:gap-8 mt-10 mb-[5rem] md:mb-0">
+            <Button href="#contact" className="px-4 md:px-12">
+              Get Started
+            </Button>
+            <Button href="#" className="px-4 md:px-12 md:text-md">
+              Learn More
+            </Button>
           </div>
 
           <BallBlue className="hidden md:absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
@@ -63,13 +67,13 @@ export function Agencies() {
           <CloudFull className="hidden md:block absolute top-[30rem] xl:left-[60rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[26rem] lg:right-[5rem] 2xl:right-[20rem] transform scale-x-[-1] h-[260px] w-[260px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[250px] w-[250px]" />
-          <GrayStar className="absolute right-14 h-[30px]" />
-          <Star className="absolute scale-x-[-1] h-[20px] w-[20px] md:h-[35px] md:w-[35px] top-[30rem] md:top-[40rem] right-[10rem]" />
+          <GrayStar className="absolute h-[15px] top-[15%] right-[15%] lg:top-[50%] lg:right-14 lg:h-[30px]" />
+          <Star className="absolute scale-x-[-1] h-[20px] w-[20px] md:h-[35px] md:w-[35px] top-[40rem] right-[10rem]" />
         </HeroCentered>
       </section>
 
       <section className="bg-black flex justify-center lg:h-full min-h-full">
-        <div className="flex flex-col sm:text-5xl font-semibold text-white">
+        <div className="flex flex-col sm:text-5xl font-semibold text-white mt-[12rem] md:mt-0">
           <Heading
             level="1"
             className="px-8 lg:max-w-4xl mb-6 text-center md:text-left"
