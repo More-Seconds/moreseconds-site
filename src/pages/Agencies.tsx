@@ -263,8 +263,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] md:right-[3%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[5%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] md:top-[428%] lg:top-[740%]" />
-                  <Planet className="hidden md:block absolute xl:right-[5%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] md:top-[442%] lg:top-[770%] right-[5%] xl:scale-[200%] 2xl:scale-[270%]" />
+                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] md:right-[3%] xl:scale-[50%] 2xl:scale-[65%] xl:right-[10%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] md:top-[428%] lg:top-[742%]" />
+                  <Planet className="hidden md:block absolute xl:right-[10%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] md:top-[442%] lg:top-[770%] right-[5%] xl:scale-[189%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
