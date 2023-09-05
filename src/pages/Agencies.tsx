@@ -190,7 +190,7 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center mb-[6rem] md:mb-[8rem]">
-          <div className="flex w-full ml-[12rem] lg:ml-[24rem] my-20">
+          <div className="flex w-full md:ml-[12rem] lg:ml-[24rem] my-20">
             <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
               <GradientDot1 className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
               <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
