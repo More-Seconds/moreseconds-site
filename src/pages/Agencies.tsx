@@ -166,7 +166,7 @@ export function Agencies() {
           <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-2">
             <TeamImage className="hidden md:block absolute right-[37%] scale-x-[-1] h-[30%] lg:h-[45%] lg:top-[315%] lg:left-[-16%] 2xl:top-[310%] 2xl:left-[-7rem] 2xl:h-[60%]" />
             <BallLightBlue className="h-[60px] w-[60px] md:h-[110px] md:w-[110px] relative" />
-            <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
+            <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-8 font-semibold">
               1
             </p>
             <div className="ml-6 ">
@@ -189,7 +189,7 @@ export function Agencies() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mb-[8rem]">
+        <div className="flex flex-col items-center mb-[6rem] md:mb-[8rem]">
           <div className="flex w-full md:ml-[24rem] my-20">
             <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
               <GradientDot1 className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
@@ -222,20 +222,20 @@ export function Agencies() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="flex px-[11rem] md:px-0 justify-center md:justify-end w-full md:mr-[20rem] mb-[10rem] lg:mb-[12rem]">
-            <div className="flex items-center">
-              <BallPurple className="h-[75px] w-[75px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
+          <div className="flex px-6 md:px-0 justify-center md:justify-end w-full md:mr-[20rem] mb-[6rem] md:mb-[10rem] lg:mb-[12rem]">
+            <div className="flex flex-col md:flex-row items-center">
+              <BallPurple className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
                 3
               </p>
               <div className="ml-6">
                 <Heading
                   level="2"
-                  className="sm:text-[16px] md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                  className="sm:text-[16px] text-center md:text-left md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4 mt-10 md:mt-0"
                 >
                   Receive Updates on Your Project
                 </Heading>
-                <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   We’ll keep you updated on the progress of your project with
                   automatically generated reports tracking every metric and
                   milestone so you can rest easy while staying informed.
@@ -249,25 +249,25 @@ export function Agencies() {
             <img src={Client3} alt="" />
           </div>
 
-          <div className="flex justify-start md:ml-[26rem] w-full mt-[10rem] mb-[8rem]">
-            <div className="flex items-center">
+          <div className="flex justify-start md:ml-[26rem] w-full mt-[6rem] mb-[8rem]">
+            <div className="flex flex-col md:flex-row items-center px-6 md:px-0">
               <BallLightBlue className="h-[60px] w-[60px] md:h-[95px] md:w-[95px] relative" />
-              <p className="absolute text-black text-3xl md:text-6xl ml-5 md:ml-7 font-semibold">
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 lg:ml-7 font-semibold">
                 4
               </p>
-              <div className="ml-6">
+              <div className="ml-6 flex flex-col items-center md:items-start">
                 <Heading
                   level="2"
-                  className="lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4"
+                  className="sm:text-[16px] text-center md:text-left md:text-lg lg:text-2xl 2xl:text-3xl text-white font-semibold mb-4 mt-10 md:mt-0"
                 >
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
                   <Rocket className="absolute -rotate-45 scale-[35%] right-[4%] xl:scale-[55%] 2xl:scale-[65%] xl:right-[13%] 2xl:right-[17%] 2xl:top-[683%] top-[546%] lg:top-[704%]" />
-                  <Planet className="absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
+                  <Planet className="hidden md:block absolute xl:right-[13%] 2xl:right-[17%] 2xl:top-[708%] scale-[125%] lg:top-[730%] right-[5%] xl:scale-[240%] 2xl:scale-[270%]" />
                 </div>
 
-                <BodyText className="text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
+                <BodyText className="text-center md:text-left text-xs lg:text-base max-w-sm 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
                   There’s a reason why tastemakers like Pharrell Williams’ Black
                   Ambition & YELLOW and top agencies like Hawke Media trust More
                   Seconds with their web projects. Your clients will be thrilled
@@ -279,7 +279,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[10%] xl:left-[574px] 2xl:left-[735px] scale-x-[-1] h-[25px] w-[25px] mt-1" />
+                <Highlight className="absolute right-[20%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] mt-[12.5rem] md:mt-[14rem]" />
               </div>
             </div>
           </div>
