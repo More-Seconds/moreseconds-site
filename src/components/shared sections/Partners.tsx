@@ -20,7 +20,7 @@ export function Partners() {
       <div className="absolute z-10 w-screen pt-10 sm:top-0">
         <Smoke className="h-auto w-[100vw]" />
       </div>
-      <div className="flex flex-col md:mx-4 md:flex-row md:mr-8 md:mr-8">
+      <div className="flex flex-col md:mx-4 md:flex-rows md:mr-8">
         <div className="z-20 md:w-1/2">
           <Satellite className="z-20 sm:w-[80%] sm:-translate-x-14 h-auto md:w-full xl:w-2/3 xl:translate-x-14" />
         </div>
