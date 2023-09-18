@@ -53,12 +53,15 @@ export function Agencies() {
           </BodyText>
 
           <div className="flex gap-4 md:gap-8 mt-10 mb-[5rem] md:mb-0">
-            <Button href="#contact" className="px-4 text-sm md:px-12">
+            <Button
+              href="#contact"
+              className="px-4 text-sm md:text-md md:px-12 z-[999]"
+            >
               Get Started
             </Button>
             <Button
               href="/services"
-              className="px-4 text-sm md:px-12 md:text-md"
+              className="px-4 text-sm md:px-12 md:text-md z-[999]"
             >
               Learn More
             </Button>
