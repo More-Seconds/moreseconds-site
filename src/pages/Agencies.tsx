@@ -164,7 +164,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center justify-center md:mb-10">
           <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-10 lg:px-2">
-            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[45%] xl:top-[337%] xl:left-[-22%] 2xl:top-[305%] 2xl:left-[-7rem] 2xl:h-[60%]" />
+            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[50%] xl:top-[308%] xl:left-[-15%] 2xl:top-[305%] 2xl:left-[-6%] 2xl:h-[60%]" />
             <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[110px] lg:w-[110px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
               1
