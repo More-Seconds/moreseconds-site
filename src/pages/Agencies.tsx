@@ -170,7 +170,7 @@ export function Agencies() {
 
         <div className="flex flex-col items-center justify-center md:mb-10">
           <div className="flex flex-col md:flex-row items-center px-6 md:ml-[17rem] lg:ml-[22rem] md:max-w-xl my-[4rem] md:my-[6rem] md:px-10 lg:px-2">
-            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[50%] xl:top-[308%] xl:left-[-15%] 2xl:top-[305%] 2xl:left-[-6%] 2xl:h-[60%]" />
+            <TeamImage className="hidden md:block absolute right-[37%] md:right-[20%] scale-x-[-1] h-[30%] md:h-[20%] lg:h-[50%] xl:top-[322%] xl:left-[-16%] 2xl:top-[305%] 2xl:left-[-6%] 2xl:h-[60%]" />
             <BallLightBlue className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[110px] lg:w-[110px] relative" />
             <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
               1
@@ -199,7 +199,7 @@ export function Agencies() {
           <div className="flex md:w-full md:ml-[12rem] lg:ml-[16rem] my-20">
             <div className="flex flex-col md:flex-row items-center md:mb-[6rem] px-6 md:px-0">
               <GradientDot1 className="sm:h-[60px] sm:w-[60px] md:h-[60px] md:w-[60px] lg:h-[90px] lg:w-[90px] relative" />
-              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-8 font-semibold">
+              <p className="absolute text-black text-3xl lg:text-6xl mt-3 md:mt-0 md:ml-[1.5rem] lg:ml-7 font-semibold">
                 2
               </p>
               <div className="md:ml-6">
@@ -219,7 +219,7 @@ export function Agencies() {
               </div>
             </div>
 
-            <MusicLady className="hidden md:block absolute right-[-8%] md:right-[-18%] top-[336%] scale-[30%] md:scale-[35%] xl:right-[2%] lg:scale-[55%] 2xl:scale-[60%] md:top-[288%] xl:top-[428%] 2xl:top-[425%] 2xl:right-[14rem] z-10" />
+            <MusicLady className="hidden md:block absolute right-[-8%] md:right-[-18%] top-[336%] scale-[30%] md:scale-[35%] xl:right-[2%] lg:scale-[55%] 2xl:scale-[60%] md:top-[288%] xl:top-[442%] 2xl:top-[425%] 2xl:right-[14rem] z-10" />
             <SaturnPurple className="hidden md:block h-[160px] w-[160px] absolute right-[8%] md:right-[4%] lg:right-[8%] 2xl:right-[14rem] mt-[4rem] md:mt-[7rem] lg:mt-[4rem] rotate-14 md:h-[180px] md:w-[180px] lg:h-[235px] lg:w-[235px] 2xl:h-[250px] 2xl:w-[320px] 2xl:top-[445%] scale-x-[-1]" />
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -248,7 +248,7 @@ export function Agencies() {
                 </BodyText>
               </div>
 
-              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[10%] xl:top-[575%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] md:h-[200px] md:w-[200px] 2xl:left-[15%] 2xl:top-[560%] scale-x-[-1]" />
+              <FormCharacter className="hidden md:block absolute h-[260px] w-[260px] left-[5%] xl:left-[10%] xl:top-[585%] 2xl:h-[380px] 2xl:w-[380px] xl:h-[320px] xl:w-[320px] md:h-[200px] md:w-[200px] 2xl:left-[15%] 2xl:top-[560%] scale-x-[-1]" />
             </div>
           </div>
           <div className="h-[70%] w-[70%] z-[999]">
@@ -269,8 +269,8 @@ export function Agencies() {
                   Launch That Beautiful Website!
                 </Heading>
                 <div>
-                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] md:right-[3%] xl:scale-[60%] 2xl:scale-[65%] xl:right-[9%] 2xl:right-[17%] 2xl:top-[680%] top-[546%] md:top-[428%] lg:top-[695%]" />
-                  <Planet className="hidden md:block absolute xl:right-[10%] 2xl:right-[17%] 2xl:top-[705%] scale-[125%] md:top-[442%] lg:top-[718%] right-[5%] xl:scale-[160%] 2xl:scale-[270%]" />
+                  <Rocket className="hidden md:block absolute -rotate-45 scale-[35%] right-[4%] md:right-[3%] xl:scale-[60%] 2xl:scale-[65%] xl:right-[10%] 2xl:right-[17%] 2xl:top-[680%] top-[546%] md:top-[428%] lg:top-[720%]" />
+                  <Planet className="hidden md:block absolute xl:right-[10%] 2xl:right-[17%] 2xl:top-[705%] scale-[125%] md:top-[442%] lg:top-[745%] right-[5%] xl:scale-[200%] 2xl:scale-[270%]" />
                 </div>
 
                 <BodyText className="text-xs md:max-w-xs text-center md:text-left lg:text-base 2xl:text-lg font-light xl:max-w-lg 2xl:max-w-xl text-white">
@@ -285,7 +285,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[22%] md:right-[54%] xl:left-[35%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
+                <Highlight className="absolute right-[22%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>
