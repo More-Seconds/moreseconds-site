@@ -26,7 +26,7 @@ const ClientWebsiteHelp = () => {
           >
             Get Started
           </Button>
-          <Highlight className="absolute right-[15.5rem] top-[15.8rem] h-[40px] w-[40px] scale-x-[-1]" />
+          <Highlight className="absolute right-[16.4rem] top-[16.2rem] h-[25px] w-[25px] scale-x-[-1]" />
         </div>
       </section>
     </div>

@@ -25,7 +25,7 @@ const HostWebsite = () => {
           >
             View Hosting Package Options
           </Button>
-          <Highlight className="absolute right-[14.5rem] top-[14.4rem] h-[40px] w-[40px] scale-x-[-1]" />
+          <Highlight className="absolute right-[15.5rem] top-[14.5rem] h-[25px] w-[25px] scale-x-[-1]" />
         </div>
       </section>
     </div>

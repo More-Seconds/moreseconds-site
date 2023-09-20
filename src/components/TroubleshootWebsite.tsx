@@ -27,7 +27,7 @@ const TroubleshootWebsite = () => {
           >
             Get Estimate
           </Button>
-          <Highlight className="absolute right-[14.5rem] top-[19.2rem] h-[40px] w-[40px] scale-x-[-1]" />
+          <Highlight className="absolute right-[16.4rem] top-[19.7rem] h-[25px] w-[25px] scale-x-[-1]" />
         </div>
       </section>
     </div>

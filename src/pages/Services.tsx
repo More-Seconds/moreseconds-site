@@ -51,6 +51,87 @@ interface SpecificInfoTitleMap {
   'Host Website': string
 }
 
+interface Col1InfoTitle {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col1InfoBody {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col2InfoTitle {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col2InfoBody {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col3InfoTitle {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col3InfoBody {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col4InfoTitle {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+interface Col4InfoBody {
+  'Client Website Help': string
+  'Website Design': string
+  'Website Development': string
+  'Update Website': string
+  'Troubleshoot Website': string
+  'Host Website': string
+}
+
+
+
 export function Services() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('Website Design')
   const [posts, setPosts] = useState<any>([])
@@ -76,7 +157,7 @@ export function Services() {
   const specificInfoTitleMap: SpecificInfoTitleMap = {
     'Client Website Help': 'More Seconds White Label Services Include…',
     'Website Design': 'More Seconds Website Design Services Include…',
-    'Website Development': 'More Seconds Website Design Services Include…',
+    'Website Development': 'More Seconds Website Development Services Include…',
     'Update Website': 'More Seconds Website Update Services Include…',
     'Troubleshoot Website':
       'More Seconds Website Maintenance Packages Include…',
@@ -126,6 +207,83 @@ export function Services() {
     'Update Website': 'We Want Our Clients To Win',
     'Troubleshoot Website': 'Stay One Step Ahead Of The Competition',
     'Host Website': 'Stay One Step Ahead Of The Competition'
+  }
+
+  const col1InfoTitle: Col1InfoTitle = {
+    'Client Website Help': 'Priced for Profitability',
+    'Website Design': 'Rapid Prototyping & Design Discovery',
+    'Website Development': 'Full-cycle Website Design & Development',
+    'Update Website': 'Comprehensive Design Updates',
+    'Troubleshoot Website': 'Preventative & Protective Measures',
+    'Host Website': 'Affordable, Hands-Off Hosting'
+  }
+
+  const col1InfoBody: Col1InfoBody = {
+    'Client Website Help': 'We offer our full suite of services at a rate far below most major agency pricing so you can expand your client offerings at your preferred rate, increase revenue, and effortlessly make a profit.',
+    'Website Design': 'You’ll see exactly how your custom designs are progressing each step of the way with mockups in Figma, and your input is always welcome.',
+    'Website Development': 'We provide full-cycle development services from market research and business analysis to design, development, and launch. We’ll handle every step of the process and deliver the website of your dreams.',
+    'Update Website': 'Whether you want to redesign a page on your site or create a new one, we’ll help you design, develop, and implement your desired changes.',
+    'Troubleshoot Website': 'We’ll update your website to prevent future issues from occurring and protect you from any unexpected and unwanted disasters.',
+    'Host Website': 'We offer affordable hosting services where all you have to do is sit back, relax, and let us take care of the whole process.'
+  
+  }
+
+
+  const col2InfoTitle: Col2InfoTitle = {
+    'Client Website Help': 'Trusted by Top Agenciess',
+    'Website Design': 'Style Guide & Brand Kit Creation',
+    'Website Development': 'Custom Functionality and Features',
+    'Update Website': 'Content & Image Updates',
+    'Troubleshoot Website': 'Comprehensive Maintenance Reports',
+    'Host Website': 'Data Security'
+  }
+
+
+  const col2InfoBody: Col2InfoBody = {
+    'Client Website Help': 'Leading marketing agencies trust More Seconds with their web development needs because we are a reliable, long-term development partner with the expertise to bring their projects to fruition on budget, on time, and with the highest degree of accuracy.',
+    'Website Design': 'We’ll create a consistent look and feel for your business across the digital landscape with the development of a brand kit and style guide.',
+    'Website Development': 'We’ll help you provide your users with an unforgettable experience by bringing all of your unique functionality and feature requests to life.',
+    'Update Website': 'We are available to make rapid text, image, and video changes to any section of your website that may need updating.',
+    'Troubleshoot Website': "With our in-depth reporting, you'll have a clear understanding of the maintenance activities performed, allowing you to make informed decisions about the future of your website.",
+    'Host Website': 'We’ll ensure all of your data, and that of your users, remains safe and secure.'
+  }
+
+
+  const col3InfoTitle: Col3InfoTitle = {
+    'Client Website Help': '24/7 Emergency Fixes',
+    'Website Design': 'User Flow Diagram Creation',
+    'Website Development': 'Ecommerce, API, and Plugin Integration and Configuration',
+    'Update Website': 'Integration, Plugin, and API Updates',
+    'Troubleshoot Website': 'Close Monitoring',
+    'Host Website': 'Website Backups'
+  }
+
+
+  const col3InfoBody: Col3InfoBody = {
+    'Client Website Help': 'Our expert team of U.S.-based developers are available around the clock to handle any after hours emergencies your clients may run into so their sites never go down.',
+    'Website Design': 'We’ll create a visual user flow diagram showing exactly how a new build will function and which users it will affect.',
+    'Website Development':'No matter what you need your site to do, we’ll get it configured with all of the necessary plugins and integrations to do exactly what you desire.',
+    'Update Website': 'We can update, add, or remove various plugins and integrations on your site to keep it up to date with your goals and vision.',
+    'Troubleshoot Website': 'Our expert team will closely monitor your website, promptly addressing any issues that may arise.',   
+    'Host Website': 'We provide peace of mind by regularly backing up your site, so you never have to worry about losing anything vital to your business.'
+  }
+  const col4InfoTitle: Col4InfoTitle = {
+    'Client Website Help': 'Lightning Fast Turnaround Times',
+    'Website Design': 'Webpage Design & Revamp',
+    'Website Development': 'Desktop, Mobile, and Tablet Responsive',
+    'Update Website': 'Support & Maintenance',
+    'Troubleshoot Website': 'On-demand Troubleshooting & Fixes',
+    'Host Website': 'Performance Optimization'
+  }
+
+
+  const col4InfoBody: Col4InfoBody = {
+    'Client Website Help': 'We boast some of the fastest turnaround times in the industry. We’ll work with you and your clients to ensure that everything gets done on budget and on time.',
+    'Website Design': 'Whether you are starting from scratch or simply interested in updating current pages, we’re excited to bring your ideas to life.',
+    'Website Development':'We’ll ensure that every page maintains its seamless design and functionality, no matter if it’s viewed on desktop, mobile, or tablet.',
+    'Update Website': 'We’ll help keep your website’s plugins, theme, core, and other important features updated and running smoothly.',
+    'Troubleshoot Website': 'Our team is available around the clock to ensure your website remains in tip-top shape. We’ll immediately handle any problems your website encounters.',   
+    'Host Website': 'We offer optimized performance options, keeping your website running better than ever.'
   }
 
   const handleMenuItemClick = (menuItem: string) => {
@@ -269,7 +427,7 @@ export function Services() {
 
             <CloudFull className="absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
-            <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
+            <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[8rem] 2xl:top-[70rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -364,46 +522,38 @@ export function Services() {
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Full-cycle Website Design & Development
+                  {col1InfoTitle[selectedMenuItem as keyof Col1InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We provide full-cycle development services from market
-                    research and business analysis to design, development, and
-                    launch. We’ll handle every step of the process and deliver
-                    the website of your dreams.
+                  {col1InfoBody[selectedMenuItem as keyof Col1InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Custom Functionality and Features
+                  {col2InfoTitle[selectedMenuItem as keyof Col2InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We’ll help you provide your users with an unforgettable
-                    experience by bringing all of your unique functionality and
-                    feature requests to life.
+                  {col2InfoBody[selectedMenuItem as keyof Col2InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Ecommerce, API, and Plugin Integration and Configuration
+                  {col3InfoTitle[selectedMenuItem as keyof Col3InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    No matter what you need your site to do, we’ll get it
-                    configured with all of the necessary plugins and
-                    integrations to do exactly what you desire.
+                  {col3InfoBody[selectedMenuItem as keyof Col3InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Desktop, Mobile, and Tablet Responsive
+                  {col4InfoTitle[selectedMenuItem as keyof Col4InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We’ll ensure that every page maintains its seamless design
-                    and functionality, no matter if it’s viewed on desktop,
-                    mobile, or tablet.
+                  {col4InfoBody[selectedMenuItem as keyof Col4InfoBody]}
+
                   </BodyText>
                 </Card>
               </div>
@@ -423,46 +573,69 @@ export function Services() {
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Full-cycle Website Design & Development
+                  {
+                  col1InfoTitle[
+                    selectedMenuItem as keyof Col1InfoTitle
+                  ]
+                }
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We provide full-cycle development services from market
-                    research and business analysis to design, development, and
-                    launch. We’ll handle every step of the process and deliver
-                    the website of your dreams.
+                  {
+                  col1InfoBody[
+                    selectedMenuItem as keyof Col1InfoBody
+                  ]
+                }
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Custom Functionality and Features
-                  </Heading>
+                  {
+                  col2InfoTitle[
+                    selectedMenuItem as keyof Col2InfoTitle
+                  ]
+                }              
+                    </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We’ll help you provide your users with an unforgettable
-                    experience by bringing all of your unique functionality and
-                    feature requests to life.
+                  {
+                  col2InfoBody[
+                    selectedMenuItem as keyof Col2InfoBody
+                  ]
+                }
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Ecommerce, API, and Plugin Integration and Configuration
-                  </Heading>
+                  {
+                  col3InfoTitle[
+                    selectedMenuItem as keyof Col3InfoTitle
+                  ]
+                } 
+                </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    No matter what you need your site to do, we’ll get it
-                    configured with all of the necessary plugins and
-                    integrations to do exactly what you desire.
+                  {
+                  col3InfoBody[
+                    selectedMenuItem as keyof Col3InfoBody
+                  ]
+                }
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                    Desktop, Mobile, and Tablet Responsive
-                  </Heading>
+                  {
+                  col4InfoTitle[
+                    selectedMenuItem as keyof Col4InfoTitle
+                  ]
+                }                
+                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                    We’ll ensure that every page maintains its seamless design
-                    and functionality, no matter if it’s viewed on desktop,
-                    mobile, or tablet.
+                  {
+                  col4InfoBody[
+                    selectedMenuItem as keyof Col4InfoBody
+                  ]
+                }
                   </BodyText>
                 </Card>
               </div>
