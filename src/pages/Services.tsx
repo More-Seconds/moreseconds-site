@@ -647,10 +647,10 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 mt-10 gap-4">
+            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 2xl:pb-40 mt-10 gap-4">
               <Card
                 backgroundColor="#3C3C59"
-                className="w-full h-fit pb-4 gap-2 xl:gap-8"
+                className="w-full h-full min-h-[700px] pb-4 gap-2 xl:gap-8"
               >
                 <div className="space-y-4">
                   <Heading
@@ -662,22 +662,34 @@ export function Services() {
                 </div>
                 <ul className="text-white list-disc px-8 space-y-4">
                   <li className="text-left text-sm">
-                    Website Uptime Monitoring & Downtime Alert Reporting
+                  24/7 Emergency Availability
                   </li>
                   <li className="text-left text-sm">
-                    Custom Maintenance PDF Report
+                  Priority Treatment in Development Queue
                   </li>
                   <li className="text-left text-sm">
-                    Website Backup System Configuration Report
+                  Unlimited CMS Updates
                   </li>
-                  <li className="text-left text-sm">WP Core Updates</li>
-                  <li className="text-left text-sm">WP Theme Updates</li>
+                  <li className="text-left text-sm">Website Uptime Monitoring & Downtime Alert Reporting</li>
+                  <li className="text-left text-sm">Custom Maintenance PDF Report</li>
                   <li className="text-left text-sm">
-                    Non-Premium Plugin Updates
+                  Website Backup System Configuration Report
                   </li>
-                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">WP Core Update</li>
                   <li className="text-left text-sm">
-                    Core Website Feature & Form Delivery Testing
+                  WP Theme Updates
+                  </li>
+                  <li className="text-left text-sm">
+                  Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">
+                  Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">
+                  Core Website Feature & Form Delivery Testing
+                  </li>
+                  <li className="text-left text-sm">
+End of Workday Response Time for Requests before 3pm MTN
                   </li>
                 </ul>
                 <Button href={'#contact'}>Get Started</Button>
@@ -685,7 +697,7 @@ export function Services() {
 
               <Card
                 backgroundColor="#3C3C59"
-                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+                className="w-full h-full min-h-[700px] pb-4 gap-2 xl:gap-8"
               >
                 <div className="space-y-4">
                   <Heading
@@ -720,7 +732,7 @@ export function Services() {
 
               <Card
                 backgroundColor="#323249"
-                className="w-full  h-fit pb-4 gap-2 xl:gap-8"
+                className="w-full h-full min-h-[700px] pb-4 gap-2 xl:gap-8"
               >
                 <div className="space-y-4">
                   <Heading
