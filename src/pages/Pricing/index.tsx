@@ -39,7 +39,7 @@ export function Pricing() {
             No monthly retainers. No minimums. Zero risk.
           </span>
         </Heading>
-        <BodyText className="max-w-[27ch] xl:max-w-md sm:max-w-[40ch] xl:text-lg">
+        <BodyText className="max-w-[27ch] xl:max-w-xl sm:max-w-[40ch] xl:text-lg">
          <>Benefit from the power of an entire development team for only </> 
           <span className="relative text-accent font-bold md:text-xl lg:text-3xl">
           $85 an hour             
