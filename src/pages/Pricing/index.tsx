@@ -54,10 +54,10 @@ export function Pricing() {
         <Button href="#contact" className="xl:max-w-[10rem] px-8 md:w-full py-3 mt-6">
           Get an Estimate
         </Button>
-        <Sputnik className="hidden md:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
+        <Sputnik className="hidden lg:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
       </Hero>
 
-      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 sm:mx-16 xl:mx-56 xl:pb-40">
+      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 md:py-20 sm:mx-16 xl:mx-56 xl:pb-40">
         <Rocket className="hidden sm:block sm:absolute sm:right-[7rem] sm:h-[80px] sm:-top-[18rem] md:top-[-30rem]" />
         <HollowStar className="hidden sm:block sm:absolute sm:top-1/2 sm:-right-12" />
         <BallOrange className="hidden sm:block sm:absolute sm:top-[75%] sm:-left-16 sm:scale-50" />
