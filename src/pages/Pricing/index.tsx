@@ -41,7 +41,7 @@ export function Pricing() {
         </Heading>
         <BodyText className="max-w-[27ch] xl:max-w-md sm:max-w-[40ch] xl:text-lg">
          <>Benefit from the power of an entire development team for only </> 
-          <span className="relative text-accent md:text-xl lg::text-3xl">
+          <span className="relative text-accent font-bold md:text-xl lg:text-3xl">
           $85 an hour             
           <NoMaintenance className="absolute bottom-0 sm:right-[-1rem] sm:w-[7.3rem] md:right-0 md:bottom-[-4px] md:w-[rem] lg:bottom-0 xl:right-[3.5rem] xl:w-[8ch] xl:scale-x-125 xl:translate-x-12" />
           </span>
