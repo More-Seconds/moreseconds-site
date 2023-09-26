@@ -40,7 +40,7 @@ export function About() {
             time
           </>
         </Heading>
-        <BodyText className="max-w-lg sm:max-w-sm xl:max-w-md">
+        <BodyText className="sm:max-w-sm lg:max-w-xl xl:max-w-3xl">
           More Seconds takes your web development projects from headache to
           handled so that you have time to focus on what you do best – driving
           traffic and sales for your business. If you want to stop scrolling
