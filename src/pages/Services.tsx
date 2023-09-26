@@ -647,7 +647,7 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 2xl:pb-40 mt-10 gap-4">
+            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:pt-[8rem] xl:pb-[14rem] 2xl:pb-40 mt-10 gap-4">
               <Card
                 backgroundColor="#3C3C59"
                 className="w-full h-full min-h-[700px] pb-4 gap-2 xl:gap-8"
