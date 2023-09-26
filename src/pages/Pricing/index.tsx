@@ -41,7 +41,7 @@ export function Pricing() {
         </Heading>
         <BodyText className="max-w-[27ch] xl:max-w-md sm:max-w-[40ch] xl:text-lg">
          <>Benefit from the power of an entire development team for only </> 
-          <span className="relative text-accent md:text-xl lg::text-3xl">
+          <span className="relative text-accent font-bold md:text-xl lg:text-3xl">
           $85 an hour             
           <NoMaintenance className="absolute bottom-0 sm:right-[-1rem] sm:w-[7.3rem] md:right-0 md:bottom-[-4px] md:w-[rem] lg:bottom-0 xl:right-[3.5rem] xl:w-[8ch] xl:scale-x-125 xl:translate-x-12" />
           </span>
@@ -54,10 +54,10 @@ export function Pricing() {
         <Button href="#contact" className="xl:max-w-[10rem] px-8 md:w-full py-3 mt-6">
           Get an Estimate
         </Button>
-        <Sputnik className="hidden md:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
+        <Sputnik className="hidden lg:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
       </Hero>
 
-      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 sm:mx-16 xl:mx-56 xl:pb-40">
+      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 md:py-20 sm:mx-16 xl:mx-56 xl:pb-40">
         <Rocket className="hidden sm:block sm:absolute sm:right-[7rem] sm:h-[80px] sm:-top-[18rem] md:top-[-30rem]" />
         <HollowStar className="hidden sm:block sm:absolute sm:top-1/2 sm:-right-12" />
         <BallOrange className="hidden sm:block sm:absolute sm:top-[75%] sm:-left-16 sm:scale-50" />
