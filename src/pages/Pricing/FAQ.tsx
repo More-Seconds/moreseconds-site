@@ -1,4 +1,3 @@
-import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { ArrowDown } from 'public/svgs'
 import { useState } from 'react'
