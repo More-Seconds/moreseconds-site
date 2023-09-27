@@ -58,7 +58,6 @@ export function Pricing() {
       </Hero>
 
       <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 md:py-20 sm:mx-16 xl:mx-56 xl:pb-40">
-        <Rocket className="hidden sm:block sm:absolute sm:right-[7rem] sm:h-[80px] sm:-top-[18rem] md:top-[-30rem]" />
         <HollowStar className="hidden sm:block sm:absolute sm:top-1/2 sm:-right-12" />
         <BallOrange className="hidden sm:block sm:absolute sm:top-[75%] sm:-left-16 sm:scale-50" />
         <Heading level="2" className="mb-4 sm:mt-10 md:mt-0 text-center">
