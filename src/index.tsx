@@ -11,7 +11,6 @@ import { Pricing } from './pages/Pricing'
 import { WebDevelopment } from './pages/WebDevelopment'
 import { Portfolio } from 'pages/Portfolio'
 import { ResearchAndAnalysis } from 'pages/ResearchAndAnalysis'
-import { WebsiteUpdates } from 'pages/WebsiteUpdates'
 import { WhoWeHelp } from 'pages/WhoWeHelp'
 import './styles/main.css'
 import './styles/modal-video.scss'
@@ -43,7 +42,6 @@ render(
         path="/research-and-analysis"
         element={<ResearchAndAnalysis />}
       ></Route>
-      <Route path="/website-updates" element={<WebsiteUpdates />}></Route>
       <Route path="/who-we-help" element={<WhoWeHelp />}></Route>
       <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
       <Route path="/terms-of-service" element={<Terms />}></Route>
