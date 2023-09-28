@@ -2,8 +2,9 @@ import {
   PageBuilding,
   PageDesign,
   WebCare,
-  FeatureFunction,
-  AuditReport
+  AuditReport,
+  WebsiteUpdates,
+  WebsiteHosting
 } from 'public/images'
 import { Heading } from '../../typography/Heading'
 import { Service } from './Service'
@@ -55,32 +56,37 @@ export function Services() {
       {/* xl:max-w-[1600px] */}
       <ul className="grid grid-cols-1 gap-4 px-0 sm:px-[25px] sm:grid-cols-2 sm:grid-rows-[repeat(3,_minmax(0,_0.50fr))] sm:mx-auto md:grid-rows-[repeat(2,_minmax(0,_.5fr))] md:px-[45px] md:grid-cols-3 lg:mx-4 lg:grid-cols-4  xl:px-4 xl:mx-auto">
         <Service
-          title="Page Building"
+          title="Website Builds"
           className="md:col-start-1 md:row-span-2 md:row-start-1"
           image={PageBuilding}
-          slug={'/web-development'}
+          slug={'/services'}
         />
         <Service
-          title="Features & Functionality"
-          className="lg:col-start-2 lg:row-start-1 lg:col-end-4"
-          image={FeatureFunction}
-          slug={'/web-development'}
-        />
-        <Service
-          title="Webcare & Upkeep"
-          image={WebCare}
-          slug={'/website-updates'}
-        />
-        <Service
-          title="Web Audit & Reporting"
-          image={AuditReport}
-          slug={'/research-analysis'}
-        />
-        <Service
-          title="Page Design"
-          className="lg:col-start-4 lg:col-end-5 lg:row-span-2 lg:row-start-1"
+          title="Website Design"
+          className="lg:col-start-2 lg:row-start-1 lg:col-end-2"
           image={PageDesign}
-          slug={'/uiux'}
+          slug={'/services'}
+        />
+        <Service
+          title="Website Updates"
+          image={WebsiteUpdates}
+          slug={'/services'}
+        />
+        <Service
+          title="Website Maintenance"
+          image={AuditReport}
+          slug={'/services'}
+        />
+       <Service
+          title="Website Hosting"
+          image={WebsiteHosting}
+          slug={'/services'}
+        />
+        <Service
+          title="White Label Services"
+          className="lg:col-start-4 lg:col-end-5 lg:row-span-2 lg:row-start-1"
+          image={WebCare}
+          slug={'/services'}
         />
       </ul>
 
