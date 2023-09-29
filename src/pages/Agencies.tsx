@@ -40,10 +40,10 @@ export function Agencies() {
           <SmallTitle className="mx-auto text-center">
             WHITE LABEL AGENCY SERVICES
           </SmallTitle>
-          <h1 className=" text-white mb-2 md:text-5xl font-semibold max-w-4xl mx-auto text-center">
+          <h1 className="text-white mb-2 text-[1.8rem] md:text-5xl font-semibold max-w-4xl mx-auto text-center">
             Grow Your Agency with More Seconds
           </h1>
-          <BodyText className="px-5 text-sm mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
+          <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
             Are you leaving money on the table because you’ve had bad
             experiences with outsourced web developers and/or haven’t been able
             to successfully supplement your in-house team? Our team of
@@ -55,13 +55,13 @@ export function Agencies() {
           <div className="flex gap-4 md:gap-8 mt-10 mb-[5rem] md:mb-0">
             <Button
               href="#contact"
-              className="px-4 text-sm md:text-[16px] md:px-12 z-[999]"
+              className="px-10 text-md md:text-[16px] md:px-12 z-[999]"
             >
               Get Started
             </Button>
             <Button
               href="/services"
-              className="px-4 text-sm md:px-12 md:text-[16px] z-[999]"
+              className="px-10 text-md md:px-12 md:text-[16px] z-[999]"
             >
               Learn More
             </Button>
@@ -82,11 +82,11 @@ export function Agencies() {
         <div className="flex flex-col sm:text-5xl font-semibold text-white mt-[12rem] md:mt-0">
           <Heading
             level="1"
-            className="sm:px-10 lg:max-w-4xl mb-6 text-center md:text-left"
+            className="sm:px-10 sm:text-[1.8rem] lg:max-w-4xl mb-6 text-center md:text-left"
           >
             Increase Your Revenue
           </Heading>
-          <BodyText className="px-5 text-sm mx-auto font-thintext-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg">
+          <BodyText className="px-5 text-sm mx-auto !leading-6 text-[16px]  font-thin text-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg sm:mb-[2rem] md:mb-0">
             We know this can be a challenging time for agencies. We make it easy
             for agencies to make more money with More Seconds with multiple
             income streams that are a win-win for you and your clients. Offer
@@ -281,11 +281,11 @@ export function Agencies() {
                 </BodyText>
                 <Button
                   href="#contact"
-                  className="block mt-6 text-center py-2 text-xs max-w-[150px] xl:text-base xl:max-w-[250px] xl:py-3"
+                  className="block mt-6 text-center py-2 text-md max-w-[150px] xl:text-base xl:max-w-[250px] xl:py-3"
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[22%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[12.5rem] lg:mt-[14rem]" />
+                <Highlight className="absolute right-[17.8%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[13rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>

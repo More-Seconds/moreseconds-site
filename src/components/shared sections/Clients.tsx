@@ -24,7 +24,7 @@ export function Clients(props: Props) {
         'relative flex flex-col items-center gap-8 pb-10 ' + props.className
       }
     >
-      <p className="mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light md:px-[64px] md:leading-[1.35] md:text-[1.75rem] md:w-full md:max-w-full lg:px-[64px] lg:leading-[1.35] lg:text-[1.75rem] lg:w-full lg:max-w-full xl:px-0 xl:text-[2.2rem] xl:leading-[48px] xl:max-w-[50ch]">
+      <p className="mx-4 font-bold text-center uppercase sm:text-xl font-Poppins text-light mt-[4rem] md:mt-[0] md:px-[64px] md:leading-[1.35] md:text-[1.75rem] md:w-full md:max-w-full lg:px-[64px] lg:leading-[1.35] lg:text-[1.75rem] lg:w-full lg:max-w-full xl:px-0 xl:text-[2.2rem] xl:leading-[48px] xl:max-w-[50ch]">
       We have completed 2,235 projects for agencies, startups, event producers, and businesses of all sizes.
       </p>
 
