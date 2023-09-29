@@ -35,15 +35,15 @@ import Client3 from '../public/images/SuncoastGradient.png'
 export function Agencies() {
   return (
     <Layout footerVariant="">
-      <section className="flex flex-col items-center justify-center md:pb-[18rem] md:h-screen max-w-full">
+      <section className="flex flex-col items-center justify-center md:pb-[18rem] md:h-screen max-w-full mx-[1rem]">
         <HeroCentered className="md:py-0">
-          <SmallTitle className="mx-auto text-center">
+          <SmallTitle className="mx-auto text-center text-xs md:text-[16px]">
             WHITE LABEL AGENCY SERVICES
           </SmallTitle>
-          <h1 className="text-white mb-2 text-[1.8rem] md:text-5xl font-semibold max-w-4xl mx-auto text-center">
-            Grow Your Agency with More Seconds
+          <h1 className="text-white mb-2 text-3xl md:text-5xl font-semibold max-w-4xl mx-auto text-center">
+            Grow Your Agency with <span className="text-accent">More Seconds</span>
           </h1>
-          <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 lg:text-lg">
+          <BodyText className="text-center sm:max-w-4xl lg:text-lg text-[15px] md:text-[18px]">
             Are you leaving money on the table because you’ve had bad
             experiences with outsourced web developers and/or haven’t been able
             to successfully supplement your in-house team? Our team of
@@ -73,20 +73,20 @@ export function Agencies() {
           <CloudFull className="hidden lg:block absolute top-[30rem] xl:left-[60rem] 2xl:left-[60rem] transform scale-x-[-1] h-[140px] w-[140px]" />
           <CloudFull className="hidden md:block absolute lg:top-[190%] lg:right-0 2xl:right-[20rem] transform scale-x-[-1] h-[240px] w-[240px]" />
           <CloudFull className="hidden md:block absolute lg:-bottom-[48rem] lg:left-[0rem] 2xl:right-[20rem] transform scale-x-[-1] h-[210px] w-[210px]" />
-          <GrayStar className="absolute h-[15px] top-[15%] right-[15%] lg:top-[50%] lg:right-14 lg:h-[30px]" />
+          <GrayStar className="absolute h-[15px] top-[9%] right-[19%] lg:top-[50%] lg:right-14 lg:h-[30px]" />
           <Star className="absolute scale-x-[-1] h-[20px] w-[20px] md:h-[35px] md:w-[35px] top-[40rem] right-[10rem]" />
         </HeroCentered>
       </section>
 
-      <section className="bg-black flex justify-center lg:mt-10 lg:h-full min-h-full">
+      <section className="mx-[1rem] bg-black mx-[1rem] flex justify-center lg:mt-10 lg:h-full min-h-full">
         <div className="flex flex-col sm:text-5xl font-semibold text-white mt-[12rem] md:mt-0">
           <Heading
             level="1"
-            className="sm:px-10 sm:text-[1.8rem] lg:max-w-4xl mb-6 text-center md:text-left"
+            className="sm:text-[2rem] lg:max-w-4xl mb-6 text-center md:text-left"
           >
             Increase Your Revenue
           </Heading>
-          <BodyText className="px-5 text-sm mx-auto !leading-6 text-[16px]  font-thin text-center md:text-left sm:max-w-4xl sm:px-10 lg:text-lg sm:mb-[2rem] md:mb-0">
+          <BodyText className="text-sm !leading-6 text-[16px] font-thin text-center sm:text-[15px] md:text-[18px] md:text-left sm:max-w-4xl lg:text-lg">
             We know this can be a challenging time for agencies. We make it easy
             for agencies to make more money with More Seconds with multiple
             income streams that are a win-win for you and your clients. Offer
@@ -163,7 +163,7 @@ export function Agencies() {
       </section>
 
       <section className="how--it--works h-full flex flex-col items-center bg-black">
-        <span className="mt-10 md:mt-0 relative text-white font-semibold mb-[4rem] md:mb-[6rem] text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
+        <span className="mt-10 md:mt-0 relative text-white font-semibold mb-[2rem] md:mb-[6rem] text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl">
           How It Works
           <NoMaintenance className="absolute left-0 mt-3 w-full" />
         </span>
@@ -285,7 +285,7 @@ export function Agencies() {
                 >
                   Get Started
                 </Button>
-                <Highlight className="absolute right-[17.8%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[13rem] lg:mt-[14rem]" />
+                <Highlight className="absolute right-[20%] md:right-[54%] xl:left-[35.5%] 2xl:left-[35%] 2xl:mt-[15rem] scale-x-[-1] h-[20px] w-[20px] md:h-[25px] md:w-[25px] md:mt-[10.5rem] mt-[13rem] lg:mt-[14rem]" />
               </div>
             </div>
           </div>
@@ -296,3 +296,4 @@ export function Agencies() {
     </Layout>
   )
 }
+ 

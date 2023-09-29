@@ -22,7 +22,7 @@ export function Homepage() {
       <Hero svg={HomeHeroBG}>
         <Heading
           level="1"
-          className="xs:text-4xl sm:mx-auto sm:text-[1.8rem] sm:leading-[1.05] sm:max-w-[18ch] md:gap-4 md:text-[2.75rem] md:leading-[1] md:text-[calc(3.05rem_-_0.7vw)] lg:mt-[2rem] lg:max-w-[45rem] lg:text-[3.5rem] lg:leading-[1] xl:max-w-3xl xl:text-[64px] xl:leading-[72.96px] 3xl:max-w-5xl"
+          className="xs:text-4xl sm:mx-auto sm:text-[2rem] sm:leading-[1.05] md:gap-4 md:text-[2.75rem] md:leading-[1] md:text-[calc(3.05rem_-_0.7vw)] lg:mt-[2rem] lg:max-w-[45rem] lg:text-[3.5rem] lg:leading-[1] xl:max-w-3xl xl:text-[64px] xl:leading-[72.96px] 3xl:max-w-5xl"
         >
           <>The last development </>
           <span className="relative">
@@ -31,22 +31,26 @@ export function Homepage() {
           </span>
           <></>
         </Heading>
-        <BodyText className="max-w-[30ch] sm:max-w-[45ch] md:max-w-full md:text-[1rem] md:leading-[1.75] md:my-4 lg:max-w-xl xl:max-w-2xl xl:text-lg">
+        <BodyText className="max-w-[30ch] text-[15px] font-thin md:text-[18px] sm:max-w-[45ch] md:max-w-full mb-4 md:mb-0 md:leading-[1.75] md:my-4 lg:max-w-xl xl:max-w-2xl xl:text-lg">
           We set the standard for high quality development teams and built a
           frictionless #dev-ops platform, designed to take your web projects
           from “headache to handled” in seconds.
         </BodyText>
 
-        <div className="flex gap-4 mb-[1rem] md:mb-0">
-        <Button
+        <div className="flex gap-4 md:gap-8 mt-4 mb-[5rem] md:mb-0">
+            <Button
               href="/agencies"
-              className="px-10 text-md md:px-12 md:text-[16px] z-[999]"
-            >Agencies</Button>
-          <Button
+              className="px-10 text-md md:text-[16px] md:px-12 z-[999]"
+            >
+              Agencies
+            </Button>
+            <Button
               href="#contact"
               className="px-10 text-md md:px-12 md:text-[16px] z-[999]"
-            >Get Started</Button>
-        </div>
+            >
+              Get Started
+            </Button>
+          </div>
       </Hero>
       <Clients className="relative z-10 sm:-top-10 md:-top-16 xl:-top-32" />
 
@@ -54,7 +58,7 @@ export function Homepage() {
       <SectionBlur />
       <Partners />
 
-      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[25px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4  md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[0px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Speed
@@ -88,7 +92,7 @@ export function Homepage() {
           <p className="mt-[0.8rem] leading-7">
             We boast an average of 5 minutes or less for response times on
             Slack.
-          </p>
+          </p> 
         </div>
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">

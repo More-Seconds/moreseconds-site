@@ -21,7 +21,7 @@ export function Portfolio() {
   return (
     <Layout footerVariant="connect">
       <section className="flex flex-col md:items-center md:h-screen lg:h-full md:justify-center md:w-min">
-        <HeroCentered className="pt-[8rem]">
+        <HeroCentered className="">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading
             level="1"
@@ -38,7 +38,7 @@ export function Portfolio() {
             magic for you and your clients!
           </BodyText>
 
-          <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
+          <Planet className="absolute hidden md:block scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
           <BallBlue className="absolute top-0  left-4 scale-[8%] xl:left-24 xl:top-4" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
