@@ -16,13 +16,13 @@ export function HeroCentered(props: Props) {
     <section
       id="hero"
       className={twMerge(
-        'flex items-center justify-center px-15 py-15 xl:pt-16 mx-auto 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen',
+        'flex items-center mx-[1rem] justify-center px-15 py-15 xl:pt-16 3xl:px-1 relative overflow-visible bg-cover flex-col w-screen',
         props.className
       )}
     >
       <div
         className={twMerge(
-          'inset-0 z-10 flex flex-col items-center justify-center gap-2 py-20 xl:gap-4',
+          'inset-0 z-10 flex flex-col mx-[1rem] items-center justify-center gap-2 py-20 xl:gap-4',
           props.className
         )}
       >
