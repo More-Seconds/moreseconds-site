@@ -1,48 +1,31 @@
-import { Button } from 'components/Button'
 import { Card } from 'components/Card'
-import { SectionBlur } from 'components/SectionBlur'
-import { Clients } from 'components/shared sections/Clients'
-import { Partners } from 'components/shared sections/Partners'
 import { Projects } from 'components/shared sections/Projects'
-import { Services } from 'components/shared sections/Services'
-import { Team } from 'components/shared sections/Team'
-import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
-import { Brian } from 'public/images'
 import {
-  AboutHero,
   BallOrange,
   Cloud,
   CloudFull,
-  CloudOpaque,
   Star,
-  Smoke,
   Planet,
-  ManArtist,
   BallBlue,
-  BallPurple,
-  StarOutline,
   BigSaturn,
   HollowStar
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
-import { SideBySide } from 'containers/shared/SideBySide'
-import { Signup } from 'components/forms/Signup'
 
 export function Portfolio() {
   return (
     <Layout footerVariant="connect">
-      <section className="flex flex-col items-center h-screen lg:h-full justify-center w-min">
+      <section className="flex flex-col md:items-center md:h-screen lg:h-full md:justify-center md:w-min">
         <HeroCentered className="pt-[8rem]">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading
             level="1"
-            className="max-w-4xl mx-auto text-center mb-[1.35rem]"
+            className="max-w-4xl mx-auto text-center mb-[1.35rem] mx-4 md:mx-0"
           >
             <span>Take A Peek At What More Seconds</span>
             <span className="text-accent"> Can Do For You</span>

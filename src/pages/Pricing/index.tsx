@@ -28,7 +28,7 @@ export function Pricing() {
     <Layout footerVariant="simplified">
       <Hero
         svg={PricingHero}
-        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0 pt-[10rem]"
+        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0 pt-[10em]"
       >
         <Heading
           level="1"
@@ -43,7 +43,7 @@ export function Pricing() {
          <>Benefit from the power of an entire development team for only </> 
           <span className="relative text-accent font-bold md:text-xl lg:text-3xl">
           $85 an hour             
-          <NoMaintenance className="absolute bottom-0 sm:right-[-1rem] sm:w-[7.3rem] md:right-0 md:bottom-[-4px] md:w-[rem] lg:bottom-0 xl:right-[3.5rem] xl:w-[8ch] xl:scale-x-125 xl:translate-x-12" />
+          <NoMaintenance className="absolute bottom-[-0.2rem] sm:right-[-0.7rem] sm:w-[7rem] md:right-0 md:bottom-[-4px] md:w-[rem] lg:bottom-0 xl:right-[3.5rem] xl:w-[8ch] xl:scale-x-125 xl:translate-x-12" />
           </span>
          <> for most projects. We also offer a competitive fixed rate for
           large builds and affordable maintenance options.</> 

@@ -35,7 +35,7 @@ export function MDash(props: Props) {
 
             {[<>Take your projects from <span className="text-accent">headache to handled</span> in seconds.</>]}
           </Heading>
-          <BodyText className="max-w-lsg mb-2 xl:text-5xl xl:mr-0 xl:min-w-[20ch] xl:text-lg">
+          <BodyText className="max-w-lg mb-2 xl:text-5xl xl:mr-0 xl:min-w-[20ch] xl:text-lg">
             We built the most streamlined and efficient #dev-ops tech platform designed specifically with non-technical managers in mind. Build projects, add tasks, set cost budgets, share files, and track progress with your development team in real-time.
              Stop wasting time chasing developers and put your team in the drivers seat.
           </BodyText>
