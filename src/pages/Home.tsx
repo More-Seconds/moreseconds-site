@@ -9,11 +9,8 @@ import { Services } from 'components/shared sections/Services'
 
 import { Heading } from 'components/typography/Heading'
 import { BodyText } from 'components/typography/BodyText'
-import { SmallTitle } from '../components/typography/SmallTitle'
 import { HomeHeroBG, NoMaintenance } from 'public/svgs'
 import { Testimonials } from 'components/shared sections/Testimonials'
-import { CenteredCTA } from 'components/shared sections/CenteredCta'
-import { Signup } from 'components/forms/Signup'
 import { Button } from 'components/Button'
 
 export function Homepage() {
@@ -31,13 +28,13 @@ export function Homepage() {
           </span>
           <></>
         </Heading>
-        <BodyText className="max-w-[30ch] text-[15px] font-thin md:text-[18px] sm:max-w-[45ch] md:max-w-full mb-4 md:mb-0 md:leading-[1.75] md:my-4 lg:max-w-xl xl:max-w-2xl xl:text-lg">
+        <BodyText className="max-w-[30ch] text-[16px] font-thin md:text-[18px] sm:max-w-[45ch] md:max-w-full md:leading-[1.75] md:my-4 lg:max-w-xl xl:max-w-2xl xl:text-lg">
           We set the standard for high quality development teams and built a
           frictionless #dev-ops platform, designed to take your web projects
           from “headache to handled” in seconds.
         </BodyText>
 
-        <div className="flex gap-4 md:gap-8 mt-4 mb-[5rem] md:mb-0">
+        <div className="flex gap-4 md:gap-8 mt-4 mb-[2rem] md:mb-0">
             <Button
               href="/agencies"
               className="px-10 text-md md:text-[16px] md:px-12 z-[999]"
