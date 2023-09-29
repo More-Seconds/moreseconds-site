@@ -32,7 +32,7 @@ export function HeroCentered(props: Props) {
         <Smoke
           width="100vw"
           height="100%"
-          className="h-auto scale-x-125 rotate-180 -scale-y-125 z-100 relative top-12"
+          className="h-auto mt-[-4rem] scale-x-125 rotate-180 -scale-y-125 z-100 relative top-12"
         />
       </div>
     </section>
