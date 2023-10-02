@@ -19,7 +19,7 @@ export function Homepage() {
       <Hero svg={HomeHeroBG}>
         <Heading
           level="1"
-          className="xs:text-4xl sm:mx-auto sm:text-[2rem] sm:leading-[1.05] md:gap-4 md:text-[2.75rem] md:leading-[1] md:text-[calc(3.05rem_-_0.7vw)] lg:mt-[2rem] lg:max-w-[45rem] lg:text-[3.5rem] lg:leading-[1] xl:max-w-3xl xl:text-[64px] xl:leading-[72.96px] 3xl:max-w-5xl"
+          className="sm:mx-auto sm:text-3xl sm:leading-[1.05] md:gap-4 md:text-[2.75rem] md:leading-[1] md:text-[calc(3.05rem_-_0.7vw)] lg:mt-[2rem] lg:max-w-[45rem] lg:text-[3.5rem] lg:leading-[1] xl:max-w-3xl xl:text-[64px] xl:leading-[72.96px] 3xl:max-w-5xl"
         >
           <>The last development </>
           <span className="relative">
@@ -55,7 +55,7 @@ export function Homepage() {
       <SectionBlur />
       <Partners />
 
-      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[0px] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className="mb-20 grid justify-center m-auto text-light flex-row sm:flex-row sm:px-[1rem] md:px-[0rem] sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Speed

@@ -23,7 +23,7 @@ type Props = {
 export function MDash(props: Props) {
   return (
     <section className="relative">
-      <div className=" pt-4 pb-8 overflow-hidden sm:px-[25px] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className=" pt-4 pb-8 overflow-hidden sm:px-[1rem] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="2xl:w-fit 2xl:self-start">
           <SmallTitle className="mb-4">
             The M-Dash
@@ -55,7 +55,7 @@ export function MDash(props: Props) {
       </div>
 
       <div>
-        <BodyText className="pb-20 sm:px-[25px] sm:leading-6 sm:mt-10 md:mt-14 mx-auto text-center sm:max-w-4xl md:px-[45wpx] md:leading-[1.35] md:text-[1.35rem] lg:px-[64px] xl:text-[1.75rem] leading-[1.35]">
+        <BodyText className="pb-20 sm:px-[1rem] sm:leading-6 sm:mt-10 md:mt-14 mx-auto text-center sm:max-w-4xl md:px-[45wpx] md:leading-[1.35] md:text-[1.35rem] lg:px-[64px] xl:text-[1.75rem] leading-[1.35]">
           {/* <span>Supercharge</span> your team with the ultimate development tool. Request,
           track, interact, and build all in real-time and all from one place. We
           “baked in” our proprietary #dev-ops processes into a purpose-built

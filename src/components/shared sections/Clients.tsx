@@ -28,7 +28,7 @@ export function Clients(props: Props) {
       We have completed 2,235 projects for agencies, startups, event producers, and businesses of all sizes.
       </p>
 
-      <ul className="grid grid-rows-2  place-items-center sm:grid-cols-2 sm:px-[25px] sm:gap-[1.5rem_3rem] md:grid-cols-5 md:gap-[2rem_5rem] md:px-[64px] lg:px-0 lg:gap-[1rem_0rem] lg:w-full lg:max-w-full xl:gap-[4rem_15rem] xl:mr-4 xl:max-w-5xl">
+      <ul className="grid grid-rows-2  place-items-center sm:grid-cols-2 sm:px-[1rem] sm:gap-[1.5rem_3rem] md:grid-cols-5 md:gap-[2rem_5rem] md:px-[64px] lg:px-0 lg:gap-[1rem_0rem] lg:w-full lg:max-w-full xl:gap-[4rem_15rem] xl:mr-4 xl:max-w-5xl">
 
         <li className="p-4 sm:p-0">
           <img src={MontyLogo} alt="Montgomery Summit" className="saturate-0 sm:max-w-[7rem] sm:min-w-[9rem] md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[8rem] xl:min-w-[13rem]" />

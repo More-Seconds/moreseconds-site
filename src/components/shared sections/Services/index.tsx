@@ -24,7 +24,7 @@ export function Services() {
         Access a broad slate of services and innovative solutions
       </Heading> */}
 
-      <div className=" pt-4 pb-8 overflow-hidden sm:px-[25px] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className=" pt-4 pb-8 overflow-hidden sm:px-[1rem] sm:flex sm:flex-col sm:items-start sm:mb-4 sm:gap-6 md:grid md:grid-cols-2 md:gap-3 md:pt-[88px] md:grid-cols-2 md:px-[45px]  lg:px-[64px]  xl:grid-cols-2  xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="2xl:w-fit 2xl:self-start">
           <SmallTitle className="mb-4">Our Services</SmallTitle>
           <Heading
@@ -54,7 +54,7 @@ export function Services() {
 
       {/* grid-template-rows: repeat(2,minmax(0,0.5fr)) */}
       {/* xl:max-w-[1600px] */}
-      <ul className="grid grid-cols-1 gap-4 px-0 sm:px-[25px] sm:grid-cols-2 sm:grid-rows-[repeat(3,_minmax(0,_0.50fr))] sm:mx-auto md:grid-rows-[repeat(2,_minmax(0,_.5fr))] md:px-[45px] md:grid-cols-3 lg:mx-4 lg:grid-cols-4  xl:px-4 xl:mx-auto">
+      <ul className="grid grid-cols-1 gap-4 px-0 sm:px-[1rem] sm:grid-cols-2 sm:grid-rows-[repeat(3,_minmax(0,_0.50fr))] sm:mx-auto md:grid-rows-[repeat(2,_minmax(0,_.5fr))] md:px-[45px] md:grid-cols-3 lg:mx-4 lg:grid-cols-4  xl:px-4 xl:mx-auto">
         <Service
           title="Website Builds"
           className="md:col-start-1 md:row-span-2 md:row-start-1"

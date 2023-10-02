@@ -11,6 +11,7 @@ import {
 import {
   BallBlue,
   BallLightBlue,
+  BallOrange,
   BallPurple,
   CarouselArrow,
   Star
@@ -40,7 +41,7 @@ export function Testimonials(props: Props) {
     setActive((active) => active - 1)
   }
   return (
-    <section className="relative flex flex-col py-16 sm:px-[25px] md:mx-4 md:mx-32 lg:pt-20 xl:mx-auto xl:max-w-4xl xl:py-32">
+    <section className="relative flex flex-col py-16 sm:px-[1rem] md:mx-4 md:mx-32 lg:pt-20 xl:mx-auto xl:max-w-4xl xl:py-32">
       <Heading
         level="2"
         className="mx-auto mb-4 sm:mb-12 tracking-tighter text-[30px] sm:text-2xl sm:text-center md:text-center md:text-[35px] text-center md:max-w-[45rem] md:text-[2.5rem] md:leading-[1.35] xl:text-[46px] xl:leading-[56px] xl:max-w-[45rem]"
@@ -128,7 +129,7 @@ export function Testimonials(props: Props) {
       </div>
       <Dots activeIndex={active} />
       <Star className="absolute scale-75 -right-48 top-52 xl:hidden" />
-      <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 xl:-left-48" />
+      <BallOrange className="absolute hidden sm:block sm:top-32 sm:-left-20 xl:-left-48" />
       <BallPurple className="absolute hiddenEsm:block sm:top-40 sm:-right-24 xl:-right-48 sm:scale-75" />
       <BallBlue className="absolute hidden md:block sm:bottom-40 h-8 sm:-left-28 xl:-left-56" />
     </section>
