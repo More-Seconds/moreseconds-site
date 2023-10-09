@@ -32,7 +32,7 @@ export function About() {
           <span className="relative">We’re </span>
           <span className="relative z-10">
             here
-            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 xl:scale-100 xl:-top-3 xl:-left-4 z-0" />
+            <CircleHighlight className="absolute sm:block sm:scale-[50%] sm:-left-12 sm:-top-8 xl:scale-100 xl:-top-3 xl:-left-4 z-0" />
           </span>
           <span> </span>
           <>
