@@ -24,7 +24,7 @@ export function Team(props: Props) {
         hideImageMobile={props.hideImageMobile}
         svgStyles="relative self-start justify-self-start lg:-right-[10%] xl:-translate-x-10 xl:-right-[5%]"
       >
-        <div className="2xl:w-fit 2xl:self-end">
+        <div className="2xl:w-fit 2xl:self-end my-[3rem] md:mt-0">
           <SmallTitle className="mb-4">Our promise</SmallTitle>
           <Heading
             level="2"

@@ -24,7 +24,7 @@ export function Partners() {
         <div className="z-20 md:w-1/2">
           <Satellite className="z-20 sm:w-[80%] sm:-translate-x-14 h-auto md:w-full xl:w-2/3 xl:translate-x-14" />
         </div>
-        <div className="z-20 sm:px-[25px] sm:mt-[3rem] sm:text-center md:text-left md:pl-0 md:pr-[64px] md:mt-[5rem]">
+        <div className="z-20 sm:px-[25px] sm:mt-[5rem] sm:text-center md:text-left md:pl-0 md:pr-[64px]">
           <Heading
             level="2"
             className="text-3xl text-center sm:max-w-2xl sm:my-0 sm:text-center md:mt-20 md:mb-10 md:text-left md:text-[1.75rem] lg:text-[2.5rem] lg:leading-[1] xl:max-w-2xl xl:text-5xl xl:mt-12"
