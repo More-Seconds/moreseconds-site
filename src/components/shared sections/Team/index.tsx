@@ -18,7 +18,7 @@ type Props = {
 
 export function Team(props: Props) {
   return (
-    <section className="relative sm:px-[25px] md:pl-[45px] md:pr-0 lg:pl-[64px] xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+    <section className="relative sm:px-8 md:pl-[45px] md:pr-0 lg:pl-[64px] xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
       <SideBySide
         svg={TeamImage}
         hideImageMobile={props.hideImageMobile}
