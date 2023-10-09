@@ -36,7 +36,7 @@ export function Project(props: Props) {
                 {props.title}
               </BodyText>
               <p className="text-light font-light sm:text-[.8rem] md:leading-normal md:text-md">
-                Sejje more
+                See more
               </p>
             </div>
           ) : (

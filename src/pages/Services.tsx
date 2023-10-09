@@ -139,7 +139,7 @@ export function Services() {
   const [featured, setFeatured] = useState<any>([])
   const [loading, setLoading] = useState(true)
   const [listOfFilters, setListOfFilters] = useState<any>([])
-  const [activeFilter, setActiveFilter] = useState('All Capabilities')
+  const [activeFilter, setActiveFilter] = useState('All Capaddbilities')
 
   const portfolioTitleMap: PortfolioTitleMap = {
     'Client Website Help':

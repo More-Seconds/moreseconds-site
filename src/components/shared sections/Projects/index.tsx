@@ -113,9 +113,9 @@ export function Projects() {
   }
 
   return (
-    <section className="relative flex flex-col content-center self-center justify-center px-8 mb-20 md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
+    <section className="relative flex flex-col content-center self-center justify-center px-8  md:my-32 flex-nowrap justify-items-center justify-self-center md:px-16">
       <Heading level="2" className="self-center w-full mb-10 max-w-7xl">
-        <span className="text-[2.75rem]">I want to see</span>
+        <span className="text-3xl md:text-[2.75rem]">I want to see</span>
 
         <span
           onMouseEnter={(e) => {
@@ -124,13 +124,13 @@ export function Projects() {
           onMouseLeave={(e) => {
             setVisibility('hidden')
           }}
-          className="z-10 h-full ml-2 text-[2.75rem] text-accent font-bold hover:cursor-pointer"
+          className="z-10 h-full md:ml-2 text-3xl sm:block md:inline-block md:text-[2.75rem] text-accent font-bold hover:cursor-pointer"
         >
           {activeFilter}
           <span>
             <DropDown className="relative inline w-4 h-4 ml-4 text-lg fill-white " />
           </span>
-          <div id="spacer " className="h-8"></div>
+          {/* <div id="spacer " className="h-8"></div> */}
           <div
             className={
               'shadow-2xl absolute left-1/2 transform -translate-x-1/2 lg:min-w-[700px] max-w-[900px] px-8 py-8 rounded-xl grid grid-cols-1 lg:grid-cols-3 gap-8 hover:cursor-default bg-slate-100	 ' +
@@ -182,7 +182,7 @@ export function Projects() {
           })}
       </ul>
 
-      <BallPurple className="absolute top-0 scale-50 right-20" />
+      <BallPurple className="absolute -top-16 left-10 scale-50 right-20" />
     </section>
   )
 }
