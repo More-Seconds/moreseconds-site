@@ -408,30 +408,30 @@ export function Services() {
           </section>
 
           <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem]">
-            <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <Star className="hidden md:block md:absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
+            <CloudFull className="hidden md:block md:absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
             <BallPurple className="hidden md:block md:absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
-            <ManArtist className="absolute xl:scale-[70%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem] 2xl:scale-[80%]" />
+            <ManArtist className="hidden md:block md:absolute xl:scale-[70%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem] 2xl:scale-[80%]" />
             <h1
-              className={`portfolio--title text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10`}
+              className={`portfolio--title px-6 md:px-0 text-lg md:max-w-xl md:ml-2 font-semibold uppercase text-white sm:mb-6`}
             >
               {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
             </h1>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
-              <GrayStar className="absolute xl:scale-[50%] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+              <GrayStar className="hidden md:block md:absolute xl:scale-[50%] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             ) : (
-              <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+              <GrayStar className="hidden md:block md:absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            <CloudFull className="absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
-            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
-            <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[8rem] 2xl:top-[70rem]" />
+            <CloudFull className="hidden md:block md:absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
+            <Star className="hidden md:block md:absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
+            <CloudFull className="hidden md:block md:absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[8rem] 2xl:top-[70rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
-              <ul className="org--logos grid grid-cols-2 max-w-lg gap-8 py-10">
+              <ul className="org--logos grid md:grid-cols-2 max-w-lg gap-8 py-10">
                 <li className="p-4 sm:p-0">
                   <img
                     src={MontyLogo}
@@ -465,7 +465,7 @@ export function Services() {
                 </li>
               </ul>
             ) : (
-              <ul className="portfolio--grid grid grid-cols-2 max-w-xl gap-10">
+              <ul className="portfolio--grid grid mx-auto md:mx-0 md:grid-cols-2 max-w-xl gap-4 md:gap-10">
                 {visiblePosts &&
                   visiblePosts.length > 0 &&
                   visiblePosts.map((ele: any) => {
@@ -474,7 +474,7 @@ export function Services() {
                         <div className="project-card-container relative">
                           <div className="project-card rounded-[3rem]">
                             <Project
-                              className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
+                              className="sm:w-[350px] h-[250px] md:w-[250px] rounded-[3rem] opacity-90 "
                               image={ele.thumbnailImage.asset.url}
                               slug={`/portfolio/${ele.slug.current}`}
                               title={''}
@@ -496,22 +496,22 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute xl:-left-[4rem] xl:top-[25rem] 2xl:-left-[6rem]"
+                className="hidden md:block md:absolute xl:-left-[4rem] xl:top-[25rem] 2xl:-left-[6rem]"
               />
             ) : (
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
+                className="hidden md:block md:absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
               />
             )}
 
-            <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
+            <StarOutline className="hidden md:block md:absolute xl:scale-[60%] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards container flex flex-col justify-center mx-auto xl:pt-[23rem] xl:pb-[4rem] px-[8rem]">
+            <section className="service--cards container flex flex-col justify-center mx-auto xl:pt-[23rem] xl:pb-[4rem] md:px-[8rem]">
               <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
                 {
                   specificInfoTitleMap[
@@ -557,22 +557,22 @@ export function Services() {
                   </BodyText>
                 </Card>
               </div>
-              <div className="flex justify-end sm:mt-4 ">
-                <p className="uppercase text-white text-2xl">...and more!</p>
+              <div className="flex justify-end sm:mt-4">
+                <p className="uppercase text-white text-lg md:text-2xl">...and more!</p>
               </div>
             </section>
           ) : (
-            <section className="service--cards container flex flex-col justify-center mx-auto xl:py-[13rem] px-[8rem]">
-              <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
+            <section className="service--cards--container md:container flex flex-col justify-center px-6  md:mx-auto xl:py-[13rem] md:px-[8rem]">
+              <h1 className="specific--info--title mt-[6rem] md:mt-0 text-white text-lg md:text-2xl font-semibold uppercase mb-6">
                 {
                   specificInfoTitleMap[
                     selectedMenuItem as keyof SpecificInfoTitleMap
                   ]
                 }
               </h1>
-              <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
+              <div className="relative flex flex-col md:grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  <Heading level="1" className="mx-auto font-bold text-lg xl:text-xl">
                   {
                   col1InfoTitle[
                     selectedMenuItem as keyof Col1InfoTitle
@@ -640,7 +640,7 @@ export function Services() {
                 </Card>
               </div>
               <div className="flex justify-end sm:mt-4 ">
-                <p className="uppercase text-white text-2xl">...and more!</p>
+                <p className="uppercase text-white text-lg md:text-2xl">...and more!</p>
               </div>
             </section>
           )}
