@@ -6,7 +6,7 @@ import { Highlight } from 'public/svgs'
 const HostWebsite = () => {
   return (
     <div className="">
-      <section className="mt-[2rem] px-8 md:px-0 md:mt-[11rem] mb-[10rem] min-h-[400px]">
+      <section id="website-hosting" className="mt-[2rem] px-6 md:px-0 md:mt-[11rem] mb-[10rem] min-h-[400px]">
         <SmallTitle className="sm:text-xs md:text-[16px] mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold sm:text-[24px] md:text-[42px] text-left mb-1 mt-1 md:mt-0">
           Website Hosting
