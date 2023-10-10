@@ -381,12 +381,12 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute xl:top-[4rem] 2xl:top-[5rem] right-[1rem] scale-x-125 rotate-180 xl:-scale-y-125 z-100"
+          className="hidden md:block h-auto absolute xl:top-[4rem] 2xl:top-[5rem] right-[1rem] scale-x-125 rotate-180 xl:-scale-y-125 z-100"
         />
-        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[8rem] 2xl:scale-[70%]" />
+        <GrayStar className="hidden md:block md:absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[8rem] 2xl:scale-[70%]" />
         <div className="flex flex-col">
-          <section className="hero--section flex justify-center gap-[4rem]">
-            <div className="z-30">
+          <section className="hero--section flex flex-col md:flex-row justify-center gap-[4rem]">
+            <div className="z-10">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
               </div>
@@ -410,7 +410,7 @@ export function Services() {
           <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem]">
             <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
             <CloudFull className="absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
+            <BallPurple className="hidden md:block md:absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
             <ManArtist className="absolute xl:scale-[70%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem] 2xl:scale-[80%]" />
             <h1
               className={`portfolio--title text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10`}
@@ -795,7 +795,7 @@ End of Workday Response Time for Requests before 3pm MTN
             />
           </section>
 
-          <StarOutline className="absolute xl:scale-[60%] xl:bottom-[48rem] xl:right-[15rem]" />
+          <StarOutline className="hidden md:block md:absolute xl:scale-[60%] xl:bottom-[48rem] xl:right-[15rem]" />
 
           <Testimonials
             title={
