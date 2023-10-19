@@ -60,7 +60,6 @@ interface Col1InfoTitle {
   'Host Website': string
 }
 
-
 interface Col1InfoBody {
   'Client Website Help': string
   'Website Design': string
@@ -69,7 +68,6 @@ interface Col1InfoBody {
   'Troubleshoot Website': string
   'Host Website': string
 }
-
 
 interface Col2InfoTitle {
   'Client Website Help': string
@@ -80,7 +78,6 @@ interface Col2InfoTitle {
   'Host Website': string
 }
 
-
 interface Col2InfoBody {
   'Client Website Help': string
   'Website Design': string
@@ -89,7 +86,6 @@ interface Col2InfoBody {
   'Troubleshoot Website': string
   'Host Website': string
 }
-
 
 interface Col3InfoTitle {
   'Client Website Help': string
@@ -100,7 +96,6 @@ interface Col3InfoTitle {
   'Host Website': string
 }
 
-
 interface Col3InfoBody {
   'Client Website Help': string
   'Website Design': string
@@ -109,7 +104,6 @@ interface Col3InfoBody {
   'Troubleshoot Website': string
   'Host Website': string
 }
-
 
 interface Col4InfoTitle {
   'Client Website Help': string
@@ -120,7 +114,6 @@ interface Col4InfoTitle {
   'Host Website': string
 }
 
-
 interface Col4InfoBody {
   'Client Website Help': string
   'Website Design': string
@@ -129,8 +122,6 @@ interface Col4InfoBody {
   'Troubleshoot Website': string
   'Host Website': string
 }
-
-
 
 export function Services() {
   const [selectedMenuItem, setSelectedMenuItem] = useState('Website Design')
@@ -219,15 +210,19 @@ export function Services() {
   }
 
   const col1InfoBody: Col1InfoBody = {
-    'Client Website Help': 'We offer our full suite of services at a rate far below most major agency pricing so you can expand your client offerings at your preferred rate, increase revenue, and effortlessly make a profit.',
-    'Website Design': 'You’ll see exactly how your custom designs are progressing each step of the way with mockups in Figma, and your input is always welcome.',
-    'Website Development': 'We provide full-cycle development services from market research and business analysis to design, development, and launch. We’ll handle every step of the process and deliver the website of your dreams.',
-    'Update Website': 'Whether you want to redesign a page on your site or create a new one, we’ll help you design, develop, and implement your desired changes.',
-    'Troubleshoot Website': 'We’ll update your website to prevent future issues from occurring and protect you from any unexpected and unwanted disasters.',
-    'Host Website': 'We offer affordable hosting services where all you have to do is sit back, relax, and let us take care of the whole process.'
-  
+    'Client Website Help':
+      'We offer our full suite of services at a rate far below most major agency pricing so you can expand your client offerings at your preferred rate, increase revenue, and effortlessly make a profit.',
+    'Website Design':
+      'You’ll see exactly how your custom designs are progressing each step of the way with mockups in Figma, and your input is always welcome.',
+    'Website Development':
+      'We provide full-cycle development services from market research and business analysis to design, development, and launch. We’ll handle every step of the process and deliver the website of your dreams.',
+    'Update Website':
+      'Whether you want to redesign a page on your site or create a new one, we’ll help you design, develop, and implement your desired changes.',
+    'Troubleshoot Website':
+      'We’ll update your website to prevent future issues from occurring and protect you from any unexpected and unwanted disasters.',
+    'Host Website':
+      'We offer affordable hosting services where all you have to do is sit back, relax, and let us take care of the whole process.'
   }
-
 
   const col2InfoTitle: Col2InfoTitle = {
     'Client Website Help': 'Trusted by Top Agenciess',
@@ -238,34 +233,44 @@ export function Services() {
     'Host Website': 'Data Security'
   }
 
-
   const col2InfoBody: Col2InfoBody = {
-    'Client Website Help': 'Leading marketing agencies trust More Seconds with their web development needs because we are a reliable, long-term development partner with the expertise to bring their projects to fruition on budget, on time, and with the highest degree of accuracy.',
-    'Website Design': 'We’ll create a consistent look and feel for your business across the digital landscape with the development of a brand kit and style guide.',
-    'Website Development': 'We’ll help you provide your users with an unforgettable experience by bringing all of your unique functionality and feature requests to life.',
-    'Update Website': 'We are available to make rapid text, image, and video changes to any section of your website that may need updating.',
-    'Troubleshoot Website': "With our in-depth reporting, you'll have a clear understanding of the maintenance activities performed, allowing you to make informed decisions about the future of your website.",
-    'Host Website': 'We’ll ensure all of your data, and that of your users, remains safe and secure.'
+    'Client Website Help':
+      'Leading marketing agencies trust More Seconds with their web development needs because we are a reliable, long-term development partner with the expertise to bring their projects to fruition on budget, on time, and with the highest degree of accuracy.',
+    'Website Design':
+      'We’ll create a consistent look and feel for your business across the digital landscape with the development of a brand kit and style guide.',
+    'Website Development':
+      'We’ll help you provide your users with an unforgettable experience by bringing all of your unique functionality and feature requests to life.',
+    'Update Website':
+      'We are available to make rapid text, image, and video changes to any section of your website that may need updating.',
+    'Troubleshoot Website':
+      "With our in-depth reporting, you'll have a clear understanding of the maintenance activities performed, allowing you to make informed decisions about the future of your website.",
+    'Host Website':
+      'We’ll ensure all of your data, and that of your users, remains safe and secure.'
   }
-
 
   const col3InfoTitle: Col3InfoTitle = {
     'Client Website Help': '24/7 Emergency Fixes',
     'Website Design': 'User Flow Diagram Creation',
-    'Website Development': 'Ecommerce, API, and Plugin Integration and Configuration',
+    'Website Development':
+      'Ecommerce, API, and Plugin Integration and Configuration',
     'Update Website': 'Integration, Plugin, and API Updates',
     'Troubleshoot Website': 'Close Monitoring',
     'Host Website': 'Website Backups'
   }
 
-
   const col3InfoBody: Col3InfoBody = {
-    'Client Website Help': 'Our expert team of U.S.-based developers are available around the clock to handle any after hours emergencies your clients may run into so their sites never go down.',
-    'Website Design': 'We’ll create a visual user flow diagram showing exactly how a new build will function and which users it will affect.',
-    'Website Development':'No matter what you need your site to do, we’ll get it configured with all of the necessary plugins and integrations to do exactly what you desire.',
-    'Update Website': 'We can update, add, or remove various plugins and integrations on your site to keep it up to date with your goals and vision.',
-    'Troubleshoot Website': 'Our expert team will closely monitor your website, promptly addressing any issues that may arise.',   
-    'Host Website': 'We provide peace of mind by regularly backing up your site, so you never have to worry about losing anything vital to your business.'
+    'Client Website Help':
+      'Our expert team of U.S.-based developers are available around the clock to handle any after hours emergencies your clients may run into so their sites never go down.',
+    'Website Design':
+      'We’ll create a visual user flow diagram showing exactly how a new build will function and which users it will affect.',
+    'Website Development':
+      'No matter what you need your site to do, we’ll get it configured with all of the necessary plugins and integrations to do exactly what you desire.',
+    'Update Website':
+      'We can update, add, or remove various plugins and integrations on your site to keep it up to date with your goals and vision.',
+    'Troubleshoot Website':
+      'Our expert team will closely monitor your website, promptly addressing any issues that may arise.',
+    'Host Website':
+      'We provide peace of mind by regularly backing up your site, so you never have to worry about losing anything vital to your business.'
   }
   const col4InfoTitle: Col4InfoTitle = {
     'Client Website Help': 'Lightning Fast Turnaround Times',
@@ -276,14 +281,19 @@ export function Services() {
     'Host Website': 'Performance Optimization'
   }
 
-
   const col4InfoBody: Col4InfoBody = {
-    'Client Website Help': 'We boast some of the fastest turnaround times in the industry. We’ll work with you and your clients to ensure that everything gets done on budget and on time.',
-    'Website Design': 'Whether you are starting from scratch or simply interested in updating current pages, we’re excited to bring your ideas to life.',
-    'Website Development':'We’ll ensure that every page maintains its seamless design and functionality, no matter if it’s viewed on desktop, mobile, or tablet.',
-    'Update Website': 'We’ll help keep your website’s plugins, theme, core, and other important features updated and running smoothly.',
-    'Troubleshoot Website': 'Our team is available around the clock to ensure your website remains in tip-top shape. We’ll immediately handle any problems your website encounters.',   
-    'Host Website': 'We offer optimized performance options, keeping your website running better than ever.'
+    'Client Website Help':
+      'We boast some of the fastest turnaround times in the industry. We’ll work with you and your clients to ensure that everything gets done on budget and on time.',
+    'Website Design':
+      'Whether you are starting from scratch or simply interested in updating current pages, we’re excited to bring your ideas to life.',
+    'Website Development':
+      'We’ll ensure that every page maintains its seamless design and functionality, no matter if it’s viewed on desktop, mobile, or tablet.',
+    'Update Website':
+      'We’ll help keep your website’s plugins, theme, core, and other important features updated and running smoothly.',
+    'Troubleshoot Website':
+      'Our team is available around the clock to ensure your website remains in tip-top shape. We’ll immediately handle any problems your website encounters.',
+    'Host Website':
+      'We offer optimized performance options, keeping your website running better than ever.'
   }
 
   const handleMenuItemClick = (menuItem: string) => {
@@ -522,43 +532,44 @@ export function Services() {
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {col1InfoTitle[selectedMenuItem as keyof Col1InfoTitle]}
+                    {col1InfoTitle[selectedMenuItem as keyof Col1InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {col1InfoBody[selectedMenuItem as keyof Col1InfoBody]}
+                    {col1InfoBody[selectedMenuItem as keyof Col1InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {col2InfoTitle[selectedMenuItem as keyof Col2InfoTitle]}
+                    {col2InfoTitle[selectedMenuItem as keyof Col2InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {col2InfoBody[selectedMenuItem as keyof Col2InfoBody]}
+                    {col2InfoBody[selectedMenuItem as keyof Col2InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {col3InfoTitle[selectedMenuItem as keyof Col3InfoTitle]}
+                    {col3InfoTitle[selectedMenuItem as keyof Col3InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {col3InfoBody[selectedMenuItem as keyof Col3InfoBody]}
+                    {col3InfoBody[selectedMenuItem as keyof Col3InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {col4InfoTitle[selectedMenuItem as keyof Col4InfoTitle]}
+                    {col4InfoTitle[selectedMenuItem as keyof Col4InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {col4InfoBody[selectedMenuItem as keyof Col4InfoBody]}
-
+                    {col4InfoBody[selectedMenuItem as keyof Col4InfoBody]}
                   </BodyText>
                 </Card>
               </div>
               <div className="flex justify-end sm:mt-4">
-                <p className="uppercase text-white text-lg md:text-2xl">...and more!</p>
+                <p className="uppercase text-white text-lg md:text-2xl">
+                  ...and more!
+                </p>
               </div>
             </section>
           ) : (
@@ -572,75 +583,48 @@ export function Services() {
               </h1>
               <div className="relative flex flex-col md:grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold text-lg xl:text-xl">
-                  {
-                  col1InfoTitle[
-                    selectedMenuItem as keyof Col1InfoTitle
-                  ]
-                }
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold text-lg xl:text-xl"
+                  >
+                    {col1InfoTitle[selectedMenuItem as keyof Col1InfoTitle]}
                   </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {
-                  col1InfoBody[
-                    selectedMenuItem as keyof Col1InfoBody
-                  ]
-                }
+                    {col1InfoBody[selectedMenuItem as keyof Col1InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {
-                  col2InfoTitle[
-                    selectedMenuItem as keyof Col2InfoTitle
-                  ]
-                }              
-                    </Heading>
+                    {col2InfoTitle[selectedMenuItem as keyof Col2InfoTitle]}
+                  </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {
-                  col2InfoBody[
-                    selectedMenuItem as keyof Col2InfoBody
-                  ]
-                }
+                    {col2InfoBody[selectedMenuItem as keyof Col2InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {
-                  col3InfoTitle[
-                    selectedMenuItem as keyof Col3InfoTitle
-                  ]
-                } 
-                </Heading>
+                    {col3InfoTitle[selectedMenuItem as keyof Col3InfoTitle]}
+                  </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {
-                  col3InfoBody[
-                    selectedMenuItem as keyof Col3InfoBody
-                  ]
-                }
+                    {col3InfoBody[selectedMenuItem as keyof Col3InfoBody]}
                   </BodyText>
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
-                  {
-                  col4InfoTitle[
-                    selectedMenuItem as keyof Col4InfoTitle
-                  ]
-                }                
-                   </Heading>
+                    {col4InfoTitle[selectedMenuItem as keyof Col4InfoTitle]}
+                  </Heading>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
-                  {
-                  col4InfoBody[
-                    selectedMenuItem as keyof Col4InfoBody
-                  ]
-                }
+                    {col4InfoBody[selectedMenuItem as keyof Col4InfoBody]}
                   </BodyText>
                 </Card>
               </div>
               <div className="flex justify-end sm:mt-4 ">
-                <p className="uppercase text-white text-lg md:text-2xl">...and more!</p>
+                <p className="uppercase text-white text-lg md:text-2xl">
+                  ...and more!
+                </p>
               </div>
             </section>
           )}
@@ -662,34 +646,32 @@ export function Services() {
                 </div>
                 <ul className="text-white list-disc px-8 space-y-4">
                   <li className="text-left text-sm">
-                  24/7 Emergency Availability
+                    24/7 Emergency Availability
                   </li>
                   <li className="text-left text-sm">
-                  Priority Treatment in Development Queue
+                    Priority Treatment in Development Queue
+                  </li>
+                  <li className="text-left text-sm">Unlimited CMS Updates</li>
+                  <li className="text-left text-sm">
+                    Website Uptime Monitoring & Downtime Alert Reporting
                   </li>
                   <li className="text-left text-sm">
-                  Unlimited CMS Updates
+                    Custom Maintenance PDF Report
                   </li>
-                  <li className="text-left text-sm">Website Uptime Monitoring & Downtime Alert Reporting</li>
-                  <li className="text-left text-sm">Custom Maintenance PDF Report</li>
                   <li className="text-left text-sm">
-                  Website Backup System Configuration Report
+                    Website Backup System Configuration Report
                   </li>
                   <li className="text-left text-sm">WP Core Update</li>
+                  <li className="text-left text-sm">WP Theme Updates</li>
                   <li className="text-left text-sm">
-                  WP Theme Updates
+                    Non-Premium Plugin Updates
+                  </li>
+                  <li className="text-left text-sm">Premium Plugin Updates</li>
+                  <li className="text-left text-sm">
+                    Core Website Feature & Form Delivery Testing
                   </li>
                   <li className="text-left text-sm">
-                  Non-Premium Plugin Updates
-                  </li>
-                  <li className="text-left text-sm">
-                  Premium Plugin Updates
-                  </li>
-                  <li className="text-left text-sm">
-                  Core Website Feature & Form Delivery Testing
-                  </li>
-                  <li className="text-left text-sm">
-End of Workday Response Time for Requests before 3pm MTN
+                    End of Workday Response Time for Requests before 3pm MTN
                   </li>
                 </ul>
                 <Button href={'#contact'}>Get Started</Button>

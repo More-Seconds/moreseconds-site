@@ -79,7 +79,7 @@ export function Agencies() {
         </HeroCentered>
       </section>
 
-      <section className="mx-[1rem] bg-black mx-[1rem] flex justify-center lg:mt-10 lg:h-full min-h-full">
+      <section className="bg-black mx-[1rem] flex justify-center lg:mt-10 lg:h-full min-h-full">
         <div className="flex flex-col sm:text-5xl font-semibold text-white mt-[12rem] md:mt-0">
           <Heading
             level="1"
