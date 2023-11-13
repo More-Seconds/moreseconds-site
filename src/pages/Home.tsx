@@ -35,19 +35,19 @@ export function Homepage() {
         </BodyText>
 
         <div className="flex gap-4 md:gap-8 mt-4 mb-[2rem] md:mb-0">
-            <Button
-              href="/agencies"
-              className="px-10 text-md md:text-[16px] md:px-12 z-[999]"
-            >
-              Agencies
-            </Button>
-            <Button
-              href="#contact"
-              className="px-10 text-md md:px-12 md:text-[16px] z-[999]"
-            >
-              Get Started
-            </Button>
-          </div>
+          <Button
+            href="/agencies"
+            className="px-10 text-md md:text-[16px] md:px-12 z-[999]"
+          >
+            Agencies
+          </Button>
+          <Button
+            href="#contact"
+            className="px-10 text-md md:px-12 md:text-[16px] z-[999]"
+          >
+            Get Started
+          </Button>
+        </div>
       </Hero>
       <Clients className="relative z-10 sm:-top-10 md:-top-16 xl:-top-32" />
 
@@ -55,7 +55,7 @@ export function Homepage() {
       <SectionBlur />
       <Partners />
 
-      <div className="mb-20 grid justify-center text-light flex-row sm:flex-row sm:px-8 sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:pt-[40px] md:pt-[88px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 3xl:pt-60 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
+      <div className="mb-20 grid justify-center text-light flex-row sm:flex-row sm:px-8 sm:mt-[3rem] sm:grid-cols-1 sm:gap-8 md:grid-cols-4 md:pt-[40px] md:px-[45px] lg:px-[64px] lg:gap-[3.25rem] xl:pt-32 xl:mx-auto xl:max-w-[1400px] xl:px-[45px]">
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">
             More Speed
@@ -89,7 +89,7 @@ export function Homepage() {
           <p className="mt-[0.8rem] leading-7">
             We boast an average of 5 minutes or less for response times on
             Slack.
-          </p> 
+          </p>
         </div>
         <div className="pb-8 pr-3 border-b-4 border-indigo-400/20">
           <p className="mb-4 font-bold uppercase font-Poppins text-accent">
