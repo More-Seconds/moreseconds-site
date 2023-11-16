@@ -24,15 +24,15 @@ export function Partners() {
         <div className="z-20 md:w-1/2">
           <Satellite className="z-20 sm:w-[80%] sm:-translate-x-14 h-auto md:w-full xl:w-2/3 xl:translate-x-14 xl:translate-y-[24rem]" />
         </div>
-        <div className="z-20 sm:px-[25px] sm:mt-[5rem] sm:text-center md:text-left md:pl-[16rem] md:pr-[64px] lg:flex lg:flex-col lg:items-end">
+        <div className="z-20 sm:px-[25px] sm:mt-[4rem] sm:text-center md:text-left md:pl-[16rem] md:pr-[64px] lg:flex lg:flex-col lg:items-end">
           <Heading
             level="2"
-            className="text-3xl sm:max-w-2xl sm:my-0 sm:text-center md:mb-10 md:text-left md:text-[1.75rem] lg:flex lg:flex-col åßlg:text-[2.5rem] lg:leading-[1] lg:justify-end xl:max-w-2xl xl:text-5xl xl:mt-12"
+            className="text-3xl sm:max-w-2xl sm:mb-10 sm:text-center md:mb-10 md:text-left md:text-[1.75rem] lg:flex lg:flex-col åßlg:text-[2.5rem] lg:leading-[1] lg:justify-end xl:max-w-2xl xl:text-5xl xl:mt-12"
           >
             We're trusted service partners for the most influential industry
             leaders.
           </Heading>
-          <ul className="flex w-full gap-4 justify-end md:h-[10rem] xl:h-auto">
+          <ul className="flex w-full gap-4 justify-end sm:h-[10rem] xl:h-auto">
             <li className="flex items-center justify-center w-full border-b-2 bg-darker border-indigo-400/20 rounded-0 xl:w-80 xl:h-64 xl:p-8">
               <img
                 src={HawkeMediaLogo}
