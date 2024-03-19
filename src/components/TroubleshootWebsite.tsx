@@ -6,13 +6,13 @@ import { Highlight } from 'public/svgs'
 const TroubleshootWebsite = () => {
   return (
     <div className="">
-      <section className="mt-[11rem] mb-[10rem] min-h-[400px]">
+      <section className="">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Maintenance
         </h1>
-        <div className="max-w-3xl relative">
-          <BodyText className="text-left xl:text-lg max-w-xl ">
+        <div className="relative">
+          <BodyText className="text-left xl:text-lg max-w-2xl">
             Never worry about your website going down again! Take full advantage
             of our troubleshooting and maintenance expertise. We’ll take a look
             at your overall website performance issues, server configurations,
@@ -23,11 +23,11 @@ const TroubleshootWebsite = () => {
           </BodyText>
           <Button
             href="#contact"
-            className="block w-[50%] px-8 mt-10 text-center"
+            className="block px-8 mt-10 text-center max-w-sm"
           >
             Get Estimate
           </Button>
-          <Highlight className="absolute right-[14.5rem] top-[19.2rem] h-[40px] w-[40px] scale-x-[-1]" />
+          {/* <Highlight className="absolute right-[15.5rem] top-[19.5rem] h-[40px] w-[40px] scale-x-[-1]" /> */}
         </div>
       </section>
     </div>

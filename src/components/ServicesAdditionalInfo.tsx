@@ -33,7 +33,7 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         <Smoke
           width="60%"
           height="60%"
-          className="h-auto absolute xl:left-[0rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100"
+          className="h-auto absolute xl:left-[0rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[74rem]"
         />
         <GrayStar className="absolute xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
 
@@ -42,7 +42,7 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
       </div>
       <div className="z-20 sm:px-[25px] sm:mt-[3rem] sm:text-center md:text-left md:pl-0 md:pr-[64px]">
         <OrangeGradientBall className="absolute h-[30px] xl:right-[-3rem] xl:bottom-[90rem]" />
-        <Star className="absolute h-[30px] xl:right-[18rem] xl:bottom-[85rem] scale-x-[-1]" />
+        <Star className="absolute h-[30px] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
         <SmallTitle className="mx-auto text-left">{title}</SmallTitle>
         <Heading
           level="2"

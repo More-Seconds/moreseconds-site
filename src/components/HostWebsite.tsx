@@ -6,13 +6,13 @@ import { Highlight } from 'public/svgs'
 const HostWebsite = () => {
   return (
     <div className="">
-      <section className="mt-[11rem] mb-[10rem] min-h-[400px]">
+      <section className="">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Hosting
         </h1>
-        <div className="max-w-3xl relative">
-          <BodyText className="text-left xl:text-lg max-w-xl ">
+        <div className="relative">
+          <BodyText className="text-left xl:text-lg max-w-2xl">
             We offer a variety of reliable, hands-off hosting options to suit
             your every need. Our affordable package options enable you to set it
             and forget it. We’ll get everything set up properly to keep your
@@ -21,11 +21,11 @@ const HostWebsite = () => {
           </BodyText>
           <Button
             href="#contact"
-            className="block w-[50%] px-8 mt-10 text-center"
+            className="block px-8 mt-10 text-center max-w-sm"
           >
             View Hosting Package Options
           </Button>
-          <Highlight className="absolute right-[14.5rem] top-[14.4rem] h-[40px] w-[40px] scale-x-[-1]" />
+          {/* <Highlight className="absolute right-[15rem] top-[14.2rem] h-[40px] w-[40px] scale-x-[-1]" /> */}
         </div>
       </section>
     </div>

@@ -6,13 +6,13 @@ import { Highlight } from 'public/svgs'
 const UpdateWebsite = () => {
   return (
     <div className="">
-      <section className="mt-[11rem] mb-[10rem] min-h-[400px]">
+      <section className="">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           Website Updates
         </h1>
-        <div className="max-w-3xl relative">
-          <BodyText className="text-left xl:text-lg max-w-xl ">
+        <div className="relative">
+          <BodyText className="text-left xl:text-lg max-w-2xl">
             From on-demand updates to urgent after-hours fixes, More Seconds'
             premium web support offers the easiest way to make rapid changes to
             your website. We provide a completely hands-off website updates
@@ -21,11 +21,11 @@ const UpdateWebsite = () => {
           </BodyText>
           <Button
             href="#contact"
-            className="block w-[50%] px-8 mt-10 text-center"
+            className="block px-8 mt-10 text-center max-w-sm"
           >
             Get Estimate
           </Button>
-          <Highlight className="absolute right-[14.5rem] top-[15.8rem] h-[40px] w-[40px] scale-x-[-1]" />
+          {/* <Highlight className="absolute right-[15.5rem] top-[16rem] h-[40px] w-[40px] scale-x-[-1]" /> */}
         </div>
       </section>
     </div>

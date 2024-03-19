@@ -223,17 +223,20 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute xl:top-[4rem] 2xl:top-[5rem] right-[1rem] scale-x-125 rotate-180 xl:-scale-y-125 z-100"
+          className="h-auto absolute right-[2rem] xl:scale-x-125 rotate-180 xl:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top8 z-100"
         />
-        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[8rem] 2xl:scale-[70%]" />
-        <div className="flex flex-col">
-          <section className="hero--section flex justify-center gap-[4rem]">
+        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
+        <div className="flex flex-col mt-[3.5rem]">
+          <h1 className="text-accent text-5xl font-bold xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
+            I want to...
+          </h1>
+          <section className="hero--section flex items-center xl:px-[10rem] 2xl:px-[18rem] gap-24">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
               </div>
             </div>
-            <div className="services-content">
+            <div className="services-content w-full">
               {selectedMenuItem === 'Client Website Help' && (
                 <ClientWebsiteHelp />
               )}
@@ -249,16 +252,10 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section flex flex-col xl:px-[15rem] 2xl:px-[28rem]">
+          <section className="portfolio--section mt-[12rem] flex items-center  xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute xl:top-[25.5rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute xl:scale-[220%] xl:right-[6rem] top-[41rem] 2xl:top-[50rem] 2xl:right-[8rem]" />
-            <ManArtist className="absolute xl:scale-[70%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem] 2xl:scale-[80%]" />
-            <h1
-              className={`portfolio--title text-xl max-w-xl ml-2 font-semibold uppercase text-white sm:mb-10`}
-            >
-              {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
-            </h1>
+            <CloudFull className="absolute xl:top-[24rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <BallPurple className="absolute xl:scale-[220%] xl:right-[10rem] top-[38rem] 2xl:top-[39rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -271,67 +268,79 @@ export function Services() {
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
             <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
-            {selectedMenuItem === 'Troubleshoot Website' ||
-            selectedMenuItem === 'Host Website' ? (
-              <ul className="org--logos grid grid-cols-2 max-w-lg gap-8 py-10">
-                <li className="p-4 sm:p-0">
-                  <img
-                    src={MontyLogo}
-                    alt="Montgomery Summit"
-                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[9rem] md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[8rem] xl:min-w-[9rem] "
-                  />
-                </li>
+            <div>
+              <h1
+                className={`portfolio--title text-xl font-semibold uppercase text-white sm:mb-10 max-w-xl`}
+              >
+                {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
+              </h1>
 
-                <li className="p-4 sm:p-0">
-                  <img
-                    src={HelpGoodLogo}
-                    alt="Help Good"
-                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[6rem] md:min-w-[5rem] lg:max-w-[5rem] "
-                  />
-                </li>
+              {selectedMenuItem === 'Troubleshoot Website' ||
+              selectedMenuItem === 'Host Website' ? (
+                <ul className="org--logos grid grid-cols-2 max-w-lg gap-8 py-10">
+                  <li className="p-4 sm:p-0">
+                    <img
+                      src={MontyLogo}
+                      alt="Montgomery Summit"
+                      className="saturate-0 sm:max-w-[7rem] sm:min-w-[9rem] md:min-w-[8rem] lg:max-w-[5rem] lg:min-w-[8rem] xl:min-w-[9rem] "
+                    />
+                  </li>
 
-                <li className="p-4 sm:p-0">
-                  <img
-                    src={HawkeMediaLogo}
-                    alt="Madison Miles Media"
-                    className="saturate-0 sm:max-w-[7rem] sm:min-w-[7rem] md:min-w-[6rem] lg:max-w-[5rem] lg:min-w-[6rem] xl:min-w-[10rem]"
-                  />
-                </li>
+                  <li className="p-4 sm:p-0">
+                    <img
+                      src={HelpGoodLogo}
+                      alt="Help Good"
+                      className="saturate-0 sm:max-w-[7rem] sm:min-w-[6rem] md:min-w-[5rem] lg:max-w-[5rem] "
+                    />
+                  </li>
 
-                <li className="p-4 sm:p-0">
-                  <img
-                    src={PCTLogo}
-                    alt="Plant Cell Technology"
-                    className="saturate-0 sm:max-w-[6rem] sm:min-w-[6rem]  md:max-w-[6rem] md:min-w-[6rem] lg:max-w-[5rem] xl:min-w-[6rem]"
-                  />
-                </li>
-              </ul>
-            ) : (
-              <ul className="portfolio--grid grid grid-cols-2 max-w-xl gap-10">
-                {visiblePosts &&
-                  visiblePosts.length > 0 &&
-                  visiblePosts.map((ele: any) => {
-                    return (
-                      <React.Fragment key={ele.title}>
-                        <div className="project-card-container relative">
-                          <div className="project-card rounded-[3rem]">
-                            <Project
-                              className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
-                              image={ele.thumbnailImage.asset.url}
-                              slug={`/portfolio/${ele.slug.current}`}
-                              title={''}
-                              showSeeMore={false}
-                            />
+                  <li className="p-4 sm:p-0">
+                    <img
+                      src={HawkeMediaLogo}
+                      alt="Madison Miles Media"
+                      className="saturate-0 sm:max-w-[7rem] sm:min-w-[7rem] md:min-w-[6rem] lg:max-w-[5rem] lg:min-w-[6rem] xl:min-w-[10rem]"
+                    />
+                  </li>
+
+                  <li className="p-4 sm:p-0">
+                    <img
+                      src={PCTLogo}
+                      alt="Plant Cell Technology"
+                      className="saturate-0 sm:max-w-[6rem] sm:min-w-[6rem]  md:max-w-[6rem] md:min-w-[6rem] lg:max-w-[5rem] xl:min-w-[6rem]"
+                    />
+                  </li>
+                </ul>
+              ) : (
+                <ul className="portfolio--grid grid grid-cols-2 max-w-xl gap-10">
+                  {visiblePosts &&
+                    visiblePosts.length > 0 &&
+                    visiblePosts.map((ele: any) => {
+                      return (
+                        <React.Fragment key={ele.title}>
+                          <div className="project-card-container relative">
+                            <div className="project-card rounded-[3rem]">
+                              <Project
+                                className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
+                                image={ele.thumbnailImage.asset.url}
+                                slug={`/portfolio/${ele.slug.current}`}
+                                title={''}
+                                showSeeMore={false}
+                              />
+                            </div>
+                            <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
+                              {ele.title}
+                            </div>
                           </div>
-                          <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
-                            {ele.title}
-                          </div>
-                        </div>
-                      </React.Fragment>
-                    )
-                  })}
-              </ul>
-            )}
+                        </React.Fragment>
+                      )
+                    })}
+                </ul>
+              )}
+            </div>
+
+            <div className="artist--image absolute right-[-7rem]">
+              <ManArtist className="xl:scale-[80%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
+            </div>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -344,7 +353,7 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute xl:-left-[4rem] xl:top-[40rem] 2xl:-left-[6rem]"
+                className="absolute xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
               />
             )}
 
@@ -353,7 +362,7 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards container flex flex-col justify-center mx-auto xl:pt-[23rem] xl:pb-[4rem] px-[8rem]">
+            <section className="service--cards flex flex-col justify-center xl:pt-[23rem] xl:pb-[4rem] xl:px-[10rem] 2xl:px-[18rem] mt-12">
               <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
                 {
                   specificInfoTitleMap[
@@ -410,9 +419,12 @@ export function Services() {
               <div className="flex justify-end sm:mt-4 ">
                 <p className="uppercase text-white text-2xl">...and more!</p>
               </div>
+              h-auto absolute xl:top-[2rem] right-[1rem] scale-x-125 rotate-180
+              xl:-scale-y-125 2xl:scale-x-100 2xl:top-[2rem] 2xl:right-[-6rem]
+              z-100
             </section>
           ) : (
-            <section className="service--cards container flex flex-col justify-center mx-auto xl:py-[13rem] px-[8rem]">
+            <section className="service--cards flex flex-col justify-center mx-auto xl:pt-[13rem] xl:pb-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
               <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
                 {
                   specificInfoTitleMap[
@@ -420,6 +432,7 @@ export function Services() {
                   ]
                 }
               </h1>
+              =
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
@@ -474,7 +487,7 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto px-[8rem] xl:h-full xl:py-32 mt-10 gap-4">
+            <section className="service--cards--container flex mx-auto  xl:h-full xl:py-32 mt-10 gap-4">
               <Card
                 backgroundColor="#3C3C59"
                 className="w-full h-fit pb-4 gap-2 xl:gap-8"
@@ -578,7 +591,7 @@ export function Services() {
             <></>
           )}
 
-          <section className="additional--info">
+          <section className="additional--info my-20">
             <ServicesAdditionalInfo
               title={
                 (

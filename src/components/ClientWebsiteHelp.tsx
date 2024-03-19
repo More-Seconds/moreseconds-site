@@ -6,13 +6,13 @@ import { Highlight } from 'public/svgs'
 const ClientWebsiteHelp = () => {
   return (
     <div className="">
-      <section className="mt-[11rem] mb-[10rem] min-h-[400px]">
+      <section className="">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
           White Label Service
         </h1>
-        <div className="max-w-3xl relative">
-          <BodyText className="text-left xl:text-lg max-w-xl">
+        <div className="relative">
+          <BodyText className="text-left xl:text-lg max-w-2xl">
             Are you leaving money on the table because you’ve had bad
             experiences with outsourced web developers and/or haven’t been able
             to successfully supplement your in-house team? Our team of
@@ -22,11 +22,11 @@ const ClientWebsiteHelp = () => {
           </BodyText>
           <Button
             href="#contact"
-            className="block w-[50%] px-8 mt-10 text-center"
+            className="block max-w-sm px-8 mt-10 text-center"
           >
             Get Started
           </Button>
-          <Highlight className="absolute right-[15.5rem] top-[15.8rem] h-[40px] w-[40px] scale-x-[-1]" />
+          {/* <Highlight className="absolute right-[16rem] top-[14.5rem] h-[40px] w-[40px] scale-x-[-1]" /> */}
         </div>
       </section>
     </div>
