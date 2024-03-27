@@ -227,10 +227,10 @@ export function Services() {
         />
         <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
         <div className="flex flex-col mt-[3.5rem]">
-          <h1 className="text-accent text-5xl font-bold xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
+          <h1 className="text-accent text-5xl font-bold lg:pl-[8rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
             I want to...
           </h1>
-          <section className="hero--section flex items-center xl:px-[10rem] 2xl:px-[18rem] gap-24">
+          <section className="hero--section flex items-center lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] gap-24">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
@@ -424,8 +424,8 @@ export function Services() {
               z-100
             </section>
           ) : (
-            <section className="service--cards flex flex-col justify-center mx-auto xl:pt-[13rem] xl:pb-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
-              <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
+            <section className="service--cards flex flex-col justify-center mx-auto xl:pt-[16rem] xl:pb-[10rem] xl:px-[12rem] 2xl:px-[18rem]">
+              <h1 className="specific--info--title text-white text-2xl xl:text-3xl font-semibold uppercase">
                 {
                   specificInfoTitleMap[
                     selectedMenuItem as keyof SpecificInfoTitleMap
