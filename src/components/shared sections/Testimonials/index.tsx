@@ -130,7 +130,7 @@ export function Testimonials(props: Props) {
       <Star className="absolute scale-75 -right-48 top-52 xl:hidden" />
       <BallPurple className="absolute hidden sm:block sm:top-32 sm:-left-20 xl:-left-48" />
       <BallPurple className="absolute hiddenEsm:block sm:top-40 sm:-right-24 xl:-right-48 sm:scale-75" />
-      <BallBlue className="absolute hidden sm:block sm:bottom-40 h-8 sm:-left-28 xl:-left-56" />
+      <BallBlue className="absolute hidden md:block sm:bottom-40 h-8 sm:-left-28 xl:-left-56" />
     </section>
   )
 }

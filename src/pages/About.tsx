@@ -32,7 +32,7 @@ export function About() {
           <span className="relative">We’re </span>
           <span className="relative z-10">
             here
-            <CircleHighlight className="absolute hidden sm:block sm:scale-[55%] sm:-left-11 sm:-top-6 xl:scale-100 xl:-top-3 xl:-left-4 z-0" />
+            <CircleHighlight className="absolute sm:block sm:scale-[50%] sm:-left-12 sm:-top-8 xl:scale-100 xl:-top-3 xl:-left-4 z-0" />
           </span>
           <span> </span>
           <>
@@ -40,7 +40,7 @@ export function About() {
             time
           </>
         </Heading>
-        <BodyText className="max-w-lg sm:max-w-sm xl:max-w-md">
+        <BodyText className="sm:max-w-sm lg:max-w-xl xl:max-w-3xl">
           More Seconds takes your web development projects from headache to
           handled so that you have time to focus on what you do best – driving
           traffic and sales for your business. If you want to stop scrolling
@@ -53,14 +53,14 @@ export function About() {
             Let's Chat
           </Button>
         </div>
-        <CloudFull className="absolute scale-50 -left-20 bottom-32 sm:bottom-24 sm:-left-20" />
+        <CloudFull className="sm:hidden md:block absolute scale-50 -left-20 bottom-32 sm:bottom-24 sm:-left-20" />
       </Hero>
-      <section className="relative mx-4 mt-10 mb-20 sm:mx-8 xl:mx-16">
-        <div className="grid gap-8 px-4 py-8 bg-light rounded-3xl sm:px-16 xl:px-64 xl:gap-10 xl:py-24">
-          <Heading level="2" dark className="text-center xl:mb-10 xl:text-5xl">
+      <section className="relative mx-4 mt-10 mb-20 lg:mx-8 xl:mx-16">
+        <div className="grid gap-8 px-4 py-14 bg-light rounded-3xl lg:px-16 xl:px-64 xl:gap-10 xl:py-24">
+          <Heading level="2" dark className="text-center sm:text-3xl xl:mb-10 xl:text-5xl">
             Our Founder
           </Heading>
-          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between sm:flex-row xl:justify-start xl:gap-16">
+          <figure className="relative flex flex-col justify-center gap-4 sm:items-center sm:justify-between lg:flex-row xl:justify-start xl:gap-16">
             <img
               src={Brian}
               alt="Brian Hurst"
@@ -69,19 +69,19 @@ export function About() {
             <figcaption className="relative">
               <Heading
                 level="3"
-                className="mb-4 text-lg text-center sm:text-2xl sm:text-left xl:text-2xl font-Poppins"
+                className="mb-4 text-center text-lg sm:text-2xl lg:text-left xl:text-2xl font-Poppins"
                 dark
               >
                 Brian Hurst
               </Heading>
-              <BodyText className="italic text-center sm:text-left sm:text-[22px] sm:leading-[28px] sm:max-w-[40ch] text-accent ">
+              <BodyText className="italic text-center lg:text-left lg:text-[22px] sm:leading-[28px] sm:max-w-[40ch] text-accent ">
                 “I’d like to create a space where clients can truly focus on
                 their ideas and creativity without the restrictions of not
                 understanding how to code or how the web works behind the
                 scenes.”
               </BodyText>
-              <Highlight className="absolute hidden sm:block -bottom-10 -left-10 sm:scale-75 xl:scale-100" />
-              <Highlight className="absolute hidden sm:block sm:rotate-180 -right-6 top-2 sm:scale-75 xl:scale-100" />
+              <Highlight className="hidden lg:block -bottom-10 -left-10 sm:scale-75 xl:scale-100" />
+              <Highlight className="hidden lg:block sm:rotate-180 -right-6 top-2 sm:scale-75 xl:scale-100" />
             </figcaption>
           </figure>
           <BodyText className="text-sm text-center sm:text-lg text-dark">
@@ -95,17 +95,17 @@ export function About() {
             Computer Science from the University at Albany, SUNY.
           </BodyText>
         </div>
-        <Rocket className="hidden sm:block sm:absolute sm:scale-75 sm:right-0 sm:-top-24 xl:right-24 xl:-top-16" />
-        <BallBlue className="absolute hidden sm:block right-10 top-[45%] xl:scale-150" />
-        <BallOrange className="absolute hidden scale-50 sm:block bottom-10 left-4" />
-        <BallPurple className="absolute hidden scale-75 sm:block top-16 left-4" />
+        <Rocket className="hidden md:block md:absolute md:scale-75 md:right-0 md:-top-24 xl:right-24 xl:-top-16" />
+        <BallBlue className="hidden md:block md:absolute top-0 scale-[8%] xl:top-40 xl:right-[2%]" />
+        <BallOrange className="hidden md:absolute md:block scale-50 bottom-10 left-4" />
+        <BallPurple className="hidden md:block md:absolute scale-75 top-16 left-4" />
       </section>
       <Clients />
       <Partners />
       <Team hideImageMobile />
       <SectionBlur />
       <div className="relative flex items-center justify-end h-0 top-4">
-        <Cloud className="z-50 opacity-100" />
+        <Cloud className="hidden md:block md:absolute z-50 opacity-100" />
       </div>
       <Testimonials title="Our Clients Always Come First" />
       <Dedicated />

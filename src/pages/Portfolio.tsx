@@ -1,53 +1,36 @@
-import { Button } from 'components/Button'
 import { Card } from 'components/Card'
-import { SectionBlur } from 'components/SectionBlur'
-import { Clients } from 'components/shared sections/Clients'
-import { Partners } from 'components/shared sections/Partners'
 import { Projects } from 'components/shared sections/Projects'
-import { Services } from 'components/shared sections/Services'
-import { Team } from 'components/shared sections/Team'
-import { Testimonials } from 'components/shared sections/Testimonials'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { SmallTitle } from 'components/typography/SmallTitle'
-import { Hero } from 'containers/shared/Hero'
 import { Layout } from 'containers/layout/Layout'
-import { Brian } from 'public/images'
 import {
-  AboutHero,
   BallOrange,
   Cloud,
   CloudFull,
-  CloudOpaque,
   Star,
-  Smoke,
   Planet,
-  ManArtist,
   BallBlue,
-  BallPurple,
-  StarOutline,
   BigSaturn,
   HollowStar
 } from 'public/svgs'
 
 import { HeroCentered } from 'containers/shared/HeroCentered'
-import { SideBySide } from 'containers/shared/SideBySide'
-import { Signup } from 'components/forms/Signup'
 
 export function Portfolio() {
   return (
     <Layout footerVariant="connect">
-      <section className="flex flex-col items-center h-screen lg:h-full justify-center w-min">
-        <HeroCentered className="pt-[8rem]">
+      <section className="flex flex-col md:items-center md:h-screen lg:h-full md:justify-center md:w-min">
+        <HeroCentered className="lg:my-16">
           <SmallTitle className="mx-auto text-center">Our Work</SmallTitle>
           <Heading
             level="1"
-            className="max-w-4xl mx-auto text-center mb-[1.35rem]"
+            className="max-w-4xl mx-auto text-center mb-[1.35rem] mx-4 md:mx-0"
           >
             <span>Take A Peek At What More Seconds</span>
             <span className="text-accent"> Can Do For You</span>
           </Heading>
-          <BodyText className="px-5 mx-auto text-center sm:max-w-4xl sm:px-10 xl:text-lg">
+          <BodyText className="mx-auto text-center sm:max-w-4xl sm:px-3 xl:text-lg">
             Our top tier, U.S.-based team of developers have completed hundreds
             of stunning projects for our impressive client roster including top
             marketing agencies, venture capital firms, gaming companies, social
@@ -55,23 +38,23 @@ export function Portfolio() {
             magic for you and your clients!
           </BodyText>
 
-          <Planet className="absolute scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
+          <Planet className="absolute hidden md:block scale-50 -top-4 -right-8 xl:scale-75 xl:right-32" />
           <BallOrange className="absolute right-0 scale-[25%] top-56 xl:scale-75 xl:right-16 xl:top-96" />
-          <BallBlue className="absolute top-0 scale-50 left-4 xl:scale-75 xl:left-32 xl:top-16" />
+          <BallBlue className="absolute top-0  left-4 scale-[8%] xl:left-24 xl:top-4" />
           <Cloud className="hidden rotate-180 xl:-scale-y-100 xl:scale-x-100 xl:left-0" />
         </HeroCentered>
       </section>
 
       <Projects />
 
-      <section className="flex flex-col mx-4 sm:flex-row sm:mr-12 xl:mr-32 sm:ml-4 xl:ml-16 sm:gap-8">
-        <div className="relative w-full h-min -mt-28 sm:mt-0 xl:w-[150%]">
+      <section className="flex flex-col sm:px-8 md:flex-row xl:mr-32 xl:ml-16 sm:gap-8">
+        <div className="hidden md:block relative w-full h-min sm:mt-0 xl:w-[150%]">
           <BigSaturn className="w-[70%] mx-auto sm:w-full xl:w-full xl:scale-110" />
           <BallOrange className="absolute scale-50 top-32 sm:top-[130%]" />
-          <BallBlue className="absolute scale-50 top-16 right-20 xl:hidden" />
+          <BallBlue className="absolute scale-[8%] top-16 right-20 xl:hidden" />
           <Star className="absolute scale-50 -right-4 top-1/2 sm:hidden" />
         </div>
-        <div className="w-[120%] relative -mt-16 sm:mt-0 xl:w-full">
+        <div className="relative  sm:mt-0 xl:w-full">
           <SmallTitle>DEVELOPMENT THAT DELIGHTS</SmallTitle>
           <Heading
             level="1"
@@ -96,7 +79,7 @@ export function Portfolio() {
         </div>
       </section>
 
-      <section className="relative grid items-center justify-center w-full grid-flow-row gap-3 px-4 mt-4 mb-4 sm:grid-cols-4 sm:mt-32 sm:mb-48 sm:px-8 xl:px-32">
+      <section className="relative sm:mt-[6rem] sm:mb-[14rem] md:my-0 sm:flex sm:flex-col lg:grid items-center justify-center w-full grid-flow-row gap-3 sm:grid-cols-4 md:mt-32 md:mb-48 sm:px-8 xl:px-32">
         <Card className="w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
           <Heading
             level="2"
@@ -149,10 +132,10 @@ export function Portfolio() {
             and plugins that drive user satisfaction and successful conversions.
           </BodyText>
         </Card>
-        <CloudFull className="absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
-        <BallBlue className="absolute -bottom-12 right-2 scale-[80%]" />
+        <CloudFull className="hidden md:block absolute -bottom-14 -z-10 -left-24 sm:scale-150 sm:-bottom-16" />
+        <BallBlue className="absolute sm:bottom-[-25%] sm:right-52 md:-bottom-12 md:right-2 scale-[8%]" />
       </section>
-      <div className="hidden max-h-[0px] sm:flex items-center justify-end">
+      <div className="hidden max-h-[0px] md:flex items-center justify-end">
         <CloudFull className="scale-y-110 translate-x-20 -translate-y-10 -scale-x-110" />
       </div>
     </Layout>

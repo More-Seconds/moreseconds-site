@@ -17,7 +17,7 @@ export function VideoModal(props: Props) {
         <img src={props.thumbnail} alt="" className="w-full rounded-xl" />
         <PlayIcon className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2" />
       </div>
-      <BodyText className="text-lg">{props.name}</BodyText>
+      <BodyText className="text-xs md:text-lg">{props.name}</BodyText>
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}

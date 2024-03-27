@@ -1,6 +1,4 @@
-import { Accordian } from 'components/shared sections/Team/Accordian'
 import { Testimonials } from 'components/shared sections/Testimonials'
-import { Testimonial } from 'components/shared sections/Testimonials/Testimonial'
 import { BodyText } from 'components/typography/BodyText'
 import { Heading } from 'components/typography/Heading'
 import { Hero } from 'containers/shared/Hero'
@@ -8,20 +6,15 @@ import { Layout } from 'containers/layout/Layout'
 import {
   CodyThumbnail,
   DanThumbnail,
-  PricingTable,
-  PricingTableMobile,
   StephThumbnail,
-  Testimonials1
 } from 'public/images'
 import {
-  ArrowDown,
   BallOrange,
   BallPurple,
   Cloud,
   CloudFull,
   HollowStar,
   NoMaintenance,
-  PlayIcon,
   PricingHero,
   Rocket,
   Sputnik
@@ -35,7 +28,7 @@ export function Pricing() {
     <Layout footerVariant="simplified">
       <Hero
         svg={PricingHero}
-        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0 pt-[10rem]"
+        svgStyles="scale-150 -translate-x-8 sm:scale-100 sm:translate-x-[10%] xl:translate-x-0 pt-[10em]"
       >
         <Heading
           level="1"
@@ -46,45 +39,28 @@ export function Pricing() {
             No monthly retainers. No minimums. Zero risk.
           </span>
         </Heading>
-        <BodyText className="max-w-[27ch] xl:max-w-md sm:max-w-[40ch] xl:text-lg">
-          Benefit from the power of an entire development team for only $85 an
-          hour for most projects. We also offer a competitive fixed rate for
-          large builds and affordable maintenance options.
+        <BodyText className="max-w-[27ch] xl:max-w-xl sm:max-w-[40ch] xl:text-lg">
+         <>Benefit from the power of an entire development team for only </> 
+          <span className="relative text-accent font-bold md:text-xl lg:text-3xl">
+          $85 an hour             
+          <NoMaintenance className="absolute bottom-[-0.2rem] sm:right-[-0.7rem] sm:w-[7rem] md:right-0 md:bottom-[-4px] md:w-[rem] lg:bottom-0 xl:right-[3.5rem] xl:w-[8ch] xl:scale-x-125 xl:translate-x-12" />
+          </span>
+         <> for most projects. We also offer a competitive fixed rate for
+          large builds and affordable maintenance options.</> 
+          <></>
+
         </BodyText>
 
-        <Button href="#contact" className="max-w-[10rem] px-8 py-3 mt-6">
+        <Button href="#contact" className="xl:max-w-[10rem] px-8 md:w-full py-3 mt-6">
           Get an Estimate
         </Button>
-        <Sputnik className="hidden md:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
+        <Sputnik className="hidden lg:block -bottom-28 -left-20 scale-[25%] sm:scale-[35%] sm:left-20 xl:scale-75" />
       </Hero>
 
-      <Testimonials title="No commitment. No hidden fees. Just great service" />
-      <section className="relative grid grid-cols-1 grid-rows-3 gap-8 py-24 mx-4 sm:grid-cols-3 sm:grid-rows-1 sm:mx-16 sm:gap-4 xl:mx-32">
-        <VideoModal
-          thumbnail={DanThumbnail}
-          videoId="cltmKuk7ezU"
-          name="Daniel Mickelson - Algorithm Agency"
-        />
-        <VideoModal
-          thumbnail={CodyThumbnail}
-          videoId="Mzqp3MuI3vE"
-          name="Cody Johnson - Dualstrike"
-        />
-        <VideoModal
-          thumbnail={StephThumbnail}
-          videoId="Wu9SJumUemc"
-          name="Stephanie Wilson - Plant Cell Technology"
-        />
-        <CloudFull className="hidden sm:block sm:absolute sm:top-0 sm:left-0 sm:-translate-x-[50%]" />
-        <Cloud className="hidden sm:block sm:absolute sm:right-0 sm:bottom-0 sm:translate-x-[25%] xl:translate-x-32" />
-        <BallPurple className="hidden sm:block sm:absolute sm:scale-75 sm:left-0 sm:bottom-0" />
-        <BallOrange className="hidden sm:block sm:absolute sm:-top-4 sm:right-0 sm:scale-75" />
-      </section>
-      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 sm:mx-16 xl:mx-56 xl:pb-40">
-        <Rocket className="hidden sm:block sm:absolute sm:-right-8 sm:scale-50 sm:-top-12" />
+      <section className="relative grid gap-4 py-10 mx-4 sm:pt-5 sm:pb-24 md:py-20 sm:mx-16 xl:mx-56 xl:pb-40">
         <HollowStar className="hidden sm:block sm:absolute sm:top-1/2 sm:-right-12" />
         <BallOrange className="hidden sm:block sm:absolute sm:top-[75%] sm:-left-16 sm:scale-50" />
-        <Heading level="2" className="mb-4 text-center">
+        <Heading level="2" className="mb-4 sm:mt-10 md:mt-0 text-center">
           FAQ
         </Heading>
         <FAQ title="What languages and platforms do you work with?">
@@ -161,6 +137,31 @@ export function Pricing() {
           </span>
         </FAQ>
       </section>
+
+      <section className="relative grid grid-cols-1 grid-rows-3 gap-8 py-24 mx-4 sm:grid-cols-3 sm:grid-rows-1 sm:mx-16 sm:gap-4 xl:mx-32">
+        <VideoModal
+          thumbnail={DanThumbnail}
+          videoId="cltmKuk7ezU"
+          name="Daniel Mickelson - Algorithm Agency"
+        />
+        <VideoModal
+          thumbnail={CodyThumbnail}
+          videoId="Mzqp3MuI3vE"
+          name="Cody Johnson - Dualstrike"
+        />
+        <VideoModal
+          thumbnail={StephThumbnail}
+          videoId="Wu9SJumUemc"
+          name="Stephanie Wilson - Plant Cell Technology"
+        />
+        <CloudFull className="hidden sm:block sm:absolute sm:top-0 sm:left-0 sm:-translate-x-[50%]" />
+        <Cloud className="hidden sm:block sm:absolute sm:right-0 sm:bottom-0 sm:translate-x-[25%] xl:translate-x-32" />
+        <BallPurple className="hidden sm:block sm:absolute sm:scale-75 sm:left-0 sm:bottom-0" />
+        <BallOrange className="hidden sm:block sm:absolute sm:-top-4 sm:right-0 sm:scale-75" />
+      </section>
+
+      <Testimonials title="No commitment. No hidden fees. Just great service" />
+ 
     </Layout>
   )
 }

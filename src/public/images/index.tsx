@@ -15,6 +15,8 @@ import PageDesign from './pagedesign.png'
 import WebCare from './webcare.png'
 import FeatureFunction from './featurefunction.png'
 import AuditReport from './auditreport.png'
+import WebsiteUpdates from './website-updates.png'
+import WebsiteHosting from './website-hosting.png'
 import Jason from './jason.png'
 import Brian from './brian.png'
 import Request1 from './request_image1.png'
@@ -73,5 +75,8 @@ export {
   CodyThumbnail,
   StephThumbnail,
   ClanFinderLogo,
-  BlackAmbitionLogo
+  BlackAmbitionLogo,
+  WebsiteUpdates,
+  WebsiteHosting
+  
 }
