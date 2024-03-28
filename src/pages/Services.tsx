@@ -223,15 +223,15 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] lg:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top-8 z-100"
+          className="h-auto absolute md:right-[-3rem] lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] md:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top-8 z-100"
         />
-        <StarOutline className="absolute scale-[50%] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
-        <GrayStar className="absolute lg:top-[6rem] lg:right-[4rem] lg:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
+        <StarOutline className="absolute scale-[50%] md:top-[10rem] md:left-[23.5rem] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
+        <GrayStar className="absolute md:top-[2rem] md:right-[1rem] lg:top-[6rem] lg:right-[4rem] md:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
         <div className="flex flex-col mt-[3.5rem]">
-          <h1 className="text-accent text-5xl font-bold lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
+          <h1 className="text-accent md:text-4xl lg:text-5xl font-bold md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
             I want to...
           </h1>
-          <section className="hero--section flex items-center lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem] gap-24">
+          <section className="hero--section flex items-center md:px-[3rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem] md:gap-14 lg:gap-24">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
