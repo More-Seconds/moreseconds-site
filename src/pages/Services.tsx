@@ -265,8 +265,8 @@ export function Services() {
               <GrayStar className="absolute lg:scale-[50%] lg:top-[5rem] xl:top-[58rem] lg:left-[2rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            <CloudFull className="absolute scale-x-[-1] h-[200px] w-[200px] lg:top-[68rem] lg:right-[12rem] xl:h-[220px] xl:w-[220px] xl:top-[70rem] xl:right-[14rem] 2xl:right-[30rem] " />
-            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
+            <CloudFull className="absolute scale-x-[-1] h-[200px] w-[200px] lg:top-[68rem] lg:right-[12rem] xl:h-[220px] xl:w-[220px]  2xl:h-[250px] 2xl:w-[300px] xl:top-[70rem] xl:right-[14rem] 2xl:top-[76rem] 2xl:right-[18rem] " />
+            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[38rem] 2xl:top-[90rem]" />
             <CloudFull className="absolute lg:right-0 lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
             <div>
