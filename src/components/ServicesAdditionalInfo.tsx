@@ -33,12 +33,12 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         <Smoke
           width="75%"
           height="75%"
-          className="h-auto absolute left-[0rem] lg:bottom-[50rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[74rem]"
+          className="h-auto absolute left-[0rem] lg:bottom-[50rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[66rem]"
         />
         <GrayStar className="absolute lg:top-[126rem] lg:left-[14rem] xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
 
         <Satellite className="md:w-[70%] z-20 xl:w-[70%] sm:-translate-x-14 sm:-translate-y-24 h-auto lg:translate-x-14" />
-        <BlueSaturn className="absolute h-[80px] xl:h-[100px] lg:left-[-10rem] lg:bottom-[38em] xl:-left-[8rem] xl:bottom-[55rem]" />
+        <BlueSaturn className="absolute h-[80px] xl:h-[100px] lg:left-[-10rem] lg:bottom-[38em] xl:-left-[8rem] xl:bottom-[55rem] 2xl:bottom-[50rem]" />
       </div>
       <div className="z-20 sm:px-[25px] sm:mt-[3rem] sm:text-center md:text-left md:pl-0 md:pr-[64px]">
         <OrangeGradientBall className="absolute h-[30px] lg:right-[-3rem] lg:bottom-[68rem] xl:right-[-3rem] xl:bottom-[90rem]" />
