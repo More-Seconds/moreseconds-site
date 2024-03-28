@@ -46,7 +46,7 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         <SmallTitle className="mx-auto text-left">{title}</SmallTitle>
         <Heading
           level="2"
-          className="text-xl text-center sm:max-w-2xl sm:text-center md:mb-3 md:text-left md:text-[1.75rem] lg:text-[2.5rem] lg:leading-[1] xl:max-w-2xl xl:text-5xl xl:mt-5"
+          className="text-xl text-center sm:max-w-2xl sm:text-center md:mb-3 md:text-left md:text-[1.75rem] lg:text-[2.5rem] lg:leading-[1] xl:max-w-2xl  xl:text-5xl xl:mt-5"
         >
           {subTitle}
         </Heading>

@@ -255,7 +255,7 @@ export function Services() {
           <section className="portfolio--section mt-[12rem] flex items-center  xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
             <CloudFull className="absolute xl:top-[24rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute xl:scale-[220%] xl:right-[10rem] top-[38rem] 2xl:top-[39rem] 2xl:right-[14rem]" />
+            <BallPurple className="absolute xl:scale-[220%] xl:right-[10rem] top-[38rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -487,7 +487,7 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto  xl:h-full xl:py-32 mt-10 gap-4">
+            <section className="service--cards--container flex mx-auto  xl:h-full xl:py-32 mt-10 gap-4 xl:px-[10rem] 2xl:px-[18rem]">
               <Card
                 backgroundColor="#3C3C59"
                 className="w-full h-fit pb-4 gap-2 xl:gap-8"
