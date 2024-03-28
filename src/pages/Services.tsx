@@ -223,14 +223,15 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute right-[2rem] xl:scale-x-125 rotate-180 xl:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top8 z-100"
+          className="h-auto absolute lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] lg:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top-8 z-100"
         />
-        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
+        <StarOutline className="absolute scale-[50%] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
+        <GrayStar className="absolute lg:top-[6rem] lg:right-[4rem] lg:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
         <div className="flex flex-col mt-[3.5rem]">
-          <h1 className="text-accent text-5xl font-bold lg:pl-[8rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
+          <h1 className="text-accent text-5xl font-bold lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
             I want to...
           </h1>
-          <section className="hero--section flex items-center lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] gap-24">
+          <section className="hero--section flex items-center lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem] gap-24">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
@@ -252,32 +253,32 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section mt-[12rem] flex items-center  xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
-            <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute xl:top-[24rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute xl:scale-[220%] xl:right-[10rem] top-[38rem] xl:top-[35rem] 2xl:right-[14rem]" />
+          <section className="portfolio--section mt-[12rem] flex items-center lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
+            <Star className="absolute lg:left-[27rem] lg:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
+            <CloudFull className="absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] lg:left-0 lg:top-[24rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <BallPurple className="absolute h-[40px] w-[40px] lg:scale-[200%] lg:right-[8rem] lg:top-[37rem] xl:scale-[220%] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
               <GrayStar className="absolute xl:scale-[50%] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             ) : (
-              <GrayStar className="absolute xl:scale-[50%] xl:top-[58rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+              <GrayStar className="absolute lg:scale-[50%] lg:top-[5rem] xl:top-[58rem] lg:left-[2rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            <CloudFull className="absolute scale-x-[-1] xl-h-[220px] xl:w-[220px] xl:top-[75rem] xl:right-[14rem] 2xl:right-[30rem] " />
-            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
-            <CloudFull className="absolute xl:right-0 xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
+            <CloudFull className="absolute scale-x-[-1] h-[200px] w-[200px] lg:top-[68rem] lg:right-[12rem] xl:h-[220px] xl:w-[220px] xl:top-[70rem] xl:right-[14rem] 2xl:right-[30rem] " />
+            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[45rem]" />
+            <CloudFull className="absolute lg:right-0 lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
             <div>
               <h1
-                className={`portfolio--title text-xl font-semibold uppercase text-white sm:mb-10 max-w-xl`}
+                className={`portfolio--title text-xl font-semibold uppercase text-white mb-8 xl::mb-10 max-w-md xl:max-w-xl`}
               >
                 {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
               </h1>
 
               {selectedMenuItem === 'Troubleshoot Website' ||
               selectedMenuItem === 'Host Website' ? (
-                <ul className="org--logos grid grid-cols-2 max-w-lg gap-8 py-10">
+                <ul className="org--logos grid grid-cols-2 max-w-lg gap-4 xl:gap-8 py-10">
                   <li className="p-4 sm:p-0">
                     <img
                       src={MontyLogo}
@@ -311,7 +312,7 @@ export function Services() {
                   </li>
                 </ul>
               ) : (
-                <ul className="portfolio--grid grid grid-cols-2 max-w-xl gap-10">
+                <ul className="portfolio--grid grid grid-cols-2 lg:max-w-md xl:max-w-xl lg:gap-6 xl:gap-8">
                   {visiblePosts &&
                     visiblePosts.length > 0 &&
                     visiblePosts.map((ele: any) => {
@@ -320,7 +321,7 @@ export function Services() {
                           <div className="project-card-container relative">
                             <div className="project-card rounded-[3rem]">
                               <Project
-                                className="w-[250px] h-[250px] rounded-[3rem] opacity-90 "
+                                className="lg:h-[200px] lg:w-[200px] xl:w-[250px] xl:h-[250px] rounded-[3rem] opacity-90 "
                                 image={ele.thumbnailImage.asset.url}
                                 slug={`/portfolio/${ele.slug.current}`}
                                 title={''}
@@ -338,8 +339,8 @@ export function Services() {
               )}
             </div>
 
-            <div className="artist--image absolute right-[-7rem]">
-              <ManArtist className="xl:scale-[80%] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
+            <div className="artist--image absolute lg:right-[-9rem] xl:right-[-7rem]">
+              <ManArtist className="lg:scale-[55%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
             </div>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
@@ -347,22 +348,22 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute xl:-left-[4rem] xl:top-[25rem] 2xl:-left-[6rem]"
+                className="absolute lg:-left-[4rem] lg:top-[25rem] 2xl:-left-[6rem]"
               />
             ) : (
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
+                className="absolute lg:left-[-2.5rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
               />
             )}
 
-            <StarOutline className="absolute xl:scale-[60%] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
+            <StarOutline className="absolute lg:scale-[60%] lg:top-[80rem] lg:left-[20rem] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards flex flex-col justify-center xl:pt-[23rem] xl:pb-[4rem] xl:px-[10rem] 2xl:px-[18rem] mt-12">
+            <section className="service--cards flex flex-col justify-center lg:pt-[23rem] lg:pb-[4rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] mt-12">
               <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
                 {
                   specificInfoTitleMap[
@@ -371,7 +372,7 @@ export function Services() {
                 }
               </h1>
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
                     Full-cycle Website Design & Development
                   </Heading>
@@ -383,7 +384,7 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4s py-10 sm:py-8 xl:gap-8">
                   <Heading level="1" className="mx-auto font-bold xl:text-xl">
                     Custom Functionality and Features
                   </Heading>
@@ -419,12 +420,9 @@ export function Services() {
               <div className="flex justify-end sm:mt-4 ">
                 <p className="uppercase text-white text-2xl">...and more!</p>
               </div>
-              h-auto absolute xl:top-[2rem] right-[1rem] scale-x-125 rotate-180
-              xl:-scale-y-125 2xl:scale-x-100 2xl:top-[2rem] 2xl:right-[-6rem]
-              z-100
             </section>
           ) : (
-            <section className="service--cards flex flex-col justify-center mx-auto xl:pt-[16rem] xl:pb-[10rem] xl:px-[12rem] 2xl:px-[18rem]">
+            <section className="service--cards flex flex-col justify-center mx-auto lg:pt-[12rem] lg:pb-[8rem] xl:pt-[16rem] xl:pb-[10rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
               <h1 className="specific--info--title text-white text-2xl xl:text-3xl font-semibold uppercase">
                 {
                   specificInfoTitleMap[
@@ -434,11 +432,14 @@ export function Services() {
               </h1>
               =
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                  >
                     Full-cycle Website Design & Development
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We provide full-cycle development services from market
                     research and business analysis to design, development, and
                     launch. We’ll handle every step of the process and deliver
@@ -446,33 +447,42 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                  >
                     Custom Functionality and Features
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We’ll help you provide your users with an unforgettable
                     experience by bringing all of your unique functionality and
                     feature requests to life.
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                  >
                     Ecommerce, API, and Plugin Integration and Configuration
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     No matter what you need your site to do, we’ll get it
                     configured with all of the necessary plugins and
                     integrations to do exactly what you desire.
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                  >
                     Desktop, Mobile, and Tablet Responsive
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We’ll ensure that every page maintains its seamless design
                     and functionality, no matter if it’s viewed on desktop,
                     mobile, or tablet.
@@ -480,14 +490,16 @@ export function Services() {
                 </Card>
               </div>
               <div className="flex justify-end sm:mt-4 ">
-                <p className="uppercase text-white text-2xl">...and more!</p>
+                <p className="uppercase text-white text-xl xl:text-2xl">
+                  ...and more!
+                </p>
               </div>
             </section>
           )}
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto  xl:h-full xl:py-32 mt-10 gap-4 xl:px-[10rem] 2xl:px-[18rem]">
+            <section className="service--cards--container flex mx-auto lgl:h-full lg:py-30 xl:py-32 mt-10 gap-4 lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
               <Card
                 backgroundColor="#3C3C59"
                 className="w-full h-fit pb-4 gap-2 xl:gap-8"
@@ -591,7 +603,7 @@ export function Services() {
             <></>
           )}
 
-          <section className="additional--info my-20">
+          <section className="additional--info  xl:my-20">
             <ServicesAdditionalInfo
               title={
                 (
@@ -622,8 +634,6 @@ export function Services() {
               buttonHref={'/contact'}
             />
           </section>
-
-          <StarOutline className="absolute xl:scale-[60%] xl:bottom-[48rem] xl:right-[15rem]" />
 
           <Testimonials
             title={

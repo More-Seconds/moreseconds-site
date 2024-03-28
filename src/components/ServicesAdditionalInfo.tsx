@@ -31,18 +31,18 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
     <div className="flex items-center justify-center md:mx-4 md:flex-row md:mr-8">
       <div className="z-20 md:w-1/2">
         <Smoke
-          width="60%"
-          height="60%"
-          className="h-auto absolute xl:left-[0rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[74rem]"
+          width="75%"
+          height="75%"
+          className="h-auto absolute left-[0rem] lg:bottom-[50rem] xl:bottom-[70rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[74rem]"
         />
-        <GrayStar className="absolute xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
+        <GrayStar className="absolute lg:top-[126rem] lg:left-[14rem] xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
 
-        <Satellite className="md:w-1/2 z-20 xl:w-[70%] sm:-translate-x-14 sm:-translate-y-24 h-auto xl:translate-x-14" />
-        <BlueSaturn className="absolute h-[100px] xl:-left-[8rem] xl:bottom-[55rem]" />
+        <Satellite className="md:w-[70%] z-20 xl:w-[70%] sm:-translate-x-14 sm:-translate-y-24 h-auto lg:translate-x-14" />
+        <BlueSaturn className="absolute h-[80px] xl:h-[100px] lg:left-[-10rem] lg:bottom-[38em] xl:-left-[8rem] xl:bottom-[55rem]" />
       </div>
       <div className="z-20 sm:px-[25px] sm:mt-[3rem] sm:text-center md:text-left md:pl-0 md:pr-[64px]">
-        <OrangeGradientBall className="absolute h-[30px] xl:right-[-3rem] xl:bottom-[90rem]" />
-        <Star className="absolute h-[30px] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
+        <OrangeGradientBall className="absolute h-[30px] lg:right-[-3rem] lg:bottom-[68rem] xl:right-[-3rem] xl:bottom-[90rem]" />
+        <Star className="absolute h-[30px] lg:right-[18rem] lg:bottom-[65rem] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
         <SmallTitle className="mx-auto text-left">{title}</SmallTitle>
         <Heading
           level="2"
