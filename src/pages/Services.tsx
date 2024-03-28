@@ -223,9 +223,9 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute right-[2rem] xl:scale-x-125 rotate-180 xl:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top8 z-100"
+          className="h-auto absolute lg:right-[-4.5rem] lg:scale-x-100 lg:-scale-y-100 xl:scale-x-125 rotate-180 xl:right-[2rem] xl:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top-8 z-100"
         />
-        <GrayStar className="absolute xl:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
+        <GrayStar className="absolute lg:top-[6rem] lg:right-[4rem] lg:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
         <div className="flex flex-col mt-[3.5rem]">
           <h1 className="text-accent text-5xl font-bold lg:pl-[8rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
             I want to...
@@ -254,7 +254,7 @@ export function Services() {
 
           <section className="portfolio--section mt-[12rem] flex items-center  xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute xl:left-[27rem] xl:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute xl:top-[24rem] scale-x-[-1] xl:h-[500px] xl:w-[500px] xl:left-0 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <CloudFull className="absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] lg:left-0 lg:top-[24rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
             <BallPurple className="absolute xl:scale-[220%] xl:right-[10rem] top-[38rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
