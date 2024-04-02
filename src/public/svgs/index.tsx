@@ -60,6 +60,7 @@ import { ReactComponent as OrangeGradientBall } from './gradient_dot_1.svg'
 import { ReactComponent as PurplePinkBall } from './gradient_dot_4.svg'
 import { ReactComponent as BallBlue } from './gradient_dot_2.svg'
 import { ReactComponent as BlueSaturn } from './Saturn_Blue.svg'
+import { ReactComponent as AstronautLady } from './Atronaut_Lady_With_Computer.svg'
 
 export {
   MSLogo,
@@ -123,5 +124,6 @@ export {
   EmailIcon,
   BallLightBlue,
   PurplePinkBall,
-  BallBlue
+  BallBlue,
+  AstronautLady
 }
