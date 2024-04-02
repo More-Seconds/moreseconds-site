@@ -6,13 +6,13 @@ import { Highlight } from 'public/svgs'
 const UpdateWebsite = () => {
   return (
     <div className="">
-      <section className="">
+      <section className="max-w-[90%]">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
-        <h1 className="max-w-4xl text-white font-semibold text-[42px] text-left mb-1">
+        <h1 className="lg:max-w-4xl text-white font-semibold md:text-4xl lg:text-[42px] text-left mb-1">
           Website Updates
         </h1>
         <div className="relative">
-          <BodyText className="text-left xl:text-lg max-w-2xl">
+          <BodyText className="text-left md:text-sm lg:text-lg max-w-2xl">
             From on-demand updates to urgent after-hours fixes, More Seconds'
             premium web support offers the easiest way to make rapid changes to
             your website. We provide a completely hands-off website updates
@@ -33,4 +33,3 @@ const UpdateWebsite = () => {
 }
 
 export default UpdateWebsite
-
