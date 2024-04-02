@@ -271,7 +271,7 @@ export function Services() {
 
             <div className="portfolio--container w-[50%]">
               <h1
-                className={`portfolio--title md:text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl`}
+                className={`portfolio--title text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl`}
               >
                 {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
               </h1>
@@ -348,7 +348,7 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute lg:-left-[4rem] lg:top-[25rem] 2xl:-left-[6rem]"
+                className="absolute md:left-[-2rem] md:top-[10rem] lg:-left-[4rem] lg:top-[25rem] 2xl:-left-[6rem]"
               />
             ) : (
               <Smoke
@@ -363,8 +363,8 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards flex flex-col justify-center lg:pt-[23rem] lg:pb-[4rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] mt-12">
-              <h1 className="specific--info--title text-white text-2xl font-semibold uppercase mb-10">
+            <section className="service--cards flex flex-col justify-center md:px-[3rem] lg:pt-[23rem] lg:pb-[4rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] mt-12">
+              <h1 className="specific--info--title text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl z-10">
                 {
                   specificInfoTitleMap[
                     selectedMenuItem as keyof SpecificInfoTitleMap
@@ -372,11 +372,11 @@ export function Services() {
                 }
               </h1>
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <h1 className="mx-auto font-bold xl:text-xl">
                     Full-cycle Website Design & Development
                   </h1>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We provide full-cycle development services from market
                     research and business analysis to design, development, and
                     launch. We’ll handle every step of the process and deliver
@@ -384,11 +384,14 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4s py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                  >
                     Custom Functionality and Features
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We’ll help you provide your users with an unforgettable
                     experience by bringing all of your unique functionality and
                     feature requests to life.
@@ -396,10 +399,13 @@ export function Services() {
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                  >
                     Ecommerce, API, and Plugin Integration and Configuration
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     No matter what you need your site to do, we’ll get it
                     configured with all of the necessary plugins and
                     integrations to do exactly what you desire.
@@ -407,18 +413,23 @@ export function Services() {
                 </Card>
 
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-2 py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  <Heading
+                    level="1"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                  >
                     Desktop, Mobile, and Tablet Responsive
                   </Heading>
-                  <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
+                  <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
                     We’ll ensure that every page maintains its seamless design
                     and functionality, no matter if it’s viewed on desktop,
                     mobile, or tablet.
                   </BodyText>
                 </Card>
               </div>
-              <div className="flex justify-end sm:mt-4 ">
-                <p className="uppercase text-white text-2xl">...and more!</p>
+              <div className="flex justify-end sm:mt-4">
+                <p className="uppercase text-white text-xl xl:text-2xl">
+                  ...and more!
+                </p>
               </div>
             </section>
           ) : (
@@ -499,7 +510,7 @@ export function Services() {
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards--container flex mx-auto lgl:h-full lg:py-30 xl:py-32 mt-10 gap-4 lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
+            <section className="service--cards--container flex justify-center  lg:h-full lg:py-30 xl:py-32 mt-10 gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
               <Card
                 backgroundColor="#3C3C59"
                 className="w-full h-fit pb-4 gap-2 xl:gap-8"
@@ -507,12 +518,12 @@ export function Services() {
                 <div className="space-y-4">
                   <Heading
                     level="1"
-                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                    className="mx-auto pt-10 text-left lg:center font-bold xl:text-4xl"
                   >
                     Gold Package
                   </Heading>
                 </div>
-                <ul className="text-white list-disc px-8 space-y-4">
+                <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
                   <li className="text-left text-sm">
                     Website Uptime Monitoring & Downtime Alert Reporting
                   </li>
@@ -532,7 +543,9 @@ export function Services() {
                     Core Website Feature & Form Delivery Testing
                   </li>
                 </ul>
-                <Button href={'#contact'}>Get Started</Button>
+                <Button href={'#contact'} className="mt-4">
+                  Get Started
+                </Button>
               </Card>
 
               <Card
@@ -542,12 +555,12 @@ export function Services() {
                 <div className="space-y-4">
                   <Heading
                     level="1"
-                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                    className="mx-auto pt-10 text-left lg:center font-bold xl:text-4xl"
                   >
                     Silver Package
                   </Heading>
                 </div>
-                <ul className="text-white list-disc px-8 space-y-4">
+                <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
                   <li className="text-left text-sm">
                     Website Uptime Monitoring & Downtime Alert Reporting
                   </li>
@@ -567,7 +580,9 @@ export function Services() {
                     Core Website Feature & Form Delivery Testing
                   </li>
                 </ul>
-                <Button href={'#contact'}>Get Started</Button>
+                <Button href={'#contact'} className="mt-4">
+                  Get Started
+                </Button>
               </Card>
 
               <Card
@@ -577,12 +592,12 @@ export function Services() {
                 <div className="space-y-4">
                   <Heading
                     level="1"
-                    className="mx-auto pt-10 font-bold xl:text-4xl"
+                    className="mx-auto pt-10 text-left lg:center font-bold xl:text-4xl"
                   >
                     Bronze Package
                   </Heading>
                 </div>
-                <ul className="text-white list-disc px-8 space-y-4">
+                <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
                   <li className="text-left text-sm">
                     Website Uptime Monitoring & Downtime Alert Reporting
                   </li>
@@ -596,7 +611,9 @@ export function Services() {
                   </li>
                   <li className="text-left text-sm">Premium Plugin Updates</li>
                 </ul>
-                <Button href={'#contact'}>Get Started</Button>
+                <Button href={'#contact'} className="mt-4">
+                  Get Started
+                </Button>
               </Card>
             </section>
           ) : (

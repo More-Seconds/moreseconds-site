@@ -37,12 +37,12 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         />
         <GrayStar className="absolute lg:top-[126rem] lg:left-[14rem] xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
 
-        <Satellite className="md:w-[100%] z-20 sm:mb-20 lg:mb-0 xl:w-[70%] sm:-translate-x-14 sm:-translate-y-24 h-auto lg:translate-x-14" />
+        <Satellite className="md:w-[100%] z-20 sm:mb-20 lg:mb-0 xl:w-[70%] sm:translate-x-[-2rem] sm:-translate-y-24 h-auto lg:translate-x-14" />
         <BlueSaturn className="absolute h-[80px] xl:h-[100px] md:left-[-8rem] md:bottom-[46rem] lg:left-[-10rem] lg:bottom-[38rem] xl:-left-[8rem] xl:bottom-[55rem] 2xl:bottom-[50rem]" />
       </div>
       <div className="z-20 sm:px-[25px] sm:mt-[4rem] sm:text-center md:text-left lg:pr-[64px]">
-        <OrangeGradientBall className="absolute h-[30px] md:right-0 md:bottom-[80rem] lg:right-[-3rem] lg:bottom-[68rem] xl:right-[-3rem] xl:bottom-[90rem]" />
-        <Star className="absolute h-[30px] md:right-[20rem] md:bottom-[78rem] lg:right-[18rem] lg:bottom-[65rem] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
+        <OrangeGradientBall className="absolute h-[30px] md:right-0 md:bottom-[82rem] lg:right-[-3rem] lg:bottom-[68rem] xl:right-[-3rem] xl:bottom-[90rem]" />
+        <Star className="absolute h-[30px] md:right-[20rem] md:bottom-[83rem] lg:right-[18rem] lg:bottom-[65rem] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
         <SmallTitle className="mx-auto text-left">{title}</SmallTitle>
         <Heading
           level="2"
