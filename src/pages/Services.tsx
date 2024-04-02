@@ -253,10 +253,10 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section mt-[12rem] flex items-center lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
+          <section className="portfolio--section mt-[12rem] flex items-center px-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute lg:left-[27rem] lg:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] lg:left-0 lg:top-[24rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute h-[40px] w-[40px] lg:scale-[200%] lg:right-[8rem] lg:top-[37rem] xl:scale-[220%] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
+            <CloudFull className="absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] md:top-[39rem] md:left-0 lg:top-[24rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
+            <BallPurple className="absolute h-[40px] w-[40px] md:scale-[200%] md:right-[8rem] md:top-[37rem] xl:scale-[220%] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -265,13 +265,13 @@ export function Services() {
               <GrayStar className="absolute lg:scale-[50%] lg:top-[5rem] xl:top-[58rem] lg:left-[2rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            <CloudFull className="absolute scale-x-[-1] h-[200px] w-[200px] lg:top-[68rem] lg:right-[12rem] xl:h-[220px] xl:w-[220px]  2xl:h-[250px] 2xl:w-[300px] xl:top-[70rem] xl:right-[14rem] 2xl:top-[76rem] 2xl:right-[18rem] " />
+            <CloudFull className="absolute scale-x-[-1] md:h-[150px] md:w-[150px] lg:h-[200px] lg:w-[200px] md:top-[64rem] lg:top-[68rem] md:right-[5rem] xl:h-[220px] xl:w-[220px]  2xl:h-[250px] 2xl:w-[300px] xl:top-[70rem] xl:right-[14rem] 2xl:top-[76rem] 2xl:right-[18rem] " />
             <Star className="absolute scale-x-[-1] h-[30px] w-[30px] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[38rem] 2xl:top-[90rem]" />
-            <CloudFull className="absolute lg:right-0 lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
+            <CloudFull className="absolute md:right-0 md:top-[72rem] lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[74rem]" />
 
-            <div>
+            <div className="portfolio--container w-[50%]">
               <h1
-                className={`portfolio--title text-xl font-semibold uppercase text-white mb-8 xl::mb-10 max-w-md xl:max-w-xl`}
+                className={`portfolio--title md:text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl`}
               >
                 {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
               </h1>
@@ -307,12 +307,12 @@ export function Services() {
                     <img
                       src={PCTLogo}
                       alt="Plant Cell Technology"
-                      className="saturate-0 sm:max-w-[6rem] sm:min-w-[6rem]  md:max-w-[6rem] md:min-w-[6rem] lg:max-w-[5rem] xl:min-w-[6rem]"
+                      className="saturate-0 sm:max-w-[6rem] sm:min-w-[6rem] md:max-w-[6rem] md:min-w-[6rem] lg:max-w-[5rem] xl:min-w-[6rem]"
                     />
                   </li>
                 </ul>
               ) : (
-                <ul className="portfolio--grid grid grid-cols-2 lg:max-w-md xl:max-w-xl lg:gap-6 xl:gap-8">
+                <ul className="portfolio--grid grid grid-cols-2 gap-4 lg:max-w-md xl:max-w-xl lg:gap-6 xl:gap-8">
                   {visiblePosts &&
                     visiblePosts.length > 0 &&
                     visiblePosts.map((ele: any) => {
@@ -321,7 +321,7 @@ export function Services() {
                           <div className="project-card-container relative">
                             <div className="project-card rounded-[3rem]">
                               <Project
-                                className="lg:h-[200px] lg:w-[200px] xl:w-[250px] xl:h-[250px] rounded-[3rem] opacity-90 "
+                                className="md:h-[180px] md:w-full lg:h-[200px] lg:w-[200px] xl:w-[250px] xl:h-[250px] rounded-[3rem] opacity-90"
                                 image={ele.thumbnailImage.asset.url}
                                 slug={`/portfolio/${ele.slug.current}`}
                                 title={''}
@@ -339,8 +339,8 @@ export function Services() {
               )}
             </div>
 
-            <div className="artist--image absolute lg:right-[-9rem] xl:right-[-7rem]">
-              <ManArtist className="lg:scale-[55%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
+            <div className="artist--image md:absolute md:right-[-10rem] lg:right-[-9rem] xl:right-[-7rem]">
+              <ManArtist className="lg:scale-[55%] md:scale-[50%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
             </div>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
@@ -354,7 +354,7 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute lg:left-[-2.5rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
+                className="absolute md:left-[-2.5rem] md:top-[30rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
               />
             )}
 
@@ -373,9 +373,9 @@ export function Services() {
               </h1>
               <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full py-10 sm:py-8 xl:gap-8">
-                  <Heading level="1" className="mx-auto font-bold xl:text-xl">
+                  <h1 className="mx-auto font-bold xl:text-xl">
                     Full-cycle Website Design & Development
-                  </Heading>
+                  </h1>
                   <BodyText className="text-xs xl:text-[16px] leading-6 font-normal">
                     We provide full-cycle development services from market
                     research and business analysis to design, development, and
@@ -422,7 +422,7 @@ export function Services() {
               </div>
             </section>
           ) : (
-            <section className="service--cards flex flex-col justify-center mx-auto lg:pt-[12rem] lg:pb-[8rem] xl:pt-[16rem] xl:pb-[10rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
+            <section className="service--cards flex flex-col justify-center mx-auto md:pt-[8rem] lg:pt-[12rem] lg:pb-[8rem] xl:pt-[16rem] xl:pb-[10rem] md:px-[3rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
               <h1 className="specific--info--title text-white text-2xl xl:text-3xl font-semibold uppercase">
                 {
                   specificInfoTitleMap[
@@ -435,7 +435,7 @@ export function Services() {
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Full-cycle Website Design & Development
                   </Heading>
@@ -450,7 +450,7 @@ export function Services() {
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Custom Functionality and Features
                   </Heading>
@@ -464,7 +464,7 @@ export function Services() {
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Ecommerce, API, and Plugin Integration and Configuration
                   </Heading>
@@ -478,7 +478,7 @@ export function Services() {
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Desktop, Mobile, and Tablet Responsive
                   </Heading>
@@ -603,7 +603,7 @@ export function Services() {
             <></>
           )}
 
-          <section className="additional--info  xl:my-20">
+          <section className="additional--info my-24">
             <ServicesAdditionalInfo
               title={
                 (
