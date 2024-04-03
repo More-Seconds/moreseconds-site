@@ -259,7 +259,7 @@ export function Services() {
           <section className="portfolio--section my-[10rem] md:my-0 md:mt-[12rem] flex items-center px-4 pl-0 md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute sm:scale-[70%]  sm:right-[10rem] sm:top-[84rem] lg:left-[27rem] lg:top-[38rem] h-[30px] w-[30px] 2xl:left-[30rem]" />
             <CloudFull className="hidden md:block md:absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] md:top-[39rem] md:left-0 lg:top-[26rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] xl:top-[24rem] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute h-[40px] w-[40px] sm:scale-[150%] sm:right-[8rem] sm:top-[59rem] md:top-[37rem] lg:scale-[220%] lg:top-[40rem] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
+            <BallPurple className="absolute h-[40px] w-[40px] sm:scale-[150%] sm:right-[8rem] sm:top-[58rem] md:top-[37rem] lg:scale-[220%] lg:top-[40rem] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -341,8 +341,8 @@ export function Services() {
               )}
             </div>
 
-            <div className="artist--image absolute sm:right-[-12rem] md:right-[-10rem] lg:right-[-9rem] xl:right-[-7rem]">
-              <ManArtist className="sm:scale-[50%] lg:scale-[55%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
+            <div className="artist--image absolute right-[-12rem] md:right-[-10rem] lg:right-[-9rem] xl:right-[-7rem]">
+              <ManArtist className="scale-[50%] lg:scale-[55%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
             </div>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
@@ -522,7 +522,7 @@ export function Services() {
                 Maintenance Package Options
               </h1>
 
-              <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[114rem] lg:top-[126rem] xl:top-[133rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
+              <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[114rem] lg:top-[124rem] xl:top-[133rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
               <OrangeGradientBall className="hidden lg:block lg:absolute scale-[30%] lg:top-[147rem] lg:left-[2rem] xl:scale-[40%] xl:top-[164rem] xl:left-[4rem] 2xl:top-[165rem] 2xl:left-[12rem]" />
 
               <section className="service--cards--container flex flex-col md:flex-row justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">

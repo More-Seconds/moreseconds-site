@@ -29,7 +29,7 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center justify-center md:mx-[3rem] md:flex-row lg:mr-8">
-      <div className="z-20 ">
+      <div className="z-20 mt-[10rem] md:mt-0">
         <Smoke
           width="75%"
           height="75%"
@@ -41,7 +41,7 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         <Satellite className="w-[75%] md:w-[100%] z-20 sm:mb-20 lg:mb-0 lg:w-[70%] sm:translate-x-[-2rem] sm:-translate-y-24 h-auto lg:translate-x-14 2xl:translate-x-[-7rem] 2xl:mt-[10rem]" />
         <BlueSaturn className="absolute h-[80px] xl:h-[100px] right-[-6rem] bottom-[84rem] md:left-[-8rem] md:bottom-[46rem] lg:left-[-10rem] lg:bottom-[47rem] xl:-left-[8rem] xl:bottom-[55rem] 2xl:bottom-[50rem]" />
       </div>
-      <div className="z-20 sm:px-[25px] md:mt-[4rem] sm:text-center md:text-left lg:pr-[64px]">
+      <div className="z-20 md:px-[25px] md:mt-[4rem] sm:text-center md:text-left lg:pr-[64px]">
         <Star className="absolute h-[30px] bottom-[90rem] md:right-[20rem] md:bottom-[83rem] lg:right-[16rem] lg:bottom-[77rem] xl:right-[18rem] xl:bottom-[90rem] 2xl:bottom-[92rem] scale-x-[-1]" />
         <OrangeGradientBall className="absolute scale-[20%] right-[-2rem] bottom-[75rem]" />
         <SmallTitle className="mx-auto text-left">{title}</SmallTitle>
