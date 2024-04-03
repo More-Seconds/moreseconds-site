@@ -6,7 +6,7 @@ import { Highlight } from 'public/svgs'
 const UpdateWebsite = () => {
   return (
     <div className="">
-      <section className="max-w-[90%]">
+      <section className="max-w-[100%] md:max-w-[90%]">
         <SmallTitle className="mx-auto text-left">Our Services</SmallTitle>
         <h1 className="lg:max-w-4xl text-white font-semibold md:text-4xl lg:text-[42px] text-left mb-1">
           Website Updates
