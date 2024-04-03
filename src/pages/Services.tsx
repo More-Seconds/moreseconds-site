@@ -10,7 +10,8 @@ import {
   GrayStar,
   Star,
   StarOutline,
-  Cloud
+  Cloud,
+  OrangeGradientBall
 } from 'public/svgs'
 import { AstronautLady } from 'public/svgs'
 import React, { useEffect, useState } from 'react'
@@ -225,15 +226,15 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto absolute md:right-[-3rem] lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] md:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] xl:top-8 z-100"
+          className="h-auto hidden md:block md:absolute sm:top-0 md:top:[-3rem] sm:right-0 md:right-[-3rem] lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] sm:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] lg:top-10 xl:top-8 z-100"
         />
-        <StarOutline className="absolute scale-[50%] md:top-[10rem] md:left-[23.5rem] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
-        <GrayStar className="absolute md:top-[2rem] md:right-[1rem] lg:top-[6rem] lg:right-[4rem] md:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
-        <div className="flex flex-col mt-[3.5rem]">
-          <h1 className="text-accent md:text-4xl lg:text-5xl font-bold md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
+        <StarOutline className="absolute scale-[50%] sm:right-10 md:top-[10rem] md:left-[23.5rem] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
+        <GrayStar className="absolute sm:top-[-3rem] sm:scale-[30%] md:top-[2rem] md:right-[1rem] lg:top-[6rem] lg:right-[4rem] md:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
+        <div className="px-4 md:px-0 flex flex-col mt-[3.5rem]">
+          <h1 className="text-accent text-4xl lg:text-5xl font-bold md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] mb-10">
             I want to...
           </h1>
-          <section className="hero--section flex items-center md:px-[3rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem] md:gap-14 lg:gap-24">
+          <section className="hero--section gap-20 flex sm:flex-col md:flex-row md:items-center md:px-[3rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem] md:gap-14 lg:gap-24">
             <div className="z-30">
               <div className="">
                 <ServicesMenu handleMenuItemClicked={handleMenuItemClick} />
@@ -255,25 +256,24 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section mt-[12rem] flex items-center px-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
-            <Star className="absolute lg:left-[27rem] lg:top-[38rem] scale-x-[-1] h-[30px] w-[30px] 2xl:left-[30rem]" />
-            <CloudFull className="absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] md:top-[39rem] md:left-0 lg:top-[24rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute h-[40px] w-[40px] md:scale-[200%] md:right-[8rem] md:top-[37rem] xl:scale-[220%] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
+          <section className="portfolio--section my-[10rem] md:my-0 md:mt-[12rem] flex items-center px-4 pl-0 md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
+            <Star className="absolute sm:scale-[70%]  sm:right-[10rem] sm:top-[84rem] lg:left-[27rem] lg:top-[38rem] h-[30px] w-[30px] 2xl:left-[30rem]" />
+            <CloudFull className="hidden md:block md:absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] md:top-[39rem] md:left-0 lg:top-[26rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] xl:top-[24rem] 2xl:top-[22.5rem]" />
+            <BallPurple className="absolute h-[40px] w-[40px] sm:scale-[150%] sm:right-[8rem] sm:top-[59rem] md:top-[37rem] lg:scale-[220%] lg:top-[40rem] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
-              <GrayStar className="absolute xl:scale-[50%] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+              <GrayStar className="absolute xl:scale-[50%] sm:scale-[50%] sm:top-[92rem] sm:right-[4rem] xl:top-[52rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             ) : (
-              <GrayStar className="absolute lg:scale-[50%] lg:top-[5rem] xl:top-[58rem] lg:left-[2rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
+              <GrayStar className="absolute sm:top-[93rem] sm:right-10 lg:scale-[50%] lg:top-[5rem] xl:top-[58rem] lg:left-[2rem] xl:left-[3rem] 2xl:left-[7rem] 2xl:scale-[70%]" />
             )}
 
-            <CloudFull className="absolute scale-x-[-1] md:h-[150px] md:w-[150px] lg:h-[200px] lg:w-[200px] md:top-[64rem] lg:top-[68rem] md:right-[5rem] xl:h-[220px] xl:w-[220px]  2xl:h-[250px] 2xl:w-[300px] xl:top-[70rem] xl:right-[14rem] 2xl:top-[70rem] 2xl:right-[18rem] " />
-            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[38rem] 2xl:top-[86rem]" />
-            <CloudFull className="absolute md:right-0 md:top-[72rem] lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[70rem]" />
-
+            <CloudFull className="hidden md:block md:absolute scale-x-[-1] md:h-[150px] md:w-[150px] lg:h-[200px] lg:w-[200px] md:top-[64rem] lg:top-[68rem] md:right-[5rem] xl:h-[220px] xl:w-[220px]  2xl:h-[250px] 2xl:w-[300px] xl:top-[70rem] xl:right-[14rem] 2xl:top-[70rem] 2xl:right-[18rem] " />
+            <Star className="absolute scale-x-[-1] h-[30px] w-[30px] sm:top-[89rem] lg:top-[77rem] lg:right-[20rem] xl:top-[82rem] xl:right-[24rem] 2xl:right-[38rem] 2xl:top-[86rem]" />
+            <CloudFull className="hidden md:block md:absolute sm:top-[89rem] md:right-0 md:top-[72rem] lg:top-[65rem] lg:w-[500px] lg:h-[500px] xl:top-[70rem] xl:w-[550px] xl:h-[550px] 2xl:w-[650px] 2xl:h-[650px] 2xl:right-[6rem] 2xl:top-[70rem]" />
             <div className="portfolio--container w-[50%]">
               <h1
-                className={`portfolio--title text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl`}
+                className={`portfolio--title text-sm md:text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 max-w-md xl:max-w-xl`}
               >
                 {portfolioTitleMap[selectedMenuItem as keyof PortfolioTitleMap]}
               </h1>
@@ -314,7 +314,7 @@ export function Services() {
                   </li>
                 </ul>
               ) : (
-                <ul className="portfolio--grid grid grid-cols-2 gap-4 lg:max-w-md xl:max-w-xl lg:gap-6 xl:gap-8">
+                <ul className="portfolio--grid relative z-10 grid grid-cols-2 gap-4 lg:max-w-md xl:max-w-xl lg:gap-6 xl:gap-8">
                   {visiblePosts &&
                     visiblePosts.length > 0 &&
                     visiblePosts.map((ele: any) => {
@@ -323,14 +323,14 @@ export function Services() {
                           <div className="project-card-container relative">
                             <div className="project-card rounded-[3rem]">
                               <Project
-                                className="md:h-[180px] md:w-full lg:h-[200px] lg:w-[200px] xl:w-[250px] xl:h-[250px] rounded-[3rem] opacity-90"
+                                className="md:h-[180px] md:w-full lg:h-[200px] lg:w-[200px] xl:w-[250px] xl:h-[250px] sm:rounded-[2rem] md:rounded-[3rem] opacity-90"
                                 image={ele.thumbnailImage.asset.url}
                                 slug={`/portfolio/${ele.slug.current}`}
                                 title={''}
                                 showSeeMore={false}
                               />
                             </div>
-                            <div className="absolute bottom-4 ml-6 xl:text-md text-white font-bold">
+                            <div className="absolute bottom-4 ml-2 md:ml-6  text-xs md:text-sm xl:text-md text-white font-bold">
                               {ele.title}
                             </div>
                           </div>
@@ -341,8 +341,8 @@ export function Services() {
               )}
             </div>
 
-            <div className="artist--image md:absolute md:right-[-10rem] lg:right-[-9rem] xl:right-[-7rem]">
-              <ManArtist className="lg:scale-[55%] md:scale-[50%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
+            <div className="artist--image absolute sm:right-[-12rem] md:right-[-10rem] lg:right-[-9rem] xl:right-[-7rem]">
+              <ManArtist className="sm:scale-[50%] lg:scale-[55%] xl:scale-[80%] lg:top-[39rem] xl:right-[-7rem] xl:top-[35rem] 2xl:top-[45rem]" />
             </div>
 
             {selectedMenuItem === 'Troubleshoot Website' ||
@@ -356,16 +356,18 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="absolute md:left-[-2.5rem] md:top-[30rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
+                className="sm:hidden md:block md:absolute md:left-[-2.5rem] md:top-[30rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
               />
             )}
 
-            <StarOutline className="absolute lg:scale-[60%] lg:top-[80rem] lg:left-[20rem] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
+            <StarOutline className="absolute sm:top-[60rem] lg:scale-[60%] md:top-[69rem] lg:top-[80rem] lg:left-[20rem] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
+
+          <Cloud className="mobile--cloud block md:hidden mb-4 scale-x-[-1] translate-x-[-1rem]" />
 
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
-            <section className="service--cards flex flex-col justify-center md:px-[3rem] lg:pt-[18rem] lg:pb-[4rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] mt-[12rem]">
+            <section className="service--cards flex flex-col justify-center mb-[20rem] md:mb-0 md:px-[3rem] lg:pt-[18rem] lg:pb-[4rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] md:mt-[12rem]">
               <h1 className="specific--info--title text-md lg:text-xl font-semibold uppercase text-white mb-8 xl:mb-10 lg::max-w-md xl:max-w-none z-10">
                 {
                   specificInfoTitleMap[
@@ -373,9 +375,9 @@ export function Services() {
                   ]
                 }
               </h1>
-              <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
+              <div className="relative flex flex-col md:grid items-center justify-center w-full grid-flow-row gap-3 mb-4 md:grid-cols-4 sm:mt-4">
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
-                  <h1 className="mx-auto font-bold xl:text-xl">
+                  <h1 className="mx-auto font-bold text-xs xl:text-xl">
                     Full-cycle Website Design & Development
                   </h1>
                   <BodyText className="text-sm xl:text-[16px] leading-6 font-normal">
@@ -389,7 +391,7 @@ export function Services() {
                 <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-sm lg:text-[18px] xl:text-xl"
                   >
                     Custom Functionality and Features
                   </Heading>
@@ -436,7 +438,7 @@ export function Services() {
             </section>
           ) : (
             <section className="service--cards flex flex-col justify-center mx-auto md:pt-[8rem] lg:pt-[12rem] lg:pb-[8rem] xl:pt-[16rem] xl:pb-[10rem] md:px-[3rem] lg:px-[6rem] xl:px-[10rem] 2xl:px-[18rem]">
-              <h1 className="specific--info--title text-white text-2xl xl:text-3xl font-semibold uppercase">
+              <h1 className="specific--info--title text-white text-lg md:text-2xl xl:text-3xl font-semibold uppercase">
                 {
                   specificInfoTitleMap[
                     selectedMenuItem as keyof SpecificInfoTitleMap
@@ -444,11 +446,11 @@ export function Services() {
                 }
               </h1>
               =
-              <div className="relative grid items-center justify-center w-full grid-flow-row gap-3 mb-4 sm:grid-cols-4 sm:mt-4">
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+              <div className="relative md:grid items-center justify-center w-full md:grid-flow-row md:gap-3 mb-4 md:grid-cols-4 sm:mt-4">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8 mb-[1rem] md:mb-0">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-sm md:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Full-cycle Website Design & Development
                   </Heading>
@@ -460,10 +462,10 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8 mb-[1rem] md:mb-0">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-sm md:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Custom Functionality and Features
                   </Heading>
@@ -474,10 +476,10 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8 mb-[1rem] md:mb-0">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-sm md:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Ecommerce, API, and Plugin Integration and Configuration
                   </Heading>
@@ -488,10 +490,10 @@ export function Services() {
                   </BodyText>
                 </Card>
 
-                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8">
+                <Card className="bg-gradient-to-b from-[#b56628] via-[#74144e] to-[#0a0055] w-full h-full gap-4 py-10 sm:py-8 xl:gap-8 mb-[1rem] md:mb-0">
                   <Heading
                     level="1"
-                    className="mx-auto font-bold !leading-normal sm:text-[18px] lg:text-[18px] xl:text-xl"
+                    className="mx-auto font-bold !leading-normal sm:text-sm md:text-[18px] lg:text-[18px] xl:text-xl"
                   >
                     Desktop, Mobile, and Tablet Responsive
                   </Heading>
@@ -513,16 +515,17 @@ export function Services() {
           {selectedMenuItem === 'Troubleshoot Website' ||
           selectedMenuItem === 'Host Website' ? (
             <>
-              <CloudFull className="absolute xl:left-[14rem] md:scale-[40%] md:left-[-8rem] md:top-[131rem] xl:top-[140rem]" />
-              <CloudFull className="scale-50 md:absolute xl:left-[-5rem] md:top-[124rem] xl:top-[161rem] 2xl:top-[152rem]" />
+              <CloudFull className="absolute xl:left-[14rem] md:scale-[40%] lg:scale-[100%] md:left-[-8rem] md:top-[131rem] xl:top-[145rem]" />
+              <CloudFull className="scale-50 hidden md:block md:absolute xl:left-[-5rem] md:top-[124rem] xl:top-[161rem] 2xl:top-[152rem]" />
 
-              <h1 className="package--title text-lg md:text-2xl lg:text-4xl xl:text-5xl font-semibold md:mt-40 xl:mt-[21rem] text-white mb-8  z-10 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
+              <h1 className="package--title text-2xl lg:text-4xl xl:text-5xl font-semibold md:mt-40 xl:mt-[21rem] text-white mb-10  z-10 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
                 Maintenance Package Options
               </h1>
 
-              <AstronautLady className="absolute md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[115rem] xl:top-[132rem] 2xl:top-[122rem] xl:scale-[60%]" />
+              <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[114rem] lg:top-[126rem] xl:top-[133rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
+              <OrangeGradientBall className="hidden lg:block lg:absolute scale-[30%] lg:top-[147rem] lg:left-[2rem] xl:scale-[40%] xl:top-[164rem] xl:left-[4rem] 2xl:top-[165rem] 2xl:left-[12rem]" />
 
-              <section className="service--cards--container flex justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
+              <section className="service--cards--container flex flex-col md:flex-row justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
                 <Card
                   backgroundColor="#3C3C59"
                   className="w-full h-fit pb-4 gap-2 xl:gap-8"
@@ -530,12 +533,12 @@ export function Services() {
                   <div className="space-y-4">
                     <Heading
                       level="1"
-                      className="mx-auto pt-10 text-left lg:text-center font-bold xl:text-4xl"
+                      className="mx-auto pt-10 text-left font-bold xl:text-4xl ml-[2.2rem]"
                     >
                       Gold Package
                     </Heading>
                   </div>
-                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
+                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4 ml-5">
                     <li className="text-left text-sm">
                       Website Uptime Monitoring & Downtime Alert Reporting
                     </li>
@@ -569,12 +572,12 @@ export function Services() {
                   <div className="space-y-4">
                     <Heading
                       level="1"
-                      className="mx-auto pt-10 text-left lg:text-center  font-bold xl:text-4xl"
+                      className="mx-auto pt-10 text-left font-bold xl:text-4xl ml-[2.2rem]"
                     >
                       Silver Package
                     </Heading>
                   </div>
-                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
+                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4 ml-5">
                     <li className="text-left text-sm">
                       Website Uptime Monitoring & Downtime Alert Reporting
                     </li>
@@ -608,12 +611,12 @@ export function Services() {
                   <div className="space-y-4">
                     <Heading
                       level="1"
-                      className="mx-auto pt-10 text-left lg:text-center font-bold xl:text-4xl"
+                      className="mx-auto pt-10 text-left font-bold xl:text-4xl ml-[2.2rem]"
                     >
                       Bronze Package
                     </Heading>
                   </div>
-                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4">
+                  <ul className="text-white list-disc md:px-4 md:mt-4 lg:mt-0 lg:px-8 space-y-4 ml-5">
                     <li className="text-left text-sm">
                       Website Uptime Monitoring & Downtime Alert Reporting
                     </li>
@@ -639,7 +642,7 @@ export function Services() {
             <></>
           )}
 
-          <section className="additional--info my-24">
+          <section className="additional--info xl:mt-[12rem] mb-24">
             <ServicesAdditionalInfo
               title={
                 (
