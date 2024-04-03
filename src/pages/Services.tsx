@@ -226,7 +226,7 @@ export function Services() {
         <Smoke
           width="80%"
           height="50%"
-          className="h-auto hidden md:block md:absolute sm:top-[-2rem] sm:right-0 md:right-[-3rem] lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] sm:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] lg:top-10 xl:top-8 z-100"
+          className="h-auto hidden md:block md:absolute sm:top-0 md:top:[-3rem] sm:right-0 md:right-[-3rem] lg:right-[-4rem] lg:scale-x-100 xl:scale-x-125 rotate-180 xl:right-[2rem] sm:-scale-y-125 2xl:scale-x-100 2xl:-scale-y-100 2xl:right-[-7rem] 2xl:top-[-2rem] lg:top-10 xl:top-8 z-100"
         />
         <StarOutline className="absolute scale-[50%] sm:right-10 md:top-[10rem] md:left-[23.5rem] lg:top-[10rem] lg:left-[27rem] xl:scale-[60%] xl:top-[12rem] xl:left-[30rem]" />
         <GrayStar className="absolute sm:top-[-3rem] sm:scale-[30%] md:top-[2rem] md:right-[1rem] lg:top-[6rem] lg:right-[4rem] md:scale-[50%] xl:top-[8rem] xl:right-[5rem] 2xl:right-[5rem] 2xl:scale-[70%]" />
@@ -256,10 +256,10 @@ export function Services() {
             </div>
           </section>
 
-          <section className="portfolio--section my-[10rem] md:my-0 md:mt-[12rem] flex items-center px-4 pl-0 lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
+          <section className="portfolio--section my-[10rem] md:my-0 md:mt-[12rem] flex items-center px-4 pl-0 md:pl-[3rem] lg:pl-[6rem] xl:pl-[10rem] 2xl:pl-[18rem] 2xl:mt-[15rem]">
             <Star className="absolute sm:scale-[70%]  sm:right-[10rem] sm:top-[84rem] lg:left-[27rem] lg:top-[38rem] h-[30px] w-[30px] 2xl:left-[30rem]" />
             <CloudFull className="hidden md:block md:absolute scale-x-[-1] lg:h-[480px] lg:w-[480px] md:top-[39rem] md:left-0 lg:top-[26rem] xl:h-[500px] xl:w-[500px] 2xl:h-[600px] 2xl:w-[600px] xl:top-[24rem] 2xl:top-[22.5rem]" />
-            <BallPurple className="absolute h-[40px] w-[40px] sm:scale-[150%] sm:right-[8rem] sm:top-[59rem]  lg:scale-[220%] lg:top-[40rem] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
+            <BallPurple className="absolute h-[40px] w-[40px] sm:scale-[150%] sm:right-[8rem] sm:top-[59rem] md:top-[37rem] lg:scale-[220%] lg:top-[40rem] xl:right-[10rem] top-[40rem] xl:top-[35rem] 2xl:right-[14rem]" />
 
             {selectedMenuItem === 'Troubleshoot Website' ||
             selectedMenuItem === 'Host Website' ? (
@@ -360,7 +360,7 @@ export function Services() {
               />
             )}
 
-            <StarOutline className="absolute sm:top-[60rem] lg:scale-[60%] lg:top-[80rem] lg:left-[20rem] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
+            <StarOutline className="absolute sm:top-[60rem] lg:scale-[60%] md:top-[69rem] lg:top-[80rem] lg:left-[20rem] xl:left-[26rem] xl:top-[88rem] 2xl:left-[36rem]" />
           </section>
 
           <Cloud className="mobile--cloud block md:hidden mb-4 scale-x-[-1] translate-x-[-1rem]" />
@@ -522,8 +522,8 @@ export function Services() {
                 Maintenance Package Options
               </h1>
 
-              <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[115rem] lg:top-[126rem] xl:top-[136rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
-              <OrangeGradientBall className="absolute scale-[30%] lg:top-[147rem] lg:left-[2rem] xl:scale-[40%] xl:top-[164rem] xl:left-[4rem] 2xl:top-[165rem] 2xl:left-[12rem]" />
+              <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[114rem] lg:top-[126rem] xl:top-[133rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
+              <OrangeGradientBall className="hidden lg:block lg:absolute scale-[30%] lg:top-[147rem] lg:left-[2rem] xl:scale-[40%] xl:top-[164rem] xl:left-[4rem] 2xl:top-[165rem] 2xl:left-[12rem]" />
 
               <section className="service--cards--container flex flex-col md:flex-row justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
                 <Card
