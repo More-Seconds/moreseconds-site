@@ -525,7 +525,7 @@ export function Services() {
               <AstronautLady className="absolute sm:top-[157rem] md:translate-x-[8rem] xl:translate-x-[12rem] md:scale-[70%] md:top-[114rem] lg:top-[124rem] xl:top-[133rem] 2xl:top-[120rem] xl:scale-[60%] 2xl:mt-[4rem]" />
               <OrangeGradientBall className="hidden lg:block lg:absolute scale-[30%] lg:top-[147rem] lg:left-[2rem] xl:scale-[40%] xl:top-[164rem] xl:left-[4rem] 2xl:top-[165rem] 2xl:left-[12rem]" />
 
-              <section className="service--cards--container flex flex-col md:flex-row justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem]">
+              <section className="service--cards--container flex flex-col md:flex-row justify-center lg:h-full lg:py-30 xl:py-24 mt-10 md:mb-[12rem] gap-4 md:px-[3rem] lg:px-[8rem] xl:px-[10rem] 2xl:px-[18rem] 2xl:pb-0">
                 <Card
                   backgroundColor="#3C3C59"
                   className="w-full h-fit pb-4 gap-2 xl:gap-8"

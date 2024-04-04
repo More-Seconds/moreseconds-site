@@ -33,12 +33,12 @@ const ServicesAdditionalInfo: React.FC<ServicesAdditionalInfoProps> = ({
         <Smoke
           width="75%"
           height="75%"
-          className="h-auto absolute sm:bottom-[4rem] left-[0rem] md:bottom-[68rem] lg:bottom-[60rem] xl:bottom-[74rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem] 2xl:bottom-[62rem]"
+          className="h-auto absolute sm:bottom-[4rem] left-[0rem] md:bottom-[68rem] lg:bottom-[60rem] xl:bottom-[74rem] scale-x-[-1] rotate-180 -scale-y-125 z-100 2xl:-scale-x-125 2xl:-scale-y-125 2xl:left-[9rem]"
         />
 
         <GrayStar className="absolute sm:top-[155rem] lg:top-[126rem] lg:left-[14rem] xl:left-[17rem] xl:top-[131rem] scale-[40%]" />
 
-        <Satellite className="w-[75%] md:w-[100%] z-20 sm:mb-20 lg:mb-0 lg:w-[70%] sm:translate-x-[-2rem] sm:-translate-y-24 h-auto lg:translate-x-14 2xl:translate-x-[-7rem] 2xl:mt-[10rem]" />
+        <Satellite className="w-[75%] md:w-[100%] z-20 sm:mb-20 lg:mb-0 lg:w-[70%] sm:translate-x-[-2rem] sm:-translate-y-24 h-auto lg:translate-x-14 2xl:translate-x-[-7rem] 2xl:w-[100%] 2xl:mt-[10rem]" />
         <BlueSaturn className="absolute h-[80px] xl:h-[100px] right-[-6rem] bottom-[84rem] md:left-[-8rem] md:bottom-[46rem] lg:left-[-10rem] lg:bottom-[47rem] xl:-left-[8rem] xl:bottom-[55rem] 2xl:bottom-[50rem]" />
       </div>
       <div className="z-20 md:px-[25px] md:mt-[4rem] sm:text-center md:text-left lg:pr-[64px]">
