@@ -356,7 +356,7 @@ export function Services() {
               <Smoke
                 width="60%"
                 height="50%"
-                className="sm:hidden md:block md:absolute md:left-[-2.5rem] md:top-[30rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[45rem]"
+                className="sm:hidden md:block md:absolute md:left-[-2.5rem] md:top-[30rem] lg:top-[40rem] xl:-left-[4rem] xl:top-[39rem] 2xl:left-[-5rem] 2xl:top-[42rem]"
               />
             )}
 
