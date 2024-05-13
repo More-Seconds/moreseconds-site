@@ -487,4 +487,4 @@ root.render(
 
 ## Contact Form
 
-[Contact Form Doc] (https://docs.google.com/document/d/1J9oZVpnG-93K0Nd0NFpG80RFEmlc-w-qPqqc_CTQT5M/edit?usp=sharing)
+[Contact Form Doc](https://docs.google.com/document/d/1J9oZVpnG-93K0Nd0NFpG80RFEmlc-w-qPqqc_CTQT5M/edit?usp=sharing)
