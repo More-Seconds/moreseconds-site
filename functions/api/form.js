@@ -11,10 +11,12 @@ export async function onRequestPost(request) {
         data: requestData
       })
     });
-    console.log(response.status);
+    const result = await response.text();
+    console.log(result);
     const body = JSON.stringify({
       request: JSON.stringify(requestData),
-      response: response.status == 200 ? 'success' : 'fail'
+      response: response.status == 200 ? 'success' : 'fail',
+      data: result
     })
     return new Response(body, {
       headers: {
