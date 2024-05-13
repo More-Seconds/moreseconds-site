@@ -2,7 +2,7 @@ export async function onRequestPost(request) {
   try {
     const requestData = await request.request.json()
     console.log(requestData)
-    const response = await fetch('http://3.95.225.68/api/ms-site/form-submission', {
+    const response = await fetch('http://email-server.moreseconds.com/api/ms-site/form-submission', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
