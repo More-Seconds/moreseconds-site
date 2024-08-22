@@ -1,4 +1,4 @@
-export async function onRequestPost(request) {
+/*export async function onRequestPost(request) {
   try {
     const requestData = await request.request.json()
     console.log(requestData)
@@ -6,7 +6,7 @@ export async function onRequestPost(request) {
     if (requestData.signUpEmail) {
       message = `New Signup Email: ${requestData.signUpEmail}`
     } else if (requestData.fullName) {
-      message = `New Form Sumbission. \n Name: ${requestData.fullName} \n Email: ${requestData.email} \n Business: ${requestData.companyName} \n Business Size: ${requestData.companySize} \n Message: ${requestData.message}`
+      message =
     } else {
       message = 'error'
     }
@@ -77,4 +77,4 @@ export async function onRequestPost(request) {
       }
     })
   }
-}
+}*/
