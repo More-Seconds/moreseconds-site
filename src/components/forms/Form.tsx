@@ -121,7 +121,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
   ) {
     console.log('submitted')
     try {
-      const response = await fetch('http://localhost:5173/ms-site/form-submission', {
+      const response = await fetch(import.meta.env.VITE_EMAIL_API_URL+'/ms-site/form-submission', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
