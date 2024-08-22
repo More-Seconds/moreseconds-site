@@ -132,7 +132,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       console.log(result)
       setSubmitStatus('success')
       actions.resetForm()
-    } catch(error) {
+    } catch(error: any) {
       console.log(error.message)
       setSubmitStatus('fail')
     }
