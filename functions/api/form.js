@@ -1,4 +1,4 @@
-export async function onRequestPost(request) {
+/*export async function onRequestPost(request) {
   try {
     const requestData = await request.request.json()
     console.log(requestData)
@@ -77,4 +77,4 @@ export async function onRequestPost(request) {
       }
     })
   }
-}
+}*/
