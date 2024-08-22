@@ -121,7 +121,7 @@ export function FooterForm({ levelUp }: Partial<Props>) {
   ) {
     console.log('submitted')
     try {
-      const response = await fetch('/api/form', {
+      const response = await fetch('http://localhost:5173/ms-site/form-submission', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -130,10 +130,10 @@ export function FooterForm({ levelUp }: Partial<Props>) {
       })
       const result = await response.json()
       console.log(result)
-      setSubmitStatus(result.response)
+      setSubmitStatus('success')
       actions.resetForm()
-    } catch {
-      console.log('failed')
+    } catch(error) {
+      console.log(error.message)
       setSubmitStatus('fail')
     }
   }
